@@ -310,7 +310,26 @@ async function saveNote(e) {
     setSaving(false);
     setNotice(error ? `Profile save nahi hua: ${error.message}` : 'Profile updated successfully.');
   }
-   
+   async function loadDoubtAnswers(doubtId) {
+  if (!supabase) return;
+
+  const { data, error } = await supabase
+    .from('doubt_answers')
+    .select('*')
+    .eq('doubt_id', doubtId)
+    .order('created_at', { ascending: true });
+
+  if (error) {
+    console.error('Answers loading error:', error);
+    setNotice(`Answers load nahi hue: ${error.message}`);
+    return;
+  }
+
+  setDoubtAnswers(previous => ({
+    ...previous,
+    [doubtId]: data || []
+  }));
+}
   async function submitDoubtAnswer(e, doubtId) {
   e.preventDefault();
 
@@ -349,11 +368,7 @@ async function saveNote(e) {
   await loadDoubtAnswers(doubtId);
 }
 
-  setDoubtAnswers(previous => ({
-    ...previous,
-    [doubtId]: data || []
-  }));
-
+ 
   async function submitDoubt(e) {
     e.preventDefault();
     if (!supabase || !session?.user) { setNotice('Forum use karne ke liye Supabase setup aur login zaroori hai.'); return; }
