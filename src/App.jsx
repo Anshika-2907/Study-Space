@@ -460,6 +460,7 @@ async function saveNote(e) {
     { label: 'Doubt Forum', icon: CircleHelp },
     { label: 'Student Community', icon: Users },
     { label: 'Notes Sharing', icon: Upload },
+    { label: 'PYQ Library', icon: FileText },
     { label: 'Subjects', icon: LibraryBig },
     { label: 'My Progress', icon: ChartNoAxesCombined },
     { label: 'Profile', icon: UserRound },
@@ -505,6 +506,11 @@ async function saveNote(e) {
        
         {page === 'Student Community' && <CommunityPage posts={communityPosts} form={communityForm} setForm={setCommunityForm} onSubmit={submitCommunityPost} filter={forumFilter} setFilter={setForumFilter} onDelete={(item)=>deleteCommunityItem('community_posts',item.id,item.user_id,setCommunityPosts)} userId={session.user.id} />}
         {page === 'Notes Sharing' && <NotesSharingPage notes={notes} openNewNote={openNewNote} uploadNoteFile={uploadNoteFile} downloadNote={downloadNote} />}
+        {page === 'PYQ Library' && <PYQLibraryPage
+         session={session}
+         profile={profile}
+         setNotice={setNotice}
+         />}
         {page === 'Quiz Zone' && <QuizPage quizTopic={quizTopic} setQuizTopic={setQuizTopic} quizLength={quizLength} setQuizLength={setQuizLength} startQuiz={startQuiz} attempts={attempts} />}
         {page === 'Subjects' && <SubjectsPage startQuiz={startQuiz} setPage={setPage} />}
         {page === 'My Progress' && <ProgressPage attempts={attempts} average={average} best={best} notes={notes} />}
@@ -833,3 +839,270 @@ function QuizRunner({quizItems,quizIndex,setQuizIndex,answers,setAnswers,quizFin
   return <div className="page-content quiz-runner-wrap"><div className="quiz-runner-top"><button className="text-link" onClick={()=>setPage('Quiz Zone')}>← Exit quiz</button><span>{topic==='All'?'Mixed practice':topic} · Question {quizIndex+1} of {quizItems.length}</span></div><div className="quiz-progress-track"><span style={{width:`${(quizIndex+1)/quizItems.length*100}%`}}/></div><div className="quiz-question-card"><div className="question-label"><span>QUESTION {String(quizIndex+1).padStart(2,'0')}</span><span className="tag tag-dsa">{q.topic}</span></div><h1>{q.q}</h1><p className="question-subtitle">Choose the best answer to continue.</p><div className="answer-options">{q.options.map((opt,i)=><button key={opt} className={`answer-option ${answers[quizIndex]===i?'chosen':''}`} onClick={()=>setAnswers({...answers,[quizIndex]:i})}><span className="option-letter">{String.fromCharCode(65+i)}</span><span>{opt}</span>{answers[quizIndex]===i&&<Check className="option-check" size={17}/>}</button>)}</div><div className="question-footer"><span>{Object.keys(answers).length} of {quizItems.length} answered</span><button className="btn btn-primary" disabled={answers[quizIndex]===undefined} onClick={()=>quizIndex<quizItems.length-1?setQuizIndex(quizIndex+1):finishQuiz()}>{quizIndex===quizItems.length-1?'Finish quiz':'Next question'} <ArrowRight size={16}/></button></div></div><div className="question-dots">{quizItems.map((item,i)=><button key={item.id} title={`Question ${i+1}`} className={`${i===quizIndex?'current':''} ${answers[i]!==undefined?'answered':''}`} onClick={()=>setQuizIndex(i)}>{i+1}</button>)}</div></div>;
 }
 export default App;
+function PYQLibraryPage({ session, profile, setNotice }) {
+  const [papers, setPapers] = useState([]);
+  const [semester, setSemester] = useState('1');
+  const [subject, setSubject] = useState('');
+  const [examYear, setExamYear] = useState('2025');
+  const [title, setTitle] = useState('');
+  const [file, setFile] = useState(null);
+  const [semesterFilter, setSemesterFilter] = useState('All');
+  const [subjectFilter, setSubjectFilter] = useState('');
+  const [yearFilter, setYearFilter] = useState('All');
+  const [loading, setLoading] = useState(false);
+
+  async function loadPapers() {
+    const { data, error } = await supabase
+      .from('pyq_papers')
+      .select('*')
+      .order('semester')
+      .order('subject')
+      .order('exam_year', { ascending: false });
+
+    if (error) {
+      setNotice('Question papers load nahi hue: ' + error.message);
+      return;
+    }
+
+    setPapers(data || []);
+  }
+
+  useEffect(() => {
+    loadPapers();
+  }, []);
+
+  async function uploadPaper(event) {
+    event.preventDefault();
+
+    if (!session?.user) {
+      setNotice('Pehle login karo.');
+      return;
+    }
+
+    if (!subject.trim() || !file) {
+      setNotice('Subject aur PDF file select karo.');
+      return;
+    }
+
+    if (!file.name.toLowerCase().endsWith('.pdf')) {
+      setNotice('Sirf PDF question paper upload karo.');
+      return;
+    }
+
+    if (file.size > 20 * 1024 * 1024) {
+      setNotice('PDF file 20 MB se chhoti honi chahiye.');
+      return;
+    }
+
+    setLoading(true);
+
+    const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, '_');
+    const path = `${session.user.id}/${crypto.randomUUID()}-${safeName}`;
+
+    try {
+      const { error: uploadError } = await supabase.storage
+        .from('studyspace-pyqs')
+        .upload(path, file, {
+          upsert: false,
+          contentType: 'application/pdf'
+        });
+
+      if (uploadError) throw uploadError;
+
+      const { error: insertError } = await supabase
+        .from('pyq_papers')
+        .insert({
+          title: title.trim() || file.name.replace(/\.pdf$/i, ''),
+          semester: Number(semester),
+          subject: subject.trim(),
+          exam_year: Number(examYear),
+          file_path: path,
+          file_name: file.name,
+          uploaded_by: session.user.id,
+          uploader_name: profile?.full_name || session.user.email
+        });
+
+      if (insertError) {
+        await supabase.storage.from('studyspace-pyqs').remove([path]);
+        throw insertError;
+      }
+
+      setNotice('PYQ paper successfully upload ho gaya!');
+      setTitle('');
+      setSubject('');
+      setExamYear('2025');
+      setFile(null);
+      event.target.reset();
+      await loadPapers();
+    } catch (error) {
+      setNotice('Upload failed: ' + error.message);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function downloadPaper(paper) {
+    const { data, error } = await supabase.storage
+      .from('studyspace-pyqs')
+      .download(paper.file_path);
+
+    if (error || !data) {
+      setNotice('Download failed: ' + (error?.message || 'File nahi mili.'));
+      return;
+    }
+
+    const url = URL.createObjectURL(data);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = paper.file_name || 'question-paper.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+
+  const filteredPapers = papers.filter((paper) => {
+    const matchesSemester =
+      semesterFilter === 'All' ||
+      String(paper.semester) === semesterFilter;
+
+    const matchesSubject = paper.subject
+      .toLowerCase()
+      .includes(subjectFilter.trim().toLowerCase());
+
+    const matchesYear =
+      yearFilter === 'All' ||
+      String(paper.exam_year) === yearFilter;
+
+    return matchesSemester && matchesSubject && matchesYear;
+  });
+
+  return (
+    <div className="page-content">
+      <div className="page-heading">
+        <div>
+          <h1>PYQ Library</h1>
+          <p>Semester-wise previous year question papers share aur download karo.</p>
+        </div>
+      </div>
+
+      <section className="panel">
+        <h2>Upload Question Paper</h2>
+
+        <form onSubmit={uploadPaper} className="share-form">
+          <label>
+            Semester
+            <select value={semester} onChange={(e) => setSemester(e.target.value)}>
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
+                <option key={sem} value={sem}>Semester {sem}</option>
+              ))}
+            </select>
+          </label>
+
+          <label>
+            Subject
+            <input
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              placeholder="e.g. Data Structures"
+              required
+            />
+          </label>
+
+          <label>
+            Exam Year
+            <select value={examYear} onChange={(e) => setExamYear(e.target.value)}>
+              {[2026, 2025, 2024, 2023, 2022, 2021, 2020].map((year) => (
+                <option key={year} value={year}>{year}</option>
+              ))}
+            </select>
+          </label>
+
+          <label>
+            Paper Title (optional)
+            <input
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              placeholder="e.g. End Semester Exam"
+            />
+          </label>
+
+          <label>
+            PDF Question Paper
+            <input
+              type="file"
+              accept=".pdf,application/pdf"
+              onChange={(e) => setFile(e.target.files?.[0] || null)}
+              required
+            />
+          </label>
+
+          <button className="btn btn-primary" type="submit" disabled={loading}>
+            {loading ? 'Uploading...' : 'Upload PYQ'}
+          </button>
+        </form>
+      </section>
+
+      <section className="panel">
+        <h2>Available Question Papers</h2>
+
+        <div className="share-form">
+          <label>
+            Filter by Semester
+            <select
+              value={semesterFilter}
+              onChange={(e) => setSemesterFilter(e.target.value)}
+            >
+              <option value="All">All Semesters</option>
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
+                <option key={sem} value={sem}>Semester {sem}</option>
+              ))}
+            </select>
+          </label>
+
+          <label>
+            Search Subject
+            <input
+              value={subjectFilter}
+              onChange={(e) => setSubjectFilter(e.target.value)}
+              placeholder="Search subject..."
+            />
+          </label>
+
+          <label>
+            Filter by Year
+            <select value={yearFilter} onChange={(e) => setYearFilter(e.target.value)}>
+              <option value="All">All Years</option>
+              {[2026, 2025, 2024, 2023, 2022, 2021, 2020].map((year) => (
+                <option key={year} value={year}>{year}</option>
+              ))}
+            </select>
+          </label>
+        </div>
+
+        {filteredPapers.length === 0 ? (
+          <p>No question papers found. Pehla PDF upload kar sakte ho.</p>
+        ) : (
+          <div>
+            {filteredPapers.map((paper) => (
+              <div className="panel" key={paper.id}>
+                <h3>{paper.title}</h3>
+                <p>
+                  Semester {paper.semester} · {paper.subject} · {paper.exam_year}
+                </p>
+                <p>Uploaded by: {paper.uploader_name || 'Student'}</p>
+                <button
+                  className="btn btn-primary"
+                  type="button"
+                  onClick={() => downloadPaper(paper)}
+                >
+                  Download PDF
+                </button>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+    </div>
+  );
+}
