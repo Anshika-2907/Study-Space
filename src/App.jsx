@@ -33,7 +33,10 @@ function App() {
   const [search, setSearch] = useState('');
   const [noteModal, setNoteModal] = useState(false);
   const [editingNote, setEditingNote] = useState(null);
-  const [noteForm, setNoteForm] = useState({ title: '', subject: 'DSA', content: '' });
+   const [noteForm, setNoteForm] = useState({ title: '', subject: 'DSA', content: '',
+    file:null,
+    sharing_type:'private',
+    });
   const [quizTopic, setQuizTopic] = useState('All');
   const [quizLength, setQuizLength] = useState(10);
   const [quizItems, setQuizItems] = useState([]);
@@ -64,25 +67,81 @@ function App() {
     else { setNotes([]); setAttempts([]); setQuestions([]); setCommunityPosts([]); setProfile({ full_name: '', course: 'CSE', year: '2nd Year', branch: 'CSE' }); }
   }, [session?.user?.id]);
 
-  async function loadData() {
-    if (!supabase || !session?.user) return;
-    setDataLoading(true);
-    const uid = session.user.id;
+ async function loadData() {
+  if (!supabase || !session?.user) return;
+
+  setDataLoading(true);
+  const uid = session.user.id;
+
+  try {
     const [noteRes, attemptRes, profileRes] = await Promise.all([
-      supabase.from('notes').select('*').eq('user_id', uid).order('updated_at', { ascending: false }),
-      supabase.from('quiz_attempts').select('*').eq('user_id', uid).order('created_at', { ascending: false }).limit(100),
-      supabase.from('profiles').select('*').eq('id', uid).maybeSingle()
+      supabase
+        .from('notes')
+        .select('*')
+        .or(`sharing_type.eq.community,user_id.eq.${uid}`)
+        .order('updated_at', { ascending: false }),
+
+      supabase
+        .from('quiz_attempts')
+        .select('*')
+        .eq('user_id', uid)
+        .order('created_at', { ascending: false })
+        .limit(100),
+
+      supabase
+        .from('profiles')
+        .select('*')
+        .eq('id', uid)
+        .maybeSingle()
     ]);
-    if (noteRes.error) setNotice(`Notes load nahi hue: ${noteRes.error.message}`);
-    else setNotes(noteRes.data || []);
-    if (!attemptRes.error) setAttempts(attemptRes.data || []);
-    if (profileRes.data) setProfile({ full_name: profileRes.data.full_name || '', course: profileRes.data.course || 'CSE', year: profileRes.data.year || '2nd Year', branch: profileRes.data.branch || profileRes.data.course || 'CSE' });
-    const doubtsRes = await supabase.from('doubts').select('*').order('created_at', { ascending: false }).limit(100);
-    if (!doubtsRes.error) setQuestions(doubtsRes.data || []);
-    const postsRes = await supabase.from('community_posts').select('*').order('created_at', { ascending: false }).limit(100);
-    if (!postsRes.error) setCommunityPosts(postsRes.data || []);
+
+    if (noteRes.error) {
+      setNotice(`Notes load nahi hue: ${noteRes.error.message}`);
+    } else {
+      setNotes(noteRes.data || []);
+    }
+
+    if (!attemptRes.error) {
+      setAttempts(attemptRes.data || []);
+    }
+
+    if (profileRes.data) {
+      setProfile({
+        full_name: profileRes.data.full_name || '',
+        course: profileRes.data.course || 'CSE',
+        year: profileRes.data.year || '2nd Year',
+        branch:
+          profileRes.data.branch ||
+          profileRes.data.course ||
+          'CSE'
+      });
+    }
+
+    const doubtsRes = await supabase
+      .from('doubts')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .limit(100);
+
+    if (!doubtsRes.error) {
+      setQuestions(doubtsRes.data || []);
+    }
+
+    const postsRes = await supabase
+      .from('community_posts')
+      .select('*')
+      .order('created_at', { ascending: false })
+      .limit(100);
+
+    if (!postsRes.error) {
+      setCommunityPosts(postsRes.data || []);
+    }
+  } catch (error) {
+    setNotice(`Data load karne mein error: ${error.message}`);
+  } finally {
     setDataLoading(false);
   }
+}
 
   async function handleAuth(e) {
     e.preventDefault(); setAuthError('');
@@ -116,31 +175,90 @@ function App() {
     if (supabase) await supabase.auth.signOut();
     setPage('Dashboard'); setNotice('You have been logged out.');
   }
+async function saveNote(e) {
+  e.preventDefault();
 
-  async function saveNote(e) {
-    e.preventDefault();
-    if (!session?.user || !supabase) return;
-    if (!noteForm.title.trim()) { setNotice('Note ka title likho.'); return; }
-    setSaving(true);
+  if (!session?.user || !supabase) return;
+
+  if (!noteForm.title.trim()) {
+    setNotice('Note ka title likho.');
+    return;
+  }
+
+  setSaving(true);
+
+  try {
+    let filePath = editingNote?.file_path || null;
+    let fileName = editingNote?.file_name || null;
+
+    if (noteForm.file) {
+      const file = noteForm.file;
+      const isCommunity = noteForm.sharing_type === 'community';
+      const bucket = isCommunity
+        ? 'studyspace-community'
+        : 'studyspace-private';
+
+      const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, '_');
+      const path = `${session.user.id}/${crypto.randomUUID()}-${safeName}`;
+
+      const { error: uploadError } = await supabase.storage
+        .from(bucket)
+        .upload(path, file, {
+          upsert: false,
+          contentType: file.type || 'application/octet-stream'
+        });
+
+      if (uploadError) {
+        setNotice(`File upload nahi hui: ${uploadError.message}`);
+        return;
+      }
+
+      filePath = `${bucket}/${path}`;
+      fileName = file.name;
+    }
+
     const payload = {
       title: noteForm.title.trim(),
       subject: noteForm.subject,
       content: noteForm.content,
       user_id: session.user.id,
-      updated_at: new Date().toISOString()
+      updated_at: new Date().toISOString(),
+      file_path: filePath,
+      file_name: fileName,
+      sharing_type: noteForm.sharing_type || 'private'
     };
-    const query = editingNote
-      ? supabase.from('notes').update(payload).eq('id', editingNote.id).eq('user_id', session.user.id)
-      : supabase.from('notes').insert(payload);
-    const { error } = await query;
-    setSaving(false);
-    if (error) { setNotice(`Note save nahi hua: ${error.message}`); return; }
-    setNoteModal(false); setEditingNote(null);
-    setNoteForm({ title: '', subject: 'DSA', content: '' });
-    setNotice('Note cloud mein save ho gaya.');
-    loadData();
-  }
 
+    const query = editingNote
+      ? supabase.from('notes')
+          .update(payload)
+          .eq('id', editingNote.id)
+          .eq('user_id', session.user.id)
+      : supabase.from('notes').insert(payload);
+
+    const { error } = await query;
+
+    if (error) {
+      setNotice(`Note save nahi hua: ${error.message}`);
+      return;
+    }
+
+    setNoteModal(false);
+    setEditingNote(null);
+    setNoteForm({
+      title: '',
+      subject: 'DSA',
+      content: '',
+      file: null,
+      sharing_type: 'private'
+    });
+    setNotice('Note cloud mein save ho gaya.');
+    await loadData();
+  } catch (error) {
+    setNotice(`Error: ${error.message || 'Kuch galat hua.'}`);
+  } finally {
+    setSaving(false);
+  }
+}
   async function deleteNote(note) {
     if (!confirm(`"${note.title}" delete karna hai?`)) return;
     const { error } = await supabase.from('notes').delete().eq('id', note.id).eq('user_id', session.user.id);
@@ -209,15 +327,57 @@ function App() {
     const { error } = await supabase.from(table).delete().eq('id', id).eq('user_id', session.user.id);
     if (error) setNotice(error.message); else setter(old => old.filter(item => item.id !== id));
   }
-  function downloadNote(note) {
-    const blob = new Blob([`${note.title}\nSubject: ${note.subject}\n\n${note.content || ''}`], { type: 'text/plain;charset=utf-8' });
-    const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = `${(note.title || 'study-note').replace(/[^a-z0-9-_ ]/gi, '').trim() || 'study-note'}.txt`; a.click(); URL.revokeObjectURL(url);
-  }
-  async function uploadNoteFile(file) {
-    if (!file) return;
-    const text = await file.text(); setNoteForm({ title: file.name.replace(/\.[^.]+$/, ''), subject: profile.branch || 'General', content: text }); setEditingNote(null); setNoteModal(true);
+ async function downloadNote(note) {
+  if (note.file_path && supabase) {
+    const [bucket, ...parts] = note.file_path.split('/');
+    const path = parts.join('/');
+
+    const { data, error } = await supabase.storage
+      .from(bucket)
+      .download(path);
+
+    if (error || !data) {
+      setNotice(`File download nahi hui: ${error?.message || 'File nahi mili.'}`);
+      return;
+    }
+
+    const url = URL.createObjectURL(data);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = note.file_name || note.title || 'study-file';
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    return;
   }
 
+  const blob = new Blob(
+    [`${note.title}\nSubject: ${note.subject}\n\n${note.content || ''}`],
+    { type: 'text/plain;charset=utf-8' }
+  );
+
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `${(note.title || 'study-note')
+    .replace(/[^a-z0-9-_ ]/gi, '').trim() || 'study-note'}.txt`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+  async function uploadNoteFile(file) {
+  if (!file) return;
+  const text = await file.text();
+  setNoteForm({
+    title: file.name.replace(/\.[^.]+$/, ''),
+    subject: profile.branch || 'General',
+    content: text
+  });
+  setEditingNote(null);
+  setNoteModal(true);
+}
   const filteredNotes = notes.filter(n =>
     `${n.title} ${n.subject} ${n.content}`.toLowerCase().includes(search.toLowerCase())
   );
@@ -280,6 +440,31 @@ function App() {
       <form className="modal-card" onSubmit={saveNote}><div className="modal-heading"><div><span className="eyebrow">{editingNote ? 'EDIT NOTE' : 'NEW NOTE'}</span><h2>{editingNote ? 'Update your note' : 'Capture an idea'}</h2></div><button type="button" className="icon-button" onClick={() => setNoteModal(false)}><X/></button></div>
         <label>Note title<input autoFocus required value={noteForm.title} onChange={e => setNoteForm({...noteForm,title:e.target.value})} placeholder="e.g. Binary search notes"/></label>
         <label>Subject<select value={noteForm.subject} onChange={e => setNoteForm({...noteForm,subject:e.target.value})}>{['DSA','HTML','CSS','JavaScript','General'].map(s=><option key={s}>{s}</option>)}</select></label>
+        <label>Choose PDF or Word file
+  <input
+    type="file"
+    accept=".pdf,.doc,.docx,.txt,.md"
+    onChange={e =>
+      setNoteForm({
+        ...noteForm,
+        file: e.target.files?.[0] || null,
+        title: noteForm.title || (e.target.files?.[0]?.name || '').replace(/\.[^.]+$/, '')
+      })
+    }
+  />
+</label>
+
+<label>Sharing
+  <select
+    value={noteForm.sharing_type || 'private'}
+    onChange={e =>
+      setNoteForm({ ...noteForm, sharing_type: e.target.value })
+    }
+  >
+    <option value="private">Private — only me</option>
+    <option value="community">Community — share with students</option>
+  </select>
+</label>
         <label>Your notes<textarea rows="7" value={noteForm.content} onChange={e => setNoteForm({...noteForm,content:e.target.value})} placeholder="Write your key ideas here…"/></label>
         <div className="modal-actions"><button type="button" className="btn btn-ghost" onClick={() => setNoteModal(false)}>Cancel</button><button className="btn btn-primary" disabled={saving}><Save size={16}/>{saving?'Saving…':'Save to cloud'}</button></div>
       </form>
@@ -361,7 +546,15 @@ function CommunityPage({posts,form,setForm,onSubmit,filter,setFilter,onDelete,us
   const visible=posts.filter(p=>(filter.year==='All years'||p.year===filter.year)&&(filter.branch==='All branches'||p.branch===filter.branch));
   return <div className="page-content"><PageHeading eyebrow="CAMPUS LEARNING COMMUNITY" title="Student Community" description="Share study tips, project updates, questions, and useful opportunities."/><form className="panel share-form" onSubmit={onSubmit}><h2>Share with students</h2><label>Your post<textarea required rows="4" value={form.body} onChange={e=>setForm({...form,body:e.target.value})} placeholder="What are you learning or working on?"/></label><div className="share-form-row"><label>Year<select value={form.year} onChange={e=>setForm({...form,year:e.target.value})}>{['1st Year','2nd Year','3rd Year','4th Year','All years'].map(x=><option key={x}>{x}</option>)}</select></label><label>Branch<select value={form.branch} onChange={e=>setForm({...form,branch:e.target.value})}>{['CSE','IT','ECE','EEE','Mechanical Engineering','Civil Engineering','Chemical Engineering','All branches','Other'].map(x=><option key={x}>{x}</option>)}</select></label><button className="btn btn-primary"><Send size={15}/> Publish post</button></div></form><StudentFilters filter={filter} setFilter={setFilter}/><div className="forum-list">{visible.length===0?<EmptyState icon={Users} title="Your community starts here" text="Share the first useful tip or update with fellow students."/>:visible.map(p=><article className="panel forum-card" key={p.id}><div className="forum-meta"><span>{p.year||'All years'} · {p.branch||'All branches'}</span><span>{new Date(p.created_at).toLocaleDateString()}</span></div><p className="community-post-body">{p.body}</p><div className="forum-byline"><span>Posted by <strong>{p.author_name||'Student'}</strong></span>{p.user_id===userId&&<button className="icon-button danger-hover" onClick={()=>onDelete(p)} title="Delete your post"><Trash2 size={15}/></button>}</div></article>)}</div></div>;
 }
-function NotesSharingPage({notes,openNewNote,uploadNoteFile,downloadNote}) { return <div className="page-content"><PageHeading eyebrow="STUDENT RESOURCE LIBRARY" title="Notes Sharing" description="Create notes, import text notes, and download notes as text files." action={<button className="btn btn-primary" onClick={openNewNote}><Plus size={16}/> Write notes</button>}/><section className="panel upload-panel"><div><Upload size={22}/><div><h2>Upload a notes file</h2><p>Choose a .txt or other text-readable file. Review it and save it to your account.</p></div></div><label className="btn btn-soft upload-label">Choose file<input type="file" accept=".txt,.md,.csv,.json,.html,.css,.js" onChange={e=>{uploadNoteFile(e.target.files?.[0]);e.target.value='';}} hidden/></label></section><div className="notes-grid">{notes.length===0?<EmptyState icon={FileText} title="No notes to share yet" text="Write or upload a note to begin your library."/>:notes.map(n=><article className="note-card" key={n.id}><div className="note-card-top"><span className="tag">{n.subject}</span></div><h3>{n.title}</h3><p>{n.content||'No content added yet.'}</p><div className="note-card-footer"><span><Clock3 size={13}/> {new Date(n.updated_at).toLocaleDateString()}</span><button onClick={()=>downloadNote(n)}><Download size={14}/> Download</button></div></article>)}</div><p className="sharing-note">Notes are saved to the signed-in account. For students to share the same public library, use the SQL setup included in this project and extend notes permissions intentionally.</p></div>; }
+function NotesSharingPage({notes,openNewNote,uploadNoteFile,downloadNote}) { return <div className="page-content"><PageHeading eyebrow="STUDENT RESOURCE LIBRARY" title="Notes Sharing" description="Create notes, import text notes, and download notes as text files." action={<button className="btn btn-primary" onClick={openNewNote}><Plus size={16}/> Write notes</button>}/><section className="panel upload-panel"><div><Upload size={22}/><div><h2>Upload a notes file</h2><p>Upload PDF, Word, or text documents to your personal or community library..</p></div></div><label className="btn btn-soft upload-label">Choose file<input
+  type="file"
+  accept=".txt,.md,.pdf,.doc,.docx,.csv"
+  onChange={e => {
+    uploadNoteFile(e.target.files?.[0]);
+    e.target.value = '';
+  }}
+  hidden
+/></label></section><div className="notes-grid">{notes.length===0?<EmptyState icon={FileText} title="No notes to share yet" text="Write or upload a note to begin your library."/>:notes.map(n=><article className="note-card" key={n.id}><div className="note-card-top"><span className="tag">{n.subject}</span></div><h3>{n.title}</h3><p>{n.content||'No content added yet.'}</p><div className="note-card-footer"><span><Clock3 size={13}/> {new Date(n.updated_at).toLocaleDateString()}</span><button onClick={()=>downloadNote(n)}><Download size={14}/> Download</button></div></article>)}</div><p className="sharing-note">Notes are saved to the signed-in account. For students to share the same public library, use the SQL setup included in this project and extend notes permissions intentionally.</p></div>; }
 
 function ProfilePage({profile,setProfile,saveProfile,saving,email}) {
   return <div className="page-content"><PageHeading eyebrow="YOUR ACCOUNT" title="My Profile" description="Keep your student details up to date."/><section className="profile-hero"><div className="profile-avatar-large">{(profile.full_name||email||'S').slice(0,1).toUpperCase()}</div><div><h2>{profile.full_name||'Student profile'}</h2><p>{email}</p><span className="verified-pill"><ShieldCheck size={14}/> Signed in</span></div></section><form className="panel profile-form" onSubmit={saveProfile}><div className="panel-heading"><div><h2>Personal details</h2><p>Your profile is saved securely to your account.</p></div></div><label>Full name<input value={profile.full_name} onChange={e=>setProfile({...profile,full_name:e.target.value})} placeholder="Enter your name"/></label><label>Course / department<select value={profile.course} onChange={e=>setProfile({...profile,course:e.target.value})}>{['CSE','IT','ECE','Electrical Engineering','Mechanical Engineering','Other'].map(c=><option key={c}>{c}</option>)}</select></label><label>Year of study<select value={profile.year || '2nd Year'} onChange={e=>setProfile({...profile,year:e.target.value})}>{['1st Year','2nd Year','3rd Year','4th Year'].map(y=><option key={y}>{y}</option>)}</select></label><label>Branch<select value={profile.branch || profile.course} onChange={e=>setProfile({...profile,branch:e.target.value,course:e.target.value})}>{['CSE','IT','ECE','EEE','Mechanical Engineering','Civil Engineering','Chemical Engineering','Other'].map(c=><option key={c}>{c}</option>)}</select></label><label>Email address<input value={email||''} disabled readOnly/></label><div className="profile-save-row"><span><ShieldCheck size={15}/> Private to your account</span><button className="btn btn-primary" disabled={saving}><Save size={16}/>{saving?'Saving…':'Save profile'}</button></div></form><div className="security-note"><LockKeyhole size={20}/><div><strong>Your data, your account</strong><p>StudySpace uses account-based database rules so your notes and quiz history are separated from other users.</p></div></div></div>;
