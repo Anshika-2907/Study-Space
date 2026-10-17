@@ -45,6 +45,8 @@ function App() {
   const [quizFinished, setQuizFinished] = useState(false);
   const [saving, setSaving] = useState(false);
   const [questions, setQuestions] = useState([]);
+  const [doubtAnswers, setDoubtAnswers] = useState({});
+  const [answerForms, setAnswerForms] = useState({});
   const [communityPosts, setCommunityPosts] = useState([]);
   const [forumForm, setForumForm] = useState({ title: '', body: '', branch: 'All branches', year: 'All years', category: 'Doubt' });
   const [communityForm, setCommunityForm] = useState({ body: '', branch: 'All branches', year: 'All years' });
@@ -117,7 +119,7 @@ function App() {
       });
     }
 
-    const doubtsRes = await supabase
+   const doubtsRes = await supabase
       .from('doubts')
       .select('*')
       .order('created_at', { ascending: false })
@@ -126,6 +128,7 @@ function App() {
     if (!doubtsRes.error) {
       setQuestions(doubtsRes.data || []);
     }
+
 
     const postsRes = await supabase
       .from('community_posts')
@@ -307,6 +310,49 @@ async function saveNote(e) {
     setSaving(false);
     setNotice(error ? `Profile save nahi hua: ${error.message}` : 'Profile updated successfully.');
   }
+   
+  async function submitDoubtAnswer(e, doubtId) {
+  e.preventDefault();
+
+  if (!supabase || !session?.user) {
+    setNotice('Answer dene ke liye login zaroori hai.');
+    return;
+  }
+
+  const answerText = (answerForms[doubtId] || '').trim();
+
+  if (!answerText) {
+    setNotice('Pehle apna answer likho.');
+    return;
+  }
+
+  const { error } = await supabase
+    .from('doubt_answers')
+    .insert({
+      doubt_id: doubtId,
+      user_id: session.user.id,
+      answer: answerText,
+      author_name: profile.full_name || session.user.email
+    });
+
+  if (error) {
+    setNotice(`Answer post nahi hua: ${error.message}`);
+    return;
+  }
+
+  setAnswerForms(previous => ({
+    ...previous,
+    [doubtId]: ''
+  }));
+
+  setNotice('Answer successfully post ho gaya!');
+  await loadDoubtAnswers(doubtId);
+}
+
+  setDoubtAnswers(previous => ({
+    ...previous,
+    [doubtId]: data || []
+  }));
 
   async function submitDoubt(e) {
     e.preventDefault();
@@ -425,7 +471,23 @@ async function saveNote(e) {
         {dataLoading && <div className="inline-loading"><LoaderCircle className="spin" size={16}/> Syncing your workspace…</div>}
         {page === 'Dashboard' && <Dashboard profile={profile} notes={notes} attempts={attempts} average={average} best={best} setPage={setPage} startQuiz={startQuiz} openNewNote={openNewNote} />}
         {page === 'My Notes' && <NotesPage notes={filteredNotes} search={search} setSearch={setSearch} openNewNote={openNewNote} openEditNote={openEditNote} deleteNote={deleteNote} />}
-        {page === 'Doubt Forum' && <DoubtForumPage questions={questions} form={forumForm} setForm={setForumForm} onSubmit={submitDoubt} profile={profile} filter={forumFilter} setFilter={setForumFilter} onDelete={(item)=>deleteCommunityItem('doubts',item.id,item.user_id,setQuestions)} userId={session.user.id} />}
+       {page === 'Doubt Forum' && <DoubtForumPage
+       questions={questions}
+       form={forumForm}
+       setForm={setForumForm}
+       onSubmit={submitDoubt}
+       doubtAnswers={doubtAnswers}
+       answerForms={answerForms}
+       setAnswerForms={setAnswerForms}
+       onLoadAnswers={loadDoubtAnswers}
+       onSubmitAnswer={submitDoubtAnswer}
+       profile={profile}
+       filter={forumFilter}
+       setFilter={setForumFilter}
+       onDelete={(item)=>deleteCommunityItem('doubts',item.id,item.user_id,setQuestions)}
+       userId={session.user.id}
+       />}
+       
         {page === 'Student Community' && <CommunityPage posts={communityPosts} form={communityForm} setForm={setCommunityForm} onSubmit={submitCommunityPost} filter={forumFilter} setFilter={setForumFilter} onDelete={(item)=>deleteCommunityItem('community_posts',item.id,item.user_id,setCommunityPosts)} userId={session.user.id} />}
         {page === 'Notes Sharing' && <NotesSharingPage notes={notes} openNewNote={openNewNote} uploadNoteFile={uploadNoteFile} downloadNote={downloadNote} />}
         {page === 'Quiz Zone' && <QuizPage quizTopic={quizTopic} setQuizTopic={setQuizTopic} quizLength={quizLength} setQuizLength={setQuizLength} startQuiz={startQuiz} attempts={attempts} />}
@@ -538,13 +600,200 @@ function ProgressPage({attempts,average,best,notes}) {
 }
 
 function StudentFilters({filter,setFilter}) { return <div className="student-filters"><label>Year <select value={filter.year} onChange={e=>setFilter({...filter,year:e.target.value})}>{['All years','1st Year','2nd Year','3rd Year','4th Year'].map(y=><option key={y}>{y}</option>)}</select></label><label>Branch <select value={filter.branch} onChange={e=>setFilter({...filter,branch:e.target.value})}>{['All branches','CSE','IT','ECE','EEE','Mechanical Engineering','Civil Engineering','Chemical Engineering','Other'].map(b=><option key={b}>{b}</option>)}</select></label></div>; }
-function DoubtForumPage({questions,form,setForm,onSubmit,profile,filter,setFilter,onDelete,userId}) {
-  const visible=questions.filter(q=>(filter.year==='All years'||q.year===filter.year)&&(filter.branch==='All branches'||q.branch===filter.branch));
-  return <div className="page-content"><PageHeading eyebrow="ASK · ANSWER · LEARN TOGETHER" title="Doubt Forum" description="Ask questions, help classmates, and learn across every year and branch."/><form className="panel share-form" onSubmit={onSubmit}><h2>Ask a question</h2><label>Question title<input required value={form.title} onChange={e=>setForm({...form,title:e.target.value})} placeholder="e.g. How does binary search work?"/></label><label>Explain your doubt<textarea required rows="4" value={form.body} onChange={e=>setForm({...form,body:e.target.value})} placeholder="Add details so other students can help…"/></label><div className="share-form-row"><label>Category<select value={form.category} onChange={e=>setForm({...form,category:e.target.value})}>{['Doubt','DSA','Programming','Exam preparation','Career'].map(x=><option key={x}>{x}</option>)}</select></label><label>Year<select value={form.year} onChange={e=>setForm({...form,year:e.target.value})}>{['1st Year','2nd Year','3rd Year','4th Year','All years'].map(x=><option key={x}>{x}</option>)}</select></label><label>Branch<select value={form.branch} onChange={e=>setForm({...form,branch:e.target.value})}>{['CSE','IT','ECE','EEE','Mechanical Engineering','Civil Engineering','Chemical Engineering','All branches','Other'].map(x=><option key={x}>{x}</option>)}</select></label><button className="btn btn-primary"><Send size={15}/> Post doubt</button></div></form><StudentFilters filter={filter} setFilter={setFilter}/><div className="forum-list">{visible.length===0?<EmptyState icon={CircleHelp} title="No questions yet" text="Be the first to ask a question, or change the year and branch filters."/>:visible.map(q=><article className="panel forum-card" key={q.id}><div className="forum-meta"><span className="tag">{q.category||'Doubt'}</span><span>{q.year||'All years'} · {q.branch||'All branches'}</span></div><h3>{q.title}</h3><p>{q.body}</p><div className="forum-byline"><span>Asked by <strong>{q.author_name||'Student'}</strong> · {new Date(q.created_at).toLocaleDateString()}</span>{q.user_id===userId&&<button className="icon-button danger-hover" onClick={()=>onDelete(q)} title="Delete your question"><Trash2 size={15}/></button>}</div></article>)}</div></div>;
-}
-function CommunityPage({posts,form,setForm,onSubmit,filter,setFilter,onDelete,userId}) {
-  const visible=posts.filter(p=>(filter.year==='All years'||p.year===filter.year)&&(filter.branch==='All branches'||p.branch===filter.branch));
-  return <div className="page-content"><PageHeading eyebrow="CAMPUS LEARNING COMMUNITY" title="Student Community" description="Share study tips, project updates, questions, and useful opportunities."/><form className="panel share-form" onSubmit={onSubmit}><h2>Share with students</h2><label>Your post<textarea required rows="4" value={form.body} onChange={e=>setForm({...form,body:e.target.value})} placeholder="What are you learning or working on?"/></label><div className="share-form-row"><label>Year<select value={form.year} onChange={e=>setForm({...form,year:e.target.value})}>{['1st Year','2nd Year','3rd Year','4th Year','All years'].map(x=><option key={x}>{x}</option>)}</select></label><label>Branch<select value={form.branch} onChange={e=>setForm({...form,branch:e.target.value})}>{['CSE','IT','ECE','EEE','Mechanical Engineering','Civil Engineering','Chemical Engineering','All branches','Other'].map(x=><option key={x}>{x}</option>)}</select></label><button className="btn btn-primary"><Send size={15}/> Publish post</button></div></form><StudentFilters filter={filter} setFilter={setFilter}/><div className="forum-list">{visible.length===0?<EmptyState icon={Users} title="Your community starts here" text="Share the first useful tip or update with fellow students."/>:visible.map(p=><article className="panel forum-card" key={p.id}><div className="forum-meta"><span>{p.year||'All years'} · {p.branch||'All branches'}</span><span>{new Date(p.created_at).toLocaleDateString()}</span></div><p className="community-post-body">{p.body}</p><div className="forum-byline"><span>Posted by <strong>{p.author_name||'Student'}</strong></span>{p.user_id===userId&&<button className="icon-button danger-hover" onClick={()=>onDelete(p)} title="Delete your post"><Trash2 size={15}/></button>}</div></article>)}</div></div>;
+function DoubtForumPage({
+  questions,
+  form,
+  setForm,
+  onSubmit,
+  profile,
+  filter,
+  setFilter,
+  onDelete,
+  userId,
+  doubtAnswers,
+  answerForms,
+  setAnswerForms,
+  onLoadAnswers,
+  onSubmitAnswer
+}) {
+  const visible = questions.filter(
+    q =>
+      (filter.year === 'All years' || q.year === filter.year) &&
+      (filter.branch === 'All branches' || q.branch === filter.branch)
+  );
+
+  return (
+    <div className="page-content">
+      <PageHeading
+        eyebrow="ASK · ANSWER · LEARN TOGETHER"
+        title="Doubt Forum"
+        description="Ask questions, help classmates, and learn across every year and branch."
+      />
+
+      <form className="panel share-form" onSubmit={onSubmit}>
+        <h2>Ask a question</h2>
+
+        <label>
+          Question title
+          <input
+            required
+            value={form.title}
+            onChange={e => setForm({ ...form, title: e.target.value })}
+            placeholder="e.g. How does binary search work?"
+          />
+        </label>
+
+        <label>
+          Explain your doubt
+          <textarea
+            required
+            rows="4"
+            value={form.body}
+            onChange={e => setForm({ ...form, body: e.target.value })}
+            placeholder="Add details so other students can help…"
+          />
+        </label>
+
+        <div className="share-form-row">
+          <label>
+            Category
+            <select
+              value={form.category}
+              onChange={e => setForm({ ...form, category: e.target.value })}
+            >
+              {['Doubt', 'DSA', 'Programming', 'Exam preparation', 'Career'].map(x =>
+                <option key={x}>{x}</option>
+              )}
+            </select>
+          </label>
+
+          <label>
+            Year
+            <select
+              value={form.year}
+              onChange={e => setForm({ ...form, year: e.target.value })}
+            >
+              {['1st Year', '2nd Year', '3rd Year', '4th Year', 'All years'].map(x =>
+                <option key={x}>{x}</option>
+              )}
+            </select>
+          </label>
+
+          <label>
+            Branch
+            <select
+              value={form.branch}
+              onChange={e => setForm({ ...form, branch: e.target.value })}
+            >
+              {['CSE', 'IT', 'ECE', 'EEE', 'Mechanical Engineering',
+                'Civil Engineering', 'Chemical Engineering',
+                'All branches', 'Other'].map(x =>
+                <option key={x}>{x}</option>
+              )}
+            </select>
+          </label>
+
+          <button className="btn btn-primary" type="submit">
+            <Send size={15} /> Post doubt
+          </button>
+        </div>
+      </form>
+
+      <StudentFilters filter={filter} setFilter={setFilter} />
+
+      <div className="forum-list">
+        {visible.length === 0 ? (
+          <EmptyState
+            icon={CircleHelp}
+            title="No questions yet"
+            text="Be the first to ask a question, or change the year and branch filters."
+          />
+        ) : (
+          visible.map(q => (
+            <article className="panel forum-card" key={q.id}>
+              <div className="forum-meta">
+                <span className="tag">{q.category || 'Doubt'}</span>
+                <span>{q.year || 'All years'} · {q.branch || 'All branches'}</span>
+              </div>
+
+              <h3>{q.title}</h3>
+              <p>{q.body}</p>
+
+              <div className="forum-byline">
+                <span>
+                  Asked by <strong>{q.author_name || 'Student'}</strong>
+                  {' · '}{new Date(q.created_at).toLocaleDateString()}
+                </span>
+
+                {q.user_id === userId && (
+                  <button
+                    type="button"
+                    className="icon-button danger-hover"
+                    onClick={() => onDelete(q)}
+                    title="Delete your question"
+                  >
+                    <Trash2 size={15} />
+                  </button>
+                )}
+              </div>
+
+              <div className="doubt-answers">
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={() => onLoadAnswers(q.id)}
+                >
+                  {doubtAnswers[q.id] === undefined
+                    ? 'View answers'
+                    : `Answers (${doubtAnswers[q.id].length})`}
+                </button>
+
+                {doubtAnswers[q.id] !== undefined && (
+                  <div className="answer-list">
+                    {doubtAnswers[q.id].length === 0 ? (
+                      <p>No answers yet. Be the first to help!</p>
+                    ) : (
+                      doubtAnswers[q.id].map(a => (
+                        <div className="answer-item" key={a.id}>
+                          <p>{a.answer}</p>
+                          <small>
+                            Answered by {a.author_name || 'Student'}
+                            {' · '}{new Date(a.created_at).toLocaleDateString()}
+                          </small>
+                        </div>
+                      ))
+                    )}
+                  </div>
+                )}
+
+                <form onSubmit={e => onSubmitAnswer(e, q.id)}>
+                  <label>
+                    Write your answer
+                    <textarea
+                      required
+                      rows="3"
+                      value={answerForms[q.id] || ''}
+                      onChange={e =>
+                        setAnswerForms(previous => ({
+                          ...previous,
+                          [q.id]: e.target.value
+                        }))
+                      }
+                      placeholder="Help this student by explaining the solution…"
+                    />
+                  </label>
+
+                  <button className="btn btn-primary" type="submit">
+                    <Send size={15} /> Post answer
+                  </button>
+                </form>
+              </div>
+            </article>
+          ))
+        )}
+      </div>
+    </div>
+  );
 }
 function NotesSharingPage({notes,openNewNote,uploadNoteFile,downloadNote}) { return <div className="page-content"><PageHeading eyebrow="STUDENT RESOURCE LIBRARY" title="Notes Sharing" description="Create notes, import text notes, and download notes as text files." action={<button className="btn btn-primary" onClick={openNewNote}><Plus size={16}/> Write notes</button>}/><section className="panel upload-panel"><div><Upload size={22}/><div><h2>Upload a notes file</h2><p>Upload PDF, Word, or text documents to your personal or community library..</p></div></div><label className="btn btn-soft upload-label">Choose file<input
   type="file"

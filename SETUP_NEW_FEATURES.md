@@ -1,11 +1,11 @@
 # StudySpace campus features setup
 
 This update keeps the existing React/Vite StudySpace app and adds:
-- Doubt Forum (post questions, filter by year and branch, delete your own questions)
+-  Forum (post questions, filter by year and branch, delete your own questions)
 - Student Community (publish posts and filter by year/branch)
 - Notes Sharing (import a text-readable file into your notes and download saved notes as `.txt`)
 - Profile fields for year of study and branch
-- Existing dashboard, personal notes, quiz zone, subjects, progress, and profile remain in place.
+- Existing dashboard, personal notes, quiz zone, subjects, progress, and profile rDoubtemain in place.
 
 ## Required Supabase step
 
