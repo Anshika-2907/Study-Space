@@ -6,7 +6,7 @@ import {
   X, Pencil, Save, LoaderCircle, LockKeyhole, Mail, ArrowRight, LibraryBig, MessagesSquare, Users, Upload, Download, Send
 } from 'lucide-react';
 import { isSupabaseConfigured, supabase } from './supabase';
-import { questionBank } from './questions';
+import { btechSemesters,questionBank } from './questions';
 
 const subjects = [
   { name: 'HTML', label: 'Web foundations', color: 'pink', icon: '🌐', description: 'Structure pages with semantic HTML.' },
@@ -39,6 +39,8 @@ function App() {
     });
   const [quizTopic, setQuizTopic] = useState('All');
   const [quizLength, setQuizLength] = useState(10);
+  const [selectedSemester, setSelectedSemester] = useState('Semester 1');
+  const [selectedSubject, setSelectedSubject] = useState('Engineering Mathematics-I');
   const [quizItems, setQuizItems] = useState([]);
   const [quizIndex, setQuizIndex] = useState(0);
   const [answers, setAnswers] = useState({});
@@ -275,14 +277,24 @@ async function saveNote(e) {
   function openEditNote(note) {
     setEditingNote(note); setNoteForm({ title: note.title, subject: note.subject, content: note.content }); setNoteModal(true);
   }
+function startQuiz(topic = quizTopic, semester = null, subject = null) {
+  const available = questionBank.filter((q) => {
+    const topicMatch = topic === 'All' || q.topic === topic;
+    const semesterMatch = !semester || q.semester === semester;
+    const subjectMatch = !subject || q.subject === subject;
 
-  function startQuiz(topic = quizTopic) {
-    const available = topic === 'All' ? questionBank : questionBank.filter(q => q.topic === topic);
-    const shuffled = [...available].sort(() => Math.random() - 0.5);
-    setQuizItems(shuffled.slice(0, Math.min(quizLength, shuffled.length)));
-    setQuizTopic(topic); setQuizIndex(0); setAnswers({}); setQuizFinished(false); setPage('Quiz');
-  }
+    return topicMatch && semesterMatch && subjectMatch;
+  });
 
+  const shuffled = [...available].sort(() => Math.random() - 0.5);
+
+  setQuizItems(shuffled.slice(0, Math.min(quizLength, shuffled.length)));
+  setQuizTopic(topic);
+  setQuizIndex(0);
+  setAnswers({});
+  setQuizFinished(false);
+  setPage('Quiz');
+}
   const score = useMemo(() => quizItems.reduce((sum, q, i) => sum + (answers[i] === q.a ? 1 : 0), 0), [quizItems, answers]);
 
   async function finishQuiz() {
@@ -511,7 +523,11 @@ async function saveNote(e) {
          profile={profile}
          setNotice={setNotice}
          />}
-        {page === 'Quiz Zone' && <QuizPage quizTopic={quizTopic} setQuizTopic={setQuizTopic} quizLength={quizLength} setQuizLength={setQuizLength} startQuiz={startQuiz} attempts={attempts} />}
+        {page === 'Quiz Zone' && <QuizPage quizTopic={quizTopic} setQuizTopic={setQuizTopic} quizLength={quizLength} setQuizLength={setQuizLength} startQuiz={startQuiz} attempts={attempts}
+        selectedSemester={selectedSemester}
+        setSelectedSemester={setSelectedSemester}
+        selectedSubject={selectedSubject}
+        setSelectedSubject={setSelectedSubject} />}
         {page === 'Subjects' && <SubjectsPage startQuiz={startQuiz} setPage={setPage} />}
         {page === 'My Progress' && <ProgressPage attempts={attempts} average={average} best={best} notes={notes} />}
         {page === 'Profile' && <ProfilePage profile={profile} setProfile={setProfile} saveProfile={saveProfile} saving={saving} email={session.user.email} />}
@@ -596,11 +612,67 @@ function NotesPage({notes,search,setSearch,openNewNote,openEditNote,deleteNote})
     {notes.length===0?<EmptyState icon={FileText} title="No notes found" text={search?'Try another search term.':'Create your first note and keep your learning organized.'} action={!search&&<button className="btn btn-primary" onClick={openNewNote}><Plus size={16}/> Create a note</button>}/>:<div className="notes-grid">{notes.map(n=><article className="note-card" key={n.id}><div className="note-card-top"><span className={`tag tag-${(n.subject||'General').toLowerCase()}`}>{n.subject}</span><div className="note-actions"><button className="icon-button" title="Edit note" onClick={()=>openEditNote(n)}><Pencil size={16}/></button><button className="icon-button danger-hover" title="Delete note" onClick={()=>deleteNote(n)}><Trash2 size={16}/></button></div></div><h3>{n.title}</h3><p>{n.content || 'No content added yet.'}</p><div className="note-card-footer"><span><Clock3 size={13}/> Updated {new Date(n.updated_at).toLocaleDateString()}</span><button onClick={()=>openEditNote(n)}>Open note <ChevronRight size={14}/></button></div></article>)}</div>}
   </div>;
 }
-function QuizPage({quizTopic,setQuizTopic,quizLength,setQuizLength,startQuiz,attempts}) {
-  const filtered = quizTopic==='All'?questionBank:questionBank.filter(q=>q.topic===quizTopic);
+function QuizPage({
+  quizTopic,
+  setQuizTopic,
+  quizLength,
+  setQuizLength,
+  startQuiz,
+  attempts,
+  selectedSemester,
+  setSelectedSemester,
+  selectedSubject,
+  setSelectedSubject
+})  {
+  const filtered = questionBank.filter((q) =>
+  q.semester === selectedSemester &&
+  q.subject === selectedSubject
+);
   return <div className="page-content"><PageHeading eyebrow="PRACTICE MAKES PROGRESS" title="Quiz Zone" description="Test your understanding with quick, focused practice."/>
     <div className="quiz-intro"><div className="quiz-intro-copy"><span className="eyebrow light">YOUR NEXT CHALLENGE</span><h2>Ready to test yourself?</h2><p>Choose a subject, set your session length, and learn from every answer.</p><div className="quiz-meta"><span><CircleHelp size={16}/>{questionBank.length} questions in bank</span><span><Clock3 size={16}/>{Math.max(2,Math.round(quizLength*0.6))}–{quizLength} min approx.</span></div></div><div className="quiz-big-icon"><Brain size={75}/><Sparkles size={25}/></div></div>
-    <section className="panel quiz-settings"><div className="panel-heading"><div><h2>Set up your session</h2><p>Make the practice fit your day.</p></div></div><label className="field-label">Choose subject</label><div className="topic-pills">{['All','HTML','CSS','JavaScript','DSA'].map(t=><button key={t} className={quizTopic===t?'selected':''} onClick={()=>setQuizTopic(t)}>{t}</button>)}</div><label className="field-label">Number of questions</label><div className="length-options">{[10,20,50].map(n=><button key={n} className={quizLength===n?'selected':''} onClick={()=>setQuizLength(n)}><strong>{Math.min(n,filtered.length)}</strong><span>{n===10?'Quick':n===20?'Focused':'Full practice'}</span></button>)}</div><div className="quiz-start-row"><span><ShieldCheck size={16}/> Instant feedback and explanations</span><button className="btn btn-primary" onClick={()=>startQuiz(quizTopic)}>Start quiz <ArrowRight size={16}/></button></div></section>
+    <section className="panel quiz-settings"><div className="panel-heading"><div><h2>Set up your session</h2><p>Make the practice fit your day.</p></div></div><label className="field-label">Choose semester</label>
+<select
+  className="input"
+  value={selectedSemester}
+  onChange={(e) => {
+    setSelectedSemester(e.target.value);
+    const nextSemester = btechSemesters.find(
+      (s) => s.semester === e.target.value
+    );
+    setSelectedSubject(nextSemester?.subjects[0] || '');
+  }}
+>
+  {btechSemesters.map((s) => (
+    <option key={s.semester} value={s.semester}>
+      {s.semester}
+    </option>
+  ))}
+</select>
+
+<label className="field-label">Choose subject</label>
+<select
+  className="input"
+  value={selectedSubject}
+  onChange={(e) => setSelectedSubject(e.target.value)}
+>
+  {(
+    btechSemesters.find((s) => s.semester === selectedSemester)?.subjects || []
+  ).map((subject) => (
+    <option key={subject} value={subject}>
+      {subject}
+    </option>
+  ))}
+</select><p>
+  Available questions: <strong>{filtered.length}</strong>
+</p><label className="field-label">Number of questions</label><div className="length-options">{[10,20,50].map(n=><button key={n} className={quizLength===n?'selected':''} onClick={()=>setQuizLength(n)}><strong>{Math.min(n,filtered.length)}</strong><span>{n===10?'Quick':n===20?'Focused':'Full practice'}</span></button>)}</div><div className="quiz-start-row"><span><ShieldCheck size={16}/> Instant feedback and explanations</span><button
+  className="btn btn-primary"
+  disabled={filtered.length === 0}
+  onClick={() =>
+    startQuiz('All', selectedSemester, selectedSubject)
+  }
+>
+  Start quiz <ArrowRight size={16} />
+</button></div></section>
     <section className="panel"><div className="panel-heading"><div><h2>Recent attempts</h2><p>Your saved quiz results.</p></div></div>{attempts.length===0?<EmptyState icon={Brain} title="Your first score is waiting" text="Complete a quiz to see your results here."/>:<div className="attempt-list">{attempts.slice(0,5).map(a=><div className="attempt-row" key={a.id}><div className="attempt-badge"><Brain size={17}/></div><div className="attempt-info"><strong>{a.topic}</strong><span>{new Date(a.created_at).toLocaleString()}</span></div><strong className="attempt-score">{a.score}/{a.total}</strong><span className="attempt-percent">{Math.round(a.score/a.total*100)}%</span></div>)}</div>}</section>
   </div>;
 }
