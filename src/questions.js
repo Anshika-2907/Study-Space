@@ -3,7 +3,7 @@
 export const btechSemesters = [
   {
     semester: "Semester 1",
-    subjects: ["Engineering Mathematics-I", "Engineering Physics", "Programming for Problem Solving", "Basic Electrical Engineering"]
+    subjects: ["Engineering Mathematics-I", "Engineering Physics", "Programming for Problem Solving (PPS)", "Basic Electrical Engineering"]
   },
   {
     semester: "Semester 2",
@@ -3717,301 +3717,301 @@ export const questionBank = [
   explanation: 'A standard BST places smaller keys left and larger keys right.'
 },
 {
-  id: 461, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 461, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is the full form of OOP?',
   options: ['Object-Oriented Programming', 'Object Order Process', 'Only Object Program', 'Operational Object Process'],
   a: 0, explanation: 'OOP stands for Object-Oriented Programming.'
 },
 {
-  id: 462, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 462, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which of the following is a fundamental concept of OOP?',
   options: ['Compilation', 'Encapsulation', 'Linking', 'Preprocessing'],
   a: 1, explanation: 'Encapsulation is one of the core concepts of OOP.'
 },
 {
-  id: 463, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 463, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is a class in OOP?',
   options: ['A blueprint for creating objects', 'A loop', 'A variable only', 'A compiler'],
   a: 0, explanation: 'A class defines the properties and behaviours of objects.'
 },
 {
-  id: 464, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 464, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is an object?',
   options: ['A function only', 'An instance of a class', 'A header file', 'A keyword for loops'],
   a: 1, explanation: 'An object is an instance of a class.'
 },
 {
-  id: 465, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 465, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which concept combines data and methods into one unit?',
   options: ['Inheritance', 'Abstraction', 'Encapsulation', 'Recursion'],
   a: 2, explanation: 'Encapsulation groups data and the methods operating on it.'
 },
 {
-  id: 466, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 466, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which OOP concept allows a class to acquire properties of another class?',
   options: ['Polymorphism', 'Inheritance', 'Abstraction', 'Compilation'],
   a: 1, explanation: 'Inheritance allows a derived class to reuse base-class features.'
 },
 {
-  id: 467, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 467, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What does polymorphism mean?',
   options: ['One name, many forms', 'One class, one object only', 'Hiding every variable', 'Deleting objects'],
   a: 0, explanation: 'Polymorphism allows one interface or name to represent different behaviours.'
 },
 {
-  id: 468, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 468, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is abstraction in OOP?',
   options: ['Showing all implementation details', 'Hiding unnecessary implementation details', 'Copying every object', 'Removing all methods'],
   a: 1, explanation: 'Abstraction exposes essential features while hiding unnecessary details.'
 },
 {
-  id: 469, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 469, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which feature is used to initialize an object?',
   options: ['Destructor', 'Constructor', 'Operator', 'Namespace'],
   a: 1, explanation: 'A constructor initializes an object when it is created.'
 },
 {
-  id: 470, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 470, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which special member function is called when an object is destroyed in C++?',
   options: ['Constructor', 'Destructor', 'Main function', 'Friend function'],
   a: 1, explanation: 'A destructor is invoked when an object is destroyed.'
 },
 {
-  id: 471, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 471, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is the usual name of a constructor in C++?',
   options: ['Any user-chosen name', 'The same name as the class', 'The word create', 'The word object'],
   a: 1, explanation: 'A C++ constructor has the same name as its class.'
 },
 {
-  id: 472, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 472, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Can a constructor have a return type in C++?',
   options: ['Yes, always int', 'Yes, always void', 'No', 'Only float'],
   a: 2, explanation: 'C++ constructors do not declare a return type.'
 },
 {
-  id: 473, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 473, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is function overloading?',
   options: ['Using the same function name with different parameter lists', 'Defining only one function', 'Deleting a function', 'Calling a function recursively only'],
   a: 0, explanation: 'Overloaded functions share a name but have different parameter lists.'
 },
 {
-  id: 474, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 474, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is function overriding?',
   options: ['Changing a variable name', 'Redefining a base-class virtual function in a derived class', 'Creating two constructors only', 'Removing inheritance'],
   a: 1, explanation: 'Overriding provides a derived-class implementation of an inherited virtual function.'
 },
 {
-  id: 475, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 475, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which is an example of compile-time polymorphism in C++?',
   options: ['Function overloading', 'Virtual dispatch only', 'Dynamic casting', 'Runtime type identification'],
   a: 0, explanation: 'Function overloading is resolved at compile time.'
 },
 {
-  id: 476, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 476, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which feature commonly enables runtime polymorphism in C++?',
   options: ['Macros', 'Virtual functions', 'Preprocessor directives', 'Global constants'],
   a: 1, explanation: 'Virtual functions support runtime dispatch through base-class interfaces.'
 },
 {
-  id: 477, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 477, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which access specifier allows access only within the class and its friends in C++?',
   options: ['public', 'protected', 'private', 'global'],
   a: 2, explanation: 'Private members are accessible to the class itself and its friends.'
 },
 {
-  id: 478, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 478, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which access specifier allows access from anywhere the object is accessible?',
   options: ['private', 'public', 'protected', 'internal'],
   a: 1, explanation: 'Public members can be accessed through accessible objects and interfaces.'
 },
 {
-  id: 479, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 479, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which access specifier allows access in a class and its derived classes?',
   options: ['private', 'protected', 'public only', 'static'],
   a: 1, explanation: 'Protected members are accessible within the class and derived classes, subject to language rules.'
 },
 {
-  id: 480, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 480, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is the default member access in a C++ class?',
   options: ['public', 'protected', 'private', 'static'],
   a: 2, explanation: 'Members of a C++ class are private by default.'
 },
 {
-  id: 481, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 481, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is the default member access in a C++ struct?',
   options: ['private', 'protected', 'public', 'friend'],
   a: 2, explanation: 'Members of a C++ struct are public by default.'
 },
 {
-  id: 482, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 482, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which keyword declares a class in C++?',
   options: ['object', 'class', 'define', 'recordclass'],
   a: 1, explanation: 'The class keyword declares a class in C++.'
 },
 {
-  id: 483, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 483, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which operator is commonly used to access a member through an object?',
   options: ['.', '#', '?', '%'],
   a: 0, explanation: 'The dot operator accesses members through an object.'
 },
 {
-  id: 484, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 484, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which operator accesses a member through a pointer to an object in C++?',
   options: ['.', '->', '::', '&'],
   a: 1, explanation: 'The arrow operator accesses members through a pointer.'
 },
 {
-  id: 485, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 485, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What does the this pointer refer to in a non-static C++ member function?',
   options: ['The base class only', 'The current object', 'The next object', 'The compiler'],
   a: 1, explanation: 'The this pointer refers to the object on which the member function is invoked.'
 },
 {
-  id: 486, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 486, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which keyword declares a class-level member shared by all objects?',
   options: ['static', 'virtual', 'friend', 'mutable only'],
   a: 0, explanation: 'A static data member belongs to the class rather than each individual object.'
 },
 {
-  id: 487, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 487, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is a friend function in C++?',
   options: ['A member inherited automatically', 'A non-member function granted access to private and protected members', 'A constructor with no parameters', 'A function that must be virtual'],
   a: 1, explanation: 'A friend function receives special access but is not a member function.'
 },
 {
-  id: 488, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 488, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which relationship represents an “is-a” relationship?',
   options: ['Inheritance', 'Composition', 'Association only', 'File handling'],
   a: 0, explanation: 'Inheritance commonly models an is-a relationship.'
 },
 {
-  id: 489, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 489, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which relationship is commonly described as “has-a”?',
   options: ['Inheritance', 'Composition', 'Overloading', 'Recursion'],
   a: 1, explanation: 'Composition models an object containing or owning another object.'
 },
 {
-  id: 490, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 490, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is multiple inheritance?',
   options: ['One class deriving from more than one base class', 'One object with multiple variables', 'A function called multiple times', 'A class with no methods'],
   a: 0, explanation: 'Multiple inheritance allows a class to inherit from multiple base classes.'
 },
 {
-  id: 491, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 491, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is a virtual base class used for in C++?',
   options: ['To prevent all inheritance', 'To help avoid duplicate base-class subobjects in a diamond hierarchy', 'To make every function static', 'To create a constructor automatically'],
   a: 1, explanation: 'Virtual inheritance can ensure a shared base subobject in a diamond hierarchy.'
 },
 {
-  id: 492, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 492, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which statement about an abstract class in C++ is correct?',
   options: ['It cannot have any data members', 'It cannot be instantiated directly', 'It cannot have constructors', 'It must contain only static functions'],
   a: 1, explanation: 'A class with at least one pure virtual function is abstract and cannot be instantiated directly.'
 },
 {
-  id: 493, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 493, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'How is a pure virtual function declared in C++?',
   options: ['Using = 0 in its declaration', 'Using #pure', 'Using the static keyword only', 'Using return null'],
   a: 0, explanation: 'A pure virtual function declaration uses = 0.'
 },
 {
-  id: 494, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 494, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is a copy constructor commonly used for?',
   options: ['Destroying an object', 'Initializing an object from another object of the same class', 'Calling the main function', 'Allocating a namespace'],
   a: 1, explanation: 'A copy constructor initializes an object using another object of the same class.'
 },
 {
-  id: 495, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 495, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is a default constructor?',
   options: ['A constructor callable without supplying arguments', 'A destructor with arguments', 'A function returning an object only', 'A private variable'],
   a: 0, explanation: 'A default constructor can be called without arguments.'
 },
 {
-  id: 496, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 496, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is operator overloading?',
   options: ['Creating a new operator symbol', 'Defining how an existing operator works for a user-defined type', 'Removing operators from C++', 'Changing operator precedence globally'],
   a: 1, explanation: 'Operator overloading defines operator behaviour for user-defined types.'
 },
 {
-  id: 497, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 497, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which operator cannot be overloaded in C++?',
   options: ['+', '==', '::', '*'],
   a: 2, explanation: 'The scope resolution operator :: cannot be overloaded.'
 },
 {
-  id: 498, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 498, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which keyword can prevent a virtual function from being overridden further in C++?',
   options: ['final', 'friend', 'extern', 'register'],
   a: 0, explanation: 'The final specifier prevents further overriding of a virtual function.'
 },
 {
-  id: 499, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 499, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Why should a polymorphic C++ base class often have a virtual destructor?',
   options: ['To overload constructors', 'To ensure proper derived-object destruction through a base pointer', 'To prevent object creation', 'To make members public'],
   a: 1, explanation: 'A virtual destructor enables correct destruction when deleting a derived object through a base pointer.'
 },
 {
-  id: 500, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 500, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is message passing in OOP?',
   options: ['Objects communicating by invoking methods or sending messages', 'Passing compiler errors to the user', 'Copying source files', 'Transferring a class to a header'],
   a: 0, explanation: 'Objects interact by invoking operations on one another.'
 },
 {
-  id: 501, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 501, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which principle helps restrict direct access to an object’s internal state?',
   options: ['Encapsulation', 'Multiple inheritance', 'Recursion', 'Tokenization'],
   a: 0, explanation: 'Encapsulation controls access to internal data through a defined interface.'
 },
 {
-  id: 502, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 502, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is dynamic binding?',
   options: ['Selecting an overridden method at runtime', 'Binding every variable at preprocessing time', 'Linking only header files', 'Creating objects without classes'],
   a: 0, explanation: 'Dynamic binding selects the appropriate method implementation at runtime.'
 },
 {
-  id: 503, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 503, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which statement about a C++ member function declared const is correct?',
   options: ['It cannot be called on any object', 'It promises not to modify ordinary non-mutable member state', 'It must be static', 'It must return an integer'],
   a: 1, explanation: 'A const member function cannot modify ordinary non-mutable data members.'
 },
 {
-  id: 504, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 504, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is the main purpose of a namespace in C++?',
   options: ['To group names and reduce naming conflicts', 'To allocate every object dynamically', 'To create inheritance automatically', 'To replace all classes'],
   a: 0, explanation: 'Namespaces organize identifiers and help avoid naming conflicts.'
 },
 {
-  id: 505, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 505, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which keyword is used to allocate an object dynamically in C++?',
   options: ['create', 'mallocclass', 'new', 'object'],
   a: 2, explanation: 'The new expression dynamically allocates an object in C++.'
 },
 {
-  id: 506, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 506, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which operator is commonly paired with new to release dynamically allocated memory in C++?',
   options: ['remove', 'delete', 'freeclass', 'clear'],
   a: 1, explanation: 'The delete expression releases memory allocated with a matching single-object new expression.'
 },
 {
-  id: 507, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 507, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is the role of an interface in object-oriented design?',
   options: ['To specify operations available to users of a component', 'To store only private data', 'To replace all implementations with loops', 'To prevent communication between objects'],
   a: 0, explanation: 'An interface defines the operations a component exposes.'
 },
 {
-  id: 508, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 508, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which is a common benefit of inheritance?',
   options: ['Code reuse and specialization', 'Guaranteed absence of bugs', 'Automatic database creation', 'Elimination of all constructors'],
   a: 0, explanation: 'Inheritance supports reuse and allows derived classes to specialize behaviour.'
 },
 {
-  id: 509, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 509, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'What is the difference between a class and an object?',
   options: ['They are always identical', 'A class is a blueprint; an object is an instance', 'An object defines all classes', 'A class can never have methods'],
   a: 1, explanation: 'A class defines a type; an object is a particular instance of that type.'
 },
 {
-  id: 510, topic: 'OOPs', semester: 'Semester 3', subject: 'OOPs',
+  id: 510, topic: 'OOPs', semester: 'Semester 3', subject: 'Object Oriented Programming (OOPs)',
   q: 'Which group contains the four commonly taught pillars of OOP?',
   options: ['Loops, arrays, pointers, files', 'Encapsulation, abstraction, inheritance, polymorphism', 'Classes, compilers, linkers, loaders', 'Variables, constants, operators, comments'],
   a: 1, explanation: 'The four commonly taught OOP pillars are encapsulation, abstraction, inheritance, and polymorphism.'
