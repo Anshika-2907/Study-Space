@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { isSupabaseConfigured, supabase } from './supabase';
 import { btechSemesters,questionBank } from './questions';
-
+import CommunityPage from "./CommunityPage.jsx";
 const subjects = [
   { name: 'HTML', label: 'Web foundations', color: 'pink', icon: '🌐', description: 'Structure pages with semantic HTML.' },
   { name: 'CSS', label: 'Visual design', color: 'blue', icon: '🎨', description: 'Create responsive, beautiful interfaces.' },
@@ -50,8 +50,10 @@ function App() {
   const [doubtAnswers, setDoubtAnswers] = useState({});
   const [answerForms, setAnswerForms] = useState({});
   const [communityPosts, setCommunityPosts] = useState([]);
+  const [communityComments, setCommunityComments] = useState([]);
   const [forumForm, setForumForm] = useState({ title: '', body: '', branch: 'All branches', year: 'All years', category: 'Doubt' });
   const [communityForm, setCommunityForm] = useState({ body: '', branch: 'All branches', year: 'All years' });
+  const [communityImageFile, setCommunityImageFile] = useState(null);
   const [forumFilter, setForumFilter] = useState({ branch: 'All branches', year: 'All years' });
 
   useEffect(() => {
@@ -139,8 +141,41 @@ function App() {
       .limit(100);
 
     if (!postsRes.error) {
-      setCommunityPosts(postsRes.data || []);
-    }
+  const postsWithImages = await Promise.all(
+    (postsRes.data || []).map(async (post) => {
+      if (!post.image_path) {
+        return { ...post, imageUrl: null };
+      }
+
+      const { data: signedData, error: signedError } =
+        await supabase.storage
+          .from('studyspace-community')
+          .createSignedUrl(post.image_path, 3600);
+
+      if (signedError) {
+        console.error('Image URL error:', signedError.message);
+        return { ...post, imageUrl: null };
+      }
+
+      return {
+        ...post,
+        imageUrl: signedData.signedUrl
+      };
+    })
+  );
+
+  setCommunityPosts(postsWithImages);
+} else {
+  setNotice(`Community posts load nahi hue: ${postsRes.error.message}`);
+}
+    const commentsRes = await supabase
+  .from('community_comments')
+  .select('*')
+  .order('created_at', { ascending: true });
+
+if (!commentsRes.error) {
+  setCommunityComments(commentsRes.data || []);
+}
   } catch (error) {
     setNotice(`Data load karne mein error: ${error.message}`);
   } finally {
@@ -225,6 +260,9 @@ async function saveNote(e) {
     const payload = {
       title: noteForm.title.trim(),
       subject: noteForm.subject,
+      branch: noteForm.branch || 'CSE',
+      academic_year: noteForm.academic_year || '2nd Year',
+      semester: noteForm.semester || 'Semester 3',
       content: noteForm.content,
       user_id: session.user.id,
       updated_at: new Date().toISOString(),
@@ -271,11 +309,46 @@ async function saveNote(e) {
     else { setNotes(old => old.filter(n => n.id !== note.id)); setNotice('Note deleted.'); }
   }
 
-  function openNewNote() {
-    setEditingNote(null); setNoteForm({ title: '', subject: 'DSA', content: '' }); setNoteModal(true);
-  }
-  function openEditNote(note) {
-    setEditingNote(note); setNoteForm({ title: note.title, subject: note.subject, content: note.content }); setNoteModal(true);
+function openNewNote() {
+  setEditingNote(null);
+  setNoteForm({
+    title: '',
+    subject: 'DSA',
+    content: '',
+    file: null,
+    sharing_type: 'private',
+    branch: 'CSE',
+    academic_year: '2nd Year',
+    semester: 'Semester 3'
+  });
+  setNoteModal(true);
+}
+
+function openEditNote(note) {
+  setEditingNote(note);
+  setNoteForm({
+    title: note.title || '',
+    subject: note.subject || 'DSA',
+    content: note.content || '',
+    file: null,
+    sharing_type: note.sharing_type || 'private',
+    branch: note.branch || 'CSE',
+    academic_year: note.academic_year || '2nd Year',
+    semester: note.semester || 'Semester 3'
+  });
+  setNoteModal(true);
+}
+function openEditNote(note) {
+  setEditingNote(note);
+  setNoteForm({
+    title: note.title || '',
+    subject: note.subject || 'DSA',
+    content: note.content || '',
+    file: null,
+    sharing_type: note.sharing_type || 'private'
+  });
+  setNoteModal(true);
+
   }
 function startQuiz(topic = quizTopic, semester = null, subject = null) {
   const available = questionBank.filter((q) => {
@@ -388,57 +461,160 @@ function startQuiz(topic = quizTopic, semester = null, subject = null) {
     const { error } = await supabase.from('doubts').insert({ user_id: session.user.id, author_name: profile.full_name || session.user.email, title: forumForm.title.trim(), body: forumForm.body.trim(), category: forumForm.category, branch: forumForm.branch, year: forumForm.year });
     if (error) setNotice(`Question post nahi hua: ${error.message}`); else { setForumForm({ title: '', body: '', branch: profile.branch || 'CSE', year: profile.year || '2nd Year', category: 'Doubt' }); setNotice('Question community mein post ho gaya.'); const { data } = await supabase.from('doubts').select('*').order('created_at', { ascending: false }).limit(100); setQuestions(data || []); }
   }
-  async function submitCommunityPost(e) {
-    e.preventDefault();
-    if (!supabase || !session?.user) { setNotice('Community use karne ke liye Supabase setup aur login zaroori hai.'); return; }
-    if (!communityForm.body.trim()) return;
-    const { error } = await supabase.from('community_posts').insert({ user_id: session.user.id, author_name: profile.full_name || session.user.email, body: communityForm.body.trim(), branch: communityForm.branch, year: communityForm.year });
-    if (error) setNotice(`Post publish nahi hua: ${error.message}`); else { setCommunityForm({ body: '', branch: profile.branch || 'CSE', year: profile.year || '2nd Year' }); setNotice('Community post publish ho gaya.'); const { data } = await supabase.from('community_posts').select('*').order('created_at', { ascending: false }).limit(100); setCommunityPosts(data || []); }
+ async function submitCommunityPost(e) {
+  e.preventDefault();
+
+  if (!supabase || !session?.user) {
+    setNotice('Community use karne ke liye login zaroori hai.');
+    return;
   }
+
+  if (!communityForm.body.trim()) {
+    setNotice('Post mein kuch text likho.');
+    return;
+  }
+
+  let imagePath = null;
+
+  if (communityImageFile) {
+    const file = communityImageFile;
+    const allowedTypes = [
+      'image/jpeg',
+      'image/png',
+      'image/webp',
+      'image/gif'
+    ];
+
+    if (!allowedTypes.includes(file.type)) {
+      setNotice('JPG, PNG, WEBP ya GIF image select karo.');
+      return;
+    }
+
+    if (file.size > 5 * 1024 * 1024) {
+      setNotice('Image 5 MB se chhoti honi chahiye.');
+      return;
+    }
+
+    const extension = file.name.split('.').pop()?.toLowerCase() || 'jpg';
+    const filePath = `${session.user.id}/${crypto.randomUUID()}.${extension}`;
+
+    const { data: uploadedFile, error: uploadError } = await supabase.storage
+      .from('studyspace-community')
+      .upload(filePath, file, {
+        contentType: file.type,
+        upsert: false
+      });
+
+    if (uploadError) {
+      setNotice(`Image upload nahi hui: ${uploadError.message}`);
+      return;
+    }
+
+    imagePath = uploadedFile.path;
+  }
+
+  const { error } = await supabase.from('community_posts').insert({
+    user_id: session.user.id,
+    author_name: profile.full_name || session.user.email,
+    body: communityForm.body.trim(),
+    branch: communityForm.branch,
+    year: communityForm.year,
+    image_path: imagePath
+  });
+
+  if (error) {
+    setNotice(`Post publish nahi hua: ${error.message}`);
+    return;
+  }
+
+  setCommunityForm({
+    body: '',
+    branch: profile.branch || 'CSE',
+    year: profile.year || '2nd Year'
+  });
+
+  setCommunityImageFile(null);
+  setNotice('Community post publish ho gaya!');
+
+ await loadData();
+}
+  async function submitCommunityComment(postId, body) {
+  if (!supabase || !session?.user) {
+    setNotice('Comment karne ke liye login zaroori hai.');
+    return;
+  }
+
+  if (!body.trim()) return;
+
+  const { error } = await supabase
+    .from('community_comments')
+    .insert({
+      post_id: String(postId),
+      user_id: session.user.id,
+      body: body.trim()
+    });
+
+  if (error) {
+    setNotice(`Comment nahi hua: ${error.message}`);
+    return;
+  }
+
+  const { data, error: loadError } = await supabase
+    .from('community_comments')
+    .select('*')
+    .order('created_at', { ascending: true });
+
+  if (!loadError) {
+    setCommunityComments(data || []);
+  }
+
+  setNotice('Comment successfully add ho gaya!');
+}
   async function deleteCommunityItem(table, id, ownerId, setter) {
     if (ownerId !== session?.user?.id) { setNotice('Aap sirf apni post delete kar sakte hain.'); return; }
     const { error } = await supabase.from(table).delete().eq('id', id).eq('user_id', session.user.id);
     if (error) setNotice(error.message); else setter(old => old.filter(item => item.id !== id));
   }
  async function downloadNote(note) {
-  if (note.file_path && supabase) {
-    const [bucket, ...parts] = note.file_path.split('/');
-    const path = parts.join('/');
+  if (!supabase || !note?.file_path) {
+    setNotice('Is note ke saath koi uploaded file nahi hai.');
+    return;
+  }
+
+  try {
+    const firstSlash = note.file_path.indexOf('/');
+
+    if (firstSlash === -1) {
+      setNotice('File ka storage path sahi nahi hai.');
+      return;
+    }
+
+    const bucket = note.file_path.slice(0, firstSlash);
+    const path = note.file_path.slice(firstSlash + 1);
 
     const { data, error } = await supabase.storage
       .from(bucket)
       .download(path);
 
-    if (error || !data) {
-      setNotice(`File download nahi hui: ${error?.message || 'File nahi mili.'}`);
+    if (error) {
+      setNotice(`Download nahi hua: ${error.message}`);
       return;
     }
 
     const url = URL.createObjectURL(data);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = note.file_name || note.title || 'study-file';
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
+    const link = document.createElement('a');
+
+    link.href = url;
+    link.download = note.file_name || note.title || 'study-note';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+
     setTimeout(() => URL.revokeObjectURL(url), 1000);
-    return;
+    setNotice('File download shuru ho gaya.');
+  } catch (error) {
+    setNotice(`Download error: ${error.message || 'Kuch galat hua.'}`);
   }
-
-  const blob = new Blob(
-    [`${note.title}\nSubject: ${note.subject}\n\n${note.content || ''}`],
-    { type: 'text/plain;charset=utf-8' }
-  );
-
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `${(note.title || 'study-note')
-    .replace(/[^a-z0-9-_ ]/gi, '').trim() || 'study-note'}.txt`;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
   async function uploadNoteFile(file) {
   if (!file) return;
@@ -514,9 +690,14 @@ function startQuiz(topic = quizTopic, semester = null, subject = null) {
        setFilter={setForumFilter}
        onDelete={(item)=>deleteCommunityItem('doubts',item.id,item.user_id,setQuestions)}
        userId={session.user.id}
+       comments={communityComments}
+      onComment={submitCommunityComment}
        />}
        
-        {page === 'Student Community' && <CommunityPage posts={communityPosts} form={communityForm} setForm={setCommunityForm} onSubmit={submitCommunityPost} filter={forumFilter} setFilter={setForumFilter} onDelete={(item)=>deleteCommunityItem('community_posts',item.id,item.user_id,setCommunityPosts)} userId={session.user.id} />}
+        {page === 'Student Community' && <CommunityPage posts={communityPosts} form={communityForm} setForm={setCommunityForm} onSubmit={submitCommunityPost} 
+        imageFile={communityImageFile}
+        setImageFile={setCommunityImageFile}
+        filter={forumFilter} setFilter={setForumFilter} onDelete={(item)=>deleteCommunityItem('community_posts',item.id,item.user_id,setCommunityPosts)} userId={session.user.id} />}
         {page === 'Notes Sharing' && <NotesSharingPage notes={notes} openNewNote={openNewNote} uploadNoteFile={uploadNoteFile} downloadNote={downloadNote} />}
         {page === 'PYQ Library' && <PYQLibraryPage
          session={session}
@@ -539,6 +720,47 @@ function startQuiz(topic = quizTopic, semester = null, subject = null) {
       <form className="modal-card" onSubmit={saveNote}><div className="modal-heading"><div><span className="eyebrow">{editingNote ? 'EDIT NOTE' : 'NEW NOTE'}</span><h2>{editingNote ? 'Update your note' : 'Capture an idea'}</h2></div><button type="button" className="icon-button" onClick={() => setNoteModal(false)}><X/></button></div>
         <label>Note title<input autoFocus required value={noteForm.title} onChange={e => setNoteForm({...noteForm,title:e.target.value})} placeholder="e.g. Binary search notes"/></label>
         <label>Subject<select value={noteForm.subject} onChange={e => setNoteForm({...noteForm,subject:e.target.value})}>{['DSA','HTML','CSS','JavaScript','General'].map(s=><option key={s}>{s}</option>)}</select></label>
+        <label>
+  Branch
+  <select
+    value={noteForm.branch || 'CSE'}
+    onChange={e =>
+      setNoteForm({ ...noteForm, branch: e.target.value })
+    }
+  >
+    {['CSE', 'ECE', 'Electrical', 'Mechanical', 'Civil', 'IT', 'Chemical', 'Other'].map(branch => (
+      <option key={branch} value={branch}>{branch}</option>
+    ))}
+  </select>
+</label>
+
+<label>
+  Academic Year
+  <select
+    value={noteForm.academic_year || '2nd Year'}
+    onChange={e =>
+      setNoteForm({ ...noteForm, academic_year: e.target.value })
+    }
+  >
+    {['1st Year', '2nd Year', '3rd Year', '4th Year'].map(year => (
+      <option key={year} value={year}>{year}</option>
+    ))}
+  </select>
+</label>
+
+<label>
+  Semester
+  <select
+    value={noteForm.semester || 'Semester 3'}
+    onChange={e =>
+      setNoteForm({ ...noteForm, semester: e.target.value })
+    }
+  >
+    {Array.from({ length: 8 }, (_, i) => `Semester ${i + 1}`).map(semester => (
+      <option key={semester} value={semester}>{semester}</option>
+    ))}
+  </select>
+</label>
         <label>Choose PDF or Word file
   <input
     type="file"
@@ -606,11 +828,183 @@ function Dashboard({profile,notes,attempts,average,best,setPage,startQuiz,openNe
 }
 function StatCard({icon:Icon,label,value,hint,tone}) { return <div className="stat-card"><div className={`stat-icon ${tone}`}><Icon size={19}/></div><span className="stat-label">{label}</span><strong className="stat-value">{value}</strong><span className="stat-hint">{hint}</span></div>; }
 function EmptyState({icon:Icon,title,text,action}) {return <div className="empty-state"><div className="empty-icon"><Icon size={23}/></div><strong>{title}</strong><p>{text}</p>{action}</div>;}
-function NotesPage({notes,search,setSearch,openNewNote,openEditNote,deleteNote}) {
-  return <div className="page-content"><PageHeading eyebrow="YOUR PERSONAL LIBRARY" title="My Notes" description="Capture the important bits. Your notes sync to your account." action={<button className="btn btn-primary" onClick={openNewNote}><Plus size={17}/> New note</button>}/>
-    <div className="search-bar"><Search size={18}/><input value={search} onChange={e=>setSearch(e.target.value)} placeholder="Search titles, subjects, or note content…"/><span>{notes.length} notes</span></div>
-    {notes.length===0?<EmptyState icon={FileText} title="No notes found" text={search?'Try another search term.':'Create your first note and keep your learning organized.'} action={!search&&<button className="btn btn-primary" onClick={openNewNote}><Plus size={16}/> Create a note</button>}/>:<div className="notes-grid">{notes.map(n=><article className="note-card" key={n.id}><div className="note-card-top"><span className={`tag tag-${(n.subject||'General').toLowerCase()}`}>{n.subject}</span><div className="note-actions"><button className="icon-button" title="Edit note" onClick={()=>openEditNote(n)}><Pencil size={16}/></button><button className="icon-button danger-hover" title="Delete note" onClick={()=>deleteNote(n)}><Trash2 size={16}/></button></div></div><h3>{n.title}</h3><p>{n.content || 'No content added yet.'}</p><div className="note-card-footer"><span><Clock3 size={13}/> Updated {new Date(n.updated_at).toLocaleDateString()}</span><button onClick={()=>openEditNote(n)}>Open note <ChevronRight size={14}/></button></div></article>)}</div>}
-  </div>;
+function NotesPage({
+  notes,
+  search,
+  setSearch,
+  openNewNote,
+  openEditNote,
+  deleteNote
+}) {
+  const [branchFilter, setBranchFilter] = useState('All');
+  const [yearFilter, setYearFilter] = useState('All');
+  const [semesterFilter, setSemesterFilter] = useState('All');
+  const [subjectFilter, setSubjectFilter] = useState('All');
+
+  const branches = [...new Set(notes.map(n => n.branch).filter(Boolean))].sort();
+  const years = [...new Set(notes.map(n => n.academic_year).filter(Boolean))].sort();
+  const semesters = [...new Set(notes.map(n => n.semester).filter(Boolean))].sort();
+  const subjects = [...new Set(notes.map(n => n.subject).filter(Boolean))].sort();
+
+  const searchTerm = search.trim().toLowerCase();
+
+  const filteredNotes = notes.filter(note =>
+    (branchFilter === 'All' || note.branch === branchFilter) &&
+    (yearFilter === 'All' || note.academic_year === yearFilter) &&
+    (semesterFilter === 'All' || note.semester === semesterFilter) &&
+    (subjectFilter === 'All' || note.subject === subjectFilter) &&
+    (
+      !searchTerm ||
+      [note.title, note.subject, note.content, note.file_name]
+        .some(value => (value || '').toLowerCase().includes(searchTerm))
+    )
+  );
+
+  return (
+    <div className="page-content">
+      <PageHeading
+        eyebrow="STUDENT NOTES LIBRARY"
+        title="Notes Library"
+        description="Find notes by branch, year, semester and subject."
+        action={
+          <button className="btn btn-primary" onClick={openNewNote}>
+            <Plus size={17} /> New note
+          </button>
+        }
+      />
+
+      <div className="search-bar">
+        <Search size={18} />
+        <input
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder="Search notes, subjects or file names..."
+        />
+        <span>{filteredNotes.length} notes</span>
+      </div>
+
+      <div className="notes-filters">
+        <label>
+          Branch
+          <select value={branchFilter} onChange={e => setBranchFilter(e.target.value)}>
+            <option value="All">All branches</option>
+            {branches.map(branch => (
+              <option key={branch} value={branch}>{branch}</option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          Academic Year
+          <select value={yearFilter} onChange={e => setYearFilter(e.target.value)}>
+            <option value="All">All years</option>
+            {years.map(year => (
+              <option key={year} value={year}>{year}</option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          Semester
+          <select value={semesterFilter} onChange={e => setSemesterFilter(e.target.value)}>
+            <option value="All">All semesters</option>
+            {semesters.map(semester => (
+              <option key={semester} value={semester}>{semester}</option>
+            ))}
+          </select>
+        </label>
+
+        <label>
+          Subject
+          <select value={subjectFilter} onChange={e => setSubjectFilter(e.target.value)}>
+            <option value="All">All subjects</option>
+            {subjects.map(subject => (
+              <option key={subject} value={subject}>{subject}</option>
+            ))}
+          </select>
+        </label>
+
+        <button
+          type="button"
+          className="btn btn-ghost"
+          onClick={() => {
+            setBranchFilter('All');
+            setYearFilter('All');
+            setSemesterFilter('All');
+            setSubjectFilter('All');
+            setSearch('');
+          }}
+        >
+          Clear filters
+        </button>
+      </div>
+
+      {filteredNotes.length === 0 ? (
+        <EmptyState
+          icon={FileText}
+          title="No notes found"
+          text="Try changing your search or filters, or upload a new note."
+          action={
+            <button className="btn btn-primary" onClick={openNewNote}>
+              <Plus size={16} /> Create a note
+            </button>
+          }
+        />
+      ) : (
+        <div className="notes-grid">
+          {filteredNotes.map(n => (
+            <article className="note-card" key={n.id}>
+              <div className="note-card-top">
+                <span className={`tag tag-${(n.subject || 'General').toLowerCase()}`}>
+                  {n.subject || 'General'}
+                </span>
+
+                <div className="note-actions">
+                  <button
+                    className="icon-button"
+                    title="Edit note"
+                    onClick={() => openEditNote(n)}
+                  >
+                    <Pencil size={16} />
+                  </button>
+                  <button
+                    className="icon-button danger-hover"
+                    title="Delete note"
+                    onClick={() => deleteNote(n)}
+                  >
+                    <Trash2 size={16} />
+                  </button>
+                </div>
+              </div>
+
+              <h3>{n.title}</h3>
+              <p>{n.content || n.file_name || 'No content added yet.'}</p>
+
+              <div className="note-metadata">
+                <span>Branch: {n.branch || 'Not specified'}</span>
+                <span>Year: {n.academic_year || 'Not specified'}</span>
+                <span>Semester: {n.semester || 'Not specified'}</span>
+                <span>Sharing: {n.sharing_type === 'community' ? 'Shared' : 'Private'}</span>
+                {n.file_name && <span>File: {n.file_name}</span>}
+              </div>
+
+              <div className="note-card-footer">
+                <span>
+                  <Clock3 size={13} /> Uploaded{' '}
+                  {n.created_at
+                    ? new Date(n.created_at).toLocaleDateString()
+                    : 'Date unavailable'}
+                </span>
+                <button onClick={() => openEditNote(n)}>
+                  Open note <ChevronRight size={14} />
+                </button>
+              </div>
+            </article>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 }
 function QuizPage({
   quizTopic,
@@ -676,8 +1070,124 @@ function QuizPage({
     <section className="panel"><div className="panel-heading"><div><h2>Recent attempts</h2><p>Your saved quiz results.</p></div></div>{attempts.length===0?<EmptyState icon={Brain} title="Your first score is waiting" text="Complete a quiz to see your results here."/>:<div className="attempt-list">{attempts.slice(0,5).map(a=><div className="attempt-row" key={a.id}><div className="attempt-badge"><Brain size={17}/></div><div className="attempt-info"><strong>{a.topic}</strong><span>{new Date(a.created_at).toLocaleString()}</span></div><strong className="attempt-score">{a.score}/{a.total}</strong><span className="attempt-percent">{Math.round(a.score/a.total*100)}%</span></div>)}</div>}</section>
   </div>;
 }
-function SubjectsPage({startQuiz,setPage}) {
-  return <div className="page-content"><PageHeading eyebrow="YOUR LEARNING LIBRARY" title="Explore subjects" description="Build your skills one topic at a time."/><div className="subject-grid subject-grid-large">{subjects.map((s,i)=><article key={s.name} className="subject-card subject-card-large"><div className={`subject-icon ${s.color}`}>{s.icon}</div><span className="subject-label">{s.label}</span><h3>{s.name}</h3><p>{s.description}</p><div className="subject-progress"><div><span>Practice bank</span><strong>{questionBank.filter(q=>q.topic===s.name).length} questions</strong></div><div className="mini-progress"><span style={{width:`${Math.min(100,questionBank.filter(q=>q.topic===s.name).length*2)}%`}}/></div></div><div className="subject-bottom"><button className="btn btn-soft" onClick={()=>startQuiz(s.name)}>Start practice <ArrowRight size={15}/></button><button className="text-link" onClick={()=>setPage('My Notes')}>My notes</button></div></article>)}</div><div className="tip-banner"><div className="tip-icon"><Sparkles size={20}/></div><div><strong>Study tip</strong><p>Try active recall: close your notes, answer a question from memory, then check what you missed.</p></div></div></div>;
+function SubjectsPage({ startQuiz, setPage }) {
+  const [selectedSemester, setSelectedSemester] = useState(
+    btechSemesters[0]?.semester || 'Semester 1'
+  );
+
+  const currentSemester = btechSemesters.find(
+    (s) => s.semester === selectedSemester
+  );
+
+  const currentSubjects = currentSemester?.subjects || [];
+
+  return (
+    <div className="page-content">
+      <PageHeading
+        eyebrow="YOUR LEARNING LIBRARY"
+        title="Explore subjects"
+        description="Choose a semester and explore its subjects."
+      />
+
+      <section className="panel">
+        <h2>Select semester</h2>
+
+        <select
+          className="input"
+          value={selectedSemester}
+          onChange={(e) => setSelectedSemester(e.target.value)}
+        >
+          {btechSemesters.map((s) => (
+            <option key={s.semester} value={s.semester}>
+              {s.semester}
+            </option>
+          ))}
+        </select>
+      </section>
+
+      <div className="subject-grid subject-grid-large">
+        {currentSubjects.map((subject, index) => {
+          const count = questionBank.filter(
+            (q) => q.topic === subject
+          ).length;
+
+          return (
+            <article
+              key={subject}
+              className="subject-card subject-card-large"
+            >
+              <div className="subject-icon violet">
+                📘
+              </div>
+
+              <span className="subject-label">
+                {selectedSemester}
+              </span>
+
+              <h3>{subject}</h3>
+
+              <p>
+                Practice concepts and prepare for your semester exams.
+              </p>
+
+              <div className="subject-progress">
+                <div>
+                  <span>Practice bank</span>
+                  <strong>{count} questions</strong>
+                </div>
+
+                <div className="mini-progress">
+                  <span
+                    style={{
+                      width: `${Math.min(100, count * 2)}%`,
+                    }}
+                  />
+                </div>
+              </div>
+
+              <div className="subject-bottom">
+                <button
+                  className="btn btn-soft"
+                  onClick={() =>
+                    startQuiz('All', selectedSemester, subject)
+                  }
+                  disabled={count === 0}
+                >
+                  Start practice <ArrowRight size={15} />
+                </button>
+
+                <button
+                  className="text-link"
+                  onClick={() => setPage('My Notes')}
+                >
+                  My notes
+                </button>
+              </div>
+            </article>
+          );
+        })}
+      </div>
+
+      {currentSubjects.length === 0 && (
+        <section className="panel">
+          No subjects found for this semester.
+        </section>
+      )}
+
+      <div className="tip-banner">
+        <div className="tip-icon">
+          <Sparkles size={20} />
+        </div>
+        <div>
+          <strong>Study tip</strong>
+          <p>
+            Study one subject at a time and practise questions to
+            strengthen your understanding.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
 function ProgressPage({attempts,average,best,notes}) {
   const topicStats = ['HTML','CSS','JavaScript','DSA','Mixed practice'].map(topic=>{
@@ -898,8 +1408,232 @@ function NotesSharingPage({notes,openNewNote,uploadNoteFile,downloadNote}) { ret
   hidden
 /></label></section><div className="notes-grid">{notes.length===0?<EmptyState icon={FileText} title="No notes to share yet" text="Write or upload a note to begin your library."/>:notes.map(n=><article className="note-card" key={n.id}><div className="note-card-top"><span className="tag">{n.subject}</span></div><h3>{n.title}</h3><p>{n.content||'No content added yet.'}</p><div className="note-card-footer"><span><Clock3 size={13}/> {new Date(n.updated_at).toLocaleDateString()}</span><button onClick={()=>downloadNote(n)}><Download size={14}/> Download</button></div></article>)}</div><p className="sharing-note">Notes are saved to the signed-in account. For students to share the same public library, use the SQL setup included in this project and extend notes permissions intentionally.</p></div>; }
 
-function ProfilePage({profile,setProfile,saveProfile,saving,email}) {
-  return <div className="page-content"><PageHeading eyebrow="YOUR ACCOUNT" title="My Profile" description="Keep your student details up to date."/><section className="profile-hero"><div className="profile-avatar-large">{(profile.full_name||email||'S').slice(0,1).toUpperCase()}</div><div><h2>{profile.full_name||'Student profile'}</h2><p>{email}</p><span className="verified-pill"><ShieldCheck size={14}/> Signed in</span></div></section><form className="panel profile-form" onSubmit={saveProfile}><div className="panel-heading"><div><h2>Personal details</h2><p>Your profile is saved securely to your account.</p></div></div><label>Full name<input value={profile.full_name} onChange={e=>setProfile({...profile,full_name:e.target.value})} placeholder="Enter your name"/></label><label>Course / department<select value={profile.course} onChange={e=>setProfile({...profile,course:e.target.value})}>{['CSE','IT','ECE','Electrical Engineering','Mechanical Engineering','Other'].map(c=><option key={c}>{c}</option>)}</select></label><label>Year of study<select value={profile.year || '2nd Year'} onChange={e=>setProfile({...profile,year:e.target.value})}>{['1st Year','2nd Year','3rd Year','4th Year'].map(y=><option key={y}>{y}</option>)}</select></label><label>Branch<select value={profile.branch || profile.course} onChange={e=>setProfile({...profile,branch:e.target.value,course:e.target.value})}>{['CSE','IT','ECE','EEE','Mechanical Engineering','Civil Engineering','Chemical Engineering','Other'].map(c=><option key={c}>{c}</option>)}</select></label><label>Email address<input value={email||''} disabled readOnly/></label><div className="profile-save-row"><span><ShieldCheck size={15}/> Private to your account</span><button className="btn btn-primary" disabled={saving}><Save size={16}/>{saving?'Saving…':'Save profile'}</button></div></form><div className="security-note"><LockKeyhole size={20}/><div><strong>Your data, your account</strong><p>StudySpace uses account-based database rules so your notes and quiz history are separated from other users.</p></div></div></div>;
+function ProfilePage({ profile, setProfile, saveProfile, saving, email }) {
+  const [section, setSection] = useState('About');
+  const [newPassword, setNewPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [securityMessage, setSecurityMessage] = useState('');
+  const [passwordLoading, setPasswordLoading] = useState(false);
+
+  async function changePassword(e) {
+    e.preventDefault();
+    setSecurityMessage('');
+
+    if (newPassword.length < 8) {
+      setSecurityMessage('Password kam se kam 8 characters ka hona chahiye.');
+      return;
+    }
+
+    if (newPassword !== confirmPassword) {
+      setSecurityMessage('Dono passwords match nahi kar rahe.');
+      return;
+    }
+
+    if (!supabase) {
+      setSecurityMessage('Supabase configured nahi hai.');
+      return;
+    }
+
+    setPasswordLoading(true);
+
+    const { error } = await supabase.auth.updateUser({
+      password: newPassword
+    });
+
+    setPasswordLoading(false);
+
+    if (error) {
+      setSecurityMessage('Password change nahi hua: ' + error.message);
+      return;
+    }
+
+    setNewPassword('');
+    setConfirmPassword('');
+    setSecurityMessage('Password successfully change ho gaya!');
+  }
+
+  return (
+    <div className="page-content">
+      <PageHeading
+        eyebrow="YOUR ACCOUNT"
+        title="My Profile"
+        description="Manage your profile, learn about StudySpace, and protect your account."
+      />
+
+      <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 20 }}>
+        {['About', 'Privacy', 'Security', 'Personal Details'].map((item) => (
+          <button
+            key={item}
+            type="button"
+            className={section === item ? 'btn btn-primary' : 'btn'}
+            onClick={() => {
+              setSection(item);
+              setSecurityMessage('');
+            }}
+          >
+            {item}
+          </button>
+        ))}
+      </div>
+      
+
+      {section === 'Privacy' && (
+        <section className="panel">
+          <h2>Privacy</h2>
+          <p>
+            Your account information and personal notes should remain private
+            to your account. Notes you choose to share with the community may
+            be visible to other students.
+          </p>
+          <h3>Keep your account safe</h3>
+          <ul>
+            <li>Do not share your password with anyone.</li>
+            <li>Check whether a note is private or shared before publishing.</li>
+            <li>Only upload files you are allowed to share.</li>
+            <li>Sign out when using a shared computer.</li>
+          </ul>
+          <p>
+            Privacy depends on the app's database and storage access policies.
+            These settings should be reviewed before claiming that all data
+            is fully private.
+          </p>
+        </section>
+      )}
+
+      {section === 'Security' && (
+        <section className="panel">
+          <h2>Change Password</h2>
+          <p>Enter your new password below. Use at least 8 characters.</p>
+
+          <form onSubmit={changePassword}>
+            <label>
+              New password
+              <input
+                type="password"
+                autoComplete="new-password"
+                value={newPassword}
+                onChange={(e) => setNewPassword(e.target.value)}
+                placeholder="Enter new password"
+                required
+                minLength={8}
+              />
+            </label>
+
+            <label>
+              Confirm new password
+              <input
+                type="password"
+                autoComplete="new-password"
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                placeholder="Re-enter new password"
+                required
+                minLength={8}
+              />
+            </label>
+
+            {securityMessage && <p role="status">{securityMessage}</p>}
+
+            <button
+              className="btn btn-primary"
+              type="submit"
+              disabled={passwordLoading}
+            >
+              {passwordLoading ? 'Updating...' : 'Change Password'}
+            </button>
+          </form>
+        </section>
+      )}
+
+      {section === 'Personal Details' && (
+        <>
+          <section className="profile-hero">
+            <div className="profile-avatar-large">
+              {(profile.full_name || email || 'S').slice(0, 1).toUpperCase()}
+            </div>
+            <div>
+              <h2>{profile.full_name || 'Student profile'}</h2>
+              <p>{email}</p>
+              <span className="verified-pill">
+                <ShieldCheck size={14} /> Signed in
+              </span>
+            </div>
+          </section>
+
+          <form className="panel profile-form" onSubmit={saveProfile}>
+            <div className="panel-heading">
+              <div>
+                <h2>Personal details</h2>
+                <p>Your student details are saved to your account.</p>
+              </div>
+            </div>
+
+            <label>
+              Full name
+              <input
+                value={profile.full_name || ''}
+                onChange={(e) => setProfile({ ...profile, full_name: e.target.value })}
+                placeholder="Enter your name"
+              />
+            </label>
+
+            <label>
+              Course / department
+              <select
+                value={profile.course || 'CSE'}
+                onChange={(e) => setProfile({ ...profile, course: e.target.value })}
+              >
+                {['CSE', 'IT', 'ECE', 'Electrical Engineering', 'Mechanical Engineering', 'Other'].map((c) => (
+                  <option key={c}>{c}</option>
+                ))}
+              </select>
+            </label>
+
+            <label>
+              Year of study
+              <select
+                value={profile.year || '2nd Year'}
+                onChange={(e) => setProfile({ ...profile, year: e.target.value })}
+              >
+                {['1st Year', '2nd Year', '3rd Year', '4th Year'].map((y) => (
+                  <option key={y}>{y}</option>
+                ))}
+              </select>
+            </label>
+
+            <label>
+              Branch
+              <select
+                value={profile.branch || profile.course || 'CSE'}
+                onChange={(e) => setProfile({
+                  ...profile,
+                  branch: e.target.value,
+                  course: e.target.value
+                })}
+              >
+                {['CSE', 'IT', 'ECE', 'EEE', 'Mechanical Engineering', 'Civil Engineering', 'Chemical Engineering', 'Other'].map((c) => (
+                  <option key={c}>{c}</option>
+                ))}
+              </select>
+            </label>
+
+            <label>
+              Email address
+              <input value={email || ''} disabled readOnly />
+            </label>
+
+            <div className="profile-save-row">
+              <span><ShieldCheck size={15} /> Private to your account</span>
+              <button className="btn btn-primary" disabled={saving}>
+                <Save size={16} />
+                {saving ? 'Saving...' : 'Save profile'}
+              </button>
+            </div>
+          </form>
+        </>
+      )}
+    </div>
+  );
 }
 function QuizRunner({quizItems,quizIndex,setQuizIndex,answers,setAnswers,quizFinished,finishQuiz,score,setPage,startQuiz,topic,totalAnswered}) {
   if (!quizItems.length) return <div className="page-content"><EmptyState icon={Brain} title="No questions in this session" text="Choose a topic and start again." action={<button className="btn btn-primary" onClick={()=>setPage('Quiz Zone')}>Back to quiz zone</button>}/></div>;
