@@ -6,7 +6,7 @@ import {
   X, Pencil, Save, LoaderCircle, LockKeyhole, Mail, ArrowRight, LibraryBig, MessagesSquare, Users, Upload, Download, Send
 } from 'lucide-react';
 import { isSupabaseConfigured, supabase } from './supabase';
-import { btechSemesters,questionBank } from './questions';
+import { btechSemesters,questionBank,branchWiseSemesters } from './questions';
 import CommunityPage from "./CommunityPage.jsx";
 const subjects = [
   { name: 'HTML', label: 'Web foundations', color: 'pink', icon: '🌐', description: 'Structure pages with semantic HTML.' },
@@ -39,6 +39,7 @@ function App() {
     });
   const [quizTopic, setQuizTopic] = useState('All');
   const [quizLength, setQuizLength] = useState(10);
+  const [selectedBranch, setSelectedBranch] = useState('CSE');
   const [selectedSemester, setSelectedSemester] = useState('Semester 1');
   const [selectedSubject, setSelectedSubject] = useState('Engineering Mathematics-I');
   const [quizItems, setQuizItems] = useState([]);
@@ -705,6 +706,8 @@ function startQuiz(topic = quizTopic, semester = null, subject = null) {
          setNotice={setNotice}
          />}
         {page === 'Quiz Zone' && <QuizPage quizTopic={quizTopic} setQuizTopic={setQuizTopic} quizLength={quizLength} setQuizLength={setQuizLength} startQuiz={startQuiz} attempts={attempts}
+        selectedBranch={selectedBranch}
+        setSelectedBranch={setSelectedBranch}
         selectedSemester={selectedSemester}
         setSelectedSemester={setSelectedSemester}
         selectedSubject={selectedSubject}
@@ -1013,32 +1016,90 @@ function QuizPage({
   setQuizLength,
   startQuiz,
   attempts,
+  selectedBranch,
+  setSelectedBranch,
   selectedSemester,
   setSelectedSemester,
   selectedSubject,
   setSelectedSubject
 })  {
-  const filtered = questionBank.filter((q) =>
+
+const filtered = questionBank.filter((q) =>
   q.semester === selectedSemester &&
-  q.subject === selectedSubject
+  q.subject === selectedSubject &&
+  (!q.branch || q.branch === selectedBranch)
 );
+
+
+console.log('Selected semester:', selectedSemester);
+console.log('Selected subject:', selectedSubject);
+console.log('Matching questions:', filtered.length);
   return <div className="page-content"><PageHeading eyebrow="PRACTICE MAKES PROGRESS" title="Quiz Zone" description="Test your understanding with quick, focused practice."/>
     <div className="quiz-intro"><div className="quiz-intro-copy"><span className="eyebrow light">YOUR NEXT CHALLENGE</span><h2>Ready to test yourself?</h2><p>Choose a subject, set your session length, and learn from every answer.</p><div className="quiz-meta"><span><CircleHelp size={16}/>{questionBank.length} questions in bank</span><span><Clock3 size={16}/>{Math.max(2,Math.round(quizLength*0.6))}–{quizLength} min approx.</span></div></div><div className="quiz-big-icon"><Brain size={75}/><Sparkles size={25}/></div></div>
-    <section className="panel quiz-settings"><div className="panel-heading"><div><h2>Set up your session</h2><p>Make the practice fit your day.</p></div></div><label className="field-label">Choose semester</label>
+    <section className="panel quiz-settings"><div className="panel-heading"><div>
+<label className="field-label">Choose branch</label>
+<select
+  className="input"
+  value={selectedBranch}
+  onChange={(e) => {
+    const nextBranch = e.target.value;
+    setSelectedBranch(nextBranch);
+
+    const branchSemesters = branchWiseSemesters[nextBranch] || [];
+    const firstSemester = branchSemesters[0];
+
+    setSelectedSemester(firstSemester?.semester || 'Semester 1');
+    setSelectedSubject(firstSemester?.subjects[0] || '');
+  }}
+>
+  {Object.keys(branchWiseSemesters).map((branch) => (
+    <option key={branch} value={branch}>
+      {branch}
+    </option>
+  ))}
+</select>
+<h2>Set up your session</h2><p>Make the practice fit your day.</p></div></div><label className="field-label">Choose semester</label>
 <select
   className="input"
   value={selectedSemester}
   onChange={(e) => {
     setSelectedSemester(e.target.value);
-    const nextSemester = btechSemesters.find(
-      (s) => s.semester === e.target.value
-    );
+    const nextSemester = (
+  branchWiseSemesters[selectedBranch] || [])
+  .find((s) => s.semester === e.target.value);
     setSelectedSubject(nextSemester?.subjects[0] || '');
   }}
 >
   {btechSemesters.map((s) => (
     <option key={s.semester} value={s.semester}>
       {s.semester}
+    </option>
+  ))}
+</select>
+
+<label className="field-label">Choose branch</label>
+<select
+  className="input"
+  value={selectedBranch}
+  onChange={(e) => {
+    const nextBranch = e.target.value;
+    setSelectedBranch(nextBranch);
+
+    const firstSemester =
+      branchWiseSemesters[nextBranch]?.[0];
+
+    setSelectedSemester(
+      firstSemester?.semester || "Semester 1"
+    );
+
+    setSelectedSubject(
+      firstSemester?.subjects?.[0] || ""
+    );
+  }}
+>
+  {Object.keys(branchWiseSemesters).map((branch) => (
+    <option key={branch} value={branch}>
+      {branch}
     </option>
   ))}
 </select>
@@ -1050,7 +1111,8 @@ function QuizPage({
   onChange={(e) => setSelectedSubject(e.target.value)}
 >
   {(
-    btechSemesters.find((s) => s.semester === selectedSemester)?.subjects || []
+    (branchWiseSemesters[selectedBranch] || [])
+  .find((s) => s.semester === selectedSemester)?.subjects || []
   ).map((subject) => (
     <option key={subject} value={subject}>
       {subject}
@@ -1097,7 +1159,7 @@ function SubjectsPage({ startQuiz, setPage }) {
           value={selectedSemester}
           onChange={(e) => setSelectedSemester(e.target.value)}
         >
-          {btechSemesters.map((s) => (
+          {(branchWiseSemesters[selectedBranch] || []).map((s) => (
             <option key={s.semester} value={s.semester}>
               {s.semester}
             </option>
