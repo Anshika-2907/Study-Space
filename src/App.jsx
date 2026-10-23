@@ -8,6 +8,7 @@ import {
 import { isSupabaseConfigured, supabase } from './supabase';
 import { btechSemesters,questionBank,branchWiseSemesters } from './questions';
 import CommunityPage from "./CommunityPage.jsx";
+import './styles.css';
 const subjects = [
   { name: 'HTML', label: 'Web foundations', color: 'pink', icon: '🌐', description: 'Structure pages with semantic HTML.' },
   { name: 'CSS', label: 'Visual design', color: 'blue', icon: '🎨', description: 'Create responsive, beautiful interfaces.' },
@@ -19,6 +20,14 @@ const initialDemoNote = null;
 
 function App() {
   const [session, setSession] = useState(null);
+   const [theme, setTheme] = useState(
+  () => localStorage.getItem('studyspace-theme') || 'light'
+);
+
+useEffect(() => {
+  document.documentElement.dataset.theme = theme;
+  localStorage.setItem('studyspace-theme', theme);
+}, [theme]);
   const [authLoading, setAuthLoading] = useState(true);
   const [authMode, setAuthMode] = useState('login');
   const [authForm, setAuthForm] = useState({ name: '', email: '', password: '' });
@@ -670,7 +679,18 @@ function startQuiz(topic = quizTopic, semester = null, subject = null) {
     </aside>
     {mobileMenu && <button className="scrim" aria-label="Close navigation" onClick={() => setMobileMenu(false)} />}
     <main className="main-area">
-      <header className="topbar"><button className="icon-button menu-toggle" onClick={() => setMobileMenu(true)}><Menu/></button><div className="breadcrumb">Workspace <ChevronRight size={14}/> <strong>{page}</strong></div><div className="topbar-actions"><div className="cloud-status"><span/> Cloud synced</div><button className="profile-mini" onClick={() => setPage('Profile')}><div className="avatar">{(profile.full_name || session.user.email || 'S').slice(0,1).toUpperCase()}</div><ChevronRight size={14}/></button></div></header>
+      <header className="topbar"><button className="icon-button menu-toggle" onClick={() => setMobileMenu(true)}><Menu/></button><div className="breadcrumb">Workspace <ChevronRight size={14}/> <strong>{page}</strong></div><div className="topbar-actions"><div className="cloud-status"><span/> Cloud synced</div><button
+  className="icon-button theme-toggle"
+  onClick={() => {
+    const nextTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(nextTheme);
+    console.log('Theme changed to:', nextTheme);
+  }}
+  title={theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode'}
+  aria-label="Toggle theme"
+>
+  {theme === 'light' ? '🌙' : '☀️'}
+</button><button className="profile-mini" onClick={() => setPage('Profile')}><div className="avatar">{(profile.full_name || session.user.email || 'S').slice(0,1).toUpperCase()}</div><ChevronRight size={14}/></button></div></header>
       <div className="content-wrap">
         {notice && <div className="notice"><span>{notice}</span><button onClick={() => setNotice('')}><X size={16}/></button></div>}
         {dataLoading && <div className="inline-loading"><LoaderCircle className="spin" size={16}/> Syncing your workspace…</div>}
@@ -1133,13 +1153,15 @@ console.log('Matching questions:', filtered.length);
   </div>;
 }
 function SubjectsPage({ startQuiz, setPage }) {
+  const [selectedBranch, setSelectedBranch] = useState('CSE');
+
   const [selectedSemester, setSelectedSemester] = useState(
     btechSemesters[0]?.semester || 'Semester 1'
   );
 
-  const currentSemester = btechSemesters.find(
-    (s) => s.semester === selectedSemester
-  );
+  const currentSemester = (
+    branchWiseSemesters[selectedBranch] || []
+  ).find(s => s.semester === selectedSemester);
 
   const currentSubjects = currentSemester?.subjects || [];
 
@@ -1151,21 +1173,38 @@ function SubjectsPage({ startQuiz, setPage }) {
         description="Choose a semester and explore its subjects."
       />
 
-      <section className="panel">
-        <h2>Select semester</h2>
+     <section className="panel">
+  <h2>Select branch</h2>
 
-        <select
-          className="input"
-          value={selectedSemester}
-          onChange={(e) => setSelectedSemester(e.target.value)}
-        >
-          {(branchWiseSemesters[selectedBranch] || []).map((s) => (
-            <option key={s.semester} value={s.semester}>
-              {s.semester}
-            </option>
-          ))}
-        </select>
-      </section>
+  <select
+    className="input"
+    value={selectedBranch}
+    onChange={(e) => {
+      setSelectedBranch(e.target.value);
+      setSelectedSemester('Semester 1');
+    }}
+  >
+    {Object.keys(branchWiseSemesters).map(branch => (
+      <option key={branch} value={branch}>
+        {branch}
+      </option>
+    ))}
+  </select>
+
+  <h2>Select semester</h2>
+
+  <select
+    className="input"
+    value={selectedSemester}
+    onChange={(e) => setSelectedSemester(e.target.value)}
+  >
+    {(branchWiseSemesters[selectedBranch] || []).map(s => (
+      <option key={s.semester} value={s.semester}>
+        {s.semester}
+      </option>
+    ))}
+  </select>
+</section>
 
       <div className="subject-grid subject-grid-large">
         {currentSubjects.map((subject, index) => {
@@ -1807,8 +1846,55 @@ function PYQLibraryPage({ session, profile, setNotice }) {
     } finally {
       setLoading(false);
     }
-  }
 
+  }
+    async function deletePaper(paper) {
+    if (!session?.user) {
+      setNotice('Pehle login karo.');
+      return;
+    }
+
+    // Sirf uploader apna PYQ delete kar sakta hai.
+    if (paper.uploaded_by !== session.user.id) {
+      setNotice('Aap sirf apna upload kiya hua PYQ delete kar sakte ho.');
+      return;
+    }
+
+    const confirmed = window.confirm(
+      `"${paper.title || paper.file_name}" delete karna hai? Ye action undo nahi hoga.`
+    );
+
+    if (!confirmed) return;
+
+    setLoading(true);
+
+    try {
+      // Pehle PDF file ko Storage se delete karo.
+      const { error: storageError } = await supabase.storage
+        .from('studyspace-pyqs')
+        .remove([paper.file_path]);
+
+      if (storageError) throw storageError;
+
+      // Phir sirf apni database entry delete karo.
+      const { error: deleteError } = await supabase
+        .from('pyq_papers')
+        .delete()
+        .eq('id', paper.id)
+        .eq('uploaded_by', session.user.id);
+
+      if (deleteError) {
+        throw deleteError;
+      }
+
+      setNotice('Aapka PYQ successfully delete ho gaya!');
+      await loadPapers();
+    } catch (error) {
+      setNotice('Delete failed: ' + error.message);
+    } finally {
+      setLoading(false);
+    }
+  }
   async function downloadPaper(paper) {
     const { data, error } = await supabase.storage
       .from('studyspace-pyqs')
@@ -1966,6 +2052,19 @@ function PYQLibraryPage({ session, profile, setNotice }) {
                 >
                   Download PDF
                 </button>
+                
+                {paper.uploaded_by === session?.user?.id && (
+                  <button
+                    className="btn btn-primary"
+                    type="button"
+                    disabled={loading}
+                    onClick={() => deletePaper(paper)}
+                    style={{ marginLeft: '8px', backgroundColor: '#dc2626' }}
+                  >
+                    Delete My PYQ
+                  </button>
+                )}
+
               </div>
             ))}
           </div>

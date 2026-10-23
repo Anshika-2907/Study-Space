@@ -122,7 +122,7 @@ export const branchWiseSemesters = {
       subjects: [
         "Engineering Mathematics-I",
         "Engineering Physics",
-        "Programming for Problem Solving",
+        "Programming for Problem Solving (PPS)",
         "Basic Electrical Engineering"
       ]
     },
@@ -11606,6 +11606,7726 @@ export const questionBank = [
   a: 0, explanation: 'Ethical professional practice balances responsibilities and considers the consequences of decisions.'
 },
 
+{
+  id: 1901, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'What is the SI unit of electrical resistance?',
+  options: ['Volt', 'Ampere', 'Ohm', 'Watt'],
+  a: 2, explanation: 'Resistance is measured in ohms (Ω).'
+},
+{
+  id: 1902, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Which law states that the algebraic sum of currents at a node is zero?',
+  options: ['Ohm’s law', 'Kirchhoff’s Current Law', 'Faraday’s law', 'Lenz’s law'],
+  a: 1, explanation: 'KCL follows conservation of electric charge.'
+},
+{
+  id: 1903, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Kirchhoff’s Voltage Law is based on conservation of:',
+  options: ['Charge', 'Mass', 'Energy', 'Power'],
+  a: 2, explanation: 'KVL follows conservation of energy around a closed loop.'
+},
+{
+  id: 1904, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'According to Ohm’s law, voltage equals:',
+  options: ['I/R', 'IR', 'R/I', 'I + R'],
+  a: 1, explanation: 'Ohm’s law is V = IR.'
+},
+{
+  id: 1905, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Two resistors of 4 Ω and 6 Ω are connected in series. Their equivalent resistance is:',
+  options: ['2 Ω', '10 Ω', '24 Ω', '1.5 Ω'],
+  a: 1, explanation: 'Series resistances add: 4 + 6 = 10 Ω.'
+},
+{
+  id: 1906, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Two resistors of 6 Ω each are connected in parallel. The equivalent resistance is:',
+  options: ['12 Ω', '6 Ω', '3 Ω', '1 Ω'],
+  a: 2, explanation: 'For two equal parallel resistors, equivalent resistance is R/2 = 3 Ω.'
+},
+{
+  id: 1907, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Electrical power in a resistor can be calculated using:',
+  options: ['P = VI', 'P = V + I', 'P = V/I', 'P = I/R'],
+  a: 0, explanation: 'Electrical power is the product of voltage and current.'
+},
+{
+  id: 1908, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The reciprocal of resistance is called:',
+  options: ['Reactance', 'Conductance', 'Capacitance', 'Inductance'],
+  a: 1, explanation: 'Conductance G = 1/R and is measured in siemens.'
+},
+{
+  id: 1909, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The SI unit of capacitance is:',
+  options: ['Henry', 'Tesla', 'Farad', 'Weber'],
+  a: 2, explanation: 'Capacitance is measured in farads (F).'
+},
+{
+  id: 1910, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The SI unit of inductance is:',
+  options: ['Farad', 'Henry', 'Ohm', 'Coulomb'],
+  a: 1, explanation: 'Inductance is measured in henries (H).'
+},
+{
+  id: 1911, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'In an ideal capacitor, current leads voltage by:',
+  options: ['0°', '45°', '90°', '180°'],
+  a: 2, explanation: 'For an ideal capacitor, current leads voltage by 90°.'
+},
+{
+  id: 1912, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'In an ideal inductor, current lags voltage by:',
+  options: ['90°', '0°', '45°', '180°'],
+  a: 0, explanation: 'For an ideal inductor, current lags voltage by 90°.'
+},
+{
+  id: 1913, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The impedance of a pure resistor is:',
+  options: ['jR', '-jR', 'R', '1/R'],
+  a: 2, explanation: 'A pure resistor has real impedance R.'
+},
+{
+  id: 1914, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Inductive reactance is given by:',
+  options: ['1/(2πfL)', '2πfL', '2πfC', 'R/L'],
+  a: 1, explanation: 'Inductive reactance XL = 2πfL.'
+},
+{
+  id: 1915, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Capacitive reactance is given by:',
+  options: ['2πfC', '2πfL', '1/(2πfC)', 'f/C'],
+  a: 2, explanation: 'Capacitive reactance XC = 1/(2πfC).'
+},
+{
+  id: 1916, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The impedance of a series RL circuit is:',
+  options: ['R + XL', 'R + jXL', 'R - XL', 'R/XL'],
+  a: 1, explanation: 'The complex impedance of a series RL circuit is R + jXL.'
+},
+{
+  id: 1917, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'At resonance in an ideal series RLC circuit:',
+  options: ['XL = XC', 'XL = R', 'XC = R', 'Current is zero'],
+  a: 0, explanation: 'At resonance, inductive and capacitive reactances are equal.'
+},
+{
+  id: 1918, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The resonant frequency of an ideal RLC circuit is:',
+  options: ['2π√LC', '1/(2π√LC)', 'R/(2πL)', '1/LC'],
+  a: 1, explanation: 'The resonant frequency is f₀ = 1/(2π√LC).'
+},
+{
+  id: 1919, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The power factor of a purely resistive AC circuit is:',
+  options: ['0', '0.5', '1', '-1'],
+  a: 2, explanation: 'Voltage and current are in phase, so the power factor is unity.'
+},
+{
+  id: 1920, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The average power consumed by an ideal inductor over a complete cycle is:',
+  options: ['Maximum', 'Zero', 'Infinite', 'Equal to apparent power'],
+  a: 1, explanation: 'An ideal inductor stores and returns energy without consuming average real power.'
+},
+{
+  id: 1921, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Thevenin’s theorem replaces a linear two-terminal network with:',
+  options: ['A current source and capacitor', 'A voltage source in series with a resistance', 'A resistor in parallel with an inductor only', 'An ideal transformer'],
+  a: 1, explanation: 'The Thevenin equivalent is a voltage source in series with equivalent resistance.'
+},
+{
+  id: 1922, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Norton’s equivalent circuit consists of:',
+  options: ['A voltage source in series with resistance', 'A current source in parallel with resistance', 'Two voltage sources in series', 'A capacitor in series with an inductor'],
+  a: 1, explanation: 'Norton’s theorem gives an equivalent current source in parallel with resistance.'
+},
+{
+  id: 1923, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The maximum power transfer theorem for a DC resistive network states that load resistance should equal:',
+  options: ['Zero', 'Source resistance', 'Twice the source resistance', 'Half the source resistance'],
+  a: 1, explanation: 'Maximum power transfer occurs when RL = Rth for a resistive DC network.'
+},
+{
+  id: 1924, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The superposition theorem applies to:',
+  options: ['Linear circuits', 'Only nonlinear circuits', 'Only magnetic circuits', 'Only open circuits'],
+  a: 0, explanation: 'Superposition applies to linear networks with multiple independent sources.'
+},
+{
+  id: 1925, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'When using superposition, an ideal independent voltage source that is turned off is replaced by:',
+  options: ['An open circuit', 'A short circuit', 'A capacitor', 'An inductor'],
+  a: 1, explanation: 'An ideal voltage source set to zero volts becomes a short circuit.'
+},
+{
+  id: 1926, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'When using superposition, an ideal independent current source that is turned off is replaced by:',
+  options: ['A short circuit', 'A voltage source', 'An open circuit', 'A resistor of zero ohms'],
+  a: 2, explanation: 'An ideal current source set to zero amperes becomes an open circuit.'
+},
+{
+  id: 1927, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Mesh analysis primarily uses:',
+  options: ['Kirchhoff’s Voltage Law', 'Kirchhoff’s Current Law only', 'Faraday’s law only', 'Coulomb’s law only'],
+  a: 0, explanation: 'Mesh analysis writes voltage equations around independent loops.'
+},
+{
+  id: 1928, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Nodal analysis primarily uses:',
+  options: ['Kirchhoff’s Voltage Law only', 'Kirchhoff’s Current Law', 'Lenz’s law', 'Ampere’s circuital law only'],
+  a: 1, explanation: 'Nodal analysis writes current equations at circuit nodes.'
+},
+{
+  id: 1929, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'A branch in an electrical network is generally a part containing:',
+  options: ['Only a node', 'One or more circuit elements carrying the same branch current', 'Only a closed loop', 'Only an ideal voltage source'],
+  a: 1, explanation: 'A branch connects nodes and carries a single branch current.'
+},
+{
+  id: 1930, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'A node is a point where:',
+  options: ['Only power is generated', 'Two or more circuit elements are connected', 'Current must always be zero', 'Voltage is always infinite'],
+  a: 1, explanation: 'A node is a junction connecting circuit elements.'
+},
+{
+  id: 1931, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'A closed path in an electrical network is called a:',
+  options: ['Node', 'Branch', 'Loop', 'Terminal'],
+  a: 2, explanation: 'A loop is a closed path in a circuit.'
+},
+{
+  id: 1932, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The time constant of an RC circuit is:',
+  options: ['R/C', 'RC', 'R + C', '1/RC'],
+  a: 1, explanation: 'The RC time constant is τ = RC seconds.'
+},
+{
+  id: 1933, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The time constant of an RL circuit is:',
+  options: ['L/R', 'R/L', 'RL', 'R + L'],
+  a: 0, explanation: 'The RL time constant is τ = L/R seconds.'
+},
+{
+  id: 1934, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'After one time constant, a charging capacitor reaches approximately what percentage of its final voltage?',
+  options: ['25%', '50%', '63.2%', '100%'],
+  a: 2, explanation: 'After one time constant, the capacitor reaches about 63.2% of its final value.'
+},
+{
+  id: 1935, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'In steady-state DC conditions, an ideal capacitor behaves as:',
+  options: ['A short circuit', 'An open circuit', 'A current source', 'A voltage amplifier'],
+  a: 1, explanation: 'Once fully charged, an ideal capacitor blocks steady DC current.'
+},
+{
+  id: 1936, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'In steady-state DC conditions, an ideal inductor behaves as:',
+  options: ['An open circuit', 'A short circuit', 'An infinite resistance', 'A capacitor'],
+  a: 1, explanation: 'An ideal inductor has zero voltage drop in steady-state DC.'
+},
+{
+  id: 1937, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The RMS value of a sinusoidal voltage with peak value Vm is:',
+  options: ['Vm', 'Vm/2', 'Vm/√2', '√2Vm'],
+  a: 2, explanation: 'For a sinusoid, RMS voltage equals peak voltage divided by √2.'
+},
+{
+  id: 1938, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The average value of a symmetrical sinusoidal waveform over one complete cycle is:',
+  options: ['Zero', 'Vm', 'Vm/√2', '2Vm'],
+  a: 0, explanation: 'Positive and negative halves cancel over a full cycle.'
+},
+{
+  id: 1939, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The unit of frequency is:',
+  options: ['Second', 'Hertz', 'Radian', 'Watt'],
+  a: 1, explanation: 'Frequency is measured in hertz (Hz), or cycles per second.'
+},
+{
+  id: 1940, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Angular frequency ω is related to frequency f by:',
+  options: ['ω = f/2π', 'ω = 2πf', 'ω = 1/f', 'ω = f²'],
+  a: 1, explanation: 'Angular frequency is ω = 2πf radians per second.'
+},
+{
+  id: 1941, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'In a series circuit, the same quantity flows through every element:',
+  options: ['Voltage', 'Current', 'Resistance', 'Power'],
+  a: 1, explanation: 'The current is the same through all elements connected in series.'
+},
+{
+  id: 1942, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'In a parallel circuit, the voltage across each branch is:',
+  options: ['The same', 'Always zero', 'Different in every case', 'Equal to total current'],
+  a: 0, explanation: 'All parallel branches share the same two nodes and therefore the same voltage.'
+},
+{
+  id: 1943, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The equivalent resistance of resistors connected in parallel is generally:',
+  options: ['Greater than the largest resistor', 'Equal to their sum', 'Less than the smallest resistor', 'Always zero'],
+  a: 2, explanation: 'Adding parallel paths decreases the equivalent resistance.'
+},
+{
+  id: 1944, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'An ideal voltage source has:',
+  options: ['Zero internal resistance', 'Infinite internal resistance', 'Infinite voltage at all times', 'No terminals'],
+  a: 0, explanation: 'An ideal voltage source has zero internal resistance.'
+},
+{
+  id: 1945, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'An ideal current source has:',
+  options: ['Zero internal resistance', 'Infinite internal resistance', 'Zero current', 'No output terminals'],
+  a: 1, explanation: 'An ideal current source has infinite internal resistance.'
+},
+{
+  id: 1946, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The unit of electrical charge is:',
+  options: ['Ampere', 'Coulomb', 'Volt', 'Ohm'],
+  a: 1, explanation: 'Electric charge is measured in coulombs (C).'
+},
+{
+  id: 1947, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'If 2 A flows through a 5 Ω resistor, the voltage across it is:',
+  options: ['2.5 V', '7 V', '10 V', '20 V'],
+  a: 2, explanation: 'Using V = IR, V = 2 × 5 = 10 V.'
+},
+{
+  id: 1948, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'A 100 W device operates for 2 hours. The energy consumed is:',
+  options: ['50 Wh', '100 Wh', '200 Wh', '500 Wh'],
+  a: 2, explanation: 'Energy = power × time = 100 W × 2 h = 200 Wh.'
+},
+{
+  id: 1949, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'The power factor of a series RL circuit is usually:',
+  options: ['Leading', 'Lagging', 'Always unity', 'Always zero'],
+  a: 1, explanation: 'An inductive circuit has current lagging behind voltage, producing a lagging power factor.'
+},
+{
+  id: 1950, branch: 'Electrical', topic: 'Electrical Circuit Analysis', semester: 'Semester 3', subject: 'Electrical Circuit Analysis',
+  q: 'Which theorem is commonly used to simplify a linear network into a single equivalent voltage source and series resistance?',
+  options: ['Norton’s theorem', 'Thevenin’s theorem', 'Superposition only', 'Maximum current theorem'],
+  a: 1, explanation: 'Thevenin’s theorem provides a voltage source in series with equivalent resistance.'
+},
+
+{
+  id: 1951, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which law explains the principle of electromagnetic induction?',
+  options: ['Ohm’s law', 'Faraday’s law', 'Kirchhoff’s law', 'Coulomb’s law'],
+  a: 1, explanation: 'Faraday’s law states that a changing magnetic flux induces an EMF.'
+},
+{
+  id: 1952, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The SI unit of magnetic flux is:',
+  options: ['Tesla', 'Weber', 'Henry', 'Ampere'],
+  a: 1, explanation: 'Magnetic flux is measured in webers (Wb).'
+},
+{
+  id: 1953, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The SI unit of magnetic flux density is:',
+  options: ['Weber', 'Tesla', 'Ohm', 'Farad'],
+  a: 1, explanation: 'Magnetic flux density is measured in teslas (T).'
+},
+{
+  id: 1954, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which component provides a path for magnetic flux in a transformer?',
+  options: ['Insulation', 'Magnetic core', 'Brushes', 'Commutator'],
+  a: 1, explanation: 'The magnetic core provides a low-reluctance path for flux.'
+},
+{
+  id: 1955, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'A transformer operates on the principle of:',
+  options: ['Electrolysis', 'Mutual induction', 'Chemical reaction', 'Photoelectric effect'],
+  a: 1, explanation: 'A transformer transfers energy through mutual electromagnetic induction.'
+},
+{
+  id: 1956, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'A transformer normally changes:',
+  options: ['Frequency', 'AC voltage level', 'Supply frequency and voltage independently', 'DC into mechanical energy'],
+  a: 1, explanation: 'A transformer changes AC voltage and current levels while maintaining frequency.'
+},
+{
+  id: 1957, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'For an ideal transformer, the turns ratio is related to voltage ratio by:',
+  options: ['V1/V2 = N2/N1', 'V1/V2 = N1/N2', 'V1V2 = N1N2', 'V1 + V2 = N1 + N2'],
+  a: 1, explanation: 'For an ideal transformer, V1/V2 = N1/N2.'
+},
+{
+  id: 1958, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'A transformer with more secondary turns than primary turns is a:',
+  options: ['Step-down transformer', 'Step-up transformer', 'Current transformer only', 'Isolation switch'],
+  a: 1, explanation: 'More secondary turns produce a higher secondary voltage in an ideal transformer.'
+},
+{
+  id: 1959, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'A transformer with fewer secondary turns than primary turns is a:',
+  options: ['Step-up transformer', 'Step-down transformer', 'Synchronous motor', 'DC generator'],
+  a: 1, explanation: 'Fewer secondary turns produce a lower secondary voltage.'
+},
+{
+  id: 1960, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which transformer loss is caused by current flowing through winding resistance?',
+  options: ['Hysteresis loss', 'Copper loss', 'Windage loss', 'Friction loss'],
+  a: 1, explanation: 'Winding resistance causes copper loss, approximately I²R.'
+},
+{
+  id: 1961, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Hysteresis loss occurs mainly in the:',
+  options: ['Transformer core', 'External switch', 'Connecting wire insulation', 'Load resistor only'],
+  a: 0, explanation: 'Repeated magnetization and demagnetization of the core causes hysteresis loss.'
+},
+{
+  id: 1962, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Eddy current loss in transformer cores can be reduced by:',
+  options: ['Using a solid thick core', 'Laminating the core', 'Removing all insulation', 'Increasing winding resistance'],
+  a: 1, explanation: 'Thin insulated laminations restrict circulating eddy currents.'
+},
+{
+  id: 1963, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Transformer efficiency is the ratio of:',
+  options: ['Input power to output power', 'Output power to input power', 'Copper loss to core loss', 'Voltage to current'],
+  a: 1, explanation: 'Efficiency equals output power divided by input power.'
+},
+{
+  id: 1964, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which test is commonly used to estimate transformer core loss?',
+  options: ['Open-circuit test', 'Short-circuit test only', 'Polarity test only', 'Continuity test only'],
+  a: 0, explanation: 'The open-circuit test estimates core loss at rated voltage and frequency.'
+},
+{
+  id: 1965, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which transformer test is commonly used to estimate equivalent series impedance and copper loss?',
+  options: ['Open-circuit test', 'Short-circuit test', 'Insulation colour test', 'No-load speed test'],
+  a: 1, explanation: 'The short-circuit test provides equivalent impedance parameters and copper loss at the test current.'
+},
+{
+  id: 1966, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'A DC generator converts:',
+  options: ['Electrical energy into chemical energy', 'Mechanical energy into electrical energy', 'Electrical energy into heat only', 'AC into DC without moving parts'],
+  a: 1, explanation: 'A DC generator converts mechanical input into electrical output.'
+},
+{
+  id: 1967, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'A DC motor converts:',
+  options: ['Mechanical energy into electrical energy', 'Electrical energy into mechanical energy', 'Heat into light', 'DC into AC only'],
+  a: 1, explanation: 'A DC motor converts electrical input into mechanical output.'
+},
+{
+  id: 1968, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The commutator in a conventional DC generator helps provide:',
+  options: ['AC at the external terminals', 'Unidirectional current at the external terminals', 'Constant frequency transformation', 'Magnetic insulation'],
+  a: 1, explanation: 'The commutator mechanically rectifies the internally induced alternating EMF.'
+},
+{
+  id: 1969, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The main function of brushes in a DC machine is to:',
+  options: ['Create the shaft', 'Transfer current between stationary and rotating parts', 'Increase winding turns', 'Eliminate the magnetic field'],
+  a: 1, explanation: 'Brushes provide electrical contact with the rotating commutator.'
+},
+{
+  id: 1970, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The generated EMF of a DC generator is proportional to:',
+  options: ['Flux per pole and speed', 'Resistance only', 'Temperature only', 'Brush width only'],
+  a: 0, explanation: 'For a given machine, generated EMF is proportional to flux per pole and rotational speed.'
+},
+{
+  id: 1971, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Back EMF in a DC motor:',
+  options: ['Opposes the applied voltage', 'Always adds to the supply voltage', 'Exists only when the motor is stopped', 'Is unrelated to rotation'],
+  a: 0, explanation: 'Back EMF opposes the applied voltage according to Lenz’s law.'
+},
+{
+  id: 1972, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Why is a starter used with many DC motors?',
+  options: ['To create unlimited current', 'To limit starting armature current', 'To remove the magnetic field', 'To increase supply frequency'],
+  a: 1, explanation: 'At startup, back EMF is nearly zero, so a starter limits excessive armature current.'
+},
+{
+  id: 1973, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The torque of a DC motor is proportional to:',
+  options: ['Flux × armature current', 'Voltage divided by frequency', 'Resistance × speed only', 'Flux divided by current'],
+  a: 0, explanation: 'For a DC motor, electromagnetic torque is proportional to ΦIa.'
+},
+{
+  id: 1974, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which DC motor is commonly known for high starting torque?',
+  options: ['DC series motor', 'DC shunt motor in all conditions', 'Separately excited generator', 'Synchronous generator'],
+  a: 0, explanation: 'A DC series motor can produce high starting torque because armature current also flows through the field winding.'
+},
+{
+  id: 1975, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which machine uses a rotating armature and field system in its common laboratory model?',
+  options: ['Every transformer', 'A DC machine', 'A fixed resistor', 'A capacitor bank'],
+  a: 1, explanation: 'A conventional DC machine has a rotating armature and a field system, commonly stationary.'
+},
+{
+  id: 1976, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'An alternator converts:',
+  options: ['AC electrical energy into DC', 'Mechanical energy into AC electrical energy', 'DC electrical energy into chemical energy', 'Heat into magnetic flux directly'],
+  a: 1, explanation: 'An alternator is an AC generator driven by mechanical power.'
+},
+{
+  id: 1977, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The frequency of an alternator is given by:',
+  options: ['f = PN/120', 'f = 120N/P', 'f = P/(120N)', 'f = PN'],
+  a: 0, explanation: 'Frequency f = PN/120, where P is pole count and N is speed in rpm.'
+},
+{
+  id: 1978, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'A 4-pole alternator rotates at 1500 rpm. Its generated frequency is:',
+  options: ['25 Hz', '50 Hz', '60 Hz', '100 Hz'],
+  a: 1, explanation: 'f = PN/120 = 4 × 1500/120 = 50 Hz.'
+},
+{
+  id: 1979, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The synchronous speed of an AC machine is:',
+  options: ['Ns = 120f/P', 'Ns = P/(120f)', 'Ns = fP', 'Ns = 120P/f'],
+  a: 0, explanation: 'Synchronous speed in rpm is Ns = 120f/P.'
+},
+{
+  id: 1980, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'A synchronous machine runs at synchronous speed when operating as a:',
+  options: ['Synchronous motor', 'Induction motor with nonzero slip', 'DC series motor', 'Universal motor only'],
+  a: 0, explanation: 'A synchronous motor runs at the speed of the rotating magnetic field in steady operation.'
+},
+{
+  id: 1981, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The rotating magnetic field in a three-phase stator is produced by:',
+  options: ['Three phase-displaced currents', 'A single DC resistor', 'A fuse only', 'A stationary permanent magnet only'],
+  a: 0, explanation: 'Balanced three-phase currents in spatially displaced windings create a rotating magnetic field.'
+},
+{
+  id: 1982, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The stator of an AC machine is the:',
+  options: ['Stationary part', 'Shaft only', 'Rotating part in every machine', 'External load'],
+  a: 0, explanation: 'The stator is the stationary part of an electrical machine.'
+},
+{
+  id: 1983, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The rotor of an electrical machine is the:',
+  options: ['Stationary frame', 'Rotating part', 'Insulating varnish', 'Protective fuse'],
+  a: 1, explanation: 'The rotor is the rotating part of the machine.'
+},
+{
+  id: 1984, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which material is commonly used for transformer cores?',
+  options: ['Soft magnetic steel', 'Wood', 'Rubber', 'Plastic'],
+  a: 0, explanation: 'Soft magnetic steel, often silicon steel, offers suitable magnetic properties and reduced core losses.'
+},
+{
+  id: 1985, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Why is transformer core material laminated?',
+  options: ['To increase eddy currents', 'To reduce eddy current losses', 'To increase winding resistance', 'To change AC into DC'],
+  a: 1, explanation: 'Laminations increase resistance to circulating eddy currents and reduce their losses.'
+},
+{
+  id: 1986, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The no-load current of a transformer is generally:',
+  options: ['Zero in every practical transformer', 'Small compared with rated current', 'Always equal to short-circuit current', 'Infinite'],
+  a: 1, explanation: 'A practical transformer draws a relatively small current to establish flux and supply core losses.'
+},
+{
+  id: 1987, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Transformer voltage regulation describes the change in secondary voltage between:',
+  options: ['No-load and load conditions', 'DC and AC supply only', 'Two different frequencies only', 'Two different core materials only'],
+  a: 0, explanation: 'Voltage regulation measures secondary voltage variation as load changes from no-load to a specified load.'
+},
+{
+  id: 1988, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'A transformer rating is commonly expressed in:',
+  options: ['kW only', 'kVA', 'kWh', 'rpm'],
+  a: 1, explanation: 'Transformer rating is expressed in kVA because its heating depends mainly on voltage and current.'
+},
+{
+  id: 1989, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'A transformer cannot operate normally on steady DC because:',
+  options: ['DC has an infinitely high frequency', 'There is no continuous changing flux to induce secondary EMF, and primary current may become excessive', 'DC always has zero voltage', 'Its core cannot carry any magnetic flux'],
+  a: 1, explanation: 'Steady DC does not provide transformer action and may cause excessive primary current due to winding resistance.'
+},
+{
+  id: 1990, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The polarity test of a transformer determines:',
+  options: ['Relative instantaneous polarities of its windings', 'Its shaft speed', 'Its bearing temperature only', 'Its core weight'],
+  a: 0, explanation: 'A polarity test identifies the relative polarity of primary and secondary terminals.'
+},
+{
+  id: 1991, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'In a DC generator, the field winding is used to:',
+  options: ['Produce the main magnetic field', 'Measure output frequency', 'Act as the external load only', 'Eliminate all copper losses'],
+  a: 0, explanation: 'Field windings establish the magnetic flux required for EMF generation.'
+},
+{
+  id: 1992, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Armature reaction in a DC machine refers to:',
+  options: ['The effect of armature flux on the main field', 'Bearing friction only', 'The chemical effect of current', 'The insulation colour'],
+  a: 0, explanation: 'Armature current produces flux that distorts or weakens the main magnetic field.'
+},
+{
+  id: 1993, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Interpoles in a DC machine are mainly used to improve:',
+  options: ['Commutation', 'Transformer turns ratio', 'Supply frequency', 'Capacitance'],
+  a: 0, explanation: 'Interpoles help counter armature reaction in the commutation zone and improve commutation.'
+},
+{
+  id: 1994, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which quantity is necessary for electromagnetic torque production in a motor?',
+  options: ['Interaction between magnetic field and current-carrying conductors', 'Insulation colour only', 'Zero magnetic flux at all times', 'Infinite resistance in every winding'],
+  a: 0, explanation: 'Torque is produced by electromagnetic forces acting on current-carrying conductors in a magnetic field.'
+},
+{
+  id: 1995, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The shaft of an electrical motor transmits:',
+  options: ['Mechanical power', 'Magnetic flux only', 'Electrical insulation only', 'Core loss only'],
+  a: 0, explanation: 'The shaft delivers mechanical power from the motor to the driven load.'
+},
+{
+  id: 1996, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which loss is associated with bearings and rotating parts of a machine?',
+  options: ['Mechanical loss', 'Hysteresis loss only', 'Dielectric loss only', 'Transformer copper loss only'],
+  a: 0, explanation: 'Friction and windage are mechanical losses.'
+},
+{
+  id: 1997, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The efficiency of an electrical machine is:',
+  options: ['Input power divided by output power', 'Useful output power divided by input power', 'Total loss divided by input power', 'Speed divided by torque'],
+  a: 1, explanation: 'Efficiency is useful output power divided by input power, often expressed as a percentage.'
+},
+{
+  id: 1998, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which device is commonly used to measure the rotational speed of a machine?',
+  options: ['Tachometer', 'Voltmeter', 'Watt-hour meter', 'Megger only'],
+  a: 0, explanation: 'A tachometer measures rotational speed.'
+},
+{
+  id: 1999, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'The main purpose of insulation in electrical machine windings is to:',
+  options: ['Prevent unwanted electrical contact between conductors and parts', 'Increase leakage current', 'Remove all magnetic flux', 'Increase shaft friction'],
+  a: 0, explanation: 'Insulation separates conductors electrically and helps prevent short circuits.'
+},
+{
+  id: 2000, branch: 'Electrical', topic: 'Electrical Machines-I', semester: 'Semester 3', subject: 'Electrical Machines-I',
+  q: 'Which machine can operate as both a motor and a generator?',
+  options: ['Electrical machine designed for reversible energy conversion', 'Fuse', 'Fixed resistor only', 'Circuit breaker only'],
+  a: 0, explanation: 'Many electrical machines can convert energy in either direction, depending on design and operating conditions.'
+},
+
+{
+  id: 2001, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'What is the SI unit of electric charge?',
+  options: ['Ampere', 'Coulomb', 'Volt', 'Ohm'],
+  a: 1, explanation: 'Electric charge is measured in coulombs (C).'
+},
+{
+  id: 2002, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Coulomb’s law describes the force between:',
+  options: ['Two electric charges', 'Two resistors', 'Two capacitors only', 'Two batteries'],
+  a: 0, explanation: 'Coulomb’s law describes the electrostatic force between point charges.'
+},
+{
+  id: 2003, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The SI unit of electric field intensity is:',
+  options: ['C/m', 'N/C', 'Wb/m²', 'A/m'],
+  a: 1, explanation: 'Electric field intensity is measured in newtons per coulomb (N/C), equivalent to V/m.'
+},
+{
+  id: 2004, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The electric field due to a positive point charge is directed:',
+  options: ['Towards the charge', 'Away from the charge', 'Along a circular path only', 'Always vertically downward'],
+  a: 1, explanation: 'Electric field direction is defined as the force direction on a positive test charge.'
+},
+{
+  id: 2005, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'According to Coulomb’s law, the force between two point charges varies inversely with:',
+  options: ['Distance', 'Square of the distance', 'Cube of the charge', 'The sum of the charges'],
+  a: 1, explanation: 'The electrostatic force is proportional to 1/r².'
+},
+{
+  id: 2006, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Like electric charges:',
+  options: ['Attract each other', 'Repel each other', 'Always cancel each other', 'Have no electric field'],
+  a: 1, explanation: 'Like charges repel, while unlike charges attract.'
+},
+{
+  id: 2007, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The permittivity of free space is represented by:',
+  options: ['μ₀', 'ε₀', 'σ', 'ρ'],
+  a: 1, explanation: 'ε₀ represents the permittivity of free space.'
+},
+{
+  id: 2008, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Electric field lines never cross because:',
+  options: ['Electric charges cannot move', 'The electric field has a unique direction at a point', 'All fields are uniform', 'Field lines are always circular'],
+  a: 1, explanation: 'Crossing lines would imply two different electric field directions at the same point.'
+},
+{
+  id: 2009, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The electric field inside a conductor under electrostatic equilibrium is:',
+  options: ['Infinite', 'Zero', 'Always 1 V/m', 'Equal to the magnetic field'],
+  a: 1, explanation: 'Free charges redistribute until the internal electrostatic field is zero.'
+},
+{
+  id: 2010, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Electric potential is measured in:',
+  options: ['Tesla', 'Volt', 'Henry', 'Weber'],
+  a: 1, explanation: 'Electric potential is measured in volts (V).'
+},
+{
+  id: 2011, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Electric potential difference is defined as work done per unit:',
+  options: ['Current', 'Charge', 'Resistance', 'Time'],
+  a: 1, explanation: 'Potential difference equals work done per unit charge.'
+},
+{
+  id: 2012, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The electric field is related to electric potential V by:',
+  options: ['E = ∇V', 'E = -∇V', 'E = V²', 'E = V/R'],
+  a: 1, explanation: 'The electric field is the negative spatial gradient of electric potential.'
+},
+{
+  id: 2013, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'An equipotential surface has:',
+  options: ['Constant electric potential', 'Constant electric current', 'Infinite resistance everywhere', 'No electric charges anywhere'],
+  a: 0, explanation: 'Electric potential is the same at every point on an equipotential surface.'
+},
+{
+  id: 2014, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The electric field is perpendicular to an equipotential surface in:',
+  options: ['Electrostatic conditions', 'Every fluid flow', 'Every mechanical system', 'All thermal systems'],
+  a: 0, explanation: 'In electrostatics, the electric field has no tangential component along an equipotential surface.'
+},
+{
+  id: 2015, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Gauss’s law relates the total electric flux through a closed surface to:',
+  options: ['The enclosed charge', 'The surface temperature', 'The wire resistance only', 'The magnetic permeability only'],
+  a: 0, explanation: 'Net electric flux through a closed surface equals enclosed charge divided by ε₀ in free space.'
+},
+{
+  id: 2016, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The differential form of Gauss’s law for the electric field in free space is:',
+  options: ['∇ × E = ρ/ε₀', '∇ · E = ρ/ε₀', '∇ · E = 0 in all cases', '∇ × E = μ₀J'],
+  a: 1, explanation: 'The divergence of E equals volume charge density divided by ε₀.'
+},
+{
+  id: 2017, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The electric flux density D in a linear isotropic medium is:',
+  options: ['D = εE', 'D = μH', 'D = E/μ', 'D = ρJ'],
+  a: 0, explanation: 'Electric flux density is D = εE for a linear isotropic medium.'
+},
+{
+  id: 2018, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The SI unit of electric flux density D is:',
+  options: ['C/m²', 'A/m', 'Wb', 'Ω/m'],
+  a: 0, explanation: 'Electric flux density is measured in coulombs per square metre.'
+},
+{
+  id: 2019, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Capacitance is defined as:',
+  options: ['Charge stored per unit potential difference', 'Voltage multiplied by resistance', 'Current per unit time', 'Magnetic flux per unit current'],
+  a: 0, explanation: 'Capacitance is C = Q/V.'
+},
+{
+  id: 2020, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The SI unit of capacitance is:',
+  options: ['Henry', 'Farad', 'Tesla', 'Siemens'],
+  a: 1, explanation: 'Capacitance is measured in farads (F).'
+},
+{
+  id: 2021, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'For a parallel-plate capacitor, neglecting fringing, capacitance is proportional to:',
+  options: ['Plate separation', 'Plate area', 'The square of the current', 'The resistance of the plates only'],
+  a: 1, explanation: 'Capacitance C = εA/d, so it increases with plate area.'
+},
+{
+  id: 2022, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'For a parallel-plate capacitor, capacitance decreases when:',
+  options: ['Plate area increases', 'Permittivity increases', 'Plate separation increases', 'A dielectric is inserted'],
+  a: 2, explanation: 'Capacitance is inversely proportional to the separation between the plates.'
+},
+{
+  id: 2023, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'A dielectric inserted between capacitor plates generally:',
+  options: ['Increases capacitance', 'Makes capacitance zero', 'Removes all electric charge', 'Makes the plates magnetic'],
+  a: 0, explanation: 'A dielectric increases capacitance by increasing the effective permittivity.'
+},
+{
+  id: 2024, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The relative permittivity of a material is:',
+  options: ['ε/ε₀', 'μ/μ₀ only', 'ε₀/ε', 'ρ/ε₀'],
+  a: 0, explanation: 'Relative permittivity is the ratio of material permittivity to free-space permittivity.'
+},
+{
+  id: 2025, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The electric potential inside a conductor in electrostatic equilibrium is:',
+  options: ['Constant throughout the conductor', 'Always zero relative to every reference', 'Infinite', 'Different at every point'],
+  a: 0, explanation: 'With zero internal electrostatic field, the potential is constant throughout the conductor.'
+},
+{
+  id: 2026, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The SI unit of magnetic flux is:',
+  options: ['Tesla', 'Weber', 'Ampere per metre', 'Coulomb'],
+  a: 1, explanation: 'Magnetic flux is measured in webers (Wb).'
+},
+{
+  id: 2027, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The SI unit of magnetic flux density B is:',
+  options: ['Tesla', 'Henry', 'Farad', 'Volt'],
+  a: 0, explanation: 'Magnetic flux density is measured in teslas (T).'
+},
+{
+  id: 2028, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The magnetic field intensity H is measured in:',
+  options: ['A/m', 'Wb/m²', 'C/m²', 'V/s'],
+  a: 0, explanation: 'Magnetic field intensity is measured in amperes per metre.'
+},
+{
+  id: 2029, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'In a linear isotropic magnetic medium, magnetic flux density is:',
+  options: ['B = μH', 'B = εE', 'B = H/ε', 'B = ρJ'],
+  a: 0, explanation: 'Magnetic flux density and field intensity are related by B = μH.'
+},
+{
+  id: 2030, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Which law is used to calculate the magnetic field produced by a current element?',
+  options: ['Biot–Savart law', 'Ohm’s law', 'Coulomb’s law only', 'Kirchhoff’s Voltage Law'],
+  a: 0, explanation: 'The Biot–Savart law determines magnetic field contributions from current elements.'
+},
+{
+  id: 2031, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Ampere’s circuital law relates the circulation of magnetic field intensity to:',
+  options: ['Enclosed current', 'Enclosed voltage only', 'Resistance only', 'Electric potential only'],
+  a: 0, explanation: 'In magnetostatics, the closed line integral of H equals the enclosed current.'
+},
+{
+  id: 2032, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The magnetic field around a long straight current-carrying conductor forms:',
+  options: ['Concentric circles', 'Straight radial lines only', 'Parallel electric plates', 'A single point'],
+  a: 0, explanation: 'The magnetic field lines form concentric circles around the conductor.'
+},
+{
+  id: 2033, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The direction of the magnetic field around a straight current-carrying wire can be found using:',
+  options: ['Right-hand grip rule', 'Left-hand rule for voltage only', 'Kirchhoff’s law', 'Thevenin’s theorem'],
+  a: 0, explanation: 'Point the right thumb in the current direction; curled fingers show the magnetic field direction.'
+},
+{
+  id: 2034, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The magnetic force on a moving charge is zero when its velocity is:',
+  options: ['Perpendicular to the magnetic field', 'Parallel or antiparallel to the magnetic field', 'At 90° to the field in all cases', 'Always nonzero'],
+  a: 1, explanation: 'Magnetic force magnitude is qvB sin θ, which is zero when θ is 0° or 180°.'
+},
+{
+  id: 2035, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The magnetic force on a current-carrying conductor is greatest when the conductor is:',
+  options: ['Parallel to the magnetic field', 'Perpendicular to the magnetic field', 'Outside the magnetic field', 'At zero current'],
+  a: 1, explanation: 'Force magnitude is BIL sin θ and is maximum when θ = 90°.'
+},
+{
+  id: 2036, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Faraday’s law states that an induced EMF is related to the rate of change of:',
+  options: ['Magnetic flux linkage', 'Resistance only', 'Mass density', 'Temperature only'],
+  a: 0, explanation: 'The induced EMF magnitude equals the rate of change of magnetic flux linkage.'
+},
+{
+  id: 2037, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Lenz’s law determines the direction of induced current so that it:',
+  options: ['Reinforces every change in flux', 'Opposes the change causing it', 'Always flows clockwise', 'Is independent of flux change'],
+  a: 1, explanation: 'Lenz’s law expresses opposition to the change in magnetic flux that produces the induced EMF.'
+},
+{
+  id: 2038, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The SI unit of inductance is:',
+  options: ['Farad', 'Henry', 'Weber per second squared', 'Tesla'],
+  a: 1, explanation: 'Inductance is measured in henries (H).'
+},
+{
+  id: 2039, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Self-inductance is the property by which a circuit opposes changes in:',
+  options: ['Its own current', 'Its physical colour', 'Its mass', 'Its resistance in every case'],
+  a: 0, explanation: 'Changing current changes the circuit’s own flux linkage and induces a counter EMF.'
+},
+{
+  id: 2040, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Mutual inductance exists between two coils when:',
+  options: ['Flux produced by one coil links the other coil', 'Both coils have zero turns', 'The coils have no magnetic coupling', 'Both coils are always disconnected from all fields'],
+  a: 0, explanation: 'Mutual inductance describes magnetic coupling between two circuits.'
+},
+{
+  id: 2041, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The magnetic field inside an ideal long solenoid is approximately:',
+  options: ['Uniform and parallel to its axis', 'Zero everywhere', 'Radially outward everywhere', 'Independent of current'],
+  a: 0, explanation: 'An ideal long solenoid produces a nearly uniform axial field inside.'
+},
+{
+  id: 2042, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Magnetic field lines:',
+  options: ['Begin and end at isolated magnetic poles in ordinary classical electromagnetism', 'Form continuous closed loops', 'Always intersect each other', 'Exist only in conductors'],
+  a: 1, explanation: 'Magnetic field lines form continuous closed loops; isolated magnetic monopoles have not been observed.'
+},
+{
+  id: 2043, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The permeability of free space is represented by:',
+  options: ['ε₀', 'μ₀', 'σ', 'ρ'],
+  a: 1, explanation: 'μ₀ represents the permeability of free space.'
+},
+{
+  id: 2044, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The divergence of magnetic flux density B is:',
+  options: ['Always equal to charge density', 'Zero', 'Always equal to current density', 'Infinite'],
+  a: 1, explanation: 'Gauss’s law for magnetism states ∇ · B = 0.'
+},
+{
+  id: 2045, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Maxwell’s equations unify:',
+  options: ['Electricity and magnetism', 'Only mechanics and thermodynamics', 'Only chemical reactions', 'Only heat transfer'],
+  a: 0, explanation: 'Maxwell’s equations describe the relationship between electric and magnetic fields.'
+},
+{
+  id: 2046, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The displacement current term was introduced by:',
+  options: ['James Clerk Maxwell', 'Georg Ohm', 'Charles Coulomb', 'Nikolaus Otto'],
+  a: 0, explanation: 'Maxwell introduced displacement current to complete the Ampere–Maxwell law.'
+},
+{
+  id: 2047, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Electromagnetic waves in free space travel at approximately:',
+  options: ['3 × 10⁴ m/s', '3 × 10⁶ m/s', '3 × 10⁸ m/s', '3 × 10¹² m/s'],
+  a: 2, explanation: 'The speed of electromagnetic waves in vacuum is approximately 3 × 10⁸ m/s.'
+},
+{
+  id: 2048, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'In a uniform plane electromagnetic wave in free space, electric and magnetic fields are:',
+  options: ['Parallel to each other', 'Perpendicular to each other and to the direction of propagation', 'Both parallel to the propagation direction', 'Always zero'],
+  a: 1, explanation: 'A plane electromagnetic wave is transverse: E, H, and propagation direction are mutually perpendicular.'
+},
+{
+  id: 2049, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'The intrinsic impedance of free space is approximately:',
+  options: ['50 Ω', '120π Ω', '1 Ω', '377 kΩ'],
+  a: 1, explanation: 'Free-space intrinsic impedance is about 120π Ω, or approximately 377 Ω.'
+},
+{
+  id: 2050, branch: 'Electrical', topic: 'Electromagnetic Field Theory', semester: 'Semester 3', subject: 'Electromagnetic Field Theory',
+  q: 'Which Maxwell equation describes the fact that a time-varying magnetic field produces a circulating electric field?',
+  options: ['Gauss’s law for electricity', 'Faraday’s law', 'Gauss’s law for magnetism', 'Ohm’s law'],
+  a: 1, explanation: 'Faraday’s law relates the curl of electric field to the negative time rate of change of magnetic flux density.'
+},
+
+{
+  id: 2051, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'Which semiconductor material is commonly used to manufacture diodes and transistors?',
+  options: ['Copper', 'Silicon', 'Aluminium', 'Iron'],
+  a: 1, explanation: 'Silicon is widely used because of its suitable semiconductor properties.'
+},
+{
+  id: 2052, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A pure semiconductor without intentionally added impurities is called:',
+  options: ['Extrinsic semiconductor', 'Intrinsic semiconductor', 'Superconductor', 'Insulator only'],
+  a: 1, explanation: 'An intrinsic semiconductor is a pure semiconductor.'
+},
+{
+  id: 2053, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'Adding suitable impurities to a semiconductor is called:',
+  options: ['Rectification', 'Doping', 'Modulation', 'Amplification'],
+  a: 1, explanation: 'Doping increases and controls the charge carrier concentration.'
+},
+{
+  id: 2054, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A semiconductor doped with donor impurities becomes:',
+  options: ['P-type', 'N-type', 'Intrinsic only', 'A perfect insulator'],
+  a: 1, explanation: 'Donor impurities provide extra electrons, producing N-type material.'
+},
+{
+  id: 2055, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'In a P-type semiconductor, the majority charge carriers are:',
+  options: ['Electrons', 'Holes', 'Neutrons', 'Photons'],
+  a: 1, explanation: 'Acceptor doping makes holes the majority carriers in P-type material.'
+},
+{
+  id: 2056, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A PN junction diode ideally allows current primarily in:',
+  options: ['Both directions equally', 'The forward direction', 'Neither direction', 'Only when disconnected'],
+  a: 1, explanation: 'A diode conducts readily when forward biased and blocks current when reverse biased, apart from leakage.'
+},
+{
+  id: 2057, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'The approximate forward voltage drop of a conducting silicon diode is:',
+  options: ['0.1 V', '0.7 V', '5 V', '12 V'],
+  a: 1, explanation: 'A silicon diode commonly has a forward drop around 0.7 V at typical operating currents.'
+},
+{
+  id: 2058, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'When a PN junction diode is forward biased, its depletion region generally:',
+  options: ['Widens significantly', 'Narrows', 'Becomes infinitely wide', 'Always remains unchanged'],
+  a: 1, explanation: 'Forward bias reduces the junction barrier and narrows the depletion region.'
+},
+{
+  id: 2059, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'Which diode is designed to operate in reverse breakdown for voltage regulation?',
+  options: ['LED', 'Zener diode', 'Photodiode only', 'Tunnel diode only'],
+  a: 1, explanation: 'A Zener diode is commonly used in reverse breakdown to maintain a nearly constant voltage.'
+},
+{
+  id: 2060, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'LED stands for:',
+  options: ['Low Energy Device', 'Light Emitting Diode', 'Linear Electrical Detector', 'Light Energy Distributor'],
+  a: 1, explanation: 'An LED emits light when forward current flows through it.'
+},
+{
+  id: 2061, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A photodiode is primarily used to detect:',
+  options: ['Light', 'Sound pressure only', 'Mechanical torque only', 'Magnetic poles only'],
+  a: 0, explanation: 'Incident light generates charge carriers that produce a measurable photocurrent.'
+},
+{
+  id: 2062, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A rectifier converts:',
+  options: ['DC into mechanical energy', 'AC into unidirectional output', 'Heat into resistance', 'Light into sound'],
+  a: 1, explanation: 'Rectification converts alternating input into a unidirectional output waveform.'
+},
+{
+  id: 2063, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'How many diodes are normally used in a basic half-wave rectifier?',
+  options: ['One', 'Two', 'Four', 'Six'],
+  a: 0, explanation: 'A basic half-wave rectifier uses one diode to pass one half-cycle.'
+},
+{
+  id: 2064, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A standard bridge rectifier uses how many diodes?',
+  options: ['One', 'Two', 'Four', 'Eight'],
+  a: 2, explanation: 'A bridge rectifier normally uses four diodes arranged in a bridge.'
+},
+{
+  id: 2065, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'The ripple frequency of a full-wave rectifier supplied by an AC source of frequency f is:',
+  options: ['f/2', 'f', '2f', '4f²'],
+  a: 2, explanation: 'A full-wave rectifier produces two output pulses per input AC cycle.'
+},
+{
+  id: 2066, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'Which component is commonly connected after a rectifier to smooth its output?',
+  options: ['Filter capacitor', 'Fuse only', 'Switch only', 'Transformer core only'],
+  a: 0, explanation: 'A filter capacitor reduces output voltage ripple by storing and releasing charge.'
+},
+{
+  id: 2067, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A clipper circuit is used to:',
+  options: ['Limit portions of a waveform', 'Store large amounts of mechanical energy', 'Increase transformer frequency', 'Measure resistance directly'],
+  a: 0, explanation: 'A clipper removes or limits parts of a signal beyond a selected level.'
+},
+{
+  id: 2068, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A clamper circuit primarily:',
+  options: ['Shifts the DC level of a waveform', 'Converts all AC into mechanical power', 'Measures current without a circuit', 'Eliminates the signal frequency'],
+  a: 0, explanation: 'A clamper shifts a waveform upward or downward by adding a DC level.'
+},
+{
+  id: 2069, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A bipolar junction transistor has how many semiconductor regions?',
+  options: ['One', 'Two', 'Three', 'Four'],
+  a: 2, explanation: 'A BJT has emitter, base, and collector regions.'
+},
+{
+  id: 2070, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'The three terminals of a BJT are:',
+  options: ['Gate, drain, source', 'Anode, cathode, gate', 'Emitter, base, collector', 'Input, output, ground'],
+  a: 2, explanation: 'A bipolar junction transistor uses emitter, base, and collector terminals.'
+},
+{
+  id: 2071, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'Which BJT region is usually thin and lightly doped?',
+  options: ['Emitter', 'Base', 'Collector casing', 'Heat sink'],
+  a: 1, explanation: 'A thin, lightly doped base helps most injected carriers cross into the collector.'
+},
+{
+  id: 2072, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'The current relation in a BJT is:',
+  options: ['IE = IC + IB', 'IB = IE + IC', 'IC = IE + IB', 'IE = IC − IB'],
+  a: 0, explanation: 'Emitter current equals the sum of collector current and base current.'
+},
+{
+  id: 2073, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'The common-emitter current gain beta is defined as:',
+  options: ['IC/IB', 'IB/IC', 'IE/IC', 'VCE/IC'],
+  a: 0, explanation: 'The common-emitter current gain β is the ratio of collector current to base current under specified conditions.'
+},
+{
+  id: 2074, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'Which BJT configuration is commonly used for voltage amplification?',
+  options: ['Common emitter', 'Common collector only for voltage gain above one', 'Common base with no input', 'Open collector without bias'],
+  a: 0, explanation: 'The common-emitter configuration can provide substantial voltage and current gain.'
+},
+{
+  id: 2075, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A common-collector amplifier is also known as a:',
+  options: ['Emitter follower', 'Collector oscillator', 'Bridge rectifier', 'Zener regulator'],
+  a: 0, explanation: 'The common-collector circuit is called an emitter follower and provides voltage gain near one.'
+},
+{
+  id: 2076, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'In the active region of a typical silicon NPN transistor, the base-emitter junction is:',
+  options: ['Forward biased', 'Reverse biased', 'Always open', 'Shorted externally'],
+  a: 0, explanation: 'In normal active operation, the base-emitter junction is forward biased and the base-collector junction is reverse biased.'
+},
+{
+  id: 2077, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A transistor used as an electronic switch is normally operated between:',
+  options: ['Cutoff and saturation', 'Only the active region', 'Only thermal breakdown', 'Only reverse breakdown'],
+  a: 0, explanation: 'Cutoff represents the OFF state and saturation commonly represents the ON state.'
+},
+{
+  id: 2078, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'In transistor cutoff, collector current is ideally:',
+  options: ['Zero', 'Infinite', 'Equal to base current multiplied by 1000', 'Always maximum'],
+  a: 0, explanation: 'In ideal cutoff, the transistor is off and collector current is zero.'
+},
+{
+  id: 2079, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A field-effect transistor is primarily controlled by:',
+  options: ['An electric field at its control terminal', 'A large base current in every case', 'Mechanical pressure only', 'Light in all operating modes'],
+  a: 0, explanation: 'A FET controls channel current using the electric field created by its control terminal.'
+},
+{
+  id: 2080, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'The three terminals of a MOSFET are commonly called:',
+  options: ['Emitter, base, collector', 'Gate, drain, source', 'Anode, cathode, grid', 'Phase, neutral, earth'],
+  a: 1, explanation: 'A MOSFET has gate, drain, and source terminals, and commonly also a body terminal.'
+},
+{
+  id: 2081, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A major advantage of a MOSFET gate is its:',
+  options: ['High input resistance', 'Very high steady gate current', 'Need for a mechanical contact', 'Inability to switch'],
+  a: 0, explanation: 'The insulated gate draws very little steady-state input current.'
+},
+{
+  id: 2082, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'Which device is widely used for voltage amplification and buffering?',
+  options: ['Operational amplifier', 'Fuse', 'Circuit breaker', 'Incandescent lamp only'],
+  a: 0, explanation: 'Operational amplifiers are versatile building blocks for analog signal processing.'
+},
+{
+  id: 2083, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'An ideal operational amplifier has what input resistance?',
+  options: ['Zero', 'Infinite', 'Exactly 1 Ω', 'Negative one ohm'],
+  a: 1, explanation: 'An ideal op-amp draws no input current, corresponding to infinite input resistance.'
+},
+{
+  id: 2084, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'An ideal operational amplifier has what output resistance?',
+  options: ['Infinite', 'Zero', 'Exactly 100 kΩ', 'Equal to input resistance'],
+  a: 1, explanation: 'An ideal op-amp has zero output resistance.'
+},
+{
+  id: 2085, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'The open-loop voltage gain of an ideal operational amplifier is:',
+  options: ['Zero', 'One', 'Infinite', 'Always negative one'],
+  a: 2, explanation: 'An ideal operational amplifier has infinite open-loop gain.'
+},
+{
+  id: 2086, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'An inverting op-amp circuit produces an output that is:',
+  options: ['In phase with the input', '180° out of phase with the input', 'Always zero', 'Always a DC signal'],
+  a: 1, explanation: 'The inverting configuration reverses the signal polarity.'
+},
+{
+  id: 2087, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'The voltage gain magnitude of an ideal inverting op-amp is:',
+  options: ['Rf/Rin', 'Rin/Rf', 'Rf + Rin', 'Zero for every input'],
+  a: 0, explanation: 'The gain is −Rf/Rin, so its magnitude is Rf/Rin.'
+},
+{
+  id: 2088, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A non-inverting op-amp amplifier has a voltage gain of:',
+  options: ['1 + Rf/Rg', '−Rf/Rg only', 'Rg/Rf − 1', 'Always zero'],
+  a: 0, explanation: 'For the standard non-inverting configuration, gain is 1 + Rf/Rg.'
+},
+{
+  id: 2089, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A voltage follower has a voltage gain approximately equal to:',
+  options: ['Zero', 'One', 'Ten thousand', 'Negative infinity'],
+  a: 1, explanation: 'A voltage follower provides approximately unity voltage gain and high input impedance.'
+},
+{
+  id: 2090, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'An op-amp comparator is used to:',
+  options: ['Compare two input voltages', 'Store magnetic flux permanently', 'Convert all AC to mechanical motion', 'Measure shaft torque directly'],
+  a: 0, explanation: 'A comparator output indicates which of its two input voltages is higher.'
+},
+{
+  id: 2091, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'Negative feedback in an amplifier generally:',
+  options: ['Improves gain stability and reduces distortion', 'Makes gain infinitely large', 'Always causes oscillation', 'Eliminates the need for a power supply'],
+  a: 0, explanation: 'Negative feedback typically stabilizes gain, improves linearity, and can increase bandwidth.'
+},
+{
+  id: 2092, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'An oscillator circuit produces:',
+  options: ['A periodic signal without requiring a periodic input signal', 'Only a constant resistance', 'Only a mechanical force', 'A signal only when a transformer is disconnected'],
+  a: 0, explanation: 'An oscillator uses an active circuit and feedback to sustain a periodic waveform from DC power.'
+},
+{
+  id: 2093, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'For sustained sinusoidal oscillation, the Barkhausen criterion requires the loop gain magnitude to be approximately:',
+  options: ['Zero', 'One', 'Ten', 'Infinite'],
+  a: 1, explanation: 'The loop gain magnitude should be unity with total loop phase shift equal to an integer multiple of 360°.'
+},
+{
+  id: 2094, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'Which circuit is commonly used to generate a square wave using an op-amp?',
+  options: ['Comparator-based relaxation oscillator', 'Half-wave transformer only', 'Fixed resistor alone', 'Passive wire alone'],
+  a: 0, explanation: 'An op-amp relaxation oscillator can switch between output levels to generate a square wave.'
+},
+{
+  id: 2095, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A low-pass filter passes:',
+  options: ['Low frequencies and attenuates sufficiently high frequencies', 'Only infinite frequencies', 'No frequencies at all', 'Only DC-blocking signals'],
+  a: 0, explanation: 'A low-pass filter passes frequencies below its cutoff region.'
+},
+{
+  id: 2096, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'A high-pass filter passes:',
+  options: ['Low frequencies only', 'Frequencies above its cutoff region', 'No AC signals', 'Only signals of zero frequency'],
+  a: 1, explanation: 'A high-pass filter attenuates low frequencies and passes sufficiently high frequencies.'
+},
+{
+  id: 2097, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'The cutoff frequency of a simple RC low-pass filter is:',
+  options: ['1/(2πRC)', '2πRC', 'R/C', 'RC/2π'],
+  a: 0, explanation: 'For a first-order RC filter, fc = 1/(2πRC).'
+},
+{
+  id: 2098, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'An amplifier’s bandwidth is the range of frequencies over which it:',
+  options: ['Operates within specified gain limits', 'Has infinite output voltage', 'Consumes no power under any condition', 'Always has zero gain'],
+  a: 0, explanation: 'Bandwidth is the frequency range over which amplifier performance meets specified criteria.'
+},
+{
+  id: 2099, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'The common-emitter amplifier output is normally:',
+  options: ['In phase with its input', 'Inverted relative to its input', 'Always exactly zero', 'Independent of input variations'],
+  a: 1, explanation: 'A common-emitter amplifier generally introduces a 180° phase reversal in its voltage output.'
+},
+{
+  id: 2100, branch: 'Electrical', topic: 'Analog Electronics', semester: 'Semester 3', subject: 'Analog Electronics',
+  q: 'Which component is commonly used to stabilize the operating point of a transistor amplifier?',
+  options: ['Biasing network', 'A bare wire replacing every resistor', 'A fuse alone', 'An unconnected capacitor only'],
+  a: 0, explanation: 'A suitable biasing network establishes a stable transistor operating point.'
+},
+
+{
+  id: 2101, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which machine converts electrical energy into mechanical energy?',
+  options: ['Transformer', 'Electric motor', 'Rectifier', 'Alternator'],
+  a: 1,
+  explanation: 'An electric motor converts electrical energy into mechanical energy.'
+},
+{
+  id: 2102, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which motor operates on the principle of electromagnetic induction?',
+  options: ['Induction motor', 'Synchronous generator', 'Transformer only', 'DC generator'],
+  a: 0,
+  explanation: 'An induction motor develops torque through electromagnetic induction.'
+},
+{
+  id: 2103, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the synchronous speed formula?',
+  options: ['Ns = 120f/P', 'Ns = 60P/f', 'Ns = fP/120', 'Ns = 120P/f'],
+  a: 0,
+  explanation: 'Synchronous speed is Ns = 120f/P rpm, where f is frequency and P is the number of poles.'
+},
+{
+  id: 2104, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the unit of slip in an induction motor?',
+  options: ['Watt', 'Ohm', 'Dimensionless ratio', 'Henry'],
+  a: 2,
+  explanation: 'Slip is a ratio of speed difference to synchronous speed, so it has no unit.'
+},
+{
+  id: 2105, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the slip of an induction motor at synchronous speed?',
+  options: ['1', '0', '0.5', '100'],
+  a: 1,
+  explanation: 'At synchronous speed, rotor speed equals synchronous speed, so slip is zero.'
+},
+{
+  id: 2106, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which rotor is commonly used in a squirrel-cage induction motor?',
+  options: ['Wound rotor with slip rings', 'Cage rotor with conducting bars', 'Salient-pole rotor only', 'Permanent-magnet rotor only'],
+  a: 1,
+  explanation: 'A squirrel-cage rotor contains conducting bars short-circuited by end rings.'
+},
+{
+  id: 2107, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Why can a three-phase induction motor start by itself?',
+  options: ['It produces a rotating magnetic field', 'It has no rotor', 'It uses a commutator', 'It needs a hand-operated starter'],
+  a: 0,
+  explanation: 'Three-phase stator currents create a rotating magnetic field that produces starting torque.'
+},
+{
+  id: 2108, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which device is commonly used to start a large induction motor?',
+  options: ['Fuse wire only', 'Star-delta starter', 'Voltmeter', 'Energy meter'],
+  a: 1,
+  explanation: 'A star-delta starter reduces starting current for suitable motors.'
+},
+{
+  id: 2109, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the main function of a starter?',
+  options: ['Measure frequency', 'Limit excessive starting current', 'Increase supply frequency', 'Measure power factor only'],
+  a: 1,
+  explanation: 'A starter helps limit high starting current and may provide protection.'
+},
+{
+  id: 2110, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which losses occur in an induction motor?',
+  options: ['Copper and core losses', 'Only chemical losses', 'Only frictionless losses', 'Only solar losses'],
+  a: 0,
+  explanation: 'Induction motors have copper losses, core losses, and mechanical losses.'
+},
+{
+  id: 2111, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which part of an induction motor remains stationary?',
+  options: ['Rotor', 'Shaft', 'Stator', 'Bearings only'],
+  a: 2,
+  explanation: 'The stator is the stationary part of an electric motor.'
+},
+{
+  id: 2112, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the usual rotor speed of a motoring induction motor?',
+  options: ['Greater than synchronous speed', 'Equal to synchronous speed', 'Slightly below synchronous speed', 'Always zero'],
+  a: 2,
+  explanation: 'In normal motoring operation, the rotor runs slightly below synchronous speed.'
+},
+{
+  id: 2113, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which instrument measures rotational speed?',
+  options: ['Tachometer', 'Ammeter', 'Wattmeter', 'Megger'],
+  a: 0,
+  explanation: 'A tachometer measures rotational speed, commonly in rpm.'
+},
+{
+  id: 2114, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the rotor frequency when an induction motor is at standstill?',
+  options: ['Zero', 'Equal to supply frequency', 'Twice supply frequency in every case', 'Half the supply frequency in every case'],
+  a: 1,
+  explanation: 'At standstill, slip is 1, so rotor frequency equals supply frequency.'
+},
+{
+  id: 2115, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'The rotor frequency of an induction motor is given by:',
+  options: ['f2 = f1/s', 'f2 = sf1', 'f2 = f1 + s', 'f2 = f1/s²'],
+  a: 1,
+  explanation: 'Rotor frequency f2 equals slip multiplied by supply frequency f1.'
+},
+{
+  id: 2116, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which motor is widely used in industrial pumps and fans?',
+  options: ['Three-phase induction motor', 'Stepper motor only', 'Universal motor only', 'Clock motor only'],
+  a: 0,
+  explanation: 'Three-phase induction motors are rugged and commonly used for industrial drives.'
+},
+{
+  id: 2117, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the purpose of slip rings in a wound-rotor induction motor?',
+  options: ['Connect external resistance to the rotor circuit', 'Cool the stator only', 'Measure shaft length', 'Change the number of stator slots'],
+  a: 0,
+  explanation: 'Slip rings allow external resistance to be connected to the rotor circuit.'
+},
+{
+  id: 2118, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Adding external resistance to a wound-rotor motor can improve:',
+  options: ['Starting torque', 'Supply frequency', 'Number of poles automatically', 'Core material conductivity'],
+  a: 0,
+  explanation: 'Appropriate external rotor resistance can improve starting torque and limit starting current.'
+},
+{
+  id: 2119, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which machine converts mechanical energy into AC electrical energy?',
+  options: ['Alternator', 'Induction heater', 'Rectifier', 'Electric motor'],
+  a: 0,
+  explanation: 'An alternator generates alternating electrical energy from mechanical input.'
+},
+{
+  id: 2120, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'An alternator works on which law?',
+  options: ['Ohm’s law only', 'Faraday’s law of electromagnetic induction', 'Kirchhoff’s current law only', 'Coulomb’s law only'],
+  a: 1,
+  explanation: 'Faraday’s law states that changing magnetic flux induces an electromotive force.'
+},
+{
+  id: 2121, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which part of an alternator usually carries the armature winding?',
+  options: ['Stator', 'Shaft only', 'Bearing', 'Frame only'],
+  a: 0,
+  explanation: 'In most modern alternators, the armature winding is placed on the stator.'
+},
+{
+  id: 2122, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'The rotor field winding of a synchronous generator is generally supplied with:',
+  options: ['DC excitation', 'Only AC at household frequency', 'No current under any condition', 'Mechanical power directly'],
+  a: 0,
+  explanation: 'DC excitation creates the rotor magnetic field in a conventional synchronous generator.'
+},
+{
+  id: 2123, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which device supplies excitation current to many synchronous machines?',
+  options: ['Exciter', 'Thermometer', 'Fuse holder only', 'Energy meter'],
+  a: 0,
+  explanation: 'An exciter supplies the field current required for the machine’s magnetic field.'
+},
+{
+  id: 2124, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the power factor of a purely resistive load?',
+  options: ['Zero', '0.5 lagging', 'Unity', 'Always leading'],
+  a: 2,
+  explanation: 'For a purely resistive load, voltage and current are in phase, giving unity power factor.'
+},
+{
+  id: 2125, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What does voltage regulation of an alternator describe?',
+  options: ['Change in terminal voltage from no-load to load at specified conditions', 'Change in shaft colour', 'Rotor weight only', 'Change in room temperature only'],
+  a: 0,
+  explanation: 'Voltage regulation indicates the change in terminal voltage between no-load and load conditions.'
+},
+{
+  id: 2126, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which machine operates at synchronous speed during steady-state operation?',
+  options: ['Synchronous motor', 'Ordinary induction motor', 'Universal motor', 'Single-phase series motor'],
+  a: 0,
+  explanation: 'A synchronous motor runs at synchronous speed under normal steady-state operation.'
+},
+{
+  id: 2127, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'A synchronous motor is generally:',
+  options: ['Not inherently self-starting', 'Always self-starting without any method', 'Unable to produce torque', 'A DC-only machine'],
+  a: 0,
+  explanation: 'A conventional synchronous motor usually requires a starting method to reach near synchronous speed.'
+},
+{
+  id: 2128, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which component helps a synchronous motor start in many designs?',
+  options: ['Damper winding', 'Fuse indicator', 'Terminal label', 'Cooling fan alone'],
+  a: 0,
+  explanation: 'Damper windings can provide induction-motor starting torque in suitable synchronous motors.'
+},
+{
+  id: 2129, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'A synchronous motor can be used to improve:',
+  options: ['Power factor', 'Wire length automatically', 'Supply voltage frequency without a converter', 'Insulation colour'],
+  a: 0,
+  explanation: 'With suitable excitation, a synchronous motor can supply reactive power and improve power factor.'
+},
+{
+  id: 2130, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What happens when the field excitation of a synchronous motor is increased above the unity-power-factor condition at a given load?',
+  options: ['It may operate at leading power factor', 'It must stop instantly', 'Its poles disappear', 'It becomes a transformer'],
+  a: 0,
+  explanation: 'An over-excited synchronous motor can draw leading current and supply reactive power.'
+},
+{
+  id: 2131, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which motor is often used where constant speed is required?',
+  options: ['Synchronous motor', 'Uncontrolled hand drill only', 'Simple heater', 'Transformer'],
+  a: 0,
+  explanation: 'A synchronous motor maintains synchronous speed when operating within its stable limits.'
+},
+{
+  id: 2132, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the main function of a transformer in an electrical system?',
+  options: ['Change AC voltage level', 'Convert AC directly to DC without electronics', 'Store mechanical energy', 'Measure rotational speed'],
+  a: 0,
+  explanation: 'A transformer changes AC voltage and current levels through electromagnetic induction.'
+},
+{
+  id: 2133, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'A transformer operates on:',
+  options: ['Mutual induction', 'Electrolysis', 'Chemical combustion', 'Centrifugal force'],
+  a: 0,
+  explanation: 'A transformer transfers energy between windings by mutual electromagnetic induction.'
+},
+{
+  id: 2134, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which transformer winding is connected to the supply?',
+  options: ['Primary winding', 'Secondary winding in every case', 'Tertiary winding only', 'Core winding'],
+  a: 0,
+  explanation: 'The primary winding receives the input supply; the secondary supplies the output.'
+},
+{
+  id: 2135, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'For an ideal transformer, the voltage ratio is equal to the:',
+  options: ['Turns ratio', 'Square of the turns ratio', 'Resistance ratio in every load', 'Frequency ratio in every case'],
+  a: 0,
+  explanation: 'For an ideal transformer, V1/V2 = N1/N2.'
+},
+{
+  id: 2136, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which transformer is used to increase voltage?',
+  options: ['Step-up transformer', 'Step-down transformer', 'Isolation switch', 'Current relay'],
+  a: 0,
+  explanation: 'A step-up transformer has a higher secondary voltage than primary voltage.'
+},
+{
+  id: 2137, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which transformer is used to reduce voltage?',
+  options: ['Step-up transformer', 'Step-down transformer', 'Alternator', 'Induction motor'],
+  a: 1,
+  explanation: 'A step-down transformer provides a lower secondary voltage.'
+},
+{
+  id: 2138, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which losses are present in a transformer core?',
+  options: ['Hysteresis and eddy-current losses', 'Only bearing friction', 'Only windage losses', 'Only brush losses'],
+  a: 0,
+  explanation: 'Alternating magnetic flux in the core produces hysteresis and eddy-current losses.'
+},
+{
+  id: 2139, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Why is transformer core steel laminated?',
+  options: ['To reduce eddy-current losses', 'To increase friction', 'To eliminate all copper losses', 'To increase winding resistance'],
+  a: 0,
+  explanation: 'Thin insulated laminations interrupt circulating current paths and reduce eddy-current losses.'
+},
+{
+  id: 2140, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which transformer test is commonly used to estimate core loss?',
+  options: ['Open-circuit test', 'Short-circuit test only', 'Polarity test only', 'Continuity test only'],
+  a: 0,
+  explanation: 'In the open-circuit test, the input power at rated voltage mainly represents core loss.'
+},
+{
+  id: 2141, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which transformer test is commonly used to estimate equivalent series impedance and copper loss?',
+  options: ['Open-circuit test only', 'Short-circuit test', 'Insulation colour test', 'Speed test'],
+  a: 1,
+  explanation: 'The short-circuit test uses low applied voltage, and measured power approximates copper loss.'
+},
+{
+  id: 2142, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the frequency of transformer secondary voltage under normal operation?',
+  options: ['Same as primary frequency', 'Always double the primary frequency', 'Always zero', 'Determined only by winding turns'],
+  a: 0,
+  explanation: 'A transformer changes voltage level but does not change the supply frequency.'
+},
+{
+  id: 2143, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is the purpose of transformer oil in many oil-filled transformers?',
+  options: ['Insulation and cooling', 'Increasing supply frequency', 'Generating shaft rotation', 'Replacing the core'],
+  a: 0,
+  explanation: 'Transformer oil provides electrical insulation and helps transfer heat away from internal parts.'
+},
+{
+  id: 2144, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What does transformer efficiency compare?',
+  options: ['Output power to input power', 'Input voltage to frequency only', 'Core weight to winding length', 'Speed to slip'],
+  a: 0,
+  explanation: 'Efficiency is the ratio of useful output power to input power, usually expressed as a percentage.'
+},
+{
+  id: 2145, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'At what condition is transformer efficiency generally maximum?',
+  options: ['Copper loss equals iron loss', 'Copper loss is always zero', 'Iron loss is infinitely high', 'Output power is zero'],
+  a: 0,
+  explanation: 'For the usual efficiency model, maximum efficiency occurs when variable copper loss equals nearly constant iron loss.'
+},
+{
+  id: 2146, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'What is an autotransformer?',
+  options: ['A transformer with a portion of winding common to input and output', 'A motor with no stator', 'A transformer that works only on DC', 'A generator without a magnetic field'],
+  a: 0,
+  explanation: 'An autotransformer uses a shared winding section for primary and secondary circuits.'
+},
+{
+  id: 2147, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which transformer is commonly used to measure high AC current safely?',
+  options: ['Current transformer (CT)', 'Step-up power transformer only', 'Synchronous motor', 'Induction heater'],
+  a: 0,
+  explanation: 'A current transformer reduces a large current to a standard measurable secondary current.'
+},
+{
+  id: 2148, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which transformer is commonly used to measure high AC voltage?',
+  options: ['Potential transformer (PT)', 'Current transformer only', 'Squirrel-cage rotor', 'DC motor'],
+  a: 0,
+  explanation: 'A potential transformer reduces high voltage to a lower value suitable for measurement and protection.'
+},
+{
+  id: 2149, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Why should the secondary of a current transformer not be left open while primary current flows?',
+  options: ['A dangerously high secondary voltage may develop', 'The supply frequency becomes zero', 'The primary current always disappears', 'The core becomes non-magnetic instantly'],
+  a: 0,
+  explanation: 'An open CT secondary can develop dangerously high voltage and create a safety hazard.'
+},
+{
+  id: 2150, branch: 'Electrical', topic: 'Electrical Machines-II', semester: 'Semester 4', subject: 'Electrical Machines-II',
+  q: 'Which factor is important when selecting an electrical machine for an application?',
+  options: ['Required power, speed, duty, and efficiency', 'Paint colour only', 'Machine name length only', 'The colour of the control panel only'],
+  a: 0,
+  explanation: 'Machine selection depends on load requirements, speed, duty cycle, efficiency, and operating conditions.'
+},
+
+{
+  id: 2151, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the main purpose of an electrical power system?',
+  options: ['Generate, transmit and distribute electricity', 'Store only mechanical energy', 'Measure temperature', 'Produce chemical fuel'],
+  a: 0, explanation: 'A power system supplies electrical energy from generating stations to consumers.'
+},
+{
+  id: 2152, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which station commonly generates electricity using steam turbines?',
+  options: ['Thermal power station', 'Battery charging station', 'Substation only', 'Distribution pole'],
+  a: 0, explanation: 'Thermal stations use heat to produce steam that drives a turbine.'
+},
+{
+  id: 2153, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which energy source is used by a hydroelectric power station?',
+  options: ['Flowing or falling water', 'Petrol only', 'Coal dust only', 'Compressed air only'],
+  a: 0, explanation: 'Hydroelectric plants convert water energy into electrical energy.'
+},
+{
+  id: 2154, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Why is electricity transmitted at high voltage?',
+  options: ['To reduce current and transmission losses for a given power', 'To increase conductor resistance', 'To eliminate all insulation', 'To increase frequency'],
+  a: 0, explanation: 'Higher voltage means lower current for the same power and power factor, reducing I²R losses.'
+},
+{
+  id: 2155, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which device changes voltage levels in a power network?',
+  options: ['Transformer', 'Fuse wire only', 'Ammeter', 'Capacitor microphone'],
+  a: 0, explanation: 'Transformers step voltage up or down in AC power networks.'
+},
+{
+  id: 2156, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the function of a substation?',
+  options: ['Switching, transformation and protection of power circuits', 'Manufacturing electricity from nothing', 'Measuring rainfall only', 'Storing coal'],
+  a: 0, explanation: 'Substations control, transform, switch and protect electrical power circuits.'
+},
+{
+  id: 2157, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which component protects a circuit against excessive current?',
+  options: ['Fuse', 'Voltmeter', 'Insulator alone', 'Energy meter'],
+  a: 0, explanation: 'A fuse melts and interrupts a circuit when current exceeds its designed limit.'
+},
+{
+  id: 2158, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What does a circuit breaker do?',
+  options: ['Interrupts current under specified fault or switching conditions', 'Increases conductor length', 'Generates fuel', 'Measures room humidity'],
+  a: 0, explanation: 'Circuit breakers open circuits to isolate faults or perform switching.'
+},
+{
+  id: 2159, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the main purpose of an electrical relay?',
+  options: ['Detect abnormal conditions and initiate protection', 'Generate mechanical power', 'Increase wire thickness automatically', 'Store electrical energy indefinitely'],
+  a: 0, explanation: 'A protective relay detects faults and signals the circuit breaker to trip.'
+},
+{
+  id: 2160, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which fault involves all three phases short-circuiting together?',
+  options: ['Three-phase fault', 'Single line-to-ground fault', 'Open-circuit fault only', 'Earth leakage without a phase fault'],
+  a: 0, explanation: 'A three-phase fault involves all three phase conductors.'
+},
+{
+  id: 2161, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which fault is commonly encountered in overhead power lines?',
+  options: ['Single line-to-ground fault', 'Only three-phase balanced fault', 'Mechanical bearing fault', 'Transformer oil colour fault'],
+  a: 0, explanation: 'Single line-to-ground faults are common in overhead distribution and transmission systems.'
+},
+{
+  id: 2162, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the function of an insulator on an overhead line?',
+  options: ['Support conductors while electrically isolating them from supports', 'Increase leakage current', 'Generate voltage', 'Measure power factor'],
+  a: 0, explanation: 'Insulators provide mechanical support and electrical isolation.'
+},
+{
+  id: 2163, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which material is commonly used for overhead line conductors?',
+  options: ['Aluminium', 'Wood', 'Rubber', 'Glass'],
+  a: 0, explanation: 'Aluminium and aluminium-based conductors are widely used for overhead lines.'
+},
+{
+  id: 2164, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is corona discharge on a transmission line?',
+  options: ['Ionisation of air near a conductor due to a strong electric field', 'Normal rotation of a turbine', 'A type of transformer oil', 'A mechanical brake'],
+  a: 0, explanation: 'Corona occurs when the electric field near a conductor ionises surrounding air.'
+},
+{
+  id: 2165, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which factor can reduce corona on transmission lines?',
+  options: ['Increasing conductor diameter', 'Increasing surface roughness', 'Reducing conductor spacing to zero', 'Removing insulation from equipment'],
+  a: 0, explanation: 'A larger conductor diameter reduces surface electric-field intensity for a given voltage.'
+},
+{
+  id: 2166, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What does a load curve show?',
+  options: ['Variation of electrical load with time', 'Variation of rainfall with altitude', 'Transformer winding colour', 'Cable length only'],
+  a: 0, explanation: 'A load curve plots demand or load against time.'
+},
+{
+  id: 2167, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'How is load factor defined?',
+  options: ['Average load divided by maximum load', 'Maximum load divided by average voltage', 'Power divided by frequency', 'Current divided by resistance'],
+  a: 0, explanation: 'Load factor = average load / maximum load over the specified period.'
+},
+{
+  id: 2168, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What does diversity factor compare?',
+  options: ['Sum of individual maximum demands with coincident maximum demand', 'Voltage with frequency', 'Resistance with temperature only', 'Energy with conductor length'],
+  a: 0, explanation: 'Diversity factor is the sum of individual maximum demands divided by coincident maximum demand.'
+},
+{
+  id: 2169, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the purpose of a spinning reserve?',
+  options: ['Provide quickly available generation capacity for changing demand or outages', 'Increase line resistance', 'Store water in conductors', 'Reduce the number of meters'],
+  a: 0, explanation: 'Spinning reserve is available generation capacity that can respond to system needs.'
+},
+{
+  id: 2170, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which source is renewable?',
+  options: ['Solar energy', 'Coal', 'Diesel fuel', 'Natural gas'],
+  a: 0, explanation: 'Solar energy is replenished naturally and is considered renewable.'
+},
+{
+  id: 2171, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which device converts sunlight directly into electricity?',
+  options: ['Photovoltaic cell', 'Steam turbine', 'Circuit breaker', 'Transformer core'],
+  a: 0, explanation: 'Photovoltaic cells convert light into electrical energy.'
+},
+{
+  id: 2172, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which machine converts wind energy into electrical energy in a wind turbine system?',
+  options: ['Electrical generator', 'Fuse', 'Insulator', 'Voltmeter'],
+  a: 0, explanation: 'The turbine drives a generator that converts mechanical power into electricity.'
+},
+{
+  id: 2173, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is a major environmental concern associated with coal-fired generation?',
+  options: ['Air pollution and greenhouse-gas emissions', 'No waste products', 'Zero fuel consumption', 'Automatic elimination of carbon dioxide'],
+  a: 0, explanation: 'Coal combustion releases carbon dioxide and other pollutants.'
+},
+{
+  id: 2174, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which plant uses nuclear fission to generate heat?',
+  options: ['Nuclear power plant', 'Solar photovoltaic plant', 'Wind farm', 'Battery bank only'],
+  a: 0, explanation: 'Nuclear fission releases heat that can be used to generate steam and drive a turbine.'
+},
+{
+  id: 2175, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the purpose of an earthing system?',
+  options: ['Provide a low-impedance fault-current path and help limit dangerous touch voltages', 'Increase shock risk', 'Increase frequency', 'Eliminate the need for protection'],
+  a: 0, explanation: 'Proper earthing supports fault protection and reduces electrical safety hazards.'
+},
+{
+  id: 2176, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the purpose of a lightning arrester?',
+  options: ['Limit transient overvoltages by diverting surge current', 'Increase normal line current indefinitely', 'Measure energy consumption', 'Change AC to DC continuously'],
+  a: 0, explanation: 'A lightning arrester protects equipment from lightning and other surge overvoltages.'
+},
+{
+  id: 2177, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which device measures electrical energy consumed by a customer?',
+  options: ['Energy meter', 'Tachometer', 'Megger only', 'Frequency counter only'],
+  a: 0, explanation: 'An energy meter records consumption, usually in kilowatt-hours.'
+},
+{
+  id: 2178, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What does a current transformer do?',
+  options: ['Produces a reduced current proportional to a larger primary current', 'Raises frequency', 'Stores mechanical energy', 'Measures temperature directly'],
+  a: 0, explanation: 'A current transformer supplies a scaled current for metering and protection.'
+},
+{
+  id: 2179, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What does a potential transformer provide?',
+  options: ['A reduced voltage proportional to the system voltage', 'A higher rotor speed', 'A mechanical output shaft', 'An increase in line frequency'],
+  a: 0, explanation: 'A potential transformer scales down voltage for metering and protection.'
+},
+{
+  id: 2180, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the purpose of busbars in a substation?',
+  options: ['Collect and distribute electrical power among circuits', 'Generate steam', 'Measure conductor temperature only', 'Replace every circuit breaker'],
+  a: 0, explanation: 'Busbars provide common electrical connection points for multiple circuits.'
+},
+{
+  id: 2181, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which component provides visible isolation for maintenance when properly operated?',
+  options: ['Isolator or disconnector', 'Energy meter', 'Current transformer alone', 'Capacitor bank only'],
+  a: 0, explanation: 'A disconnector provides isolation and is generally operated when current interruption is not required.'
+},
+{
+  id: 2182, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the main purpose of a protective fuse in a domestic circuit?',
+  options: ['Interrupt dangerous overcurrent', 'Increase appliance power', 'Maintain constant frequency', 'Improve lighting colour'],
+  a: 0, explanation: 'A fuse opens the circuit when current exceeds its rating for long enough.'
+},
+{
+  id: 2183, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which quantity is measured in kilowatt-hours?',
+  options: ['Electrical energy', 'Resistance', 'Frequency', 'Power factor'],
+  a: 0, explanation: 'A kilowatt-hour is a unit of energy.'
+},
+{
+  id: 2184, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What does power factor represent in an AC circuit?',
+  options: ['Ratio of real power to apparent power', 'Ratio of resistance to frequency', 'Voltage multiplied by time', 'Energy divided by distance'],
+  a: 0, explanation: 'Power factor is real power divided by apparent power.'
+},
+{
+  id: 2185, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which equipment is often used to improve lagging power factor?',
+  options: ['Capacitor bank', 'Fuse only', 'Insulator only', 'Ammeter only'],
+  a: 0, explanation: 'Capacitor banks provide reactive power compensation for inductive loads.'
+},
+{
+  id: 2186, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is voltage drop in a feeder?',
+  options: ['Decrease in voltage along the feeder due to its impedance and load current', 'Increase in frequency along the feeder', 'Loss of all magnetic flux', 'Change in conductor colour'],
+  a: 0, explanation: 'Current flowing through feeder impedance produces a voltage drop.'
+},
+{
+  id: 2187, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which distribution system has a single path from source to loads?',
+  options: ['Radial distribution system', 'Ring main system', 'Interconnected mesh only', 'Double-bus system'],
+  a: 0, explanation: 'A radial system supplies each load through a single main path.'
+},
+{
+  id: 2188, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is one advantage of a ring-main distribution system?',
+  options: ['Alternative supply path may improve reliability', 'It never needs protection', 'It uses no conductors', 'It produces electricity without a source'],
+  a: 0, explanation: 'A ring-main arrangement can provide an alternate path if one section is isolated.'
+},
+{
+  id: 2189, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What does a feeder primarily do in a distribution system?',
+  options: ['Carry power from a substation toward distribution areas', 'Measure shaft speed', 'Store steam', 'Generate sunlight'],
+  a: 0, explanation: 'Feeders carry bulk power from substations to distribution points.'
+},
+{
+  id: 2190, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the role of a distributor in a distribution network?',
+  options: ['Supply consumers through multiple tapping points', 'Generate power through nuclear fission', 'Convert mechanical energy to fuel', 'Provide turbine lubrication only'],
+  a: 0, explanation: 'Consumers are tapped from distributors at different locations.'
+},
+{
+  id: 2191, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What does system frequency indicate?',
+  options: ['Number of AC cycles per second', 'Voltage per metre', 'Energy per kilogram', 'Resistance per second'],
+  a: 0, explanation: 'Frequency is measured in hertz and indicates cycles per second.'
+},
+{
+  id: 2192, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'In a synchronous generator, what mainly determines frequency at a given pole count?',
+  options: ['Rotor speed', 'Conductor colour', 'Transformer oil level only', 'Load name'],
+  a: 0, explanation: 'Generated frequency depends on rotor speed and the number of poles.'
+},
+{
+  id: 2193, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is a major function of a load dispatch centre?',
+  options: ['Coordinate generation and power-system operation', 'Manufacture household wires', 'Measure rainwater pH only', 'Replace all transformers'],
+  a: 0, explanation: 'Load dispatch centres coordinate generation, scheduling and grid operation.'
+},
+{
+  id: 2194, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Why must interconnected AC systems maintain synchronism?',
+  options: ['To operate safely and transfer power as intended', 'To make conductor resistance infinite', 'To eliminate all current', 'To stop generators rotating'],
+  a: 0, explanation: 'Synchronous operation is necessary for stable interconnection of AC systems.'
+},
+{
+  id: 2195, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which device can provide backup power during a mains outage?',
+  options: ['Battery-based inverter system', 'Isolator alone', 'Insulator alone', 'Energy meter alone'],
+  a: 0, explanation: 'A suitable inverter and battery can supply selected loads when mains power fails.'
+},
+{
+  id: 2196, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is a blackout?',
+  options: ['A widespread loss of electrical supply', 'A small voltage measurement error only', 'Normal operation at full supply', 'An increase in lighting brightness'],
+  a: 0, explanation: 'A blackout is a loss of electricity supply over an area.'
+},
+{
+  id: 2197, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which action helps reduce technical losses in a distribution network?',
+  options: ['Appropriate conductor sizing and network design', 'Using undersized conductors everywhere', 'Increasing unnecessary current', 'Removing all protection devices'],
+  a: 0, explanation: 'Proper conductor sizing and system design can reduce resistive and other technical losses.'
+},
+{
+  id: 2198, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What does N-1 security generally mean in power-system planning?',
+  options: ['The system can withstand the loss of one specified component', 'Only one consumer can be connected', 'One generator must always be off', 'The system has no protection'],
+  a: 0, explanation: 'N-1 security assesses whether the system can remain acceptable after one component outage.'
+},
+{
+  id: 2199, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'Which device helps detect insulation resistance problems?',
+  options: ['Insulation resistance tester (megohmmeter)', 'Tachometer', 'Watt-hour meter only', 'Thermometer only'],
+  a: 0, explanation: 'A megohmmeter measures high insulation resistance.'
+},
+{
+  id: 2200, branch: 'Electrical', topic: 'Power Systems-I', semester: 'Semester 4', subject: 'Power Systems-I',
+  q: 'What is the main aim of power-system protection?',
+  options: ['Detect faults and isolate affected equipment quickly', 'Ensure every fault continues indefinitely', 'Increase damage to generators', 'Eliminate maintenance'],
+  a: 0, explanation: 'Protection limits equipment damage and helps maintain system safety and reliability.'
+},
+
+{
+  id: 2201, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is a signal?',
+  options: ['A quantity that conveys information', 'A type of resistor only', 'A mechanical fastener', 'A power station'],
+  a: 0, explanation: 'A signal represents information as a function of one or more independent variables.'
+},
+{
+  id: 2202, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which is an example of a continuous-time signal?',
+  options: ['x(t) defined over continuous time', 'A list defined only at integer indices', 'A printed table only', 'A binary file name'],
+  a: 0, explanation: 'A continuous-time signal is defined for every time value in its domain.'
+},
+{
+  id: 2203, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which notation commonly represents a discrete-time signal?',
+  options: ['x[n]', 'x(t) only', 'X metres', 'V per second only'],
+  a: 0, explanation: 'The index n commonly denotes discrete-time samples.'
+},
+{
+  id: 2204, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the fundamental period of sin(ωt), for nonzero ω?',
+  options: ['2π/|ω|', 'ω/2π', 'π|ω|', '1/ω²'],
+  a: 0, explanation: 'The sine wave repeats after 2π/|ω| seconds.'
+},
+{
+  id: 2205, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which signal has a constant value for all time?',
+  options: ['Constant signal', 'Impulse signal', 'Ramp signal', 'Decaying exponential only'],
+  a: 0, explanation: 'A constant signal does not change with time.'
+},
+{
+  id: 2206, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the unit-step signal u(t) for t greater than zero?',
+  options: ['1', '0', 't²', 'Negative infinity'],
+  a: 0, explanation: 'The unit step is conventionally one for t greater than zero and zero for t less than zero.'
+},
+{
+  id: 2207, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the value of the unit impulse outside its impulse instant in the ideal continuous-time model?',
+  options: ['Zero', 'One at all times', 'Always infinite', 'Equal to time'],
+  a: 0, explanation: 'The ideal impulse is zero away from its impulse instant and has unit area.'
+},
+{
+  id: 2208, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which signal increases linearly with time?',
+  options: ['Ramp signal', 'Unit impulse', 'Constant signal', 'Pure sinusoid only'],
+  a: 0, explanation: 'A ramp signal is proportional to time over its active region.'
+},
+{
+  id: 2209, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'A signal satisfying x(t) = x(-t) is called:',
+  options: ['Even', 'Odd', 'Random only', 'Non-causal by definition'],
+  a: 0, explanation: 'An even signal is symmetric about the vertical axis.'
+},
+{
+  id: 2210, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'A signal satisfying x(-t) = -x(t) is called:',
+  options: ['Odd', 'Even', 'Constant only', 'Periodic by definition'],
+  a: 0, explanation: 'An odd signal has origin symmetry.'
+},
+{
+  id: 2211, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which operation delays a signal by T seconds?',
+  options: ['x(t - T), for T greater than zero', 'x(t + T)', 'x(-t) only', 'T times x(t) only'],
+  a: 0, explanation: 'Replacing t with t - T delays the signal by T.'
+},
+{
+  id: 2212, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which operation advances a signal by T seconds?',
+  options: ['x(t + T), for T greater than zero', 'x(t - T)', 'x(t) + T only', 'x(Tt) only'],
+  a: 0, explanation: 'Replacing t with t + T advances the signal by T.'
+},
+{
+  id: 2213, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What does time reversal produce?',
+  options: ['x(-t)', 'x(t - 1)', '2x(t)', 'x(t) + 1'],
+  a: 0, explanation: 'Time reversal reflects the signal about t = 0.'
+},
+{
+  id: 2214, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which signal is periodic?',
+  options: ['A signal that repeats after a fixed positive period', 'Every signal that changes once', 'Only an impulse', 'Only a random signal'],
+  a: 0, explanation: 'A periodic signal repeats after a fixed positive interval.'
+},
+{
+  id: 2215, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which is an aperiodic signal?',
+  options: ['A single nonrepeating pulse', 'A steady sine wave', 'A repeating square wave', 'A repeating clock signal'],
+  a: 0, explanation: 'An aperiodic signal has no positive period over which it repeats exactly.'
+},
+{
+  id: 2216, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the energy of a finite-energy continuous-time signal?',
+  options: ['Integral of |x(t)|² over all time', 'Maximum value only', 'Frequency multiplied by time', 'The signal value at t = 0 only'],
+  a: 0, explanation: 'Signal energy is defined as the integral of squared magnitude over time.'
+},
+{
+  id: 2217, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What does average power of a periodic signal measure?',
+  options: ['Time-average squared magnitude over one period', 'Only its maximum amplitude', 'Its phase angle only', 'Its duration only'],
+  a: 0, explanation: 'Average power is the mean of squared magnitude over a period for a periodic signal.'
+},
+{
+  id: 2218, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is a system?',
+  options: ['A process that maps an input signal to an output signal', 'A signal amplitude only', 'A wire colour code', 'A frequency unit'],
+  a: 0, explanation: 'A system transforms an input into an output according to its rule.'
+},
+{
+  id: 2219, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'A system is linear if it satisfies:',
+  options: ['Additivity and homogeneity', 'Only time shifting', 'Only periodicity', 'Only positive output'],
+  a: 0, explanation: 'Linearity requires superposition: additivity and scaling.'
+},
+{
+  id: 2220, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is a time-invariant system?',
+  options: ['Its response shifts in the same way when the input is shifted', 'Its output is always constant', 'It cannot accept signals', 'Its output must be periodic'],
+  a: 0, explanation: 'A time shift at the input produces the corresponding time shift at the output.'
+},
+{
+  id: 2221, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'A causal system depends on:',
+  options: ['Present and past inputs only', 'Future inputs only', 'Future outputs only', 'No input at all'],
+  a: 0, explanation: 'A causal system does not depend on future input values.'
+},
+{
+  id: 2222, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is a stable system in the BIBO sense?',
+  options: ['Every bounded input produces a bounded output', 'Every input produces infinite output', 'Output is always zero', 'The system has no memory'],
+  a: 0, explanation: 'BIBO stability means bounded-input bounded-output stability.'
+},
+{
+  id: 2223, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'A memoryless system has an output that depends on:',
+  options: ['The input at the same instant only', 'All future input values', 'Only the input from ten seconds ago', 'Only the initial condition'],
+  a: 0, explanation: 'A memoryless system uses the current input value to determine the current output.'
+},
+{
+  id: 2224, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the impulse response of an LTI system?',
+  options: ['Its output when the input is a unit impulse', 'Its output for every possible input simultaneously', 'Its supply voltage', 'Its physical length'],
+  a: 0, explanation: 'The impulse response characterises a linear time-invariant system.'
+},
+{
+  id: 2225, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which operation is fundamental to the input-output relation of an LTI system?',
+  options: ['Convolution', 'Division by zero', 'Random guessing', 'Only time reversal'],
+  a: 0, explanation: 'An LTI system output is the convolution of input and impulse response.'
+},
+{
+  id: 2226, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the Fourier transform used to analyse?',
+  options: ['Frequency content of a signal', 'Wire tensile strength only', 'Physical temperature only', 'Insulation thickness only'],
+  a: 0, explanation: 'The Fourier transform represents signal content in the frequency domain.'
+},
+{
+  id: 2227, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which transform is commonly used for continuous-time signals and systems?',
+  options: ['Laplace transform', 'Only the decimal logarithm', 'Only matrix transposition', 'Only geometric projection'],
+  a: 0, explanation: 'The Laplace transform is useful for analysing continuous-time systems and differential equations.'
+},
+{
+  id: 2228, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which transform is commonly used for discrete-time sequences?',
+  options: ['Z-transform', 'Laplace transform only', 'Mechanical transform', 'Thermal transform'],
+  a: 0, explanation: 'The Z-transform is a standard tool for discrete-time signal and system analysis.'
+},
+{
+  id: 2229, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the angular frequency ω related to frequency f by?',
+  options: ['ω = 2πf', 'ω = f/2π', 'ω = f²', 'ω = 1 + f'],
+  a: 0, explanation: 'Angular frequency in radians per second equals 2π times frequency in hertz.'
+},
+{
+  id: 2230, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the Nyquist sampling criterion for a band-limited signal with maximum frequency fm?',
+  options: ['Sampling frequency at least 2fm', 'Sampling frequency always below fm', 'Sampling frequency equal to zero', 'Sampling frequency unrelated to fm'],
+  a: 0, explanation: 'Ideal reconstruction requires a sampling rate at least twice the highest signal frequency.'
+},
+{
+  id: 2231, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is aliasing?',
+  options: ['Overlap of frequency representations caused by insufficient sampling', 'Perfect signal reconstruction in every case', 'Removal of all noise automatically', 'An increase in conductor resistance'],
+  a: 0, explanation: 'Insufficient sampling can make different frequencies appear indistinguishable.'
+},
+{
+  id: 2232, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the purpose of an anti-aliasing filter?',
+  options: ['Limit high-frequency content before sampling', 'Increase sampling errors', 'Generate random noise', 'Convert all signals to DC'],
+  a: 0, explanation: 'A low-pass anti-aliasing filter limits frequencies before sampling.'
+},
+{
+  id: 2233, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which filter passes low frequencies and attenuates sufficiently high frequencies?',
+  options: ['Low-pass filter', 'High-pass filter', 'Band-stop filter only', 'Ideal differentiator only'],
+  a: 0, explanation: 'A low-pass filter allows low-frequency components to pass.'
+},
+{
+  id: 2234, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which filter passes frequencies above its cutoff region?',
+  options: ['High-pass filter', 'Low-pass filter', 'DC blocker with no passband', 'All-stop filter'],
+  a: 0, explanation: 'A high-pass filter attenuates low frequencies and passes higher frequencies.'
+},
+{
+  id: 2235, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which filter passes a selected band of frequencies?',
+  options: ['Band-pass filter', 'Low-pass filter only', 'High-pass filter only', 'Notch filter only'],
+  a: 0, explanation: 'A band-pass filter passes frequencies within a specified band.'
+},
+{
+  id: 2236, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which filter rejects a narrow range of frequencies?',
+  options: ['Notch filter', 'Low-pass filter only', 'High-pass filter only', 'All-pass filter'],
+  a: 0, explanation: 'A notch filter strongly attenuates a narrow frequency band.'
+},
+{
+  id: 2237, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the unit of frequency?',
+  options: ['Hertz', 'Ohm', 'Henry', 'Coulomb'],
+  a: 0, explanation: 'Frequency is measured in hertz, or cycles per second.'
+},
+{
+  id: 2238, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the phase of a sinusoidal signal?',
+  options: ['Its angular position relative to a reference', 'Its resistance only', 'Its energy unit', 'Its sampling interval only'],
+  a: 0, explanation: 'Phase specifies the angular offset of a sinusoid relative to a reference.'
+},
+{
+  id: 2239, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Two sinusoids of the same frequency are in phase when their phase difference is:',
+  options: ['0° modulo 360°', '90°', '180°', '270°'],
+  a: 0, explanation: 'Signals in phase have phase difference equal to an integer multiple of 360°.'
+},
+{
+  id: 2240, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which operation changes signal amplitude by a constant factor?',
+  options: ['Amplitude scaling', 'Time reversal only', 'Time shifting only', 'Sampling only'],
+  a: 0, explanation: 'Multiplying a signal by a constant scales its amplitude.'
+},
+{
+  id: 2241, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What does differentiation of a signal describe?',
+  options: ['Its rate of change', 'Its total duration only', 'Its average colour', 'Its resistance only'],
+  a: 0, explanation: 'Differentiation gives the instantaneous rate of change with respect to time.'
+},
+{
+  id: 2242, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What does integration of a signal commonly represent?',
+  options: ['Accumulation or area under the signal', 'Only its highest frequency', 'Only its phase angle', 'Only its sampling rate'],
+  a: 0, explanation: 'Integration accumulates signal values over an interval.'
+},
+{
+  id: 2243, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is white noise ideally characterised by?',
+  options: ['Flat power spectral density over the considered frequency range', 'Only one frequency component', 'Always zero amplitude', 'A perfectly repeating waveform'],
+  a: 0, explanation: 'Ideal white noise has constant power spectral density across frequency.'
+},
+{
+  id: 2244, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the signal-to-noise ratio (SNR)?',
+  options: ['Ratio of signal power to noise power', 'Ratio of frequency to time', 'Sum of voltage and resistance', 'Ratio of phase to amplitude only'],
+  a: 0, explanation: 'SNR compares desired signal power with noise power.'
+},
+{
+  id: 2245, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which is a deterministic signal?',
+  options: ['A signal completely specified by a known rule', 'A signal whose values are entirely unpredictable', 'Only thermal noise', 'Every signal with no equation'],
+  a: 0, explanation: 'A deterministic signal can be described or predicted by a specified rule.'
+},
+{
+  id: 2246, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which is a random signal?',
+  options: ['A signal described using probabilistic properties', 'A fixed constant in every case', 'A perfectly known repeating waveform only', 'A circuit diagram'],
+  a: 0, explanation: 'Random signals are characterised using probability and statistical properties.'
+},
+{
+  id: 2247, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is a discrete-time system?',
+  options: ['A system that processes discrete-time sequences', 'A system that uses only continuous mechanical motion', 'A system with no input', 'A power station only'],
+  a: 0, explanation: 'Discrete-time systems operate on sequences indexed by integers.'
+},
+{
+  id: 2248, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'Which representation is often used for a discrete-time system?',
+  options: ['Difference equation', 'Differential equation only', 'Building blueprint only', 'Mechanical drawing only'],
+  a: 0, explanation: 'Difference equations describe relationships among discrete-time input and output samples.'
+},
+{
+  id: 2249, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the region of convergence associated with?',
+  options: ['A Laplace or Z-transform', 'A resistor colour code only', 'A mechanical gear ratio only', 'A conductor material name'],
+  a: 0, explanation: 'The region of convergence specifies where a transform converges.'
+},
+{
+  id: 2250, branch: 'Electrical', topic: 'Signals and Systems', semester: 'Semester 4', subject: 'Signals and Systems',
+  q: 'What is the main benefit of analysing a system in the frequency domain?',
+  options: ['It helps understand frequency response and filtering', 'It removes the need for mathematics', 'It directly measures conductor length', 'It guarantees zero noise'],
+  a: 0, explanation: 'Frequency-domain analysis helps reveal how systems respond to different frequency components.'
+},
+
+{
+  id: 2251, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which number system uses only 0 and 1?',
+  options: ['Binary', 'Decimal', 'Octal', 'Hexadecimal'],
+  a: 0, explanation: 'Binary is a base-2 number system using digits 0 and 1.'
+},
+{
+  id: 2252, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is the base of the decimal number system?',
+  options: ['2', '8', '10', '16'],
+  a: 2, explanation: 'Decimal uses ten digits, from 0 to 9.'
+},
+{
+  id: 2253, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is the base of the hexadecimal number system?',
+  options: ['2', '8', '10', '16'],
+  a: 3, explanation: 'Hexadecimal uses sixteen symbols: 0–9 and A–F.'
+},
+{
+  id: 2254, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is the decimal value of binary 1010?',
+  options: ['8', '10', '12', '14'],
+  a: 1, explanation: 'Binary 1010 equals 8 + 2 = 10 in decimal.'
+},
+{
+  id: 2255, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is binary 1111 in decimal?',
+  options: ['12', '13', '14', '15'],
+  a: 3, explanation: 'Binary 1111 equals 8 + 4 + 2 + 1 = 15.'
+},
+{
+  id: 2256, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is decimal 8 in binary?',
+  options: ['1000', '0100', '1010', '1110'],
+  a: 0, explanation: 'Decimal 8 is represented as binary 1000.'
+},
+{
+  id: 2257, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'How many bits are in one byte?',
+  options: ['4', '8', '16', '32'],
+  a: 1, explanation: 'A byte conventionally contains eight bits.'
+},
+{
+  id: 2258, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is the smallest unit of digital information?',
+  options: ['Bit', 'Byte', 'Kilobyte', 'Word'],
+  a: 0, explanation: 'A bit represents one binary digit: 0 or 1.'
+},
+{
+  id: 2259, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which gate produces the complement of its input?',
+  options: ['AND', 'OR', 'NOT', 'XOR'],
+  a: 2, explanation: 'A NOT gate outputs the logical inverse of its input.'
+},
+{
+  id: 2260, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'An AND gate outputs 1 when:',
+  options: ['At least one input is 1', 'All inputs are 1', 'All inputs are 0', 'Inputs are different only'],
+  a: 1, explanation: 'An AND gate is high only when every input is high.'
+},
+{
+  id: 2261, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'An OR gate outputs 1 when:',
+  options: ['At least one input is 1', 'Every input is 0', 'Inputs must be identical', 'There are no inputs'],
+  a: 0, explanation: 'An OR gate is high if one or more inputs are high.'
+},
+{
+  id: 2262, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which gate is the complement of an AND gate?',
+  options: ['NAND', 'NOR', 'XOR', 'XNOR'],
+  a: 0, explanation: 'A NAND gate produces the inverse of the AND output.'
+},
+{
+  id: 2263, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which gate is the complement of an OR gate?',
+  options: ['NAND', 'NOR', 'XOR', 'AND'],
+  a: 1, explanation: 'A NOR gate produces the inverse of the OR output.'
+},
+{
+  id: 2264, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'An XOR gate outputs 1 when two binary inputs are:',
+  options: ['Equal', 'Different', 'Both always zero', 'Both always one'],
+  a: 1, explanation: 'For two inputs, XOR is high when the inputs differ.'
+},
+{
+  id: 2265, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'An XNOR gate outputs 1 when two binary inputs are:',
+  options: ['Different', 'Equal', 'Both disconnected', 'Always zero'],
+  a: 1, explanation: 'XNOR is high when its two binary inputs match.'
+},
+{
+  id: 2266, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which gates are known as universal gates?',
+  options: ['NAND and NOR', 'AND and OR only', 'XOR and XNOR only', 'NOT and buffer only'],
+  a: 0, explanation: 'Any Boolean function can be implemented using only NAND gates or only NOR gates.'
+},
+{
+  id: 2267, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which law states that A + 0 = A in Boolean algebra?',
+  options: ['Identity law', 'Complement law', 'De Morgan’s law', 'Absorption law only'],
+  a: 0, explanation: 'The OR identity element is 0, so A + 0 = A.'
+},
+{
+  id: 2268, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is A · 1 in Boolean algebra?',
+  options: ['0', '1', 'A', 'A̅'],
+  a: 2, explanation: 'ANDing A with 1 leaves A unchanged.'
+},
+{
+  id: 2269, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is A + A in Boolean algebra?',
+  options: ['0', '1', 'A', 'A̅'],
+  a: 2, explanation: 'The idempotent law gives A + A = A.'
+},
+{
+  id: 2270, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is A · A in Boolean algebra?',
+  options: ['0', '1', 'A', 'A̅'],
+  a: 2, explanation: 'The idempotent law gives A · A = A.'
+},
+{
+  id: 2271, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'According to De Morgan’s law, complement of A · B is:',
+  options: ['A̅ + B̅', 'A̅ · B̅', 'A + B', 'A · B'],
+  a: 0, explanation: 'The complement of an AND expression equals the OR of the complemented inputs.'
+},
+{
+  id: 2272, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'According to De Morgan’s law, complement of A + B is:',
+  options: ['A̅ + B̅', 'A̅ · B̅', 'A · B', 'A + B'],
+  a: 1, explanation: 'The complement of an OR expression equals the AND of the complemented inputs.'
+},
+{
+  id: 2273, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is the purpose of a truth table?',
+  options: ['Show outputs for all possible input combinations', 'Measure current directly', 'Show physical dimensions only', 'Calculate conductor resistance only'],
+  a: 0, explanation: 'A truth table lists logical outputs for every possible input combination.'
+},
+{
+  id: 2274, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'How many input combinations are possible for a circuit with 3 binary inputs?',
+  options: ['3', '6', '8', '9'],
+  a: 2, explanation: 'For n binary inputs, there are 2^n combinations; for 3 inputs, that is 8.'
+},
+{
+  id: 2275, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is a minterm?',
+  options: ['A product term containing every variable once in true or complemented form', 'A power supply', 'A memory chip only', 'A type of transformer'],
+  a: 0, explanation: 'A minterm is an AND term involving every variable in one polarity.'
+},
+{
+  id: 2276, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is a maxterm?',
+  options: ['A sum term containing every variable once in true or complemented form', 'An electrical machine', 'A current sensor', 'A type of battery'],
+  a: 0, explanation: 'A maxterm is an OR term involving every variable in one polarity.'
+},
+{
+  id: 2277, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is the main purpose of a Karnaugh map?',
+  options: ['Simplify Boolean expressions', 'Increase supply voltage', 'Measure frequency directly', 'Store files permanently'],
+  a: 0, explanation: 'A Karnaugh map simplifies logic expressions by grouping adjacent cells.'
+},
+{
+  id: 2278, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which circuit converts binary information into one of many output lines?',
+  options: ['Decoder', 'Encoder', 'Comparator only', 'Oscillator only'],
+  a: 0, explanation: 'A decoder activates an output corresponding to its input code.'
+},
+{
+  id: 2279, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which circuit converts one of many input lines into a coded output?',
+  options: ['Encoder', 'Decoder', 'Rectifier', 'Filter'],
+  a: 0, explanation: 'An encoder generates a code representing the active input.'
+},
+{
+  id: 2280, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What does a multiplexer do?',
+  options: ['Selects one of several inputs to send to an output', 'Sends one input to every output independently', 'Stores charge indefinitely', 'Converts DC directly into mechanical energy'],
+  a: 0, explanation: 'A multiplexer selects one input according to its select lines.'
+},
+{
+  id: 2281, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What does a demultiplexer do?',
+  options: ['Routes one input to a selected output', 'Adds two binary numbers only', 'Stores a single bit only', 'Amplifies analogue signals only'],
+  a: 0, explanation: 'A demultiplexer routes its input to one selected output.'
+},
+{
+  id: 2282, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which circuit compares two binary numbers?',
+  options: ['Digital comparator', 'Multiplexer only', 'Oscillator only', 'Rectifier'],
+  a: 0, explanation: 'A digital comparator indicates whether two binary values are equal or one is greater.'
+},
+{
+  id: 2283, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which circuit adds two single binary bits without a carry input?',
+  options: ['Half adder', 'Full adder', 'Multiplexer', 'Decoder'],
+  a: 0, explanation: 'A half adder adds two bits and produces sum and carry outputs.'
+},
+{
+  id: 2284, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which circuit adds two bits and an incoming carry?',
+  options: ['Full adder', 'Half adder', 'Encoder', 'Demultiplexer'],
+  a: 0, explanation: 'A full adder accepts two operand bits and a carry-in.'
+},
+{
+  id: 2285, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which circuit subtracts binary numbers?',
+  options: ['Binary subtractor', 'Decoder only', 'Oscillator only', 'Voltage regulator only'],
+  a: 0, explanation: 'A binary subtractor performs subtraction using logic circuitry.'
+},
+{
+  id: 2286, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is a flip-flop?',
+  options: ['A bistable circuit that stores one bit', 'A voltage transformer', 'A current-limiting fuse', 'An analogue microphone'],
+  a: 0, explanation: 'A flip-flop stores one binary state until changed by its control inputs.'
+},
+{
+  id: 2287, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which flip-flop has Set and Reset inputs?',
+  options: ['SR flip-flop', 'T flip-flop only', 'JK flip-flop only', 'D flip-flop only'],
+  a: 0, explanation: 'The SR flip-flop uses set and reset inputs to control its state.'
+},
+{
+  id: 2288, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is the main function of a D flip-flop?',
+  options: ['Capture the D input at the active clock event', 'Add three numbers', 'Decode decimal digits only', 'Generate analogue power'],
+  a: 0, explanation: 'A clocked D flip-flop transfers its D input to Q at the specified active clock event.'
+},
+{
+  id: 2289, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What happens to a T flip-flop when T = 1 at its active clock event?',
+  options: ['It toggles its state', 'It always resets', 'It always sets and never changes', 'It becomes an analogue amplifier'],
+  a: 0, explanation: 'A T flip-flop complements its current state when T is high at the active clock event.'
+},
+{
+  id: 2290, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which flip-flop avoids the forbidden SR input combination by providing toggle operation?',
+  options: ['JK flip-flop', 'SR latch only', 'D latch only', 'Buffer'],
+  a: 0, explanation: 'The JK flip-flop defines a toggle state when both J and K are high.'
+},
+{
+  id: 2291, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is a register in digital electronics?',
+  options: ['A group of flip-flops used to store multiple bits', 'A single resistor', 'A transformer winding', 'A power cable'],
+  a: 0, explanation: 'Registers store binary words using multiple flip-flops.'
+},
+{
+  id: 2292, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is a counter?',
+  options: ['A sequential circuit that advances through a sequence of states', 'A voltage sensor only', 'A power transformer', 'An analogue filter only'],
+  a: 0, explanation: 'Counters use sequential logic to track pulses or events.'
+},
+{
+  id: 2293, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which counter changes one flip-flop stage at a time through a ripple arrangement?',
+  options: ['Asynchronous counter', 'Pure combinational adder', 'Encoder', 'Multiplexer'],
+  a: 0, explanation: 'In an asynchronous counter, a stage clock is driven by a preceding stage output.'
+},
+{
+  id: 2294, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'In a synchronous counter, the flip-flops are generally driven by:',
+  options: ['A common clock', 'Separate unrelated power supplies only', 'No clock under any condition', 'An analogue microphone'],
+  a: 0, explanation: 'Synchronous counter flip-flops share a common clock signal.'
+},
+{
+  id: 2295, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is a shift register used for?',
+  options: ['Moving stored bits between stages', 'Changing AC frequency directly', 'Measuring temperature only', 'Generating mechanical torque'],
+  a: 0, explanation: 'A shift register moves data bits from one stage to another with clock events.'
+},
+{
+  id: 2296, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which memory is typically volatile?',
+  options: ['RAM', 'ROM', 'Flash memory', 'Optical disc'],
+  a: 0, explanation: 'Conventional RAM loses its stored contents when power is removed.'
+},
+{
+  id: 2297, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'Which memory is commonly non-volatile?',
+  options: ['ROM', 'Volatile SRAM without backup', 'A temporary logic signal', 'A capacitor with no refresh'],
+  a: 0, explanation: 'ROM retains its stored information without continuous power.'
+},
+{
+  id: 2298, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is an analogue-to-digital converter (ADC) used for?',
+  options: ['Convert an analogue signal into digital representation', 'Convert digital data into a mechanical shaft', 'Increase wire resistance', 'Generate magnetic poles only'],
+  a: 0, explanation: 'An ADC samples and quantises an analogue signal into digital values.'
+},
+{
+  id: 2299, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is a digital-to-analogue converter (DAC) used for?',
+  options: ['Convert digital values into an analogue output', 'Convert all signals into binary without sampling', 'Measure conductor length', 'Protect a circuit from lightning only'],
+  a: 0, explanation: 'A DAC converts digital codes into corresponding analogue levels.'
+},
+{
+  id: 2300, branch: 'Electrical', topic: 'Digital Electronics', semester: 'Semester 4', subject: 'Digital Electronics',
+  q: 'What is propagation delay in a digital logic circuit?',
+  options: ['Time between an input change and the corresponding output response', 'Time needed to manufacture a chip', 'The number of input pins', 'The supply voltage value'],
+  a: 0, explanation: 'Propagation delay is the time taken for a logic change to appear at the output.'
+},
+
+{
+  id: 2301, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the main purpose of an electrical substation?',
+  options: ['Generate electricity only', 'Transform voltage and control power flow', 'Store coal', 'Produce mechanical power'],
+  a: 1, explanation: 'Substations transform voltage and provide switching and protection.'
+},
+{
+  id: 2302, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which device steps up voltage at a generating station?',
+  options: ['Current transformer', 'Step-up transformer', 'Fuse', 'Isolator'],
+  a: 1, explanation: 'Step-up transformers increase voltage for transmission.'
+},
+{
+  id: 2303, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Why is high voltage used for power transmission?',
+  options: ['To increase current', 'To reduce I²R losses', 'To increase resistance', 'To eliminate insulation'],
+  a: 1, explanation: 'For the same power, higher voltage means lower current and lower copper losses.'
+},
+{
+  id: 2304, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which equipment interrupts fault current?',
+  options: ['Circuit breaker', 'Busbar', 'Insulator', 'Energy meter'],
+  a: 0, explanation: 'Circuit breakers open the circuit under normal and fault conditions.'
+},
+{
+  id: 2305, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the function of a busbar?',
+  options: ['Measure temperature', 'Collect and distribute electrical power', 'Store electrical charge', 'Convert AC to DC'],
+  a: 1, explanation: 'A busbar connects incoming and outgoing electrical circuits.'
+},
+{
+  id: 2306, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which device provides isolation for maintenance?',
+  options: ['Relay', 'Isolator', 'Lightning arrester', 'CT'],
+  a: 1, explanation: 'An isolator provides visible isolation and is generally operated without load.'
+},
+{
+  id: 2307, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What does a lightning arrester protect against?',
+  options: ['Low frequency', 'Voltage surges', 'Low power factor', 'Overheating of bearings'],
+  a: 1, explanation: 'It limits transient overvoltages caused by lightning or switching.'
+},
+{
+  id: 2308, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which transformer instrument measures line current indirectly?',
+  options: ['Potential transformer', 'Current transformer', 'Autotransformer', 'Isolation transformer'],
+  a: 1, explanation: 'A CT produces a reduced secondary current proportional to primary current.'
+},
+{
+  id: 2309, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the main purpose of a potential transformer?',
+  options: ['Reduce high voltage for measurement', 'Increase frequency', 'Interrupt fault current', 'Improve insulation resistance'],
+  a: 0, explanation: 'A PT or VT scales high voltage to a safe measurable value.'
+},
+{
+  id: 2310, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which protection is commonly used for a power transformer?',
+  options: ['Buchholz relay', 'Thermocouple only', 'Speed governor', 'Tachometer'],
+  a: 0, explanation: 'A Buchholz relay detects certain internal faults in oil-filled transformers.'
+},
+{
+  id: 2311, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What does a protective relay do?',
+  options: ['Detects abnormal conditions and initiates tripping', 'Generates electricity', 'Raises frequency', 'Stores energy'],
+  a: 0, explanation: 'Relays detect faults and send trip commands to circuit breakers.'
+},
+{
+  id: 2312, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which fault involves all three phases shorted together?',
+  options: ['Single line-to-ground', 'Line-to-line', 'Three-phase fault', 'Open-circuit fault'],
+  a: 2, explanation: 'A three-phase fault involves all three phases and is often severe.'
+},
+{
+  id: 2313, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which fault is most common on overhead transmission lines?',
+  options: ['Single line-to-ground', 'Three-phase short circuit', 'Three-phase open circuit', 'No-load fault'],
+  a: 0, explanation: 'Single line-to-ground faults are common due to insulation or environmental failures.'
+},
+{
+  id: 2314, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the purpose of a neutral grounding system?',
+  options: ['Increase frequency', 'Control earth-fault current and overvoltages', 'Eliminate all losses', 'Increase conductor resistance'],
+  a: 1, explanation: 'Grounding helps manage earth-fault current and system voltages.'
+},
+{
+  id: 2315, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which quantity is expressed in per unit?',
+  options: ['Only time', 'Electrical quantities normalized to base values', 'Only temperature', 'Only distance'],
+  a: 1, explanation: 'Per-unit values are actual values divided by selected base values.'
+},
+{
+  id: 2316, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the base impedance in a three-phase per-unit system?',
+  options: ['Base kV / base kVA', 'Base kV² / base MVA', 'Base MVA / base kV²', 'Base kV × base MVA'],
+  a: 1, explanation: 'With line-to-line kV and three-phase MVA, Zbase = kVbase² / MVAbase.'
+},
+{
+  id: 2317, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which representation is commonly used for power-system analysis?',
+  options: ['Single-line diagram', 'Pictorial landscape', 'Flowchart only', 'Mechanical drawing only'],
+  a: 0, explanation: 'A single-line diagram simplifies a three-phase network.'
+},
+{
+  id: 2318, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What does load factor represent?',
+  options: ['Maximum demand / average load', 'Average load / maximum demand', 'Voltage / current', 'Power factor / efficiency'],
+  a: 1, explanation: 'Load factor is average load divided by maximum demand over the same period.'
+},
+{
+  id: 2319, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is diversity factor?',
+  options: ['Sum of individual maximum demands / coincident maximum demand', 'Energy / time', 'Voltage / resistance', 'Average load / energy'],
+  a: 0, explanation: 'Diversity factor compares the sum of individual peaks with the combined peak.'
+},
+{
+  id: 2320, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is demand factor?',
+  options: ['Maximum demand / connected load', 'Connected load / maximum demand', 'Energy / voltage', 'Current / frequency'],
+  a: 0, explanation: 'Demand factor is maximum demand divided by connected load.'
+},
+{
+  id: 2321, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which unit is commonly used for electrical energy billing?',
+  options: ['kW', 'kWh', 'kVAR', 'Volt'],
+  a: 1, explanation: 'One billing unit is commonly equal to one kilowatt-hour.'
+},
+{
+  id: 2322, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What does power factor indicate?',
+  options: ['Real power / apparent power', 'Apparent power / resistance', 'Voltage / frequency', 'Current / energy'],
+  a: 0, explanation: 'For sinusoidal conditions, power factor equals cos φ and real power divided by apparent power.'
+},
+{
+  id: 2323, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which equipment can improve lagging power factor?',
+  options: ['Shunt capacitor bank', 'Series fuse', 'Isolator', 'Lightning rod'],
+  a: 0, explanation: 'Capacitor banks supply leading reactive power.'
+},
+{
+  id: 2324, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is corona on a transmission line?',
+  options: ['Ionization of surrounding air', 'Conductor melting only', 'Mechanical vibration only', 'Transformer oil leakage'],
+  a: 0, explanation: 'Corona occurs when the electric field ionizes the air around a conductor.'
+},
+{
+  id: 2325, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which factor can increase corona loss?',
+  options: ['Higher surface electric stress', 'Perfectly smooth surface only', 'Lower voltage always', 'Zero air ionization'],
+  a: 0, explanation: 'High electric stress, rough conductors and adverse weather can increase corona.'
+},
+{
+  id: 2326, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Why are bundled conductors used in EHV transmission?',
+  options: ['To increase corona and reactance', 'To reduce surface electric stress and reactance', 'To eliminate all insulation', 'To reduce tower height to zero'],
+  a: 1, explanation: 'Bundling reduces surface electric stress and line reactance.'
+},
+{
+  id: 2327, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the purpose of transposition of transmission lines?',
+  options: ['Balance phase inductance and capacitance', 'Increase conductor weight', 'Stop all current flow', 'Change AC into DC'],
+  a: 0, explanation: 'Transposition helps balance electrical parameters among phases.'
+},
+{
+  id: 2328, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which insulator is commonly used on high-voltage overhead lines?',
+  options: ['Suspension insulator string', 'Paper clip', 'Wooden block only', 'Copper strip'],
+  a: 0, explanation: 'Suspension strings are widely used for high-voltage overhead lines.'
+},
+{
+  id: 2329, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the main purpose of a strain insulator?',
+  options: ['Withstand tensile load at line ends or angles', 'Measure current', 'Generate reactive power', 'Store energy'],
+  a: 0, explanation: 'Strain insulators support the mechanical tension in conductors.'
+},
+{
+  id: 2330, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What does string efficiency measure?',
+  options: ['Voltage distribution uniformity across insulator units', 'Generator fuel efficiency', 'Cable resistance', 'Motor speed'],
+  a: 0, explanation: 'String efficiency indicates how uniformly voltage is distributed across the units.'
+},
+{
+  id: 2331, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is sag in an overhead line?',
+  options: ['Vertical distance between support level and lowest conductor point', 'Conductor resistance', 'Line voltage', 'Tower current'],
+  a: 0, explanation: 'Sag is the vertical dip of a conductor between supports.'
+},
+{
+  id: 2332, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What happens to conductor resistance as temperature rises?',
+  options: ['Usually increases for metals', 'Always becomes zero', 'Always decreases to zero', 'Does not depend on temperature'],
+  a: 0, explanation: 'Metallic conductors generally have a positive temperature coefficient of resistance.'
+},
+{
+  id: 2333, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which line parameter is associated with magnetic flux linkage?',
+  options: ['Inductance', 'Capacitance', 'Conductance only', 'Frequency only'],
+  a: 0, explanation: 'Inductance relates magnetic flux linkage to current.'
+},
+{
+  id: 2334, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which line parameter stores energy in an electric field?',
+  options: ['Capacitance', 'Resistance', 'Inductance only', 'Conductance'],
+  a: 0, explanation: 'Capacitance stores energy in an electric field.'
+},
+{
+  id: 2335, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which model is suitable for a short transmission line?',
+  options: ['Shunt capacitance is often neglected', 'Distributed model is always mandatory', 'Only a DC model', 'No series impedance'],
+  a: 0, explanation: 'Short-line analysis usually retains series impedance and neglects shunt capacitance.'
+},
+{
+  id: 2336, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which transmission-line model accounts for distributed parameters?',
+  options: ['Long-line model', 'Ideal switch model', 'Battery model', 'Rectifier model'],
+  a: 0, explanation: 'Long lines are modeled using distributed resistance, inductance, capacitance and conductance.'
+},
+{
+  id: 2337, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is voltage regulation of a transmission line?',
+  options: ['Change in receiving-end voltage between specified load conditions', 'Change in frequency only', 'Power consumed by a relay', 'Conductor diameter'],
+  a: 0, explanation: 'Voltage regulation compares receiving-end voltage under no-load and load conditions.'
+},
+{
+  id: 2338, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the Ferranti effect?',
+  options: ['Receiving-end voltage exceeds sending-end voltage at light load', 'Current becomes zero at full load', 'Frequency doubles', 'Resistance becomes negative'],
+  a: 0, explanation: 'Line capacitance can cause receiving-end voltage to rise under light-load conditions.'
+},
+{
+  id: 2339, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which device can help control transmission voltage?',
+  options: ['Shunt reactor', 'Fuse wire only', 'Mechanical brake', 'Thermometer'],
+  a: 0, explanation: 'Shunt reactors absorb reactive power and can reduce excessive voltage.'
+},
+{
+  id: 2340, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the main purpose of an interconnector between power systems?',
+  options: ['Enable power exchange and improve reliability', 'Prevent all power transfer', 'Increase line resistance', 'Remove all generators'],
+  a: 0, explanation: 'Interconnections allow power sharing and can improve system reliability.'
+},
+{
+  id: 2341, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is a radial distribution system?',
+  options: ['Loads supplied mainly through one path', 'Every load has multiple independent paths', 'A system with no feeder', 'A DC generator only'],
+  a: 0, explanation: 'A radial network generally has one source-to-load path.'
+},
+{
+  id: 2342, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which distribution arrangement usually offers higher supply reliability?',
+  options: ['Interconnected or ring system', 'Single isolated radial feeder in every case', 'Open wire with no protection', 'No feeder arrangement'],
+  a: 0, explanation: 'Alternative supply paths can improve continuity when a section fails.'
+},
+{
+  id: 2343, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which voltage is commonly used for domestic single-phase supply in India?',
+  options: ['230 V nominal', '12 V nominal', '11 kV at every socket', '400 kV'],
+  a: 0, explanation: 'The nominal domestic single-phase supply is approximately 230 V.'
+},
+{
+  id: 2344, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What does an energy meter measure?',
+  options: ['Electrical energy consumed', 'Only resistance', 'Only frequency', 'Only power factor'],
+  a: 0, explanation: 'An energy meter records electrical energy, commonly in kWh.'
+},
+{
+  id: 2345, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which instrument is used to measure insulation resistance?',
+  options: ['Megohmmeter', 'Wattmeter', 'Tachometer', 'Frequency counter only'],
+  a: 0, explanation: 'A megohmmeter measures high insulation resistance.'
+},
+{
+  id: 2346, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the purpose of load dispatch?',
+  options: ['Coordinate generation to meet demand economically and securely', 'Increase faults', 'Stop all generators', 'Measure conductor sag'],
+  a: 0, explanation: 'Load dispatch coordinates generation and power-system operation.'
+},
+{
+  id: 2347, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is spinning reserve?',
+  options: ['Available generation capacity from already running units', 'Energy stored in a rotating disk only', 'Total annual energy', 'Transformer insulation'],
+  a: 0, explanation: 'Spinning reserve is unused capacity available from synchronized operating generators.'
+},
+
+{
+  id: 2348, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which frequency is the nominal grid frequency in India?',
+  options: ['50 Hz', '25 Hz', '60 Hz', '100 Hz'],
+  a: 0, explanation: "India's nominal power-system frequency is 50 Hz."
+},
+{
+  id: 2349, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'What is the purpose of automatic generation control?',
+  options: ['Help regulate system frequency and scheduled interchange', 'Change conductor material', 'Measure only insulation resistance', 'Eliminate all reactive power'],
+  a: 0, explanation: 'AGC adjusts generator output to help maintain frequency and interchange schedules.'
+},
+{
+  id: 2350, branch: 'Electrical', topic: 'Power Systems-II', semester: 'Semester 5', subject: 'Power Systems-II',
+  q: 'Which factor is important when selecting a substation location?',
+  options: ['Load centre, access, safety and future expansion', 'Paint colour alone', 'Nearby tree height alone', 'Office furniture'],
+  a: 0, explanation: 'Substation planning considers load, land, safety, access and expansion needs.'
+},
+
+{
+  id: 2351,
+  branch: 'Electrical',
+  topic: 'Control Systems',
+  semester: 'Semester 5',
+  subject: 'Control Systems',
+  q: 'What is a control system?',
+  options: [
+    'A system that regulates a process or output',
+    'A measuring scale only',
+    'A power cable',
+    'A mechanical fastener'
+  ],
+  a: 0,
+  explanation: "A control system manages a system's output according to a desired objective."
+},
+{
+  id: 2352, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which is an example of an open-loop system?',
+  options: ['Timer-based toaster', 'Thermostat-controlled heater', 'Automatic cruise control with speed feedback', 'Closed-loop motor speed controller'],
+  a: 0, explanation: 'A timer toaster operates without measuring the actual browning result.'
+},
+{
+  id: 2353, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What characterizes a closed-loop control system?',
+  options: ['Feedback is used', 'No input is applied', 'Output is never measured', 'It cannot correct disturbances'],
+  a: 0, explanation: 'Closed-loop systems compare output with the reference using feedback.'
+},
+{
+  id: 2354, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is the error signal in a feedback system?',
+  options: ['Reference minus feedback signal', 'Reference plus supply voltage always', 'Output multiplied by time', 'Resistance divided by current'],
+  a: 0, explanation: 'The error is the difference between reference and measured feedback.'
+},
+{
+  id: 2355, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is the main advantage of negative feedback?',
+  options: ['Improved accuracy and disturbance rejection', 'Always infinite gain', 'Guaranteed instability', 'No need for sensors'],
+  a: 0, explanation: 'Negative feedback can reduce sensitivity and improve performance.'
+},
+{
+  id: 2356, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which mathematical tool is widely used to analyze linear control systems?',
+  options: ['Laplace transform', 'Only long division', 'Only geometry', 'Chemical titration'],
+  a: 0, explanation: 'The Laplace transform converts differential equations into algebraic equations in s.'
+},
+{
+  id: 2357,
+  branch: 'Electrical',
+  topic: 'Control Systems',
+  semester: 'Semester 5',
+  subject: 'Control Systems',
+  q: 'What does a transfer function represent?',
+  options: [
+    'Output-to-input transform ratio with zero initial conditions',
+    'Input plus output at all times',
+    'Only system mass',
+    "A circuit's physical length"
+  ],
+  a: 0,
+  explanation: 'G(s) = Y(s)/U(s) for zero initial conditions in an LTI system.'
+},
+{
+  id: 2358, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'For a transfer function, poles are the roots of which expression?',
+  options: ['Denominator', 'Numerator only', 'Input amplitude only', 'Time delay only'],
+  a: 0, explanation: 'Poles are the roots of the transfer-function denominator after simplification.'
+},
+{
+  id: 2359, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'For a transfer function, zeros are the roots of which expression?',
+  options: ['Numerator', 'Denominator only', 'Supply frequency only', 'Feedback sensor casing'],
+  a: 0, explanation: 'Zeros are the roots of the numerator after simplification.'
+},
+{
+  id: 2360, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is the characteristic equation of a unity negative-feedback system?',
+  options: ['1 + G(s)H(s) = 0', 'G(s) - H(s) = 1 always', 'G(s)H(s) = 0 only', 'G(s) + H(s) = 0 in every system'],
+  a: 0, explanation: 'The closed-loop characteristic equation is 1 + G(s)H(s) = 0.'
+},
+{
+  id: 2361, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which input is represented by a unit step?',
+  options: ['A signal that changes from zero to one at t = 0', 'A constant zero signal', 'A linearly increasing ramp', 'A sinusoid only'],
+  a: 0, explanation: 'The unit step is zero before t = 0 and one afterward.'
+},
+{
+  id: 2362, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is a unit ramp input for t ≥ 0?',
+  options: ['r(t) = t', 'r(t) = 1', 'r(t) = 0', 'r(t) = t²/2 always'],
+  a: 0, explanation: 'A unit ramp increases linearly with time.'
+},
+{
+  id: 2363, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does transient response describe?',
+  options: ['Behaviour before reaching steady state', 'Only the input label', 'Only physical dimensions', 'The colour of a controller'],
+  a: 0, explanation: 'Transient response is the temporary behaviour following a change in input.'
+},
+{
+  id: 2364, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is steady-state error?',
+  options: ['Final difference between reference and output', 'Maximum input frequency', 'Initial capacitor charge only', 'Controller weight'],
+  a: 0, explanation: 'Steady-state error is the error remaining after transient effects have died out.'
+},
+{
+  id: 2365, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which response specification measures the time to first reach the final value?',
+  options: ['Rise time', 'Settling time', 'Peak overshoot', 'Steady-state error'],
+  a: 0, explanation: 'Rise time describes how quickly the response initially rises toward its final value.'
+},
+{
+  id: 2366, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is settling time?',
+  options: ['Time for response to enter and remain within a specified tolerance band', 'Time for input to begin', 'One oscillation period only', 'Time to build the sensor'],
+  a: 0, explanation: 'Settling time is measured using a defined tolerance band around the final value.'
+},
+{
+  id: 2367, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does percentage overshoot measure?',
+  options: ['Peak response above final value relative to final value', 'Input resistance only', 'Final error divided by frequency', 'Rise time divided by mass'],
+  a: 0, explanation: 'Overshoot quantifies how far the peak exceeds the final value.'
+},
+{
+  id: 2368, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'When is a continuous-time linear system asymptotically stable?',
+  options: ['All poles lie in the open left half of the s-plane', 'Any pole lies in the right half-plane', 'All poles are positive real', 'The numerator is zero'],
+  a: 0, explanation: 'For a continuous-time LTI system, poles with negative real parts give asymptotic stability.'
+},
+{
+  id: 2369, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does the Routh-Hurwitz criterion help determine?',
+  options: ['Stability without explicitly calculating all roots', 'Wire colour', 'Transformer turns ratio only', 'Motor bearing size'],
+  a: 0, explanation: 'The Routh array can determine right-half-plane root counts from polynomial coefficients.'
+},
+{
+  id: 2370, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does a root locus plot show?',
+  options: ['Closed-loop pole locations as gain varies', 'Only input current versus voltage', 'Geographical location of sensors', 'Temperature distribution in a cable'],
+  a: 0, explanation: 'Root locus traces closed-loop poles as a system parameter, usually gain, changes.'
+},
+{
+  id: 2371, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which plot shows magnitude and phase versus frequency?',
+  options: ['Bode plot', 'Pie chart', 'Gantt chart', 'Histogram only'],
+  a: 0, explanation: 'Bode plots show frequency response magnitude and phase.'
+},
+{
+  id: 2372, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is gain margin?',
+  options: ['A measure of how much gain can increase before instability', 'Difference between motor diameters', 'Ratio of length to area', 'A sensor calibration date'],
+  a: 0, explanation: 'Gain margin measures the gain change needed to reach the stability boundary.'
+},
+{
+  id: 2373, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is phase margin?',
+  options: ['Additional phase lag needed to reach the -180° condition at gain crossover', 'The angle of a mechanical shaft only', 'Input voltage margin', 'The difference between two resistors'],
+  a: 0, explanation: 'Phase margin is assessed at the gain-crossover frequency.'
+},
+{
+  id: 2374, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which controller is commonly used to reduce steady-state error?',
+  options: ['Integral controller', 'Pure derivative controller only', 'Open switch', 'Mechanical fuse'],
+  a: 0, explanation: 'Integral action increases low-frequency gain and can eliminate some steady-state errors.'
+},
+{
+  id: 2375, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is the main effect of derivative control?',
+  options: ['Responds to rate of change and can improve damping', 'Always removes sensor noise', 'Stores electrical energy', 'Guarantees zero overshoot in all systems'],
+  a: 0, explanation: 'Derivative action responds to error rate but may amplify high-frequency noise.'
+},
+{
+  id: 2376, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does a PI controller combine?',
+  options: ['Proportional and integral actions', 'Power and insulation', 'Pressure and induction', 'Position and illumination'],
+  a: 0, explanation: 'A PI controller combines proportional and integral terms.'
+},
+{
+  id: 2377, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does a PID controller combine?',
+  options: ['Proportional, integral and derivative actions', 'Only voltage and current', 'Only position and speed', 'Only resistance and capacitance'],
+  a: 0, explanation: 'PID control combines P, I and D actions.'
+},
+{
+  id: 2378, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which device measures temperature for a feedback controller?',
+  options: ['Temperature sensor', 'Fuse', 'Isolator', 'Busbar'],
+  a: 0, explanation: 'A temperature sensor measures process temperature for feedback.'
+},
+{
+  id: 2379, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'In a DC motor speed-control loop, what can serve as the feedback signal?',
+  options: ['Measured motor speed', 'Paint colour', 'Room number', 'Cable label'],
+  a: 0, explanation: 'A tachometer or encoder can provide measured speed feedback.'
+},
+{
+  id: 2380, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is a disturbance in a control system?',
+  options: ['An unwanted influence affecting the process or output', 'The desired reference only', 'A transfer-function pole only', 'A circuit diagram title'],
+  a: 0, explanation: 'Disturbances alter system behaviour independently of the desired input.'
+},
+{
+  id: 2381, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does a signal-flow graph represent?',
+  options: ['Relationships among system variables', 'Only physical wire routing', 'A list of spare parts', 'A building floor plan'],
+  a: 0, explanation: 'Signal-flow graphs represent variable relationships using nodes and directed branches.'
+},
+{
+  id: 2382, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Mason’s gain formula is used to find what?',
+  options: ['Overall transfer function from a signal-flow graph', 'Conductor resistance by colour', 'Transformer oil level', 'Mechanical torque only'],
+  a: 0, explanation: 'Mason’s formula calculates overall gain from forward paths and loops.'
+},
+{
+  id: 2383, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is a first-order system commonly associated with?',
+  options: ['One independent energy-storage dynamic element in its model', 'No dynamics in any case', 'Exactly three poles always', 'Only mechanical systems'],
+  a: 0, explanation: 'A first-order transfer function has a first-degree denominator.'
+},
+{
+  id: 2384, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'A standard second-order system has which denominator form?',
+  options: ['s² + 2ζωn s + ωn²', 's + 1 only', 's³ + 1 always', 'ωn s² + ζ only'],
+  a: 0, explanation: 'The standard second-order denominator uses natural frequency ωn and damping ratio ζ.'
+},
+{
+  id: 2385, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does damping ratio ζ indicate?',
+  options: ['Relative damping of a second-order system', 'Conductor length', 'Input voltage polarity only', 'Sensor resolution only'],
+  a: 0, explanation: 'The damping ratio characterizes oscillatory behaviour and damping.'
+},
+{
+  id: 2386, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'For a standard second-order system, what is the condition for an underdamped response?',
+  options: ['0 < ζ < 1', 'ζ = 0 only', 'ζ > 1', 'ζ is always negative'],
+  a: 0, explanation: 'An underdamped system has a damping ratio between zero and one.'
+},
+{
+  id: 2387, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is the natural frequency commonly denoted by?',
+  options: ['ωn', 'ζ only', 'R only', 'Kp only'],
+  a: 0, explanation: 'ωn denotes undamped natural frequency in the standard second-order model.'
+},
+{
+  id: 2388, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does controllability describe?',
+  options: ['Ability to drive the state to a desired value using inputs', 'Ability to measure temperature only', 'Ability to eliminate all disturbances physically', 'Ability to increase resistance'],
+  a: 0, explanation: 'Controllability asks whether suitable inputs can move the system between states.'
+},
+{
+  id: 2389, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does observability describe?',
+  options: ['Ability to infer internal states from outputs', 'Ability to supply unlimited power', 'Ability to increase motor poles', 'Ability to remove all noise'],
+  a: 0, explanation: 'Observability concerns reconstructing internal states from measured outputs.'
+},
+{
+  id: 2390, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which representation is used in modern state-space control?',
+  options: ['State, input and output equations', 'Only a single resistance value', 'Only a wiring colour code', 'Only a frequency table'],
+  a: 0, explanation: 'State-space models express system dynamics using state variables and matrices.'
+},
+{
+  id: 2391, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is a servo system primarily designed to control?',
+  options: ['Position, speed or another motion variable', 'Fuel chemistry only', 'Room lighting colour only', 'Cable insulation thickness'],
+  a: 0, explanation: 'Servo systems provide controlled motion, often with feedback.'
+},
+{
+  id: 2392, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which system is an example of automatic temperature control?',
+  options: ['Thermostat-controlled heater', 'Unregulated heater with a manual switch only', 'An isolated conductor', 'A fixed resistor alone'],
+  a: 0, explanation: 'A thermostat compares measured temperature with a setpoint.'
+},
+{
+  id: 2393, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is a system time constant?',
+  options: ['A measure of how quickly a first-order response changes', 'The time shown on a wall clock only', 'The number of inputs', 'The size of a motor shaft'],
+  a: 0, explanation: 'A first-order time constant describes its characteristic response speed.'
+},
+{
+  id: 2394, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'For a stable first-order system, approximately how much of its final step response is reached after one time constant?',
+  options: ['63.2%', '10%', '90%', '100% exactly'],
+  a: 0, explanation: 'At one time constant, the response reaches about 63.2% of its final change.'
+},
+{
+  id: 2395, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What does steady-state analysis focus on?',
+  options: ['Long-term response after transients decay', 'Only the first instant', 'Only the construction cost', 'Only the input wire length'],
+  a: 0, explanation: 'Steady-state analysis studies the response after transient effects have diminished.'
+},
+{
+  id: 2396, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is the purpose of a compensator?',
+  options: ['Modify system dynamics to improve performance', 'Measure only physical length', 'Replace every sensor', 'Increase noise intentionally'],
+  a: 0, explanation: 'Compensators shape stability, speed, accuracy or other response characteristics.'
+},
+{
+  id: 2397, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which compensator is commonly used to improve phase margin?',
+  options: ['Lead compensator', 'Fuse', 'Isolator', 'Circuit breaker'],
+  a: 0, explanation: 'A lead compensator can add positive phase over a selected frequency range.'
+},
+{
+  id: 2398, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Which compensator can improve low-frequency accuracy?',
+  options: ['Lag compensator', 'Open switch', 'Lightning arrester', 'Thermal fuse'],
+  a: 0, explanation: 'Lag compensation can increase low-frequency gain, improving steady-state accuracy.'
+},
+{
+  id: 2399, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'Why is sensor noise important in feedback control?',
+  options: ['It can cause unwanted control actions', 'It always improves accuracy', 'It changes all poles to zero', 'It removes disturbances automatically'],
+  a: 0, explanation: 'Noisy measurements can cause erratic or excessive controller responses.'
+},
+{
+  id: 2400, branch: 'Electrical', topic: 'Control Systems', semester: 'Semester 5', subject: 'Control Systems',
+  q: 'What is the main role of a controller in a feedback loop?',
+  options: ['Use error information to determine the control action', 'Generate the reference signal in every system', 'Remove the plant from the system', 'Measure resistance only'],
+  a: 0, explanation: 'The controller processes the error and produces a suitable control signal.'
+},
+
+{
+  id: 2401, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is power electronics mainly concerned with?',
+  options: ['Conversion and control of electrical power using semiconductor devices', 'Only building wiring', 'Only mechanical gears', 'Only chemical batteries'],
+  a: 0, explanation: 'Power electronics uses semiconductor switches to control and convert electrical power.'
+},
+{
+  id: 2402, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which device is a controlled semiconductor switch?',
+  options: ['SCR', 'Fixed resistor', 'Fuse wire', 'Insulator'],
+  a: 0, explanation: 'An SCR is a thyristor that can be triggered into conduction.'
+},
+{
+  id: 2403, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What does SCR stand for?',
+  options: ['Silicon Controlled Rectifier', 'Series Current Resistor', 'Synchronous Control Relay', 'Silicon Current Regulator'],
+  a: 0, explanation: 'SCR means Silicon Controlled Rectifier.'
+},
+{
+  id: 2404, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'How is a conventional SCR commonly turned on?',
+  options: ['By applying a suitable gate pulse while forward biased', 'By removing its anode', 'By reversing every terminal', 'By cooling it only'],
+  a: 0, explanation: 'A gate pulse can trigger a forward-biased SCR into conduction.'
+},
+{
+  id: 2405, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'How does a conventional SCR normally turn off in a simple AC circuit?',
+  options: ['When current falls below holding current at current zero', 'By applying another positive gate pulse', 'By increasing gate current indefinitely', 'By opening the gate terminal only'],
+  a: 0, explanation: 'Natural commutation occurs when current falls below holding current.'
+},
+{
+  id: 2406, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which device can be turned on and off through its gate under normal operation?',
+  options: ['IGBT', 'Conventional SCR', 'Power diode', 'Fuse'],
+  a: 0, explanation: 'An IGBT is a gate-controlled device that can be turned on and off.'
+},
+{
+  id: 2407, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which device is widely used for fast switching in low- and medium-power converters?',
+  options: ['MOSFET', 'Mechanical isolator', 'Glass insulator', 'Energy meter'],
+  a: 0, explanation: 'Power MOSFETs are widely used where fast switching is required.'
+},
+{
+  id: 2408, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is a rectifier?',
+  options: ['A converter that changes AC to DC', 'A converter that changes DC to AC', 'A device that only measures power', 'A mechanical speed sensor'],
+  a: 0, explanation: 'Rectifiers convert alternating current into direct current.'
+},
+{
+  id: 2409, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is an inverter?',
+  options: ['A converter that changes DC to AC', 'A converter that changes AC to DC only', 'A current transformer', 'A protective fuse'],
+  a: 0, explanation: 'An inverter produces AC from a DC source.'
+},
+{
+  id: 2410, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What does a DC-DC converter do?',
+  options: ['Changes one DC voltage level to another', 'Converts heat directly to sound', 'Measures frequency only', 'Changes mechanical energy to fuel'],
+  a: 0, explanation: 'DC-DC converters regulate or transform DC voltage levels.'
+},
+{
+  id: 2411, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is a chopper in power electronics?',
+  options: ['A DC-to-DC converter', 'An AC-to-DC transformer', 'A mechanical breaker only', 'A voltage measuring instrument'],
+  a: 0, explanation: 'A chopper controls average DC output by switching the input.'
+},
+{
+  id: 2412, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is the duty cycle of a switch?',
+  options: ['On-time divided by switching period', 'Switching period divided by current', 'Resistance divided by voltage', 'Off-time plus current'],
+  a: 0, explanation: 'Duty cycle D is Ton/T for periodic switching.'
+},
+{
+  id: 2413, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'In an ideal buck converter, increasing duty cycle generally does what?',
+  options: ['Increases average output voltage', 'Always makes output voltage zero', 'Converts DC to AC directly', 'Removes the need for switching'],
+  a: 0, explanation: 'For an ideal buck converter, Vout is approximately D times Vin.'
+},
+{
+  id: 2414, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is the function of a boost converter?',
+  options: ['Raise DC voltage', 'Lower DC voltage only', 'Convert AC directly to mechanical motion', 'Measure phase angle only'],
+  a: 0, explanation: 'A boost converter can provide an output voltage higher than its input.'
+},
+{
+  id: 2415, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is the function of a buck converter?',
+  options: ['Lower DC voltage', 'Raise DC voltage only', 'Convert DC to three-phase AC directly without switches', 'Measure resistance only'],
+  a: 0, explanation: 'A buck converter steps down DC voltage.'
+},
+{
+  id: 2416, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which component stores energy in a magnetic field in many DC-DC converters?',
+  options: ['Inductor', 'Fuse', 'Insulator', 'Voltmeter'],
+  a: 0, explanation: 'An inductor stores energy in its magnetic field.'
+},
+{
+  id: 2417, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is the purpose of a freewheeling diode in an inductive load circuit?',
+  options: ['Provide a path for load current when the switch turns off', 'Increase switching noise intentionally', 'Block all load current continuously', 'Measure output frequency'],
+  a: 0, explanation: 'The diode maintains an inductive current path during switching intervals.'
+},
+{
+  id: 2418, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which converter uses controlled rectifiers to vary average DC output?',
+  options: ['Phase-controlled rectifier', 'Oscillator only', 'Transformer alone', 'Circuit breaker'],
+  a: 0, explanation: 'Changing the thyristor firing angle controls the average rectified voltage.'
+},
+{
+  id: 2419, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is firing angle in an SCR-controlled rectifier?',
+  options: ['Delay angle from the reference point in the AC cycle to gate triggering', 'The physical angle of the heat sink', 'The motor shaft angle only', 'The transformer winding pitch'],
+  a: 0, explanation: 'Firing angle α specifies when the SCR is triggered during the AC cycle.'
+},
+{
+  id: 2420, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'In a phase-controlled rectifier, what generally happens when firing angle increases?',
+  options: ['Average DC output decreases in common rectifier operation', 'Average output always becomes infinite', 'Supply frequency doubles', 'Gate control becomes unnecessary'],
+  a: 0, explanation: 'A larger firing delay generally reduces average rectified output.'
+},
+{
+  id: 2421, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'How many diodes are used in a single-phase bridge rectifier?',
+  options: ['Four', 'One', 'Two hundred', 'Three'],
+  a: 0, explanation: 'A standard single-phase full bridge uses four diodes.'
+},
+{
+  id: 2422, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which rectifier usually gives lower ripple for the same basic supply frequency than a half-wave rectifier?',
+  options: ['Full-wave rectifier', 'A single series resistor', 'Open circuit', 'Isolator'],
+  a: 0, explanation: 'Full-wave rectification uses both half cycles and produces a higher ripple frequency.'
+},
+{
+  id: 2423, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is the main purpose of a DC-link capacitor?',
+  options: ['Smooth the DC bus voltage', 'Increase mechanical friction', 'Change wire colour', 'Trigger a fuse'],
+  a: 0, explanation: 'A DC-link capacitor reduces voltage ripple and buffers energy.'
+},
+{
+  id: 2424, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What does PWM stand for?',
+  options: ['Pulse Width Modulation', 'Power Wire Measurement', 'Phase Wave Motor', 'Primary Winding Method'],
+  a: 0, explanation: 'PWM controls average output by varying pulse widths.'
+},
+{
+  id: 2425, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is a common purpose of PWM in an inverter?',
+  options: ['Control the output waveform and its fundamental component', 'Eliminate all semiconductor losses', 'Convert AC into stored coal', 'Measure conductor sag'],
+  a: 0, explanation: 'PWM shapes the inverter waveform and controls its fundamental output.'
+},
+{
+  id: 2426, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What does an H-bridge inverter allow?',
+  options: ['Applying either polarity across a load from a DC supply', 'Measuring only temperature', 'Producing energy without a source', 'Eliminating all switching devices'],
+  a: 0, explanation: 'An H-bridge switches the load connection to create positive and negative voltage.'
+},
+{
+  id: 2427, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is commutation in a thyristor circuit?',
+  options: ['Turning off the conducting thyristor by reducing current and restoring blocking ability', 'Measuring resistance', 'Increasing insulation thickness', 'Generating gate pulses only'],
+  a: 0, explanation: 'Commutation transfers current away from a thyristor so it can turn off.'
+},
+{
+  id: 2428, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which quantity is especially important when selecting a power semiconductor?',
+  options: ['Voltage and current ratings', 'Paint colour only', 'Packaging font only', 'Room number'],
+  a: 0, explanation: 'Devices must safely withstand expected voltage, current and thermal stress.'
+},
+{
+  id: 2429, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Why is a heat sink used with power semiconductor devices?',
+  options: ['To remove heat', 'To amplify gate pulses', 'To store software', 'To increase junction temperature'],
+  a: 0, explanation: 'Heat sinks transfer heat away from devices to keep temperatures within limits.'
+},
+{
+  id: 2430, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What are switching losses?',
+  options: ['Losses during transitions between on and off states', 'Only wire installation cost', 'Mechanical energy stored in a flywheel', 'Energy measured by a clock'],
+  a: 0, explanation: 'Voltage and current overlap during switching transitions, producing losses.'
+},
+{
+  id: 2431, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is conduction loss?',
+  options: ['Loss while a semiconductor carries current in its on-state', 'Loss from a disconnected wire only', 'Loss caused only by room lighting', 'Loss due to paper thickness'],
+  a: 0, explanation: 'On-state voltage drop or resistance causes conduction loss.'
+},
+{
+  id: 2432, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is a snubber circuit used for?',
+  options: ['Limit switching voltage or current transients', 'Increase uncontrolled spikes', 'Measure energy bills', 'Replace all control circuits'],
+  a: 0, explanation: 'Snubbers help protect switching devices from transients and excessive dv/dt or di/dt.'
+},
+{
+  id: 2433, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Why is gate-drive isolation often used?',
+  options: ['Provide electrical separation and protect low-voltage control circuits', 'Increase leakage deliberately', 'Remove all switching signals', 'Convert a fuse into a sensor'],
+  a: 0, explanation: 'Isolation helps protect control electronics and supports different voltage potentials.'
+},
+{
+  id: 2434, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What does a diode ideally do in forward bias?',
+  options: ['Conduct current', 'Block all current', 'Generate a clock signal', 'Store mechanical energy'],
+  a: 0, explanation: 'An ideal diode conducts in forward bias and blocks in reverse bias.'
+},
+{
+  id: 2435, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which diode is specifically designed for fast switching?',
+  options: ['Fast-recovery diode', 'Ordinary fuse', 'Zener-only voltage reference in every case', 'Photocell'],
+  a: 0, explanation: 'Fast-recovery diodes reduce reverse-recovery time in switching circuits.'
+},
+{
+  id: 2436, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is a cycloconverter?',
+  options: ['An AC-to-AC converter that can change output frequency directly', 'A DC-to-DC buck converter only', 'An energy meter', 'A fuse holder'],
+  a: 0, explanation: 'A cycloconverter directly converts AC at one frequency to AC at another.'
+},
+{
+  id: 2437, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which converter changes AC supply frequency using a DC link?',
+  options: ['AC-DC-AC frequency converter', 'Isolator', 'Current transformer', 'Fuse'],
+  a: 0, explanation: 'A rectifier and inverter stage can form a variable-frequency drive.'
+},
+{
+  id: 2438, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is a common application of a variable-frequency drive?',
+  options: ['Control AC motor speed', 'Measure building height', 'Store paper records', 'Increase line frequency without electronics'],
+  a: 0, explanation: 'A VFD adjusts the frequency and voltage supplied to an AC motor.'
+},
+{
+  id: 2439, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which converter is commonly used in solar photovoltaic systems to interface DC power with the grid?',
+  options: ['Grid-tied inverter', 'Isolator alone', 'Thermocouple', 'Fuse only'],
+  a: 0, explanation: 'A grid-tied inverter converts PV DC power to synchronized AC.'
+},
+{
+  id: 2440, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is a common function of an MPPT controller in a solar system?',
+  options: ['Track the operating point for maximum available PV power', 'Change the sun position', 'Eliminate all cloud cover', 'Measure wind direction only'],
+  a: 0, explanation: 'MPPT adjusts the operating point to extract maximum available panel power.'
+},
+{
+  id: 2441, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is an advantage of synchronous rectification in suitable converters?',
+  options: ['Reduced conduction loss by replacing a diode with a controlled switch', 'Guaranteed zero cost', 'No need for gate control', 'Unlimited voltage capability'],
+  a: 0, explanation: 'A controlled MOSFET can have lower conduction loss than a diode in some designs.'
+},
+{
+  id: 2442, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is a thyristor latching current?',
+  options: ['Minimum anode current needed to remain on immediately after triggering when gate drive is removed', 'Maximum gate voltage always', 'Reverse leakage current only', 'Current through an open switch'],
+  a: 0, explanation: 'Latching current is needed to establish conduction after the gate pulse ends.'
+},
+{
+  id: 2443, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is holding current in an SCR?',
+  options: ['Minimum anode current needed to keep it conducting', 'Maximum load voltage', 'Gate resistance only', 'Current through a disconnected circuit'],
+  a: 0, explanation: 'Below holding current, the SCR turns off if it is not retriggered.'
+},
+{
+  id: 2444, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is dv/dt protection used for in an SCR circuit?',
+  options: ['Prevent unintended triggering due to rapid voltage rise', 'Increase gate noise', 'Measure average power', 'Reduce conductor length'],
+  a: 0, explanation: 'A high rate of voltage rise can trigger an SCR unintentionally.'
+},
+{
+  id: 2445, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Why is current limiting important in a converter?',
+  options: ['Protect devices and loads from excessive current', 'Ensure unlimited current flow', 'Remove all switching losses', 'Change AC into mechanical gears'],
+  a: 0, explanation: 'Current limiting helps prevent overheating and component damage.'
+},
+{
+  id: 2446, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is the purpose of dead time in a bridge inverter?',
+  options: ['Prevent both switches in one leg from conducting simultaneously', 'Increase shoot-through current', 'Stop all output switching permanently', 'Raise DC voltage without limit'],
+  a: 0, explanation: 'Dead time prevents shoot-through caused by overlapping switch conduction.'
+},
+{
+  id: 2447, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is shoot-through in a bridge converter?',
+  options: ['A direct short-circuit path across the DC supply through switches', 'Normal load current through a resistor', 'A temperature measurement', 'A type of insulation test'],
+  a: 0, explanation: 'Simultaneous conduction of conflicting switches can short the DC bus.'
+},
+{
+  id: 2448, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'Which measurement is useful for assessing converter efficiency?',
+  options: ['Output power divided by input power', 'Input voltage plus enclosure size', 'Switch count divided by temperature', 'Frequency divided by wire length'],
+  a: 0, explanation: 'Efficiency is useful output power divided by input power, expressed as a percentage.'
+},
+{
+  id: 2449, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is the main reason for using a high switching frequency, within design limits?',
+  options: ['Potentially reduce passive component size', 'Eliminate every source of loss', 'Remove the need for cooling in all cases', 'Guarantee zero electromagnetic interference'],
+  a: 0, explanation: 'Higher frequency can reduce inductor and transformer size but may increase switching losses.'
+},
+{
+  id: 2450, branch: 'Electrical', topic: 'Power Electronics', semester: 'Semester 5', subject: 'Power Electronics',
+  q: 'What is electromagnetic interference in a switching converter?',
+  options: ['Unwanted electromagnetic disturbance generated or coupled by circuit operation', 'Useful output power only', 'A type of battery chemistry', 'A mechanical bearing force'],
+  a: 0, explanation: 'Fast voltage and current transitions can generate conducted and radiated interference.'
+},
+
+{
+  id: 2451, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is the purpose of an electrical measuring instrument?',
+  options: ['Measure an electrical quantity', 'Generate unlimited power', 'Eliminate all circuit resistance', 'Convert every signal to mechanical energy'],
+  a: 0, explanation: 'Measuring instruments indicate or record quantities such as voltage, current and power.'
+},
+{
+  id: 2452, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which instrument measures voltage?',
+  options: ['Voltmeter', 'Ammeter', 'Wattmeter only', 'Energy meter only'],
+  a: 0, explanation: 'A voltmeter measures potential difference.'
+},
+{
+  id: 2453, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'How is an ammeter connected to measure current?',
+  options: ['In series', 'In parallel across the supply', 'Only to earth', 'Across an open switch only'],
+  a: 0, explanation: 'The circuit current flows through a series-connected ammeter.'
+},
+{
+  id: 2454, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'How is a voltmeter connected?',
+  options: ['In parallel with the component', 'In series with the whole circuit always', 'Only in the earth wire', 'Across a fuse holder only'],
+  a: 0, explanation: 'A voltmeter measures the potential difference across a component.'
+},
+{
+  id: 2455, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is the ideal resistance of an ammeter?',
+  options: ['Zero', 'Infinite', 'One megaohm always', 'Equal to supply voltage'],
+  a: 0, explanation: 'An ideal ammeter has zero resistance to avoid changing circuit current.'
+},
+{
+  id: 2456, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is the ideal resistance of a voltmeter?',
+  options: ['Infinite', 'Zero', 'Always one ohm', 'Equal to load resistance'],
+  a: 0, explanation: 'An ideal voltmeter draws no current from the measured circuit.'
+},
+{
+  id: 2457, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which instrument measures electrical power?',
+  options: ['Wattmeter', 'Ohmmeter', 'Megohmmeter only', 'Tachometer'],
+  a: 0, explanation: 'A wattmeter measures electrical power.'
+},
+{
+  id: 2458, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which instrument measures electrical energy consumption?',
+  options: ['Energy meter', 'Voltmeter only', 'Frequency meter only', 'Galvanometer only'],
+  a: 0, explanation: 'An energy meter records consumed electrical energy, commonly in kWh.'
+},
+{
+  id: 2459, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What does an ohmmeter measure?',
+  options: ['Resistance', 'Frequency', 'Power factor only', 'Magnetic flux only'],
+  a: 0, explanation: 'An ohmmeter measures electrical resistance.'
+},
+{
+  id: 2460, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which instrument is used to measure frequency?',
+  options: ['Frequency meter', 'Ammeter', 'Megohmmeter', 'Watt-hour meter only'],
+  a: 0, explanation: 'A frequency meter indicates cycles per second, typically in hertz.'
+},
+{
+  id: 2461, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is accuracy?',
+  options: ['Closeness of a measured value to the true or accepted value', 'Repeatability alone', 'Smallest display digit only', 'Maximum instrument weight'],
+  a: 0, explanation: 'Accuracy describes how close a measurement is to the reference value.'
+},
+{
+  id: 2462, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is precision in measurement?',
+  options: ['Closeness of repeated measurements to one another', 'Closeness to the true value in every case', 'Instrument supply voltage', 'The length of a scale'],
+  a: 0, explanation: 'Precision concerns the agreement among repeated measurements.'
+},
+{
+  id: 2463, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is measurement error?',
+  options: ['Difference between measured value and reference value', 'Measured value multiplied by time always', 'The unit of current', 'A type of circuit breaker'],
+  a: 0, explanation: 'Error is commonly calculated as measured value minus reference value.'
+},
+{
+  id: 2464, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is sensitivity of an instrument?',
+  options: ['Change in output per unit change in input', 'Maximum weight it can carry', 'Power consumed by a building', 'Number of wires attached'],
+  a: 0, explanation: 'Sensitivity expresses how much the indication changes for a given input change.'
+},
+{
+  id: 2465, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What does instrument resolution mean?',
+  options: ['Smallest change in input that can be distinguished', 'Maximum allowable temperature only', 'Accuracy of the reference standard only', 'Total circuit resistance'],
+  a: 0, explanation: 'Resolution is the smallest discernible measurement increment.'
+},
+{
+  id: 2466, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is calibration?',
+  options: ['Comparing an instrument with a reference standard', 'Increasing current without limit', 'Changing AC into DC', 'Replacing all instrument labels'],
+  a: 0, explanation: 'Calibration compares indications against known reference values.'
+},
+{
+  id: 2467, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is parallax error?',
+  options: ['Reading error caused by viewing a scale from the wrong angle', 'Error caused only by a broken fuse', 'Error from high current alone', 'A frequency conversion method'],
+  a: 0, explanation: 'Correct eye positioning helps avoid parallax when reading analogue scales.'
+},
+{
+  id: 2468, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which instrument commonly uses a pointer and calibrated scale?',
+  options: ['Analogue instrument', 'Digital-only display', 'Software compiler', 'Optical fibre cable'],
+  a: 0, explanation: 'Analogue instruments often indicate values with a pointer over a scale.'
+},
+{
+  id: 2469, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which device converts a physical quantity into a usable signal?',
+  options: ['Transducer', 'Fuse', 'Busbar', 'Isolator'],
+  a: 0, explanation: 'A transducer converts a physical quantity into a corresponding signal.'
+},
+{
+  id: 2470, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which sensor is commonly used to measure temperature?',
+  options: ['Thermocouple', 'Current transformer', 'Isolator', 'Circuit breaker'],
+  a: 0, explanation: 'A thermocouple produces a voltage related to the temperature difference between its junctions.'
+},
+{
+  id: 2471, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What does an RTD measure?',
+  options: ['Temperature using resistance change', 'Frequency using sound only', 'Voltage by induction only', 'Speed using light only'],
+  a: 0, explanation: 'An RTD uses the predictable resistance variation of a material with temperature.'
+},
+{
+  id: 2472, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is a strain gauge used to measure?',
+  options: ['Strain or deformation', 'Supply frequency only', 'Electrical energy directly', 'Light colour only'],
+  a: 0, explanation: 'A strain gauge changes resistance when mechanically deformed.'
+},
+{
+  id: 2473, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which sensor commonly measures rotational speed without contact?',
+  options: ['Optical encoder', 'Fuse wire', 'Voltmeter', 'Isolator'],
+  a: 0, explanation: 'An optical encoder produces pulses corresponding to shaft movement.'
+},
+{
+  id: 2474, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is a signal conditioner used for?',
+  options: ['Amplify, filter or otherwise prepare a sensor signal', 'Generate mechanical power', 'Replace every transducer', 'Store energy in a flywheel'],
+  a: 0, explanation: 'Signal conditioning adapts sensor signals for measurement or processing.'
+},
+{
+  id: 2475, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is the purpose of an operational amplifier in instrumentation?',
+  options: ['Amplify or process analogue signals', 'Interrupt high-voltage faults mechanically', 'Measure wire length directly', 'Generate fuel'],
+  a: 0, explanation: 'Op-amps are used in amplifier, filter, buffer and signal-processing circuits.'
+},
+{
+  id: 2476, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What does a data acquisition system do?',
+  options: ['Collect and convert measurement signals into data', 'Only distribute high-voltage power', 'Replace every sensor with a fuse', 'Increase conductor sag'],
+  a: 0, explanation: 'DAQ systems sample signals and make measurement data available for analysis.'
+},
+{
+  id: 2477, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What does an ADC do?',
+  options: ['Convert analogue signals into digital values', 'Convert all digital data into mechanical motion', 'Measure insulation only', 'Increase line voltage'],
+  a: 0, explanation: 'An analogue-to-digital converter samples and quantizes analogue signals.'
+},
+{
+  id: 2478, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What does a DAC do?',
+  options: ['Convert digital values into an analogue signal', 'Convert AC into stored energy', 'Measure temperature directly in all cases', 'Open a circuit mechanically'],
+  a: 0, explanation: 'A digital-to-analogue converter generates an analogue output from digital data.'
+},
+{
+  id: 2479, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is sampling in digital measurement?',
+  options: ['Taking signal values at discrete times', 'Increasing a signal continuously without measuring it', 'Removing all noise automatically', 'Changing resistance into inductance'],
+  a: 0, explanation: 'Sampling records a signal at specific time intervals.'
+},
+{
+  id: 2480, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'According to the Nyquist criterion, the sampling frequency should be at least what for a band-limited signal?',
+  options: ['Twice the highest signal frequency', 'Half the highest signal frequency', 'Equal to zero', 'Ten times the signal amplitude'],
+  a: 0, explanation: 'Ideal reconstruction requires a sampling rate greater than twice the highest frequency component.'
+},
+{
+  id: 2481, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is aliasing?',
+  options: ['Misrepresentation of signal frequencies due to insufficient sampling', 'A method of increasing insulation', 'A type of voltage transformer', 'A mechanical bearing fault only'],
+  a: 0, explanation: 'Aliasing occurs when sampling does not adequately represent signal frequency content.'
+},
+{
+  id: 2482, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is a low-pass filter used for in a measurement system?',
+  options: ['Pass low frequencies and attenuate higher frequencies', 'Pass only DC voltage into a motor always', 'Increase every frequency equally', 'Convert resistance to power'],
+  a: 0, explanation: 'A low-pass filter attenuates components above its cutoff region.'
+},
+{
+  id: 2483, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Why is shielding used in measurement cables?',
+  options: ['Reduce electromagnetic interference pickup', 'Increase noise intentionally', 'Raise the signal frequency', 'Eliminate the need for calibration'],
+  a: 0, explanation: 'Proper shielding helps reduce unwanted electrical interference.'
+},
+{
+  id: 2484, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is a current transformer used for?',
+  options: ['Scale AC current for measurement and protection', 'Measure shaft temperature directly', 'Convert DC into AC', 'Measure distance optically'],
+  a: 0, explanation: 'A CT provides a reduced current proportional to primary AC current.'
+},
+{
+  id: 2485, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Why should a current transformer secondary not be left open while its primary carries current?',
+  options: ['A dangerously high secondary voltage may develop', 'It will always reduce primary current to zero', 'It converts the CT into a motor', 'It removes all magnetic flux'],
+  a: 0, explanation: 'An open CT secondary can develop hazardous voltage; follow safe CT procedures.'
+},
+{
+  id: 2486, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is a potential transformer used for?',
+  options: ['Scale AC voltage for measurement and protection', 'Measure mechanical force only', 'Interrupt short circuits directly', 'Convert light to sound'],
+  a: 0, explanation: 'A PT or VT provides a reduced voltage proportional to the primary voltage.'
+},
+{
+  id: 2487, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which bridge is commonly used to measure unknown resistance?',
+  options: ['Wheatstone bridge', 'H-bridge inverter', 'Rectifier bridge only', 'Bridge crane'],
+  a: 0, explanation: 'A Wheatstone bridge compares resistance ratios to determine an unknown resistance.'
+},
+{
+  id: 2488, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which bridge is commonly associated with precise low-resistance measurement?',
+  options: ['Kelvin double bridge', 'Wien bridge only', 'H-bridge inverter', 'Rectifier bridge'],
+  a: 0, explanation: 'The Kelvin double bridge reduces errors due to lead and contact resistance.'
+},
+{
+  id: 2489, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which bridge is commonly used to measure inductance?',
+  options: ['Maxwell bridge', 'Wheatstone bridge in every configuration', 'H-bridge', 'Rectifier bridge'],
+  a: 0, explanation: 'The Maxwell bridge can determine an unknown inductance using a balance condition.'
+},
+{
+  id: 2490, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which instrument detects small electrical currents?',
+  options: ['Galvanometer', 'Isolator', 'Circuit breaker', 'Busbar'],
+  a: 0, explanation: 'A galvanometer is sensitive to small currents.'
+},
+{
+  id: 2491, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which instrument principle uses the interaction of current and magnetic fields?',
+  options: ['Moving-coil instrument', 'Glass thermometer only', 'Mechanical ruler', 'Optical microscope only'],
+  a: 0, explanation: 'A moving-coil instrument develops deflecting torque from magnetic interaction.'
+},
+{
+  id: 2492, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'A permanent-magnet moving-coil instrument directly measures which type of current?',
+  options: ['DC', 'AC of any frequency directly without modification', 'Only radio-frequency current', 'Only zero current'],
+  a: 0, explanation: 'A PMMC instrument is inherently suited to DC; AC measurement needs suitable conversion.'
+},
+{
+  id: 2493, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which instrument type is commonly suitable for both AC and DC measurements?',
+  options: ['Moving-iron instrument', 'PMMC without a rectifier', 'A DC-only galvanometer in every configuration', 'Optical encoder'],
+  a: 0, explanation: 'Moving-iron instruments can operate on both AC and DC.'
+},
+{
+  id: 2494, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is the purpose of damping in an analogue instrument?',
+  options: ['Help the pointer settle quickly without excessive oscillation', 'Increase pointer oscillations indefinitely', 'Change the measured quantity', 'Raise the supply frequency'],
+  a: 0, explanation: 'Damping reduces oscillations and helps the pointer settle.'
+},
+{
+  id: 2495,
+  branch: 'Electrical',
+  topic: 'Electrical Measurements and Instrumentation',
+  semester: 'Semester 5',
+  subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is loading effect?',
+  options: [
+    'A measuring instrument alters the quantity being measured',
+    'A display shows a larger font',
+    'A cable is stored on a shelf',
+    'A sensor is labelled incorrectly'
+  ],
+  a: 0,
+  explanation: "An instrument's finite impedance can disturb the original circuit."
+},
+{
+  id: 2496,
+  branch: 'Electrical',
+  topic: 'Electrical Measurements and Instrumentation',
+  semester: 'Semester 5',
+  subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which instrument commonly measures insulation resistance at elevated test voltage?',
+  options: ['Megohmmeter', 'Ordinary ammeter', 'Wattmeter only', 'Frequency meter'],
+  a: 0, explanation: 'A megohmmeter applies a test voltage and measures high insulation resistance.'
+},
+{
+  id: 2497, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is a digital multimeter commonly able to measure?',
+  options: ['Voltage, current and resistance', 'Only mechanical torque', 'Only light wavelength', 'Only conductor sag'],
+  a: 0, explanation: 'Many digital multimeters measure voltage, current and resistance, with other functions depending on the model.'
+},
+{
+  id: 2498, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What does true RMS measurement provide for an AC waveform?',
+  options: ['The RMS value accounting for waveform shape within instrument limits', 'Only the peak voltage in every case', 'Only the average of positive peaks', 'The waveform frequency only'],
+  a: 0, explanation: 'True-RMS instruments calculate RMS for non-sinusoidal waveforms within their bandwidth and crest-factor limits.'
+},
+{
+  id: 2499, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'What is the purpose of an oscilloscope?',
+  options: ['Display signal voltage versus time', 'Measure insulation resistance only', 'Interrupt fault current', 'Convert DC to AC power'],
+  a: 0, explanation: 'An oscilloscope displays electrical waveforms and helps analyze their timing and shape.'
+},
+{
+  id: 2500, branch: 'Electrical', topic: 'Electrical Measurements and Instrumentation', semester: 'Semester 5', subject: 'Electrical Measurements and Instrumentation',
+  q: 'Which practice is most important before measuring a high-voltage circuit?',
+  options: ['Use correctly rated equipment and follow electrical safety procedures', 'Touch exposed conductors to test voltage', 'Disable all protection', 'Use any meter regardless of rating'],
+  a: 0, explanation: 'Correct ratings, isolation, PPE and safe procedures are essential for electrical measurements.'
+},
+{
+  id: 2501, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is the main purpose of a protective relay?',
+  options: ['Detect faults and initiate circuit breaker operation', 'Increase system voltage', 'Reduce conductor length', 'Generate electrical power'],
+  a: 0, explanation: 'A protective relay detects abnormal conditions and sends a trip signal to the circuit breaker.'
+},
+{
+  id: 2502, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which device interrupts current during a fault?',
+  options: ['Current transformer', 'Circuit breaker', 'Voltmeter', 'Busbar'],
+  a: 1, explanation: 'A circuit breaker opens its contacts to interrupt fault current.'
+},
+{
+  id: 2503, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What does an overcurrent relay detect?',
+  options: ['Excessive current', 'Low frequency only', 'High temperature only', 'Low power factor only'],
+  a: 0, explanation: 'An overcurrent relay operates when current exceeds its set value.'
+},
+{
+  id: 2504, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is the function of a current transformer (CT)?',
+  options: ['Step down current for measurement and protection', 'Increase system frequency', 'Interrupt all faults directly', 'Store electrical energy'],
+  a: 0, explanation: 'A CT provides a reduced proportional current for meters and protective relays.'
+},
+{
+  id: 2505, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is the function of a potential transformer (PT)?',
+  options: ['Measure high voltage through a reduced proportional voltage', 'Interrupt short-circuit current', 'Increase load current', 'Protect against mechanical vibration'],
+  a: 0, explanation: 'A PT or VT scales high voltage to a safer value for measurement and protection.'
+},
+{
+  id: 2506, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which fault involves all three phases short-circuiting together?',
+  options: ['Single line-to-ground fault', 'Line-to-line fault', 'Three-phase fault', 'Open-circuit fault'],
+  a: 2, explanation: 'A three-phase fault involves all three phases and is generally symmetrical.'
+},
+{
+  id: 2507, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which is the most common type of fault on overhead power lines?',
+  options: ['Single line-to-ground fault', 'Three-phase fault', 'Three-phase-to-ground fault', 'No-load fault'],
+  a: 0, explanation: 'Single line-to-ground faults are common because a conductor may contact the ground or a grounded object.'
+},
+{
+  id: 2508, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What does a differential protection scheme compare?',
+  options: ['Currents entering and leaving a protected zone', 'Room temperatures', 'Generator speeds only', 'Supply frequencies at different times'],
+  a: 0, explanation: 'Differential protection detects a difference between the currents at the boundaries of a protected zone.'
+},
+{
+  id: 2509, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which protection is commonly used for power transformers?',
+  options: ['Buchholz protection', 'Thermocouple protection only', 'Lighting control', 'Speed governor protection'],
+  a: 0, explanation: 'A Buchholz relay detects certain internal faults in oil-filled transformers with a conservator.'
+},
+{
+  id: 2510, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Where is a Buchholz relay normally installed?',
+  options: ['Between the transformer tank and conservator', 'Inside the circuit breaker handle', 'On the consumer meter display', 'At the end of a street light'],
+  a: 0, explanation: 'It is fitted in the pipe connecting the main transformer tank to its conservator.'
+},
+{
+  id: 2511, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which protection is widely used for transmission lines?',
+  options: ['Distance protection', 'Room thermostat protection', 'Water-level protection', 'Lighting timer protection'],
+  a: 0, explanation: 'Distance relays estimate the impedance to a fault and are widely used on transmission lines.'
+},
+{
+  id: 2512, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'A distance relay primarily measures which quantity?',
+  options: ['Impedance', 'Illumination', 'Humidity', 'Mechanical pressure'],
+  a: 0, explanation: 'A distance relay uses measured voltage and current to determine apparent impedance.'
+},
+{
+  id: 2513, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What does relay selectivity mean?',
+  options: ['Only the faulty section is isolated where possible', 'All circuit breakers trip for every fault', 'Voltage always increases during faults', 'The relay changes supply frequency'],
+  a: 0, explanation: 'Selectivity helps isolate the faulted section while keeping healthy sections in service.'
+},
+{
+  id: 2514, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is relay sensitivity?',
+  options: ['Ability to detect faults within its intended operating range', 'Ability to increase generator output', 'Ability to change cable colour', 'Ability to store energy'],
+  a: 0, explanation: 'Sensitivity describes the relay’s ability to respond to faults it is designed to detect.'
+},
+{
+  id: 2515, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is relay reliability?',
+  options: ['Correct operation when required and avoiding unwanted operation', 'Operating only during normal conditions', 'Increasing current continuously', 'Eliminating the need for maintenance'],
+  a: 0, explanation: 'A reliable protection system operates correctly for faults and remains stable when it should not trip.'
+},
+{
+  id: 2516, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is the purpose of backup protection?',
+  options: ['Operate if the primary protection or its breaker fails', 'Replace all system earthing', 'Increase load demand', 'Control lighting levels'],
+  a: 0, explanation: 'Backup protection provides another means of clearing a fault if the primary protection fails.'
+},
+{
+  id: 2517, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is meant by primary protection?',
+  options: ['The main protection assigned to a particular equipment or zone', 'Protection used only in homes', 'A system for increasing frequency', 'A device used only for billing'],
+  a: 0, explanation: 'Primary protection is designed to clear faults in its assigned zone quickly and selectively.'
+},
+{
+  id: 2518, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which device is used to protect a circuit against excessive current in many low-voltage installations?',
+  options: ['Fuse', 'Watt-hour meter', 'Capacitor bank', 'Insulator alone'],
+  a: 0, explanation: 'A fuse melts when current exceeds its specified operating characteristics, interrupting the circuit.'
+},
+{
+  id: 2519, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What happens when a fuse element carries a sufficiently high fault current?',
+  options: ['It melts and opens the circuit', 'It generates extra power', 'It increases the supply frequency', 'It becomes a transformer'],
+  a: 0, explanation: 'Excessive current heats the fuse element until it melts and interrupts current.'
+},
+{
+  id: 2520, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is the purpose of an isolator in a substation?',
+  options: ['Provide isolation for maintenance under appropriate no-load conditions', 'Interrupt every high fault current', 'Measure current accurately', 'Generate voltage'],
+  a: 0, explanation: 'An isolator provides a visible isolation gap and is normally operated after current has been interrupted by a breaker.'
+},
+{
+  id: 2521, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which device is designed to interrupt load and fault current within its rated capability?',
+  options: ['Circuit breaker', 'Isolator only', 'Earthing rod only', 'Insulator'],
+  a: 0, explanation: 'Circuit breakers are designed to make or break current within their specified ratings.'
+},
+{
+  id: 2522, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Why is an arc formed when circuit-breaker contacts separate under current?',
+  options: ['The medium between contacts becomes ionized', 'The supply frequency becomes zero', 'The conductor becomes superconducting', 'The current transformer disappears'],
+  a: 0, explanation: 'Ionization of the medium can sustain an electric arc as contacts separate.'
+},
+{
+  id: 2523, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which circuit-breaker medium has strong arc-quenching properties and is used in modern high-voltage breakers?',
+  options: ['Sulfur hexafluoride (SF6) gas', 'Ordinary paper', 'Wood', 'Cotton cloth'],
+  a: 0, explanation: 'SF6 has strong dielectric and arc-quenching properties, though its environmental impact requires careful management.'
+},
+{
+  id: 2524, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which circuit breaker uses vacuum as its arc-quenching medium?',
+  options: ['Vacuum circuit breaker', 'Oil circuit breaker', 'Air-blast circuit breaker', 'SF6 circuit breaker'],
+  a: 0, explanation: 'A vacuum circuit breaker interrupts current in a sealed vacuum interrupter.'
+},
+{
+  id: 2525, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What does the breaking capacity of a circuit breaker indicate?',
+  options: ['The maximum fault current it can safely interrupt under specified conditions', 'The number of lamps it can power', 'Its physical weight only', 'Its normal operating temperature only'],
+  a: 0, explanation: 'Breaking capacity specifies the maximum current the breaker can interrupt safely at its rated conditions.'
+},
+{
+  id: 2526, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is the purpose of earthing in an electrical installation?',
+  options: ['Provide a path for fault current and help limit dangerous touch voltages', 'Increase the normal supply voltage', 'Eliminate all circuit breakers', 'Raise the system frequency'],
+  a: 0, explanation: 'Proper earthing helps conduct fault current and supports protective-device operation while reducing electric-shock risk.'
+},
+{
+  id: 2527, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is earth-fault protection intended to detect?',
+  options: ['Current flowing from a live part to earth', 'Normal current in a healthy load only', 'Mechanical vibration only', 'Ambient light changes'],
+  a: 0, explanation: 'Earth-fault protection detects current associated with an unintended path to earth.'
+},
+{
+  id: 2528, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is a symmetrical fault in a three-phase system?',
+  options: ['A fault affecting all three phases equally', 'A fault affecting only one phase to earth', 'A broken neutral with no other effect', 'A normal balanced load'],
+  a: 0, explanation: 'A symmetrical three-phase fault affects the three phases equally and preserves phase symmetry.'
+},
+{
+  id: 2529, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which components are used to analyse unsymmetrical faults?',
+  options: ['Positive-, negative- and zero-sequence components', 'Only optical components', 'Only mechanical components', 'Only thermal components'],
+  a: 0, explanation: 'Symmetrical components separate unbalanced three-phase quantities into sequence networks.'
+},
+{
+  id: 2530, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which sequence component has phase quantities in normal positive phase order?',
+  options: ['Positive sequence', 'Negative sequence', 'Zero sequence', 'Random sequence'],
+  a: 0, explanation: 'Positive-sequence quantities have equal magnitudes and the normal phase sequence, typically ABC.'
+},
+{
+  id: 2531, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What characterizes negative-sequence components?',
+  options: ['Equal phase magnitudes with the reverse phase sequence', 'All phase quantities are always zero', 'Only DC quantities exist', 'The frequency must be doubled'],
+  a: 0, explanation: 'Negative-sequence components have equal magnitudes but the reverse phase order, typically ACB.'
+},
+{
+  id: 2532, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'In a balanced three-phase system, what is the zero-sequence current?',
+  options: ['Zero', 'Equal to three times line voltage', 'Always infinite', 'Equal to system frequency'],
+  a: 0, explanation: 'For a balanced system, the three phase currents sum to zero, so zero-sequence current is absent.'
+},
+{
+  id: 2533, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Why is a relay operating time important?',
+  options: ['It affects how quickly a fault is cleared', 'It determines the cable colour', 'It sets the room temperature', 'It changes the rated frequency'],
+  a: 0, explanation: 'Fast and coordinated operation limits equipment damage and helps maintain system stability.'
+},
+{
+  id: 2534, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is an inverse-time overcurrent relay?',
+  options: ['A relay whose operating time generally decreases as fault current increases', 'A relay that never trips', 'A relay that measures only voltage', 'A relay that works only at zero current'],
+  a: 0, explanation: 'Inverse-time relays operate more quickly at higher multiples of their current setting.'
+},
+{
+  id: 2535, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What does the plug-setting multiplier (PSM) represent?',
+  options: ['Measured relay current divided by the relay pickup current', 'Voltage divided by frequency', 'Resistance divided by power', 'Breaker weight divided by its length'],
+  a: 0, explanation: 'PSM is the ratio of the current seen by the relay to its pickup-current setting.'
+},
+{
+  id: 2536, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is the purpose of a time multiplier setting (TMS) in an inverse-time relay?',
+  options: ['Adjust the relay operating time', 'Change the system frequency', 'Increase the transformer turns ratio', 'Measure insulation thickness'],
+  a: 0, explanation: 'TMS scales the operating-time characteristic of an inverse-time relay.'
+},
+{
+  id: 2537, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is relay coordination?',
+  options: ['Arranging protection settings so the appropriate device trips first', 'Making all relays trip simultaneously for every fault', 'Connecting relays only to lighting circuits', 'Increasing every relay pickup current without calculation'],
+  a: 0, explanation: 'Coordination helps the closest suitable protective device clear the fault before backup devices operate.'
+},
+{
+  id: 2538, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which protection principle is often used for large generators against internal winding faults?',
+  options: ['Differential protection', 'Street-light control', 'Domestic thermostat control', 'Water-level control'],
+  a: 0, explanation: 'Differential protection compares currents at the generator winding boundaries to identify internal faults.'
+},
+{
+  id: 2539, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What can a negative-sequence relay help protect against in a generator?',
+  options: ['Unbalanced currents that cause rotor heating', 'Low room illumination', 'Excessive water flow', 'Incorrect display brightness'],
+  a: 0, explanation: 'Negative-sequence currents induce double-frequency currents in the rotor and can cause damaging heating.'
+},
+{
+  id: 2540, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is the purpose of a thermal overload relay in a motor circuit?',
+  options: ['Protect against sustained overload conditions', 'Interrupt every lightning strike directly', 'Increase motor speed beyond its rating', 'Measure only power factor'],
+  a: 0, explanation: 'A thermal overload relay responds to heating caused by sustained excessive motor current.'
+},
+{
+  id: 2541, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which condition can cause a motor to draw excessive current?',
+  options: ['Mechanical overload', 'Correct rated loading only', 'Proper cooling in every case', 'Normal insulation resistance alone'],
+  a: 0, explanation: 'Excessive mechanical load can increase motor current and cause overheating.'
+},
+{
+  id: 2542, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is auto-reclosing used for on many overhead transmission lines?',
+  options: ['Restore service after a temporary fault has cleared', 'Increase conductor resistance permanently', 'Prevent all planned maintenance', 'Change AC supply to DC'],
+  a: 0, explanation: 'Auto-reclosing attempts to restore the line after a temporary fault, subject to protection settings and system requirements.'
+},
+{
+  id: 2543, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which fault is often temporary on an overhead line?',
+  options: ['A flashover caused by lightning', 'A permanently broken conductor', 'A destroyed transformer winding', 'A physically severed cable'],
+  a: 0, explanation: 'Some lightning-related flashovers clear after the arc extinguishes, making automatic reclosing useful.'
+},
+{
+  id: 2544, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is the main purpose of a lightning arrester?',
+  options: ['Limit transient overvoltages and divert surge current to earth', 'Measure normal load energy', 'Increase load current continuously', 'Replace all circuit breakers'],
+  a: 0, explanation: 'A lightning arrester limits dangerous surge voltage and diverts surge current away from protected equipment.'
+},
+{
+  id: 2545, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Which device protects equipment against damaging voltage surges?',
+  options: ['Surge arrester', 'Watt-hour meter', 'Ordinary switch only', 'Mechanical tachometer'],
+  a: 0, explanation: 'A surge arrester provides a path for transient surge current and limits overvoltage at the equipment.'
+},
+{
+  id: 2546, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is a busbar protection zone intended to cover?',
+  options: ['The busbar and associated connections within the defined zone', 'Every appliance in a city', 'Only the transformer cooling fan', 'Only the control-room lighting'],
+  a: 0, explanation: 'Busbar protection detects faults within the defined busbar zone and trips the relevant breakers.'
+},
+{
+  id: 2547, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What does a trip circuit do in a circuit-breaker protection system?',
+  options: ['Energizes the breaker trip mechanism when a trip command is issued', 'Raises the supply frequency', 'Measures the consumer bill', 'Stores energy in the transmission line'],
+  a: 0, explanation: 'The trip circuit carries the control signal and energy needed to operate the breaker opening mechanism.'
+},
+{
+  id: 2548, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'Why is a DC battery supply often used for substation protection and control?',
+  options: ['It can keep control and tripping circuits available when AC supply is lost', 'It makes fault current unlimited', 'It replaces all transformers', 'It prevents every possible equipment failure'],
+  a: 0, explanation: 'A station battery can provide dependable control and tripping power during an AC auxiliary-supply failure.'
+},
+{
+  id: 2549, branch: 'Electrical', topic: 'Power System Protection', semester: 'Semester 6', subject: 'Power System Protection',
+  q: 'What is the purpose of a circuit-breaker failure protection scheme?',
+  options: ['Clear the fault through other breakers if the commanded breaker fails to open', 'Increase the failed breaker current', 'Disable all backup protection', 'Measure only the ambient temperature'],
+  a: 0, explanation: 'Breaker-failure protection initiates tripping of other appropriate breakers when the original breaker does not clear the fault.'
+},
+{
+  id: 2550,
+  branch: 'Electrical',
+  topic: 'Power System Protection',
+  semester: 'Semester 6',
+  subject: 'Power System Protection',
+  q: 'Which feature is essential for a good power-system protection scheme?',
+  options: [
+    'Reliability, selectivity, sensitivity and suitable speed',
+    'Maximum delay for every fault',
+    'Uncontrolled simultaneous tripping',
+    'No coordination between devices'
+  ],
+  a: 0,
+  explanation: 'Effective protection should detect faults reliably, isolate the correct section, and clear faults quickly enough.'
+},
+{
+  id: 2551, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is an electrical drive?',
+  options: ['A system that controls the motion of an electric motor', 'A type of insulator', 'A measuring scale', 'A transmission tower'],
+  a: 0, explanation: 'An electrical drive uses a motor and associated equipment to control mechanical motion.'
+},
+{
+  id: 2552, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which component converts electrical energy into mechanical energy?',
+  options: ['Electric motor', 'Fuse', 'Transformer alone', 'Circuit breaker'],
+  a: 0, explanation: 'An electric motor converts electrical energy into mechanical energy.'
+},
+{
+  id: 2553, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the main purpose of a variable-frequency drive?',
+  options: ['Control AC motor speed by varying supply frequency', 'Increase cable length', 'Measure insulation thickness', 'Change the colour of a motor'],
+  a: 0, explanation: 'A variable-frequency drive adjusts the frequency supplied to an AC motor to control its speed.'
+},
+{
+  id: 2554, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which motor is widely used in industrial variable-speed drives?',
+  options: ['Three-phase induction motor', 'Electric bell only', 'Heating element', 'Ordinary fuse'],
+  a: 0, explanation: 'Three-phase induction motors are widely used in industry because they are robust and economical.'
+},
+{
+  id: 2555, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What does the term torque represent?',
+  options: ['Turning effect of a force', 'Electrical resistance only', 'Supply frequency', 'Insulation strength'],
+  a: 0, explanation: 'Torque is the rotational effect of a force about an axis.'
+},
+{
+  id: 2556, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the SI unit of torque?',
+  options: ['Newton-metre', 'Watt-hour', 'Ampere', 'Hertz'],
+  a: 0, explanation: 'Torque is expressed in newton-metres (N·m).'
+},
+{
+  id: 2557, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the synchronous speed of an AC motor?',
+  options: ['120f/P rpm', '60P/f rpm', 'fP/120 rpm', '120P/f rpm'],
+  a: 0, explanation: 'Synchronous speed Ns in rpm is calculated as 120f/P, where f is frequency and P is the number of poles.'
+},
+{
+  id: 2558, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'A four-pole motor operates on a 50 Hz supply. What is its synchronous speed?',
+  options: ['1500 rpm', '3000 rpm', '750 rpm', '1000 rpm'],
+  a: 0, explanation: 'Ns = 120 × 50 / 4 = 1500 rpm.'
+},
+{
+  id: 2559, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is slip in an induction motor?',
+  options: ['Difference between synchronous speed and rotor speed divided by synchronous speed', 'Ratio of voltage to resistance only', 'Rotor diameter divided by shaft length', 'Motor weight divided by power'],
+  a: 0, explanation: 'Slip s = (Ns − Nr)/Ns, where Ns is synchronous speed and Nr is rotor speed.'
+},
+{
+  id: 2560, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'At synchronous speed, the slip of an induction motor is:',
+  options: ['Zero', 'One', 'Two', 'Infinite'],
+  a: 0, explanation: 'At synchronous speed, rotor speed equals synchronous speed, so slip is zero.'
+},
+{
+  id: 2561, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which motor has a commutator?',
+  options: ['Conventional DC motor', 'Squirrel-cage induction motor', 'Synchronous motor without a commutator', 'Transformer'],
+  a: 0, explanation: 'A conventional brushed DC motor uses a commutator to reverse armature current appropriately.'
+},
+{
+  id: 2562, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which method can control the speed of a DC shunt motor?',
+  options: ['Armature-voltage control', 'Changing the colour of the shaft', 'Increasing insulation thickness only', 'Changing the foundation material'],
+  a: 0, explanation: 'Armature-voltage control is a common method for varying DC motor speed.'
+},
+{
+  id: 2563, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is regenerative braking?',
+  options: ['Returning mechanical energy to the electrical supply', 'Dissipating all energy in a fuse', 'Disconnecting the motor permanently', 'Increasing friction without energy recovery'],
+  a: 0, explanation: 'Regenerative braking allows a motor to operate as a generator and return energy to the supply when conditions permit.'
+},
+{
+  id: 2564, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is plugging in an electric drive?',
+  options: ['Applying a connection that produces reverse torque for rapid braking', 'Connecting a motor to a wall socket only', 'Increasing the motor frame size', 'Removing the motor bearings'],
+  a: 0, explanation: 'Plugging creates a braking torque by reversing the effective direction of the motor supply or connections.'
+},
+{
+  id: 2565, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is dynamic braking?',
+  options: ['Converting kinetic energy into electrical energy that is dissipated, commonly in a resistor', 'Returning all energy to the grid in every case', 'Increasing motor speed indefinitely', 'Eliminating the motor load'],
+  a: 0, explanation: 'In dynamic braking, generated electrical energy is dissipated in a braking resistor or other circuit.'
+},
+{
+  id: 2566, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which load commonly requires high starting torque?',
+  options: ['Loaded conveyor', 'Unloaded measuring instrument', 'LED indicator', 'Small signal lamp'],
+  a: 0, explanation: 'A loaded conveyor may require high torque to overcome load and friction at startup.'
+},
+{
+  id: 2567, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which drive is suitable when several motors operate together in a coordinated machine?',
+  options: ['Group or multi-motor drive, depending on the application', 'Single fuse drive', 'Lighting-only drive', 'No-motor drive'],
+  a: 0, explanation: 'Multi-motor arrangements are used when several motors perform coordinated functions in a machine.'
+},
+{
+  id: 2568, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is a single-motor drive?',
+  options: ['One motor drives one machine or a set of mechanically connected loads', 'Every machine has several independent motors', 'A system without an electric motor', 'A system containing only transformers'],
+  a: 0, explanation: 'A single-motor drive uses one motor to drive the relevant mechanical load or mechanism.'
+},
+{
+  id: 2569, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What does a motor duty cycle describe?',
+  options: ['The pattern of loading and rest over time', 'Only the motor paint colour', 'Only the shaft diameter', 'The number of wires in a building'],
+  a: 0, explanation: 'Duty describes how the motor is loaded and operated over time, including starting, running and rest.'
+},
+{
+  id: 2570, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Why is motor starting current often high?',
+  options: ['Back EMF is low or absent at initial startup', 'Rotor speed is immediately infinite', 'Supply voltage is always zero', 'The motor has no windings'],
+  a: 0, explanation: 'At startup, low back EMF can allow a large current unless the drive or starter limits it.'
+},
+{
+  id: 2571, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which device can reduce starting current in a suitable AC motor application?',
+  options: ['Soft starter', 'Ordinary lamp holder', 'Earthing electrode alone', 'Energy meter display'],
+  a: 0, explanation: 'A soft starter gradually increases the applied motor voltage to reduce starting current and mechanical stress.'
+},
+{
+  id: 2572, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the main function of a motor starter?',
+  options: ['Help start the motor safely and provide suitable protection', 'Increase the building height', 'Measure room humidity only', 'Replace the motor shaft'],
+  a: 0, explanation: 'A starter controls motor starting and may provide overload and other protection.'
+},
+{
+  id: 2573, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which motor is commonly used in variable-speed servo applications?',
+  options: ['Servo motor', 'Ordinary heating element', 'Fuse wire', 'Lightning arrester'],
+  a: 0, explanation: 'Servo motors are used in closed-loop systems requiring controlled position, speed or torque.'
+},
+{
+  id: 2574, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the purpose of an encoder in a servo drive?',
+  options: ['Provide position or speed feedback', 'Increase insulation resistance directly', 'Interrupt fault current by melting', 'Convert all AC to mechanical energy without a motor'],
+  a: 0, explanation: 'An encoder provides feedback used by the controller to estimate position or speed.'
+},
+{
+  id: 2575, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is closed-loop speed control?',
+  options: ['Using feedback to compare actual speed with the reference speed', 'Operating without any reference', 'Running the motor only at zero speed', 'Using only a mechanical switch with no feedback'],
+  a: 0, explanation: 'A closed-loop controller uses measured speed feedback to correct the difference from the setpoint.'
+},
+{
+  id: 2576, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is open-loop control?',
+  options: ['Control without measuring the output for feedback correction', 'Control requiring continuous encoder feedback', 'A short circuit in the motor', 'A motor with no supply'],
+  a: 0, explanation: 'Open-loop control applies a command without using output feedback to correct the result.'
+},
+{
+  id: 2577, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which power-electronic device is commonly used in a modern AC motor inverter?',
+  options: ['IGBT', 'Mechanical fuse only', 'Thermometer', 'Wooden switch'],
+  a: 0, explanation: 'IGBTs are widely used as controlled semiconductor switches in motor-drive inverters.'
+},
+{
+  id: 2578, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is pulse-width modulation (PWM) used for in a motor drive?',
+  options: ['Control the effective output voltage by varying switching pulse widths', 'Change motor bearing material', 'Increase cable insulation thickness', 'Measure shaft length'],
+  a: 0, explanation: 'PWM varies the widths of switching pulses to control the effective voltage delivered to the load.'
+},
+{
+  id: 2579, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the purpose of a rectifier in an AC-to-DC drive?',
+  options: ['Convert AC into DC', 'Convert mechanical energy into sound only', 'Measure torque directly', 'Increase pole count mechanically'],
+  a: 0, explanation: 'A rectifier converts alternating current into direct current.'
+},
+{
+  id: 2580, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the function of an inverter in an AC drive?',
+  options: ['Convert DC into controlled AC', 'Convert AC into a mechanical shaft directly', 'Measure insulation resistance only', 'Interrupt every fault without switching'],
+  a: 0, explanation: 'An inverter produces AC from a DC link, often with controllable frequency and voltage.'
+},
+{
+  id: 2581, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the purpose of the DC link in a typical variable-frequency drive?',
+  options: ['Provide an intermediate DC stage between rectifier and inverter', 'Support the motor mechanically', 'Measure ambient light', 'Replace the motor winding'],
+  a: 0, explanation: 'The DC link smooths or stores energy between the input rectifier and output inverter stages.'
+},
+{
+  id: 2582, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What does a braking resistor do in a drive?',
+  options: ['Dissipates excess regenerated energy as heat', 'Increases supply frequency permanently', 'Provides position feedback', 'Replaces the motor rotor'],
+  a: 0, explanation: 'A braking resistor dissipates excess DC-link energy during braking when energy cannot be returned to the supply.'
+},
+{
+  id: 2583, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the purpose of overload protection in a motor drive?',
+  options: ['Protect against excessive load current and overheating', 'Increase shaft vibration', 'Prevent all normal starting current', 'Raise the rated supply frequency'],
+  a: 0, explanation: 'Overload protection helps prevent damage from sustained excessive current and heating.'
+},
+{
+  id: 2584, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is a four-quadrant drive capable of controlling?',
+  options: ['Forward and reverse motoring and braking', 'Only one fixed speed in one direction', 'Only motor temperature', 'Only supply voltage measurement'],
+  a: 0, explanation: 'Four-quadrant operation allows motoring and braking in both directions of rotation.'
+},
+{
+  id: 2585, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What does constant-torque operation mean?',
+  options: ['The drive can provide approximately constant torque over a specified speed range', 'Torque must always be zero', 'Speed and torque must both be infinite', 'The motor cannot change speed'],
+  a: 0, explanation: 'Many drives provide a constant-torque region within their specified operating range.'
+},
+{
+  id: 2586, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Above its base speed, an AC motor drive often operates in which region?',
+  options: ['Field-weakening region with approximately constant power over a range', 'Zero-frequency-only region', 'Infinite-torque region', 'No-load-only region'],
+  a: 0, explanation: 'Above base speed, voltage limits can require field weakening, often producing an approximately constant-power region.'
+},
+{
+  id: 2587, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which load is often approximated as a variable-torque load?',
+  options: ['Centrifugal fan', 'Constant-force lifting load in all conditions', 'Precision positioning table at rest', 'Fixed electrical resistor'],
+  a: 0, explanation: 'For many centrifugal fans, load torque rises approximately with the square of speed.'
+},
+{
+  id: 2588, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which load commonly requires approximately constant torque over its operating range?',
+  options: ['Conveyor belt', 'Centrifugal fan in all operating regions', 'Windage-only load', 'Unloaded shaft with no friction'],
+  a: 0, explanation: 'Conveyors often require roughly constant torque, although actual torque depends on loading and friction.'
+},
+{
+  id: 2589, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is motor efficiency?',
+  options: ['Mechanical output power divided by electrical input power', 'Electrical input divided by motor mass', 'Torque divided by cable length', 'Frequency divided by voltage'],
+  a: 0, explanation: 'Efficiency is useful output power divided by input power, usually expressed as a percentage.'
+},
+{
+  id: 2590, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which practice can improve energy efficiency in a fan drive?',
+  options: ['Using variable-speed control when the airflow demand varies', 'Running at maximum speed at all times', 'Increasing mechanical friction', 'Leaving all filters blocked'],
+  a: 0, explanation: 'Variable-speed control can reduce fan energy use when the required airflow is lower than maximum.'
+},
+{
+  id: 2591, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What can cause overheating in an electric motor?',
+  options: ['Overload, poor cooling or unsuitable operation', 'Correct loading and adequate cooling only', 'Proper maintenance in every case', 'A correctly selected rating by itself'],
+  a: 0, explanation: 'Overload and inadequate cooling can raise winding temperature and damage insulation.'
+},
+{
+  id: 2592, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Why is a motor nameplate important when configuring a drive?',
+  options: ['It provides rated voltage, current, frequency and speed information', 'It sets the building address', 'It replaces all protection settings', 'It determines the colour of the supply cable'],
+  a: 0, explanation: 'Nameplate ratings help configure the drive and protect the motor within its specified limits.'
+},
+{
+  id: 2593, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What does a tachometer measure?',
+  options: ['Rotational speed', 'Insulation thickness', 'Cable resistance only', 'Room temperature'],
+  a: 0, explanation: 'A tachometer measures the rotational speed of a shaft or motor.'
+},
+{
+  id: 2594, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which motor is often selected for precise position control in robotics?',
+  options: ['Servo motor', 'Ordinary fixed resistor', 'Power transformer', 'Fuse link'],
+  a: 0, explanation: 'Servo systems use feedback to control position and motion precisely.'
+},
+{
+  id: 2595, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the purpose of a current sensor in a motor drive?',
+  options: ['Measure current for control and protection', 'Measure shaft colour', 'Change the motor pole count physically', 'Store mechanical energy'],
+  a: 0, explanation: 'Current feedback supports control functions and detection of overloads or other abnormal conditions.'
+},
+{
+  id: 2596, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Why may a drive use a ramp for acceleration?',
+  options: ['Limit sudden changes in speed and reduce mechanical stress', 'Force the motor to reach infinite speed', 'Remove the need for a motor', 'Increase all fault currents'],
+  a: 0, explanation: 'Acceleration ramps limit the rate of speed change and can reduce stress on the motor and driven machine.'
+},
+{
+  id: 2597, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the purpose of a speed reference in a drive?',
+  options: ['Specify the desired motor speed', 'Specify the colour of the enclosure', 'Determine the number of buildings', 'Replace all sensor signals'],
+  a: 0, explanation: 'The speed reference is the commanded speed that the drive attempts to achieve.'
+},
+{
+  id: 2598, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What can happen if an induction motor is operated at very low speed without suitable cooling?',
+  options: ['Cooling may be insufficient and the motor may overheat', 'Cooling always becomes infinite', 'The motor loses all resistance', 'The supply frequency automatically becomes zero'],
+  a: 0, explanation: 'A shaft-mounted fan may deliver less cooling air at low speed, so thermal limits must be considered.'
+},
+{
+  id: 2599, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'What is the purpose of an emergency stop in a motor-driven machine?',
+  options: ['Bring hazardous machine operation to a safe stop according to the design', 'Increase the motor speed', 'Disable every safety function', 'Prevent routine maintenance'],
+  a: 0, explanation: 'An emergency-stop function is designed to reduce risk by stopping hazardous operation appropriately.'
+},
+{
+  id: 2600, branch: 'Electrical', topic: 'Electrical Drives', semester: 'Semester 6', subject: 'Electrical Drives',
+  q: 'Which combination best describes a modern electric drive?',
+  options: ['Motor, power converter and control system', 'Fuse and lamp only', 'Transformer core alone', 'Mechanical bearing without electrical equipment'],
+  a: 0, explanation: 'A modern drive typically combines an electric motor, power electronics and control.'
+},
+{
+  id: 2601, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is a microprocessor?',
+  options: ['A programmable processor implemented on an integrated circuit', 'A mechanical relay', 'A power transformer', 'An electrical insulator'],
+  a: 0, explanation: 'A microprocessor executes instructions to process data and control operations.'
+},
+{
+  id: 2602, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is a microcontroller?',
+  options: ['An integrated device containing a processor, memory and peripherals', 'A motor without a controller', 'A transformer with three windings only', 'A mechanical fuse'],
+  a: 0, explanation: 'A microcontroller typically combines a CPU, memory and input/output peripherals on one chip.'
+},
+{
+  id: 2603, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What does CPU stand for?',
+  options: ['Central Processing Unit', 'Current Protection Utility', 'Control Power Unit', 'Central Power Utility'],
+  a: 0, explanation: 'The Central Processing Unit executes instructions and coordinates processing.'
+},
+{
+  id: 2604, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is the main function of the ALU?',
+  options: ['Perform arithmetic and logical operations', 'Store electrical energy in a battery', 'Interrupt power lines', 'Convert AC into mechanical motion'],
+  a: 0, explanation: 'The Arithmetic Logic Unit performs operations such as addition, subtraction and logical comparisons.'
+},
+{
+  id: 2605, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is the function of a control unit?',
+  options: ['Direct and coordinate instruction execution', 'Generate mechanical torque directly', 'Measure only room temperature', 'Replace all memory'],
+  a: 0, explanation: 'The control unit coordinates data movement and the steps needed to execute instructions.'
+},
+{
+  id: 2606, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'Which memory is generally volatile?',
+  options: ['RAM', 'ROM', 'Flash memory', 'EPROM when unpowered'],
+  a: 0, explanation: 'RAM normally loses its stored data when power is removed.'
+},
+{
+  id: 2607, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'Which memory commonly stores firmware in a microcontroller?',
+  options: ['Flash memory', 'Volatile register only', 'Temporary cache only', 'A mechanical hard stop'],
+  a: 0, explanation: 'Flash memory is non-volatile and commonly stores program code.'
+},
+{
+  id: 2608, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is a register in a processor?',
+  options: ['A small, fast storage location inside the processor', 'A large power transformer', 'A type of motor bearing', 'An electrical cable joint'],
+  a: 0, explanation: 'Registers hold data, addresses or control information needed during instruction execution.'
+},
+{
+  id: 2609, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What does the program counter usually contain?',
+  options: ['The address of the next instruction to fetch', 'The motor torque in newton-metres', 'The transformer oil level', 'The resistance of every circuit'],
+  a: 0, explanation: 'The program counter tracks the address used to fetch the next instruction.'
+},
+{
+  id: 2610, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What does the stack pointer identify?',
+  options: ['The current top location of the stack', 'The voltage of a transmission line', 'The speed of a rotor', 'The temperature of a transformer'],
+  a: 0, explanation: 'The stack pointer tracks the current stack location used for calls, returns and temporary storage.'
+},
+{
+  id: 2611, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is an instruction set?',
+  options: ['The collection of machine instructions supported by a processor', 'A list of motor spare parts', 'A set of transformer windings', 'A group of electrical poles'],
+  a: 0, explanation: 'An instruction set defines the operations a processor can execute.'
+},
+{
+  id: 2612, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is an opcode?',
+  options: ['The part of an instruction that specifies the operation', 'A motor mounting bolt', 'A power-line insulator', 'A type of electrical meter'],
+  a: 0, explanation: 'The opcode identifies the operation the processor is instructed to perform.'
+},
+{
+  id: 2613, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is an interrupt?',
+  options: ['An event that requests the processor to handle a condition', 'A permanent mechanical break in a shaft', 'A type of transformer oil', 'A method of increasing wire thickness'],
+  a: 0, explanation: 'An interrupt temporarily redirects execution to a handler to service an event.'
+},
+{
+  id: 2614, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is polling in an embedded system?',
+  options: ['Repeatedly checking a device or status flag', 'A method of cooling transformer oil', 'A type of motor winding', 'A process for joining power cables'],
+  a: 0, explanation: 'Polling checks a status or input repeatedly to determine whether an event has occurred.'
+},
+{
+  id: 2615, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is the advantage of interrupt-driven input/output?',
+  options: ['The CPU can do other work until an event needs service', 'The CPU must always wait in a tight loop', 'It eliminates all program code', 'It prevents every hardware fault'],
+  a: 0, explanation: 'Interrupt-driven I/O can reduce wasted CPU time compared with continuous polling.'
+},
+{
+  id: 2616, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is a timer peripheral used for?',
+  options: ['Measure time intervals or generate timed events', 'Increase the physical size of memory', 'Change the colour of a display', 'Store mechanical energy'],
+  a: 0, explanation: 'Timers support delays, event timing, pulse generation and related time-based functions.'
+},
+{
+  id: 2617, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is a watchdog timer?',
+  options: ['A timer that can reset or recover a system if software stops responding', 'A device for measuring line voltage only', 'A type of power transformer', 'A mechanical speed reducer'],
+  a: 0, explanation: 'A watchdog detects failure to service it within a specified time and can initiate recovery.'
+},
+{
+  id: 2618, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is GPIO?',
+  options: ['General-Purpose Input/Output', 'Generator Power Input Only', 'Ground Protection Induction Output', 'General Power Interrupt Option'],
+  a: 0, explanation: 'GPIO pins can be configured as digital inputs or outputs.'
+},
+{
+  id: 2619, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is an ADC used for?',
+  options: ['Convert an analog signal into a digital value', 'Convert a digital number into mechanical torque', 'Increase the mains frequency', 'Interrupt a circuit breaker mechanically'],
+  a: 0, explanation: 'An analog-to-digital converter represents an analog input as a digital number.'
+},
+{
+  id: 2620, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is a DAC used for?',
+  options: ['Convert a digital value into an analog signal', 'Convert heat directly into program instructions', 'Measure only cable length', 'Replace all processor registers'],
+  a: 0, explanation: 'A digital-to-analog converter generates an analog output from a digital value.'
+},
+{
+  id: 2621, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What does UART commonly provide?',
+  options: ['Asynchronous serial communication', 'Mechanical torque amplification', 'Three-phase power generation', 'Transformer cooling'],
+  a: 0, explanation: 'UART hardware sends and receives serial data without a shared serial clock.'
+},
+{
+  id: 2622, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'Which bus carries memory addresses?',
+  options: ['Address bus', 'Data bus only', 'Cooling bus', 'Mechanical bus'],
+  a: 0, explanation: 'The address bus identifies the memory location or peripheral being accessed.'
+},
+{
+  id: 2623, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is the function of the data bus?',
+  options: ['Carry data between processor, memory and peripherals', 'Carry only mechanical force', 'Measure insulation resistance directly', 'Generate the processor clock by itself'],
+  a: 0, explanation: 'The data bus transports data among connected digital components.'
+},
+{
+  id: 2624, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What does the control bus carry?',
+  options: ['Control signals such as read and write', 'Only mechanical torque', 'Only room temperature', 'Only motor speed'],
+  a: 0, explanation: 'Control signals coordinate operations such as memory reads, writes and interrupt handling.'
+},
+{
+  id: 2625, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'How many distinct values can an unsigned 8-bit number represent?',
+  options: ['256', '8', '16', '128'],
+  a: 0, explanation: 'Eight bits represent 2^8 = 256 values, from 0 through 255.'
+},
+{
+  id: 2626, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is the binary representation of decimal 5 using four bits?',
+  options: ['0101', '0011', '1010', '1111'],
+  a: 0, explanation: 'Decimal 5 equals binary 0101 in four-bit representation.'
+},
+{
+  id: 2627, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is hexadecimal notation based on?',
+  options: ['Base 16', 'Base 2', 'Base 8', 'Base 10 only'],
+  a: 0, explanation: 'Hexadecimal uses sixteen symbols, 0–9 and A–F.'
+},
+{
+  id: 2628, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What does a logic AND operation produce?',
+  options: ['1 only when all inputs are 1', '1 whenever any input is 0', 'Always 0', 'Always 1'],
+  a: 0, explanation: 'An AND gate produces logic 1 only if every input is logic 1.'
+},
+{
+  id: 2629, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What does a logic OR operation produce?',
+  options: ['1 when at least one input is 1', '1 only when every input is 0', 'Always 0', 'Only analog values'],
+  a: 0, explanation: 'An OR gate outputs 1 if at least one input is 1.'
+},
+{
+  id: 2630, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What does a NOT gate do?',
+  options: ['Inverts its input logic value', 'Adds two binary numbers', 'Stores a full byte permanently', 'Measures motor speed'],
+  a: 0, explanation: 'A NOT gate changes 0 to 1 and 1 to 0.'
+},
+{
+  id: 2631, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is the purpose of a clock signal in a synchronous digital system?',
+  options: ['Coordinate the timing of operations', 'Supply all motor mechanical power', 'Store program data permanently', 'Replace the power supply'],
+  a: 0, explanation: 'The clock provides timing references for synchronous logic and instruction execution.'
+},
+{
+  id: 2632, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is reset used for in a microcontroller?',
+  options: ['Put the device into a defined startup state', 'Increase memory without hardware', 'Measure line current directly', 'Change the chip material'],
+  a: 0, explanation: 'Reset initializes processor state so execution can begin from the defined reset entry point.'
+},
+{
+  id: 2633, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is embedded software?',
+  options: ['Software designed to control or operate a dedicated device', 'Only a desktop word-processing document', 'A mechanical bearing', 'A power cable coating'],
+  a: 0, explanation: 'Embedded software runs on hardware designed for a particular function or set of functions.'
+},
+{
+  id: 2634, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is a real-time system?',
+  options: ['A system whose correctness can depend on meeting timing deadlines', 'A system that never uses a clock', 'A system with no inputs', 'A system that only stores photographs'],
+  a: 0, explanation: 'Real-time systems must respond within specified timing constraints.'
+},
+{
+  id: 2635, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is an RTOS?',
+  options: ['Real-Time Operating System', 'Random Transfer Output Signal', 'Rotating Torque Operating Shaft', 'Read-Through Optical Sensor'],
+  a: 0, explanation: 'An RTOS provides scheduling and services designed to support time-constrained tasks.'
+},
+{
+  id: 2636, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is the purpose of task scheduling in an RTOS?',
+  options: ['Decide which task should execute and when', 'Increase the voltage of every input', 'Replace digital memory with mechanical storage', 'Measure the motor frame size'],
+  a: 0, explanation: 'The scheduler allocates processor time to tasks according to the system policy and priorities.'
+},
+{
+  id: 2637, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is an I2C bus commonly used for?',
+  options: ['Communication with peripherals using clock and data lines', 'High-voltage power transmission', 'Direct mechanical braking', 'Cooling a processor with oil'],
+  a: 0, explanation: 'I2C commonly uses serial clock (SCL) and serial data (SDA) lines to connect peripherals.'
+},
+{
+  id: 2638, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'Which signals are central to SPI communication?',
+  options: ['Clock, data and chip-select signals', 'Only a ground rod and fuse', 'Only three-phase line voltages', 'Only temperature and pressure'],
+  a: 0, explanation: 'SPI commonly uses a clock, data lines and a chip-select signal for peripheral communication.'
+},
+{
+  id: 2639, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is debouncing needed for when reading a mechanical push button?',
+  options: ['Prevent multiple false transitions caused by contact bounce', 'Increase the button voltage without limit', 'Store the button in flash memory', 'Convert the button into a motor'],
+  a: 0, explanation: 'Mechanical contacts can produce rapid transitions; debouncing filters these into a stable input.'
+},
+{
+  id: 2640, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What does PWM from a microcontroller commonly control?',
+  options: ['Average power delivered to a load by switching', 'The physical size of the chip', 'Only the serial port name', 'The number of memory addresses automatically'],
+  a: 0, explanation: 'PWM controls average delivered power by changing the duty cycle of a switching signal.'
+},
+{
+  id: 2641, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is the duty cycle of a PWM signal?',
+  options: ['Percentage of a period for which the signal is active', 'Number of processor pins', 'Memory capacity in bytes', 'Ratio of motor mass to length'],
+  a: 0, explanation: 'Duty cycle is the active time divided by the total period, commonly expressed as a percentage.'
+},
+{
+  id: 2642, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is firmware?',
+  options: ['Software stored in non-volatile memory to control hardware', 'A mechanical motor part', 'An ordinary power cable', 'A type of circuit breaker arc'],
+  a: 0, explanation: 'Firmware is low-level software stored in non-volatile memory and used to operate a device.'
+},
+{
+  id: 2643, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is the purpose of a bootloader?',
+  options: ['Start or load application software, often supporting firmware updates', 'Cool the processor mechanically', 'Generate three-phase power', 'Replace every digital instruction'],
+  a: 0, explanation: 'A bootloader runs during startup and may load an application or support firmware programming.'
+},
+{
+  id: 2644, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'Why should unused microcontroller inputs be configured appropriately?',
+  options: ['Floating inputs can pick up noise and produce unpredictable readings', 'They automatically increase processor memory', 'They always consume no power in every device', 'They convert digital data to analog automatically'],
+  a: 0, explanation: 'Defined pull-up, pull-down or other appropriate configurations help prevent floating input states.'
+},
+{
+  id: 2645, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is the purpose of a pull-up resistor?',
+  options: ['Hold a signal at a defined high level when no device pulls it low', 'Always force the signal low', 'Increase the processor clock frequency', 'Interrupt the mains supply'],
+  a: 0, explanation: 'A pull-up resistor biases a signal toward the supply voltage when it is otherwise undriven.'
+},
+{
+  id: 2646, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What does an interrupt service routine (ISR) do?',
+  options: ['Handle a specific interrupt event', 'Replace the entire processor hardware', 'Measure transformer oil level only', 'Increase motor speed directly without control'],
+  a: 0, explanation: 'An ISR executes the code required to service an interrupt source.'
+},
+{
+  id: 2647, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'Why should an ISR generally execute quickly?',
+  options: ['Long ISRs can delay other time-critical work and interrupts', 'Long ISRs always improve response time', 'It changes flash memory into RAM', 'It eliminates the system clock'],
+  a: 0, explanation: 'Short handlers reduce interrupt latency and help the system meet timing deadlines.'
+},
+{
+  id: 2648, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'What is an embedded sensor interface used for?',
+  options: ['Read physical measurements such as temperature or pressure', 'Generate unlimited power', 'Replace every processor instruction', 'Increase the number of CPU cores automatically'],
+  a: 0, explanation: 'Sensor interfaces condition and acquire signals from physical sensors.'
+},
+{
+  id: 2649, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'Why is input voltage compatibility important when connecting a sensor to a microcontroller?',
+  options: ['An incompatible voltage may cause incorrect readings or damage', 'It determines the chip colour', 'It removes the need for grounding', 'It guarantees infinite sampling speed'],
+  a: 0, explanation: 'Signals must stay within the input pin ratings and match the expected logic or ADC range.'
+},
+{
+  id: 2650, branch: 'Electrical', topic: 'Microprocessors and Microcontrollers', semester: 'Semester 6', subject: 'Microprocessors and Microcontrollers',
+  q: 'Which is an important practice when designing a microcontroller-based electrical control system?',
+  options: ['Use suitable isolation, protection and signal conditioning where required', 'Connect every sensor directly to mains voltage', 'Ignore pin ratings', 'Disable all fault handling'],
+  a: 0, explanation: 'Appropriate electrical protection and signal conditioning help improve safety and reliability.'
+},
+{
+  id: 2651, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the main purpose of power system analysis?',
+  options: ['Evaluate system operation under normal and abnormal conditions', 'Choose building paint colours', 'Measure only room temperature', 'Calculate the weight of insulators only'],
+  a: 0, explanation: 'Power system analysis studies electrical quantities to support planning, operation and protection.'
+},
+{
+  id: 2652, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is a single-line diagram?',
+  options: ['A simplified representation of a three-phase power system', 'A physical cable with one conductor only in every case', 'A motor winding diagram only', 'A building floor plan'],
+  a: 0, explanation: 'A single-line diagram uses symbols and one line to represent a three-phase network.'
+},
+{
+  id: 2653, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What does a bus represent in power system analysis?',
+  options: ['A node where system components are electrically connected', 'A mechanical vehicle', 'A transformer cooling fan', 'A type of fuse material'],
+  a: 0, explanation: 'A bus is an electrical node connecting generators, loads and network branches.'
+},
+{
+  id: 2654, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the purpose of a load-flow study?',
+  options: ['Calculate bus voltages, phase angles and power flows in a steady-state network', 'Measure the height of towers only', 'Determine the paint thickness of equipment', 'Find the motor bearing colour'],
+  a: 0, explanation: 'Load-flow analysis calculates steady-state voltages, angles and real and reactive power flows.'
+},
+{
+  id: 2655, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which bus is commonly used as the reference for voltage angle in load-flow studies?',
+  options: ['Slack or swing bus', 'Every load bus simultaneously', 'An isolated mechanical shaft', 'A disconnected insulator'],
+  a: 0, explanation: 'The slack bus provides the reference angle and balances the remaining system real and reactive power mismatch.'
+},
+{
+  id: 2656, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which quantities are normally specified at a PV bus?',
+  options: ['Real power and voltage magnitude', 'Real power and reactive power only', 'Voltage angle and reactive power only', 'Frequency and conductor length'],
+  a: 0, explanation: 'A PV bus generally specifies generator real power and voltage magnitude.'
+},
+{
+  id: 2657, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which quantities are normally specified at a PQ bus?',
+  options: ['Real and reactive power', 'Voltage magnitude and angle only', 'Real power and voltage magnitude only', 'Conductor length and temperature'],
+  a: 0, explanation: 'A PQ bus specifies real and reactive power demand or injection.'
+},
+{
+  id: 2658, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What does per-unit representation do?',
+  options: ['Express a quantity relative to a selected base value', 'Convert all AC quantities into DC', 'Remove all transformer losses', 'Make all voltage angles equal'],
+  a: 0, explanation: 'Per-unit value equals the actual quantity divided by its corresponding base quantity.'
+},
+{
+  id: 2659, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the per-unit value of a quantity equal to its base value?',
+  options: ['1.0 pu', '0 pu', '10 pu', '100 pu in every case'],
+  a: 0, explanation: 'A quantity equal to its selected base has a per-unit value of one.'
+},
+{
+  id: 2660, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Why is per-unit analysis useful in networks with transformers?',
+  options: ['It simplifies comparisons and impedance calculations across voltage levels', 'It removes the need to know system ratings', 'It makes all currents equal', 'It eliminates all fault currents'],
+  a: 0, explanation: 'With consistent bases, transformer impedance conversion is simplified in per-unit calculations.'
+},
+{
+  id: 2661, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the Y-bus matrix?',
+  options: ['Bus admittance matrix', 'Generator speed table', 'Transformer oil chart', 'Motor torque curve'],
+  a: 0, explanation: 'The bus admittance matrix represents the nodal current-voltage relationships of a network.'
+},
+{
+  id: 2662, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the Z-bus matrix?',
+  options: ['Bus impedance matrix', 'Insulator colour matrix', 'Generator fuel table', 'Motor speed diagram'],
+  a: 0, explanation: 'The bus impedance matrix relates bus current injections to bus voltages when appropriately defined.'
+},
+{
+  id: 2663, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'How are Y-bus and Z-bus related in a nonsingular network model?',
+  options: ['Z-bus is the inverse of Y-bus', 'Z-bus is always identical to Y-bus', 'Both always equal zero', 'Y-bus is the square of frequency'],
+  a: 0, explanation: 'When the relevant matrix is invertible, Z-bus = inverse of Y-bus.'
+},
+{
+  id: 2664, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which algorithm is commonly used for solving load-flow problems?',
+  options: ['Newton-Raphson method', 'Bubble sort only', 'Binary search only', 'Euclidean division only'],
+  a: 0, explanation: 'Newton-Raphson is a widely used iterative method for solving nonlinear load-flow equations.'
+},
+{
+  id: 2665, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which load-flow method is often valued for its simplicity?',
+  options: ['Gauss-Seidel method', 'Only Fourier synthesis', 'Only binary search', 'Only matrix sorting'],
+  a: 0, explanation: 'Gauss-Seidel is conceptually simple but may converge more slowly than Newton-Raphson for large systems.'
+},
+{
+  id: 2666, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What does convergence mean in an iterative load-flow calculation?',
+  options: ['The solution changes or mismatches satisfy the chosen tolerance', 'The voltage becomes infinite', 'All buses disconnect', 'Every iteration must increase the error'],
+  a: 0, explanation: 'An iterative solution converges when the specified mismatch or update criterion is sufficiently small.'
+},
+{
+  id: 2667, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is a power mismatch in load-flow analysis?',
+  options: ['Difference between specified and calculated power at a bus', 'Difference between tower heights', 'Difference between motor colours', 'Difference between two cable labels'],
+  a: 0, explanation: 'Power mismatch is the difference between scheduled and calculated real or reactive power.'
+},
+{
+  id: 2668, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is reactive power commonly associated with in AC systems?',
+  options: ['Energy exchange involving electric and magnetic fields', 'Net useful work only', 'Mechanical mass alone', 'Conductor length alone'],
+  a: 0, explanation: 'Reactive power reflects periodic energy exchange in inductive and capacitive elements.'
+},
+{
+  id: 2669, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the unit of reactive power?',
+  options: ['var', 'Watt-hour only', 'Ohm-metre', 'Hertz per metre'],
+  a: 0, explanation: 'Reactive power is measured in volt-amperes reactive (var).'
+},
+{
+  id: 2670, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the power factor of an AC circuit?',
+  options: ['Ratio of real power to apparent power', 'Ratio of resistance to conductor length', 'Ratio of frequency to voltage', 'Ratio of torque to speed only'],
+  a: 0, explanation: 'Power factor is P/S, the ratio of real power to apparent power.'
+},
+{
+  id: 2671, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What can low power factor cause in a power network for a given real power?',
+  options: ['Higher current and increased losses', 'Zero current in all conditions', 'No voltage drop in any line', 'Infinite transmission capacity'],
+  a: 0, explanation: 'For a given real power and voltage, lower power factor generally requires more current, increasing losses.'
+},
+{
+  id: 2672, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which equipment is commonly used to improve lagging power factor?',
+  options: ['Shunt capacitor bank', 'Series fuse only', 'Mechanical brake', 'Ordinary insulator'],
+  a: 0, explanation: 'Shunt capacitors supply reactive power locally and can improve lagging power factor.'
+},
+{
+  id: 2673, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What causes real power losses in a transmission line?',
+  options: ['Conductor resistance', 'Voltage angle alone without current or impedance', 'The line name', 'The colour of the tower'],
+  a: 0, explanation: 'Resistive losses are commonly represented by I²R for a conductor.'
+},
+{
+  id: 2674, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is voltage regulation in a transmission line concerned with?',
+  options: ['Change in receiving-end voltage between specified operating conditions', 'Change in tower colour', 'Change in transformer weight', 'Change in conductor brand name'],
+  a: 0, explanation: 'Voltage regulation describes receiving-end voltage change as the load changes, under a stated convention.'
+},
+{
+  id: 2675, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What does a short-circuit study calculate?',
+  options: ['Fault currents and related voltages during short circuits', 'Only normal household energy bills', 'Only conductor paint thickness', 'Only motor bearing temperature'],
+  a: 0, explanation: 'Short-circuit analysis estimates fault current and network response for equipment selection and protection.'
+},
+{
+  id: 2676, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Why is fault-current calculation important?',
+  options: ['To select suitable switchgear and protection ratings', 'To determine the colour of the busbar', 'To remove the need for earthing', 'To increase every load current'],
+  a: 0, explanation: 'Fault-current estimates help ensure equipment can withstand and interrupt expected fault levels.'
+},
+{
+  id: 2677, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which fault is generally symmetrical?',
+  options: ['Three-phase short circuit', 'Single line-to-ground fault', 'Line-to-line fault', 'One phase open circuit'],
+  a: 0, explanation: 'A three-phase short circuit is symmetrical when the three phases are affected equally.'
+},
+{
+  id: 2678, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which method is used to analyse unsymmetrical faults?',
+  options: ['Symmetrical components', 'Only geometric scaling', 'Only decimal rounding', 'Only mechanical balancing'],
+  a: 0, explanation: 'Symmetrical components decompose unbalanced phase quantities into sequence components.'
+},
+{
+  id: 2679, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which sequence networks are used in symmetrical-component fault analysis?',
+  options: ['Positive, negative and zero sequence', 'Only odd and even numbers', 'Only input and output networks', 'Only AC and DC cables'],
+  a: 0, explanation: 'The three sequence networks model positive-, negative- and zero-sequence behaviour.'
+},
+{
+  id: 2680, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the purpose of transient stability analysis?',
+  options: ['Assess whether generators remain in synchronism after a large disturbance', 'Measure conductor paint thickness', 'Find the weight of a tower only', 'Calculate only household power bills'],
+  a: 0, explanation: 'Transient stability studies rotor-angle behaviour following major disturbances such as faults or switching.'
+},
+{
+  id: 2681, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is rotor-angle stability concerned with?',
+  options: ['Maintaining synchronism among synchronous machines', 'Keeping all conductor colours identical', 'Maintaining constant building temperature', 'Preventing all reactive power flow'],
+  a: 0, explanation: 'Rotor-angle stability concerns the ability of synchronous machines to remain in step.'
+},
+{
+  id: 2682, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What does frequency stability concern?',
+  options: ['Maintaining system frequency after a significant power imbalance', 'Maintaining tower height', 'Maintaining constant cable colour', 'Maintaining a fixed motor bearing size'],
+  a: 0, explanation: 'Frequency stability depends on balancing generation and demand and the response of controls and reserves.'
+},
+{
+  id: 2683, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What happens to system frequency immediately after a generation deficit, before control response restores balance?',
+  options: ['Frequency tends to decrease', 'Frequency must instantly double', 'Frequency always becomes zero immediately', 'Frequency is unrelated to active-power balance'],
+  a: 0, explanation: 'A generation deficit tends to slow synchronous machines and lower system frequency.'
+},
+{
+  id: 2684, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is economic dispatch?',
+  options: ['Allocate generation among units to meet demand at low operating cost subject to constraints', 'Choose the cheapest conductor colour', 'Schedule only maintenance workers', 'Set every generator to zero output'],
+  a: 0, explanation: 'Economic dispatch shares generation to minimize operating cost while satisfying system requirements.'
+},
+{
+  id: 2685, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is unit commitment?',
+  options: ['Decide which generating units should be on or off over a scheduling period', 'Choose a motor bearing size', 'Measure only reactive power', 'Select the paint on a substation'],
+  a: 0, explanation: 'Unit commitment schedules generator start-up and shutdown while meeting demand and operating constraints.'
+},
+{
+  id: 2686, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is spinning reserve?',
+  options: ['Available capacity from generators already online that can increase output', 'A rotating tower structure', 'The energy stored in a fuse', 'A disconnected cable'],
+  a: 0, explanation: 'Spinning reserve is unused capability from synchronized generating units that can respond when needed.'
+},
+{
+  id: 2687, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What does contingency analysis examine?',
+  options: ['The effect of specified component outages on system operation', 'Only normal weather records', 'Only the cost of office furniture', 'Only motor paint defects'],
+  a: 0, explanation: 'Contingency analysis evaluates how outages, such as line or generator trips, affect system security.'
+},
+{
+  id: 2688, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is an N-1 security criterion?',
+  options: ['The system can withstand a defined single credible contingency within specified limits', 'The system must have only one bus', 'Every component must fail once', 'The system has no backup equipment'],
+  a: 0, explanation: 'N-1 planning checks whether the system can tolerate the loss of one specified component without unacceptable consequences.'
+},
+{
+  id: 2689, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the purpose of state estimation in power-system operation?',
+  options: ['Estimate the most likely network state from measurements and a network model', 'Determine the colour of every cable', 'Replace all protection relays', 'Calculate the mass of each transformer'],
+  a: 0, explanation: 'State estimation combines measurements with a network model to estimate bus voltage magnitudes and angles.'
+},
+{
+  id: 2690, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is an observability problem in state estimation?',
+  options: ['Insufficient measurement information to determine the required state uniquely', 'Excessive paint thickness', 'A broken motor fan only', 'A conductor with zero length'],
+  a: 0, explanation: 'A network is observable when available measurements and topology provide enough information to estimate its state.'
+},
+{
+  id: 2691, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the main purpose of reactive-power planning?',
+  options: ['Maintain acceptable voltage and reactive-power balance', 'Increase real power without any limit', 'Remove all generators', 'Keep all loads disconnected'],
+  a: 0, explanation: 'Reactive-power resources help maintain voltage profiles and support secure operation.'
+},
+{
+  id: 2692, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is voltage collapse associated with?',
+  options: ['The inability to maintain acceptable voltage following increasing stress or disturbances', 'A permanent increase in every bus voltage', 'A change in tower colour', 'A decrease in conductor length only'],
+  a: 0, explanation: 'Voltage collapse can occur when the system cannot supply the reactive power needed to maintain voltage.'
+},
+{
+  id: 2693, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What does the swing equation describe?',
+  options: ['Rotor-angle dynamics of a synchronous machine', 'The physical swing of a transmission tower', 'The colour change of a motor', 'The thermal expansion of every cable only'],
+  a: 0, explanation: 'The swing equation relates accelerating power to rotor-speed and rotor-angle dynamics.'
+},
+{
+  id: 2694, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the purpose of a power system equivalent model?',
+  options: ['Simplify part of the network while preserving relevant electrical behaviour', 'Remove all electrical parameters', 'Make every bus physically identical', 'Increase the number of faults'],
+  a: 0, explanation: 'Equivalent models reduce complexity while retaining behaviour relevant to the analysis.'
+},
+{
+  id: 2695, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which quantity is commonly represented by the phase angle of a bus voltage?',
+  options: ['The voltage phase relative to a reference', 'The physical height of the busbar', 'The conductor diameter', 'The mass of a generator'],
+  a: 0, explanation: 'Bus voltage angle indicates its phase relative to the chosen reference angle.'
+},
+{
+  id: 2696, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'In a simplified lossless transmission network, real power transfer is strongly related to which quantities?',
+  options: ['Voltage magnitudes, line reactance and voltage-angle difference', 'Tower paint and conductor colour', 'Only transformer mass', 'Only the physical length of the control room'],
+  a: 0, explanation: 'For a simplified lossless line, real power transfer depends on voltage magnitudes, reactance and the sine of the angle difference.'
+},
+{
+  id: 2697, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What is the main purpose of a DC load-flow approximation?',
+  options: ['Estimate real-power flows using simplifying assumptions', 'Calculate exact reactive power and voltage magnitudes in all cases', 'Model only transformer temperature', 'Replace all network measurements'],
+  a: 0, explanation: 'DC load flow approximates real-power flows by assuming small angle differences and other simplifying conditions.'
+},
+{
+  id: 2698, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Why are transmission limits considered in power-system studies?',
+  options: ['To avoid overloading equipment and violating operating constraints', 'To make all currents infinite', 'To eliminate every voltage drop', 'To remove generator control'],
+  a: 0, explanation: 'Thermal, voltage and stability limits constrain safe power-system operation.'
+},
+{
+  id: 2699, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'What does system reliability analysis assess?',
+  options: ['The ability to supply demand with acceptable continuity and quality', 'The colour of every circuit breaker', 'The size of office furniture', 'Only the frequency of a computer keyboard'],
+  a: 0, explanation: 'Reliability analysis assesses whether the system can provide service despite failures and changing conditions.'
+},
+{
+  id: 2700, branch: 'Electrical', topic: 'Power System Analysis', semester: 'Semester 6', subject: 'Power System Analysis',
+  q: 'Which set of studies is commonly used for power-system planning and operation?',
+  options: ['Load flow, short circuit, stability and contingency analysis', 'Only paint inspection and building design', 'Only motor bearing measurements', 'Only office network testing'],
+  a: 0, explanation: 'These studies evaluate steady-state operation, fault levels, dynamic stability and security under outages.'
+},
+
+{
+  id: 2701, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the main purpose of load flow analysis?',
+  options: ['To determine bus voltages and power flows', 'To design batteries only', 'To measure wire length', 'To calculate motor speed only'],
+  a: 0,
+  explanation: 'Load flow analysis determines bus voltage magnitudes, phase angles, and power flow in a power system.'
+},
+{
+  id: 2702, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'Which bus is also known as the slack bus?',
+  options: ['Load bus', 'Generator bus with specified voltage only', 'Reference bus', 'Distribution bus'],
+  a: 2,
+  explanation: 'The slack bus provides the reference voltage angle and balances system real and reactive power mismatches.'
+},
+{
+  id: 2703, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What does a PQ bus specify?',
+  options: ['Voltage magnitude and angle', 'Real and reactive power', 'Voltage and real power', 'Frequency and angle'],
+  a: 1,
+  explanation: 'At a PQ bus, real power P and reactive power Q are specified.'
+},
+{
+  id: 2704, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is specified at a PV bus?',
+  options: ['Real power and voltage magnitude', 'Reactive power and angle', 'Real and reactive power', 'Voltage angle and reactive power'],
+  a: 0,
+  explanation: 'A PV bus specifies generator real power and voltage magnitude.'
+},
+{
+  id: 2705, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'Which method is commonly used for load flow calculations?',
+  options: ['Newton-Raphson method', 'Euclidean algorithm', 'Binary search only', 'Kruskal algorithm'],
+  a: 0,
+  explanation: 'Newton-Raphson is a widely used iterative method for solving load flow equations.'
+},
+{
+  id: 2706, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the purpose of the Y-bus matrix?',
+  options: ['To represent bus admittance relationships', 'To store energy', 'To calculate conductor color', 'To measure temperature'],
+  a: 0,
+  explanation: 'The bus admittance matrix relates bus current injections to bus voltages.'
+},
+{
+  id: 2707, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What does the diagonal element of a Y-bus matrix represent?',
+  options: ['Sum of admittances connected to that bus', 'Only bus voltage', 'Total system frequency', 'Transformer temperature'],
+  a: 0,
+  explanation: 'A diagonal Y-bus element is the sum of admittances connected to the corresponding bus, including shunt admittances.'
+},
+{
+  id: 2708, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What does an off-diagonal Y-bus element generally represent?',
+  options: ['Negative of the admittance between two buses', 'Bus voltage magnitude', 'Generated real power', 'System frequency'],
+  a: 0,
+  explanation: 'For directly connected buses, the off-diagonal element is generally the negative of their mutual branch admittance.'
+},
+{
+  id: 2709, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is per-unit representation?',
+  options: ['A normalized system of electrical quantities', 'A type of circuit breaker', 'A method of earthing only', 'A motor starting method'],
+  a: 0,
+  explanation: 'Per-unit values express quantities as fractions of selected base values.'
+},
+{
+  id: 2710, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the base impedance in a three-phase per-unit system?',
+  options: ['Base voltage squared divided by base apparent power', 'Base current divided by voltage', 'Power multiplied by current', 'Voltage multiplied by frequency'],
+  a: 0,
+  explanation: 'Using consistent three-phase base quantities, Zbase = Vbase(line-line)^2 / Sbase(three-phase).'
+},
+{
+  id: 2711, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the main purpose of economic dispatch?',
+  options: ['To allocate generation economically while meeting demand', 'To increase line length', 'To eliminate all transformers', 'To change consumer tariffs only'],
+  a: 0,
+  explanation: 'Economic dispatch allocates generator outputs to meet demand at minimum operating cost, subject to constraints.'
+},
+{
+  id: 2712, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What does spinning reserve mean?',
+  options: ['Available online generation capacity above current demand', 'Energy stored in a rotating disc only', 'Power lost in cables', 'The total number of substations'],
+  a: 0,
+  explanation: 'Spinning reserve is unused capacity from generators already synchronized with the grid.'
+},
+{
+  id: 2713, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is a power system contingency?',
+  options: ['An unexpected outage of a component', 'A normal voltage measurement', 'A planned energy bill', 'A type of insulator material'],
+  a: 0,
+  explanation: 'A contingency is an event such as the outage of a generator, transformer, or transmission line.'
+},
+{
+  id: 2714, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the objective of contingency analysis?',
+  options: ['To assess system security after possible outages', 'To calculate building height', 'To measure fuel color', 'To design household lighting only'],
+  a: 0,
+  explanation: 'Contingency analysis checks whether the system remains within acceptable operating limits after outages.'
+},
+{
+  id: 2715, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the main purpose of symmetrical component analysis?',
+  options: ['To analyze unbalanced three-phase systems', 'To increase power factor automatically', 'To measure conductor diameter', 'To eliminate frequency'],
+  a: 0,
+  explanation: 'Symmetrical components represent unbalanced phasors using positive-, negative-, and zero-sequence components.'
+},
+{
+  id: 2716, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'How many symmetrical sequence networks are defined?',
+  options: ['One', 'Two', 'Three', 'Four'],
+  a: 2,
+  explanation: 'The three sequence networks are positive sequence, negative sequence, and zero sequence.'
+},
+{
+  id: 2717, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'Which sequence component represents balanced normal phase rotation?',
+  options: ['Positive sequence', 'Negative sequence', 'Zero sequence', 'No sequence'],
+  a: 0,
+  explanation: 'Positive-sequence components have equal magnitudes and normal phase order.'
+},
+{
+  id: 2718, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'In a zero-sequence set, the three phase phasors are:',
+  options: ['Equal in magnitude and phase', '120 degrees apart in normal sequence', 'Always zero', 'Opposite in phase order only'],
+  a: 0,
+  explanation: 'Zero-sequence currents or voltages have equal phasor values in all three phases.'
+},
+{
+  id: 2719, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'Which fault is generally the most common on overhead power lines?',
+  options: ['Single line-to-ground fault', 'Three-phase fault', 'Three-phase-to-ground fault only', 'No fault'],
+  a: 0,
+  explanation: 'Single line-to-ground faults are generally the most frequent type of power-system fault.'
+},
+{
+  id: 2720, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'Which fault is usually symmetrical?',
+  options: ['Three-phase fault', 'Single line-to-ground fault', 'Line-to-line fault', 'Double line-to-ground fault'],
+  a: 0,
+  explanation: 'A three-phase fault affects all three phases equally and is classified as a symmetrical fault.'
+},
+{
+  id: 2721, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is fault current?',
+  options: ['Current flowing during an electrical fault', 'Normal lighting current only', 'Current used only for billing', 'Current in an open circuit'],
+  a: 0,
+  explanation: 'Fault current is the current that flows through the system when an abnormal short-circuit or ground fault occurs.'
+},
+{
+  id: 2722, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What does short-circuit analysis estimate?',
+  options: ['Fault currents and associated voltages', 'Only annual energy bills', 'Mechanical shaft length', 'The color of electrical equipment'],
+  a: 0,
+  explanation: 'Short-circuit studies estimate fault levels needed for protection and equipment selection.'
+},
+{
+  id: 2723, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the purpose of a circuit breaker rating?',
+  options: ['To define its ability to interrupt specified fault current', 'To define room temperature', 'To measure transformer oil color', 'To specify cable insulation color'],
+  a: 0,
+  explanation: 'The interrupting rating indicates the fault current a breaker can safely interrupt under specified conditions.'
+},
+{
+  id: 2724, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What does voltage stability concern?',
+  options: ['Maintaining acceptable bus voltages during disturbances and loading', 'Keeping all currents at zero', 'Increasing frequency without limit', 'Removing all reactive power'],
+  a: 0,
+  explanation: 'Voltage stability is the ability of a power system to maintain acceptable voltages under normal conditions and after disturbances.'
+},
+{
+  id: 2725, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'Which quantity is strongly associated with voltage control in AC systems?',
+  options: ['Reactive power', 'Wire color', 'Mechanical torque only', 'Ambient light'],
+  a: 0,
+  explanation: 'Reactive power balance has a major influence on voltage magnitudes in AC power systems.'
+},
+{
+  id: 2726, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is power factor?',
+  options: ['Ratio of real power to apparent power', 'Ratio of voltage to frequency', 'Ratio of resistance to inductance', 'Ratio of current to conductor length'],
+  a: 0,
+  explanation: 'Power factor is P/S and, for sinusoidal conditions, equals the cosine of the phase angle between voltage and current.'
+},
+{
+  id: 2727, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the unit of reactive power?',
+  options: ['VAR', 'Watt-hour', 'Ohm', 'Hertz'],
+  a: 0,
+  explanation: 'Reactive power is measured in volt-amperes reactive (VAR).'
+},
+{
+  id: 2728, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the unit of apparent power?',
+  options: ['VA', 'Watt', 'Joule', 'Ohm'],
+  a: 0,
+  explanation: 'Apparent power is measured in volt-amperes (VA).'
+},
+{
+  id: 2729, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What does a transmission line primarily transfer?',
+  options: ['Electrical power between locations', 'Only mechanical energy', 'Water between reservoirs', 'Chemical fuel through pipes'],
+  a: 0,
+  explanation: 'Transmission lines carry electrical power from generation areas toward substations and load centers.'
+},
+{
+  id: 2730, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'Why is high voltage used for long-distance transmission?',
+  options: ['To reduce current and resistive losses for a given power', 'To increase current without limit', 'To eliminate all insulation', 'To remove the need for conductors'],
+  a: 0,
+  explanation: 'For a given power transfer, higher voltage allows lower current, reducing I²R losses for the same conductor resistance.'
+},
+{
+  id: 2731, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the Ferranti effect?',
+  options: ['Receiving-end voltage rises above sending-end voltage under light-load conditions', 'Current always becomes zero', 'Frequency doubles during a fault', 'Resistance becomes negative'],
+  a: 0,
+  explanation: 'In a sufficiently long AC line, charging current can cause the receiving-end voltage to exceed the sending-end voltage at light load.'
+},
+{
+  id: 2732, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is corona discharge on a transmission line?',
+  options: ['Ionization of air around a high-voltage conductor', 'A transformer cooling method', 'A type of circuit diagram', 'A mechanical bearing failure'],
+  a: 0,
+  explanation: 'Corona occurs when the electric field near a conductor ionizes surrounding air.'
+},
+{
+  id: 2733, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the main role of a transformer in transmission systems?',
+  options: ['To change AC voltage levels', 'To convert AC directly into mechanical motion', 'To store all generated energy', 'To eliminate all system losses'],
+  a: 0,
+  explanation: 'Transformers step AC voltage up or down to suit transmission and distribution requirements.'
+},
+{
+  id: 2734, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What does an ideal transformer assume?',
+  options: ['No losses and perfect magnetic coupling', 'Infinite copper losses', 'Zero turns on both windings', 'Only DC operation'],
+  a: 0,
+  explanation: 'An ideal transformer is modeled with no winding or core losses and perfect coupling.'
+},
+{
+  id: 2735, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the main purpose of load forecasting?',
+  options: ['To estimate future electricity demand', 'To identify conductor colors', 'To calculate past rainfall only', 'To remove generators from service'],
+  a: 0,
+  explanation: 'Load forecasting estimates future demand to support generation, transmission, and operational planning.'
+},
+{
+  id: 2736, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is peak load?',
+  options: ['The maximum demand during a specified period', 'The minimum voltage in a circuit', 'The current in an open switch', 'The average transformer temperature'],
+  a: 0,
+  explanation: 'Peak load is the highest demand recorded over a defined time interval.'
+},
+{
+  id: 2737, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is load factor?',
+  options: ['Average load divided by peak load', 'Peak load divided by voltage', 'Reactive power divided by resistance', 'Frequency divided by current'],
+  a: 0,
+  explanation: 'Load factor is the average load over a period divided by the maximum demand during that period.'
+},
+{
+  id: 2738, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is demand factor?',
+  options: ['Maximum demand divided by connected load', 'Connected load divided by frequency', 'Energy divided by resistance', 'Voltage divided by time'],
+  a: 0,
+  explanation: 'Demand factor is the maximum demand divided by the total connected load.'
+},
+{
+  id: 2739, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What does the swing equation describe?',
+  options: ['Rotor-angle dynamics of a synchronous machine', 'Heat flow in a cable', 'Battery chemical reactions only', 'The color of a voltage waveform'],
+  a: 0,
+  explanation: 'The swing equation relates accelerating power to rotor angular motion in a synchronous machine.'
+},
+{
+  id: 2740, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is transient stability?',
+  options: ['The ability to remain in synchronism after a large disturbance', 'The ability to avoid all maintenance', 'The ability to store unlimited energy', 'The ability to operate without voltage'],
+  a: 0,
+  explanation: 'Transient stability concerns maintaining synchronism after severe disturbances such as faults or generator outages.'
+},
+{
+  id: 2741, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is steady-state stability?',
+  options: ['The ability to maintain synchronism under small, gradual disturbances', 'The ability to interrupt every fault manually', 'The ability to operate only at zero load', 'The ability to eliminate reactive power'],
+  a: 0,
+  explanation: 'Steady-state stability concerns small changes in operating conditions around an equilibrium point.'
+},
+{
+  id: 2742, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is an equal-area criterion used to assess?',
+  options: ['Transient stability of a simple power system', 'Cable insulation thickness only', 'Transformer oil acidity', 'Energy billing accuracy'],
+  a: 0,
+  explanation: 'The equal-area criterion provides a graphical method for assessing transient stability in simplified systems.'
+},
+{
+  id: 2743, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the main function of automatic generation control?',
+  options: ['To help regulate system frequency and scheduled tie-line power', 'To paint transmission towers', 'To increase line resistance', 'To measure conductor diameter only'],
+  a: 0,
+  explanation: 'Automatic generation control adjusts generator output to help maintain frequency and scheduled interchange.'
+},
+{
+  id: 2744, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'In a synchronous power system, frequency is mainly related to:',
+  options: ['The balance between generation and load', 'The color of the insulator', 'The length of the control room', 'The number of meters installed only'],
+  a: 0,
+  explanation: 'A generation-load imbalance causes system frequency to deviate from its nominal value.'
+},
+{
+  id: 2745, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is a bus in a power-system network model?',
+  options: ['A node connecting electrical components', 'A type of generator fuel', 'A cooling fan only', 'A mechanical gearbox'],
+  a: 0,
+  explanation: 'A bus is a node where generators, loads, and network branches are electrically connected.'
+},
+{
+  id: 2746, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the main purpose of a one-line diagram?',
+  options: ['To simplify representation of a three-phase power system', 'To show only building architecture', 'To replace all electrical calculations', 'To display only temperature readings'],
+  a: 0,
+  explanation: 'A one-line diagram uses single lines and standard symbols to represent a three-phase system.'
+},
+{
+  id: 2747, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What does the term base MVA mean in per-unit studies?',
+  options: ['The selected reference apparent-power value', 'The maximum frequency of the grid', 'The physical mass of a generator', 'The resistance of an insulator'],
+  a: 0,
+  explanation: 'Base MVA is the chosen apparent-power reference used to calculate per-unit quantities.'
+},
+{
+  id: 2748, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'Which device is commonly used to compensate reactive power?',
+  options: ['Shunt capacitor bank', 'Incandescent lamp only', 'Mechanical fuse puller', 'Energy meter display'],
+  a: 0,
+  explanation: 'Shunt capacitor banks supply reactive power locally and can help improve power factor and voltage.'
+},
+{
+  id: 2749, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the main objective of power-system protection?',
+  options: ['To detect faults and isolate affected sections', 'To keep every fault connected', 'To increase fault duration', 'To disable all alarms'],
+  a: 0,
+  explanation: 'Protection systems detect abnormal conditions and isolate faulty equipment to limit damage and preserve system security.'
+},
+{
+  id: 2750, branch: 'Electrical Engineering', topic: 'Power System Analysis', semester: 'Semester 7', subject: 'Power System Analysis',
+  q: 'What is the purpose of a busbar in a substation?',
+  options: ['To provide a common electrical connection point', 'To store fuel', 'To cool turbine blades', 'To measure rainfall'],
+  a: 0,
+  explanation: 'A busbar provides a common conductive connection for incoming and outgoing electrical circuits.'
+},
+
+{
+  id: 2751, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is an electrical drive?',
+  options: ['A system used to control the motion of an electrical motor', 'A type of transmission tower', 'A voltage measuring instrument', 'A circuit used only for lighting'],
+  a: 0,
+  explanation: 'An electrical drive controls an electric motor to achieve the required speed, torque, and motion.'
+},
+{
+  id: 2752, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which component converts electrical energy into mechanical energy?',
+  options: ['Electric motor', 'Fuse', 'Insulator', 'Voltmeter'],
+  a: 0,
+  explanation: 'An electric motor converts electrical energy into mechanical energy.'
+},
+{
+  id: 2753, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the main function of a power electronic converter in a drive?',
+  options: ['To control the power supplied to the motor', 'To store mechanical energy permanently', 'To measure room temperature', 'To increase wire length'],
+  a: 0,
+  explanation: 'A power electronic converter controls voltage, current, or frequency supplied to the motor.'
+},
+{
+  id: 2754, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which motor is widely used in variable-speed industrial drives?',
+  options: ['Induction motor', 'Only a hand-cranked generator', 'A permanent fuse', 'A mechanical switch'],
+  a: 0,
+  explanation: 'Induction motors are widely used in industry and can be controlled over a range of speeds using suitable drives.'
+},
+{
+  id: 2755, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What does VFD stand for?',
+  options: ['Variable Frequency Drive', 'Voltage Fuse Device', 'Variable Flux Diode', 'Visual Frequency Display'],
+  a: 0,
+  explanation: 'A Variable Frequency Drive controls AC motor speed by varying the supply frequency.'
+},
+{
+  id: 2756, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which quantity directly determines the synchronous speed of an AC motor?',
+  options: ['Supply frequency and number of poles', 'Wire color and length only', 'Ambient light', 'Bearing material only'],
+  a: 0,
+  explanation: 'Synchronous speed is Ns = 120f/P rpm, where f is frequency and P is the number of poles.'
+},
+{
+  id: 2757, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the unit of motor torque?',
+  options: ['Newton-metre', 'Hertz', 'Ohm', 'Coulomb'],
+  a: 0,
+  explanation: 'Torque is measured in newton-metres (N·m).'
+},
+{
+  id: 2758, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the main purpose of a motor starter?',
+  options: ['To help start the motor safely and limit starting current where required', 'To eliminate the motor shaft', 'To measure energy bills only', 'To increase insulation color'],
+  a: 0,
+  explanation: 'A starter provides starting and switching functions and may limit inrush current or provide protection.'
+},
+{
+  id: 2759, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What does regenerative braking do?',
+  options: ['Returns part of the mechanical energy to the electrical supply or a storage system', 'Destroys all energy without recovery', 'Always increases motor speed', 'Disconnects the motor shaft permanently'],
+  a: 0,
+  explanation: 'During regenerative braking, the motor operates as a generator and energy can be recovered.'
+},
+{
+  id: 2760, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the main purpose of four-quadrant operation?',
+  options: ['To allow motoring and braking in both directions of rotation', 'To run a motor only at zero speed', 'To remove all motor controls', 'To measure only resistance'],
+  a: 0,
+  explanation: 'Four-quadrant drives support forward and reverse motoring as well as forward and reverse braking.'
+},
+
+{
+  id: 2761, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the slip of an induction motor?',
+  options: ['(Synchronous speed - Rotor speed) / Synchronous speed', 'Rotor speed / Supply voltage', 'Torque / Resistance', 'Frequency / Number of poles'],
+  a: 0,
+  explanation: 'Slip is s = (Ns - Nr) / Ns, where Ns is synchronous speed and Nr is rotor speed.'
+},
+{
+  id: 2762, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which motor has a nearly constant speed under normal operating conditions?',
+  options: ['Synchronous motor', 'Universal motor under every load', 'Series DC motor under every load', 'Any motor with no supply'],
+  a: 0,
+  explanation: 'A synchronous motor runs at synchronous speed while operating in synchronism.'
+},
+{
+  id: 2763, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which device is commonly used to switch power electronically in motor drives?',
+  options: ['IGBT', 'Mechanical ruler', 'Thermometer', 'Insulating tape'],
+  a: 0,
+  explanation: 'IGBTs are widely used as controlled power switches in industrial motor drives.'
+},
+{
+  id: 2764, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the purpose of a rectifier in an AC drive?',
+  options: ['To convert AC into DC', 'To convert heat into sound', 'To increase shaft length', 'To measure torque directly'],
+  a: 0,
+  explanation: 'A rectifier converts AC input power into DC for the drive DC link.'
+},
+{
+  id: 2765, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the purpose of an inverter in a variable-frequency AC drive?',
+  options: ['To convert DC into controlled AC', 'To convert mechanical energy into fuel', 'To store current in a fuse', 'To measure cable length'],
+  a: 0,
+  explanation: 'An inverter produces AC output with controllable voltage and frequency from a DC source.'
+},
+{
+  id: 2766, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the function of the DC link in a typical AC drive?',
+  options: ['To provide an intermediate DC stage', 'To connect the motor shaft to a gearbox only', 'To measure room humidity', 'To replace the motor winding'],
+  a: 0,
+  explanation: 'The DC link smooths and stores energy between the rectifier and inverter stages.'
+},
+{
+  id: 2767, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which method controls induction motor speed by changing supply frequency?',
+  options: ['Variable-frequency control', 'Changing the paint color', 'Changing bearing size only', 'Disconnecting the rotor permanently'],
+  a: 0,
+  explanation: 'Changing supply frequency changes synchronous speed and enables speed control.'
+},
+{
+  id: 2768, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Why is voltage often varied with frequency in an induction motor drive?',
+  options: ['To maintain approximately constant air-gap flux below base speed', 'To keep the shaft stationary', 'To eliminate all motor losses', 'To make resistance infinite'],
+  a: 0,
+  explanation: 'Keeping the voltage-to-frequency ratio approximately constant helps maintain air-gap flux below base speed.'
+},
+{
+  id: 2769, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the main disadvantage of a DC motor with brushes?',
+  options: ['Brushes and commutator require maintenance', 'It cannot produce torque', 'It never runs on electricity', 'It has no moving parts'],
+  a: 0,
+  explanation: 'Brushes and the commutator wear over time and require inspection and maintenance.'
+},
+{
+  id: 2770, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which motor is commonly used in modern electric vehicles?',
+  options: ['Permanent-magnet synchronous motor or induction motor', 'Only a shaded-pole motor', 'Only a hand-operated motor', 'A motor without a rotor'],
+  a: 0,
+  explanation: 'Many electric vehicles use permanent-magnet synchronous motors or induction motors, depending on design.'
+},
+{
+  id: 2771, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What does dynamic braking generally do?',
+  options: ['Dissipates motor energy as heat in a braking resistor or circuit', 'Returns all energy to the grid in every case', 'Removes the motor bearings', 'Increases speed indefinitely'],
+  a: 0,
+  explanation: 'In dynamic braking, generated electrical energy is dissipated, often in a resistor.'
+},
+{
+  id: 2772, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is plugging in motor braking?',
+  options: ['A braking method using connections that produce reverse torque', 'A method of painting a motor', 'A way to increase cable length', 'A normal energy-meter reading'],
+  a: 0,
+  explanation: 'Plugging creates braking torque by reversing the effective direction of the motor field or connections as appropriate.'
+},
+{
+  id: 2773, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What does the duty cycle of a motor describe?',
+  options: ['The pattern of operating and resting periods', 'The motor color code', 'Only the number of terminals', 'The weight of the foundation'],
+  a: 0,
+  explanation: 'Duty cycle describes the motor’s operating pattern, including running, starting, braking, and rest periods.'
+},
+{
+  id: 2774, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the purpose of overload protection in a motor drive?',
+  options: ['To protect against excessive load current over time', 'To increase overload indefinitely', 'To eliminate the need for insulation', 'To control room lighting'],
+  a: 0,
+  explanation: 'Overload protection helps prevent motor overheating due to sustained excessive current.'
+},
+{
+  id: 2775, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which quantity is the product of torque and angular speed?',
+  options: ['Mechanical power', 'Electrical resistance', 'Magnetic flux density', 'Capacitance'],
+  a: 0,
+  explanation: 'Mechanical power is P = Tω, where T is torque and ω is angular speed in radians per second.'
+},
+{
+  id: 2776, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the SI unit of angular speed?',
+  options: ['Radian per second', 'Volt per metre', 'Coulomb per second squared', 'Ohm-metre'],
+  a: 0,
+  explanation: 'Angular speed is expressed in radians per second (rad/s).'
+},
+{
+  id: 2777, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which load typically requires high starting torque?',
+  options: ['Loaded conveyor', 'A small unloaded indicator lamp', 'An open switch', 'A voltmeter with no load'],
+  a: 0,
+  explanation: 'A loaded conveyor may require substantial torque to overcome load and friction at startup.'
+},
+{
+  id: 2778, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which drive application often requires precise speed control?',
+  options: ['Machine tool', 'Fixed wall socket', 'Passive insulator', 'Fuse holder only'],
+  a: 0,
+  explanation: 'Machine tools often need controlled speed and torque to meet machining requirements.'
+},
+{
+  id: 2779, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What does closed-loop speed control use?',
+  options: ['Speed feedback compared with a reference', 'Only a painted label', 'No measurement or control signal', 'A mechanical ruler alone'],
+  a: 0,
+  explanation: 'A closed-loop controller compares measured speed with the reference and adjusts the drive to reduce error.'
+},
+{
+  id: 2780, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the role of an encoder in a motor drive?',
+  options: ['To provide position or speed feedback', 'To cool the power cable directly', 'To increase supply frequency by itself', 'To replace all power switches'],
+  a: 0,
+  explanation: 'An encoder measures shaft position or rotation and can provide feedback for precise control.'
+},
+{
+  id: 2781, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is open-loop motor control?',
+  options: ['Control without feedback of the controlled output', 'Control that always uses an encoder', 'A short circuit across the motor', 'A method requiring no power source'],
+  a: 0,
+  explanation: 'Open-loop control applies a command without measuring the output to correct errors.'
+},
+{
+  id: 2782, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is a servo drive designed to control?',
+  options: ['Position, speed, or torque accurately', 'Only the room temperature', 'Only cable color', 'The number of building floors'],
+  a: 0,
+  explanation: 'Servo drives are used for precise motion control, commonly with feedback.'
+},
+{
+  id: 2783, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is a stepper motor commonly valued for?',
+  options: ['Moving in discrete angular steps', 'Operating without any magnetic field', 'Producing only continuous combustion', 'Measuring insulation resistance directly'],
+  a: 0,
+  explanation: 'A stepper motor moves in discrete steps in response to suitable electrical pulses.'
+},
+{
+  id: 2784, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What can happen if an induction motor is operated above its base frequency with limited voltage?',
+  options: ['Available torque generally decreases in the field-weakening region', 'Torque becomes infinite', 'The motor needs no current', 'The motor automatically becomes a transformer only'],
+  a: 0,
+  explanation: 'Above base speed, voltage limits often cause flux weakening and reduced available torque.'
+},
+{
+  id: 2785, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the main benefit of soft starting?',
+  options: ['Reducing starting stress and current where the method permits', 'Increasing mechanical shock', 'Removing all protection', 'Making the motor operate without electricity'],
+  a: 0,
+  explanation: 'Soft starters gradually increase motor voltage to reduce starting current and mechanical stress.'
+},
+{
+  id: 2786, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which device is commonly used to provide variable AC voltage during soft starting?',
+  options: ['Thyristor-based AC voltage controller', 'Mechanical thermometer', 'Fuse wire alone', 'Energy meter display'],
+  a: 0,
+  explanation: 'A thyristor-based AC voltage controller can gradually control the voltage applied during starting.'
+},
+{
+  id: 2787, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What does motor efficiency represent?',
+  options: ['Output power divided by input power', 'Input power divided by wire length', 'Torque divided by temperature', 'Voltage multiplied by resistance only'],
+  a: 0,
+  explanation: 'Efficiency is the ratio of useful output power to input power, usually expressed as a percentage.'
+},
+{
+  id: 2788, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which loss is caused by current flowing through motor windings?',
+  options: ['Copper loss', 'Windage loss only', 'Sound loss only', 'Optical loss'],
+  a: 0,
+  explanation: 'Winding copper loss is mainly I²R loss caused by current through winding resistance.'
+},
+{
+  id: 2789, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which loss is associated with rotating air resistance and friction?',
+  options: ['Mechanical loss', 'Copper loss only', 'Dielectric loss only', 'Billing loss'],
+  a: 0,
+  explanation: 'Friction and windage are mechanical losses in rotating electrical machines.'
+},
+{
+  id: 2790, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Why is motor cooling important?',
+  options: ['To keep temperature within safe limits', 'To increase winding resistance without limit', 'To eliminate the shaft', 'To make insulation unnecessary'],
+  a: 0,
+  explanation: 'Cooling removes heat and helps prevent insulation damage and premature motor failure.'
+},
+{
+  id: 2791, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the purpose of electrical isolation in a drive circuit?',
+  options: ['To improve safety and separate electrical circuits where required', 'To increase shock risk', 'To eliminate all switching devices', 'To increase conductor temperature'],
+  a: 0,
+  explanation: 'Isolation can reduce hazardous electrical coupling and support safe control and maintenance design.'
+},
+{
+  id: 2792, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is electromagnetic interference (EMI) in a motor drive?',
+  options: ['Unwanted electrical or electromagnetic disturbance', 'A type of mechanical lubricant', 'A motor mounting bolt', 'A standard unit of torque'],
+  a: 0,
+  explanation: 'Fast switching and power cables can generate electromagnetic disturbances that affect nearby equipment.'
+},
+{
+  id: 2793, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which practice can help reduce conducted or radiated EMI in a drive installation?',
+  options: ['Proper grounding, cable routing, and suitable filtering', 'Leaving all shields disconnected in every case', 'Removing protective earth', 'Using longer unshielded cables without planning'],
+  a: 0,
+  explanation: 'Correct grounding, cable separation, shielding, and filters can reduce EMI when applied according to the installation design.'
+},
+{
+  id: 2794, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is a common advantage of an induction motor drive compared with a brushed DC drive?',
+  options: ['No brushes or mechanical commutator in the induction motor', 'No need for electrical energy', 'Zero losses at all loads', 'Unlimited torque at every speed'],
+  a: 0,
+  explanation: 'A standard induction motor has no brushes or mechanical commutator, reducing this type of maintenance.'
+},
+{
+  id: 2795, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What does field weakening allow in a suitable motor drive?',
+  options: ['Operation above base speed within design limits', 'Unlimited torque without current', 'Operation without magnetic flux', 'Removal of all speed control'],
+  a: 0,
+  explanation: 'Field weakening reduces effective flux to permit higher speed, usually with reduced torque capability.'
+},
+{
+  id: 2796, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the main role of a current sensor in a motor drive?',
+  options: ['To measure motor or converter current for control and protection', 'To measure shaft color', 'To cool the motor bearing', 'To set the number of poles mechanically'],
+  a: 0,
+  explanation: 'Current sensing supports feedback control, current limiting, and fault protection.'
+},
+{
+  id: 2797, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is torque ripple?',
+  options: ['Periodic variation in developed motor torque', 'A constant supply voltage', 'A type of cable insulation', 'A measure of room brightness'],
+  a: 0,
+  explanation: 'Torque ripple is variation in torque around its average value and may cause vibration or speed fluctuations.'
+},
+{
+  id: 2798, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Why is pulse-width modulation (PWM) used in inverters?',
+  options: ['To control the effective output voltage and waveform', 'To increase conductor length', 'To remove all switching', 'To measure mechanical load directly'],
+  a: 0,
+  explanation: 'PWM varies switching patterns to control the fundamental output voltage and shape the inverter waveform.'
+},
+{
+  id: 2799, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'What is the purpose of a braking chopper in a drive?',
+  options: ['To control excess DC-link energy through a braking resistor', 'To measure motor speed optically only', 'To replace the AC motor', 'To increase DC-link voltage without limit'],
+  a: 0,
+  explanation: 'A braking chopper switches a resistor across the DC link to dissipate excess energy and limit DC-link overvoltage.'
+},
+{
+  id: 2800, branch: 'Electrical Engineering', topic: 'Electrical Drives', semester: 'Semester 7', subject: 'Electrical Drives',
+  q: 'Which factor should be considered when selecting an electrical drive?',
+  options: ['Load torque, speed range, duty, and control requirements', 'Only the motor paint color', 'Only the building name', 'Only the cable label font'],
+  a: 0,
+  explanation: 'Drive selection depends on load characteristics, speed and torque needs, duty cycle, efficiency, and control requirements.'
+},
+
+{
+  id: 2801, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the main purpose of high voltage engineering?',
+  options: ['To study generation, measurement, and insulation of high voltages', 'To design computer keyboards', 'To study only low-voltage batteries', 'To measure room temperature'],
+  a: 0,
+  explanation: 'High voltage engineering deals with high-voltage generation, measurement, insulation, and testing.'
+},
+{
+  id: 2802, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is dielectric strength?',
+  options: ['Maximum electric field an insulating material can withstand before breakdown', 'The weight of an insulator', 'The color of an insulating material', 'The current rating of a motor'],
+  a: 0,
+  explanation: 'Dielectric strength indicates the electric field at which an insulating material breaks down.'
+},
+{
+  id: 2803, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is electrical breakdown in an insulator?',
+  options: ['Loss of insulating ability under electrical stress', 'A normal increase in wire length', 'A reduction in room temperature', 'A mechanical speed increase'],
+  a: 0,
+  explanation: 'Electrical breakdown occurs when an insulating medium can no longer withstand the applied electric field.'
+},
+{
+  id: 2804, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Which gas is commonly used as an insulating medium in some high-voltage switchgear?',
+  options: ['Sulfur hexafluoride (SF6)', 'Hydrogen only', 'Oxygen only', 'Water vapour only'],
+  a: 0,
+  explanation: 'SF6 has strong dielectric properties and has been used in high-voltage switchgear; its environmental impact requires careful management.'
+},
+{
+  id: 2805, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is a lightning impulse voltage?',
+  options: ['A short-duration impulse used to represent lightning overvoltages', 'A constant DC voltage for years', 'A normal household frequency', 'A mechanical force'],
+  a: 0,
+  explanation: 'Lightning impulse voltage simulates transient overvoltages caused by lightning for insulation testing.'
+},
+{
+  id: 2806, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is a switching impulse?',
+  options: ['A transient overvoltage associated with switching operations', 'A steady mechanical load', 'A type of battery chemistry', 'A constant room temperature'],
+  a: 0,
+  explanation: 'Switching impulses arise from switching operations and are important in high-voltage insulation coordination.'
+},
+{
+  id: 2807, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Which instrument is commonly used to measure high DC voltage?',
+  options: ['Electrostatic voltmeter', 'Ordinary ruler', 'Thermometer', 'Tachometer only'],
+  a: 0,
+  explanation: 'Electrostatic voltmeters can measure high voltages while drawing very little current.'
+},
+{
+  id: 2808, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is a voltage divider used for in high-voltage measurement?',
+  options: ['To reduce a high voltage to a measurable proportional voltage', 'To increase conductor weight', 'To cool a transformer', 'To measure shaft speed'],
+  a: 0,
+  explanation: 'A voltage divider produces a scaled-down voltage suitable for a measuring instrument.'
+},
+{
+  id: 2809, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the purpose of a sphere gap?',
+  options: ['To measure or calibrate high voltage using sparkover', 'To store electrical energy indefinitely', 'To measure motor torque', 'To increase insulation thickness automatically'],
+  a: 0,
+  explanation: 'A sphere gap can provide a standardized sparkover measurement under specified conditions.'
+},
+{
+  id: 2810, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is partial discharge?',
+  options: ['A localized electrical discharge that does not completely bridge the insulation', 'A full short circuit across every phase', 'A normal mechanical vibration', 'A complete loss of all supply voltage'],
+  a: 0,
+  explanation: 'Partial discharge occurs in a localized region of insulation without completely bridging the electrodes.'
+},
+{
+  id: 2811, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Which phenomenon is associated with ionization of air around a high-voltage conductor?',
+  options: ['Corona discharge', 'Electromagnetic braking only', 'Mechanical resonance only', 'Chemical storage'],
+  a: 0,
+  explanation: 'Corona occurs when the electric field near a conductor ionizes the surrounding air.'
+},
+{
+  id: 2812, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Which factor can increase corona loss on an overhead line?',
+  options: ['Higher operating voltage above the corona onset level', 'Lower voltage in every condition', 'A shorter measuring scale', 'Lower room lighting'],
+  a: 0,
+  explanation: 'Corona loss can increase when the operating voltage rises above the onset level, depending on conductor and atmospheric conditions.'
+},
+{
+  id: 2813, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Why are bundled conductors used in some extra-high-voltage lines?',
+  options: ['To reduce surface electric-field intensity and corona effects', 'To remove the need for towers', 'To make resistance infinite', 'To stop all current flow'],
+  a: 0,
+  explanation: 'Bundling increases the effective conductor diameter and can reduce surface electric-field intensity and corona.'
+},
+{
+  id: 2814, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the main purpose of a surge arrester?',
+  options: ['To limit transient overvoltages and divert surge current', 'To continuously increase system voltage', 'To measure motor speed', 'To replace every circuit breaker'],
+  a: 0,
+  explanation: 'A surge arrester limits dangerous overvoltages by conducting surge current and then returning to a high-impedance state.'
+},
+{
+  id: 2815, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Where is a surge arrester commonly installed?',
+  options: ['Near equipment that needs overvoltage protection', 'Inside a water tank for every installation', 'Only in a computer mouse', 'Only on a motor shaft'],
+  a: 0,
+  explanation: 'Surge arresters are placed near protected equipment to limit the voltage appearing at its terminals.'
+},
+{
+  id: 2816, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What does insulation coordination mean?',
+  options: ['Selecting insulation levels and protective devices to withstand expected overvoltages', 'Making all insulators the same color', 'Eliminating all grounding', 'Increasing voltage without equipment limits'],
+  a: 0,
+  explanation: 'Insulation coordination matches equipment withstand capability with expected overvoltages and protective-device performance.'
+},
+{
+  id: 2817, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the purpose of a high-voltage impulse generator?',
+  options: ['To generate short-duration high-voltage impulses for testing', 'To supply drinking water', 'To measure building height', 'To cool a motor shaft'],
+  a: 0,
+  explanation: 'Impulse generators produce standardized transient voltages for insulation testing.'
+},
+{
+  id: 2818, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Which circuit is traditionally associated with generating high-voltage impulses?',
+  options: ['Marx generator circuit', 'Wheatstone bridge only', 'Simple lamp circuit only', 'Rectifier-free audio circuit'],
+  a: 0,
+  explanation: 'A Marx generator charges capacitors in parallel and discharges them in series to produce a high-voltage impulse.'
+},
+{
+  id: 2819, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the main purpose of a cascade transformer arrangement?',
+  options: ['To obtain a very high AC test voltage using multiple transformer stages', 'To reduce all voltage to zero', 'To measure rotational speed', 'To replace all insulation'],
+  a: 0,
+  explanation: 'Cascade-connected test transformers allow higher AC voltages to be generated than a single stage may provide.'
+},
+{
+  id: 2820, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is a Cockcroft-Walton circuit used for?',
+  options: ['Generating high DC voltage using a diode-capacitor multiplier', 'Generating mechanical torque directly', 'Measuring sound intensity', 'Cooling a transformer winding'],
+  a: 0,
+  explanation: 'A Cockcroft-Walton multiplier uses diodes and capacitors to generate high DC voltage from an AC input.'
+},
+{
+  id: 2821, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Which insulation medium is used in many conventional power transformers?',
+  options: ['Transformer oil and solid paper insulation', 'Dry sand only', 'Ordinary drinking water', 'Unprotected bare air gaps only'],
+  a: 0,
+  explanation: 'Many conventional transformers use mineral oil for insulation and cooling together with solid cellulose insulation.'
+},
+{
+  id: 2822, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Why is moisture undesirable in transformer insulation?',
+  options: ['It can reduce dielectric strength and accelerate insulation ageing', 'It always improves insulation', 'It removes all electrical stress', 'It prevents every possible fault'],
+  a: 0,
+  explanation: 'Moisture can impair dielectric performance and contribute to deterioration of cellulose insulation.'
+},
+{
+  id: 2823, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What does a dielectric loss test help assess?',
+  options: ['Energy dissipated in insulation under an alternating electric field', 'Only conductor length', 'Mechanical shaft speed', 'The color of a circuit breaker'],
+  a: 0,
+  explanation: 'Dielectric loss measurements help evaluate insulation condition and energy dissipation under AC stress.'
+},
+{
+  id: 2824, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the dissipation factor related to?',
+  options: ['Dielectric losses in an insulating material', 'The number of motor poles only', 'Transformer tank weight only', 'The speed of a cooling fan only'],
+  a: 0,
+  explanation: 'The dissipation factor, often expressed as tan delta, indicates dielectric loss relative to capacitive behaviour.'
+},
+{
+  id: 2825, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the main purpose of a high-voltage withstand test?',
+  options: ['To verify that insulation withstands a specified test voltage', 'To measure room humidity only', 'To increase conductor resistance permanently', 'To measure motor torque'],
+  a: 0,
+  explanation: 'A withstand test applies a specified voltage to check whether insulation can withstand the prescribed electrical stress.'
+},
+{
+  id: 2826, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Why must high-voltage test areas be properly guarded?',
+  options: ['To protect people from electric shock and other hazards', 'To increase the test voltage beyond its rating', 'To eliminate the need for grounding', 'To improve paint quality'],
+  a: 0,
+  explanation: 'Barriers, interlocks, grounding, and controlled access reduce the risk of accidental contact with hazardous voltages.'
+},
+{
+  id: 2827, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What should be done to a high-voltage test object after a test before it is touched?',
+  options: ['Isolate it, discharge stored charge safely, and verify it is safe', 'Touch it immediately', 'Assume it has no stored charge', 'Disconnect only the measuring display'],
+  a: 0,
+  explanation: 'High-voltage equipment can retain charge; approved isolation, discharge, and verification procedures are essential.'
+},
+{
+  id: 2828, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is an electric field?',
+  options: ['Force per unit positive test charge', 'Energy per unit mass only', 'Resistance per unit length only', 'Torque per unit speed'],
+  a: 0,
+  explanation: 'Electric field strength is defined as force per unit positive test charge.'
+},
+{
+  id: 2829, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the SI unit of electric field strength?',
+  options: ['Volt per metre', 'Ohm', 'Watt-hour', 'Newton-metre'],
+  a: 0,
+  explanation: 'Electric field strength is measured in volts per metre (V/m), equivalent to newtons per coulomb.'
+},
+{
+  id: 2830, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Why can sharp points increase electrical stress?',
+  options: ['They can concentrate the electric field locally', 'They always reduce the electric field to zero', 'They eliminate ionization', 'They make the conductor nonconductive'],
+  a: 0,
+  explanation: 'Sharp conductor geometry can cause local electric-field enhancement and encourage corona or discharge.'
+},
+{
+  id: 2831, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is an insulating bushing used for?',
+  options: ['To allow a conductor to pass safely through a grounded barrier', 'To increase shaft rotation', 'To store fuel', 'To measure the speed of a turbine'],
+  a: 0,
+  explanation: 'A bushing provides electrical insulation where a conductor passes through a grounded wall or equipment enclosure.'
+},
+{
+  id: 2832, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is creepage distance?',
+  options: ['The shortest path along an insulating surface between conductive parts', 'The distance travelled by a motor shaft in one second', 'The length of a grounding rod only', 'The depth of a transformer tank'],
+  a: 0,
+  explanation: 'Creepage distance is measured along the surface of insulation between conductive parts.'
+},
+{
+  id: 2833, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is clearance in insulation design?',
+  options: ['The shortest distance through air between conductive parts', 'The path along a solid insulation surface only', 'The length of a rotating shaft', 'The height of a control panel'],
+  a: 0,
+  explanation: 'Electrical clearance is the shortest distance through air between conductive parts.'
+},
+{
+  id: 2834, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Why are outdoor insulators designed with sheds or skirts?',
+  options: ['To increase creepage distance and help manage surface contamination', 'To make the insulator conduct electricity', 'To remove the need for towers', 'To increase fault current'],
+  a: 0,
+  explanation: 'Sheds lengthen the surface leakage path and help maintain insulation performance in outdoor conditions.'
+},
+{
+  id: 2835, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What can pollution on an outdoor insulator cause when it becomes wet?',
+  options: ['Surface leakage current and possible flashover', 'Guaranteed zero current', 'A permanent increase in insulation strength', 'A change in supply frequency only'],
+  a: 0,
+  explanation: 'Wet contamination can create conductive surface paths, leading to leakage current and potentially flashover.'
+},
+{
+  id: 2836, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is flashover?',
+  options: ['An electrical discharge across the surface or external insulation path', 'A normal rise in motor speed', 'A transformer oil filling method', 'A mechanical gear change'],
+  a: 0,
+  explanation: 'Flashover is a discharge that bridges an insulating path externally, often along a surface or through surrounding air.'
+},
+{
+  id: 2837, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is puncture in a solid insulator?',
+  options: ['Electrical breakdown through the body of the insulating material', 'A normal voltage measurement', 'A mechanical speed increase', 'A reduction in conductor length'],
+  a: 0,
+  explanation: 'Puncture is breakdown through the bulk of a solid insulating material.'
+},
+{
+  id: 2838, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the purpose of a Faraday cage in high-voltage measurements?',
+  options: ['To shield a region from external electric fields', 'To increase corona intentionally in every case', 'To measure shaft torque', 'To convert AC directly into mechanical power'],
+  a: 0,
+  explanation: 'A conductive enclosure can shield its interior from external electrostatic fields when properly designed.'
+},
+{
+  id: 2839, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Why are measuring leads and probes important in impulse testing?',
+  options: ['Their response and layout affect measurement accuracy', 'They never affect any measurement', 'They eliminate the need for calibration', 'They automatically prevent every fault'],
+  a: 0,
+  explanation: 'Probe bandwidth, lead inductance, grounding, and layout can affect fast transient measurements.'
+},
+{
+  id: 2840, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is a Rogowski coil commonly used to measure?',
+  options: ['Changing current, including impulse current', 'Static room temperature', 'Insulator surface color', 'Mechanical shaft length'],
+  a: 0,
+  explanation: 'A Rogowski coil senses changing current and is useful for measuring fast current pulses with suitable integration.'
+},
+{
+  id: 2841, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is a current transformer used for?',
+  options: ['To produce a reduced proportional current for measurement and protection', 'To increase mechanical torque directly', 'To measure humidity only', 'To eliminate all short circuits'],
+  a: 0,
+  explanation: 'A current transformer provides an appropriately scaled current signal for meters and protective relays.'
+},
+{
+  id: 2842, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Why should a conventional current transformer secondary not be left open while primary current flows?',
+  options: ['A dangerously high secondary voltage may develop', 'The primary current must become zero immediately', 'The transformer becomes a capacitor only', 'It always improves measurement accuracy'],
+  a: 0,
+  explanation: 'An open CT secondary can develop dangerous voltage; follow approved shorting and safety procedures.'
+},
+{
+  id: 2843, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What does an impulse voltage waveform usually contain?',
+  options: ['A rising front and a decaying tail', 'Only a constant value forever', 'Only a mechanical rotation', 'No time variation'],
+  a: 0,
+  explanation: 'A standard impulse waveform rises rapidly to a peak and then decays toward zero.'
+},
+{
+  id: 2844, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the purpose of a chopped lightning impulse test?',
+  options: ['To evaluate insulation response to an impulse that is interrupted early', 'To measure fuel consumption', 'To test only mechanical bearings', 'To maintain constant DC voltage indefinitely'],
+  a: 0,
+  explanation: 'A chopped impulse ends abruptly before its normal decay and can impose a distinct electrical stress on insulation.'
+},
+{
+  id: 2845, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is an overvoltage?',
+  options: ['Voltage exceeding the expected or specified operating level', 'Any current equal to zero', 'A type of mechanical load', 'A normal resistance reading'],
+  a: 0,
+  explanation: 'An overvoltage is a voltage above the relevant normal or specified level, potentially stressing insulation.'
+},
+{
+  id: 2846, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Which event can cause a transient overvoltage on a power system?',
+  options: ['Lightning or switching operations', 'A change in a notebook title', 'A change in room paint', 'A mechanical ruler reading'],
+  a: 0,
+  explanation: 'Lightning strokes and switching operations can produce transient overvoltages on power systems.'
+},
+{
+  id: 2847, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the role of grounding during high-voltage testing?',
+  options: ['To provide a controlled path for fault or discharge current and improve safety', 'To increase touch voltage intentionally', 'To remove all test barriers', 'To replace insulation coordination'],
+  a: 0,
+  explanation: 'Proper grounding supports safety and helps control fault and residual-charge hazards.'
+},
+{
+  id: 2848, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Why is calibration important for high-voltage measuring equipment?',
+  options: ['To help ensure measurements are accurate and traceable', 'To increase measurement error', 'To eliminate all safety procedures', 'To change the test object material'],
+  a: 0,
+  explanation: 'Calibration compares an instrument against suitable references to establish measurement accuracy and traceability.'
+},
+{
+  id: 2849, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'What is the main objective of an insulation resistance test?',
+  options: ['To assess resistance to leakage current through or over insulation', 'To measure motor shaft torque directly', 'To measure grid frequency only', 'To determine tower height'],
+  a: 0,
+  explanation: 'Insulation resistance testing helps identify leakage paths and possible deterioration, using appropriate procedures.'
+},
+{
+  id: 2850, branch: 'Electrical Engineering', topic: 'High Voltage Engineering', semester: 'Semester 7', subject: 'High Voltage Engineering',
+  q: 'Which practice is essential before performing high-voltage laboratory work?',
+  options: ['Follow approved procedures, interlocks, grounding, and supervision', 'Work alone without checking equipment', 'Bypass safety interlocks', 'Touch test terminals to check for voltage'],
+  a: 0,
+  explanation: 'High-voltage testing requires trained supervision, appropriate PPE, approved procedures, and verified safety controls.'
+},
+
+{
+  id: 2851, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which of the following is a renewable energy source?',
+  options: ['Solar energy', 'Coal', 'Petroleum', 'Natural gas'],
+  a: 0,
+  explanation: 'Solar energy is naturally replenished by sunlight.'
+},
+{
+  id: 2852, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which device converts sunlight directly into electricity?',
+  options: ['Photovoltaic cell', 'Transformer', 'Circuit breaker', 'Induction motor'],
+  a: 0,
+  explanation: 'A photovoltaic cell converts light into electrical energy through the photovoltaic effect.'
+},
+{
+  id: 2853, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is the basic unit of a solar PV panel?',
+  options: ['Solar cell', 'Fuse', 'Relay', 'Capacitor bank'],
+  a: 0,
+  explanation: 'Solar cells are connected to form modules and panels.'
+},
+{
+  id: 2854, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which material is commonly used in commercial solar cells?',
+  options: ['Silicon', 'Wood', 'Rubber', 'Concrete'],
+  a: 0,
+  explanation: 'Silicon is widely used as a semiconductor in photovoltaic cells.'
+},
+{
+  id: 2855, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is the main function of a solar inverter?',
+  options: ['Convert DC electricity into AC electricity', 'Convert sunlight into coal', 'Store wind mechanically', 'Measure rainfall'],
+  a: 0,
+  explanation: 'A solar inverter converts DC output from PV modules into AC suitable for loads or the grid.'
+},
+{
+  id: 2856, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What does MPPT stand for in solar systems?',
+  options: ['Maximum Power Point Tracking', 'Minimum Power Protection Test', 'Motor Phase Position Timing', 'Maximum Panel Pressure Technique'],
+  a: 0,
+  explanation: 'MPPT adjusts the operating point of a PV system to extract available maximum power.'
+},
+{
+  id: 2857, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which factor directly affects the output of a solar PV panel?',
+  options: ['Solar irradiance', 'Paint color of the building', 'Distance to a railway station', 'Room furniture'],
+  a: 0,
+  explanation: 'PV output depends strongly on irradiance, temperature, and module characteristics.'
+},
+{
+  id: 2858, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is solar irradiance?',
+  options: ['Solar power received per unit area', 'Energy stored per unit mass only', 'Wind speed per hour', 'Electrical resistance per metre'],
+  a: 0,
+  explanation: 'Solar irradiance is power from sunlight incident per unit area, commonly measured in W/m².'
+},
+{
+  id: 2859, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which device converts wind energy into electrical energy?',
+  options: ['Wind turbine generator system', 'Fuse holder', 'Domestic switch', 'Voltage divider'],
+  a: 0,
+  explanation: 'A wind turbine captures wind energy and drives a generator to produce electricity.'
+},
+{
+  id: 2860, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is the main purpose of wind turbine blades?',
+  options: ['Capture wind energy and create rotational torque', 'Store electrical charge permanently', 'Measure voltage directly', 'Prevent all wind movement'],
+  a: 0,
+  explanation: 'Aerodynamic forces on the blades convert part of the wind energy into rotational mechanical power.'
+},
+{
+  id: 2861, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is the cut-in speed of a wind turbine?',
+  options: ['The minimum wind speed at which it starts generating usable power', 'The maximum speed of a train', 'The speed of a solar panel', 'The speed at which wind always stops'],
+  a: 0,
+  explanation: 'Cut-in speed is the wind speed at which a turbine begins producing power.'
+},
+{
+  id: 2862, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is the cut-out speed of a wind turbine?',
+  options: ['The wind speed above which it shuts down for protection', 'The speed at which a battery becomes full in every case', 'The normal grid frequency', 'The speed of a water pump only'],
+  a: 0,
+  explanation: 'A turbine may shut down above its cut-out speed to protect equipment during very high winds.'
+},
+{
+  id: 2863, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which law describes the power available in moving wind?',
+  options: ['Power is proportional to air density, swept area, and wind speed cubed', 'Power is always independent of wind speed', 'Power is proportional only to wire color', 'Power is always zero'],
+  a: 0,
+  explanation: 'Available wind power is P = 1/2 ρAv³, before accounting for turbine conversion limits.'
+},
+{
+  id: 2864, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What does the Betz limit describe?',
+  options: ['The theoretical maximum fraction of wind power a turbine can extract', 'The maximum voltage of a household socket', 'The efficiency of every solar panel', 'The capacity of a battery'],
+  a: 0,
+  explanation: 'The Betz limit is about 59.3% of the kinetic power in undisturbed wind.'
+},
+{
+  id: 2865, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which renewable technology uses flowing or falling water to generate electricity?',
+  options: ['Hydroelectric power', 'Diesel generation', 'Coal gasification', 'Nuclear fission'],
+  a: 0,
+  explanation: 'Hydroelectric plants convert the energy of water into mechanical energy and then electrical energy.'
+},
+{
+  id: 2866, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which machine is commonly used as the prime mover in a hydroelectric plant?',
+  options: ['Hydraulic turbine', 'Photocopier', 'Air conditioner', 'Battery charger only'],
+  a: 0,
+  explanation: 'A hydraulic turbine converts water energy into rotational mechanical power.'
+},
+{
+  id: 2867, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What does the head of a hydroelectric plant represent?',
+  options: ['The effective height difference associated with water pressure and energy', 'The height of a control-room chair', 'The length of a power cable only', 'The temperature of the generator'],
+  a: 0,
+  explanation: 'Hydraulic head represents available water energy per unit weight, commonly related to elevation and pressure differences.'
+},
+{
+  id: 2868, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is pumped-storage hydropower used for?',
+  options: ['Storing energy by pumping water uphill and generating later', 'Producing coal from water', 'Increasing solar irradiance', 'Eliminating all transmission lines'],
+  a: 0,
+  explanation: 'Pumped-storage plants use surplus electricity to pump water uphill and recover energy during later generation.'
+},
+{
+  id: 2869, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which source is used in geothermal power generation?',
+  options: ['Heat from inside the Earth', 'Only sunlight reflected by buildings', 'Coal dust alone', 'Ocean plastic'],
+  a: 0,
+  explanation: 'Geothermal systems use naturally occurring heat from the Earth.'
+},
+{
+  id: 2870, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is biomass energy obtained from?',
+  options: ['Organic material from plants and other biological sources', 'Only metal ores', 'Pure silicon wafers', 'Electric insulators'],
+  a: 0,
+  explanation: 'Biomass energy comes from organic materials such as plant matter and certain biological wastes.'
+},
+{
+  id: 2871, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is biogas mainly produced by?',
+  options: ['Anaerobic digestion of organic matter', 'Melting copper wires', 'Solar cells under darkness', 'Passing current through a fuse'],
+  a: 0,
+  explanation: 'Microorganisms break down organic material without oxygen and produce biogas.'
+},
+{
+  id: 2872, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which gas is the main energy-bearing component of typical biogas?',
+  options: ['Methane', 'Helium', 'Neon', 'Argon'],
+  a: 0,
+  explanation: 'Methane is the principal combustible component of typical biogas.'
+},
+{
+  id: 2873, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is the main purpose of an energy storage system in a renewable power plant?',
+  options: ['Store energy for use when generation and demand differ', 'Increase clouds over solar panels', 'Eliminate the need for electrical protection', 'Change wind direction'],
+  a: 0,
+  explanation: 'Storage can shift energy across time and help balance variable generation with demand.'
+},
+{
+  id: 2874, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which rechargeable battery type is widely used in modern energy storage systems?',
+  options: ['Lithium-ion battery', 'Single-use zinc-carbon cell only', 'Uncharged fuse', 'Capacitor-free insulator'],
+  a: 0,
+  explanation: 'Lithium-ion batteries are widely used because of their energy density and round-trip efficiency.'
+},
+{
+  id: 2875, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What does battery state of charge (SOC) indicate?',
+  options: ['The estimated remaining charge relative to battery capacity', 'The color of the battery case', 'The number of solar panels in a field', 'The wind turbine blade angle only'],
+  a: 0,
+  explanation: 'SOC estimates how much charge remains compared with the battery’s usable capacity.'
+},
+{
+  id: 2876, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is the main purpose of a charge controller in a solar battery system?',
+  options: ['Regulate charging and help protect the battery', 'Convert the battery into a turbine', 'Increase sunlight intensity', 'Measure wind direction only'],
+  a: 0,
+  explanation: 'A charge controller manages power from the PV array to help prevent inappropriate battery charging.'
+},
+{
+  id: 2877, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What does a grid-connected solar PV system do?',
+  options: ['Connects solar generation to the electrical grid through suitable equipment', 'Operates only as a water pump', 'Uses no electrical protection', 'Always operates without an inverter'],
+  a: 0,
+  explanation: 'A grid-connected PV system uses an inverter and protection equipment to interface with the utility grid.'
+},
+{
+  id: 2878, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is islanding in a grid-connected inverter system?',
+  options: ['When local generation continues supplying a separated part of the grid', 'When a solar panel is placed on an island', 'When the battery is removed permanently', 'When the grid frequency becomes a unit of length'],
+  a: 0,
+  explanation: 'Islanding occurs when a distributed source continues energizing a section isolated from the main grid.'
+},
+{
+  id: 2879, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Why is anti-islanding protection important?',
+  options: ['To prevent unsafe unintended energization of an isolated grid section', 'To increase voltage without limit', 'To prevent all solar generation', 'To remove the need for an inverter'],
+  a: 0,
+  explanation: 'Anti-islanding protection helps disconnect distributed generation when the utility supply is lost, according to applicable standards.'
+},
+{
+  id: 2880, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is a microgrid?',
+  options: ['A local group of loads and distributed resources that can operate in coordinated modes', 'A single insulated wire', 'A type of battery terminal', 'A device that measures wind speed only'],
+  a: 0,
+  explanation: 'A microgrid coordinates local loads and resources and may operate connected to or independently from the main grid.'
+},
+{
+  id: 2881, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is a major challenge of solar and wind power?',
+  options: ['Their output varies with weather and available resources', 'They always require coal as their primary fuel', 'They can never generate electricity', 'Their output is always constant'],
+  a: 0,
+  explanation: 'Solar and wind output depends on changing environmental conditions, so forecasting, flexibility, and storage can be useful.'
+},
+{
+  id: 2882, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is capacity factor?',
+  options: ['Actual energy produced over a period divided by the energy possible at rated output for that period', 'The number of switches in a panel', 'The ratio of cable length to tower height', 'The battery color rating'],
+  a: 0,
+  explanation: 'Capacity factor compares actual energy output with the output possible if the plant operated at rated power throughout the period.'
+},
+{
+  id: 2883, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is the purpose of renewable energy forecasting?',
+  options: ['To estimate future generation and support scheduling', 'To determine the color of turbine blades', 'To remove every power converter', 'To stop weather observations'],
+  a: 0,
+  explanation: 'Forecasts help operators schedule resources and manage variability in renewable generation.'
+},
+{
+  id: 2884, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which unit is commonly used to express the energy capacity of a battery?',
+  options: ['Kilowatt-hour (kWh)', 'Hertz (Hz)', 'Ohm (Ω)', 'Metre (m)'],
+  a: 0,
+  explanation: 'Battery energy capacity is commonly expressed in watt-hours or kilowatt-hours.'
+},
+{
+  id: 2885, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which unit is used to express the power rating of a solar installation?',
+  options: ['Kilowatt (kW)', 'Kilogram (kg)', 'Second (s)', 'Ohm-metre (Ω·m)'],
+  a: 0,
+  explanation: 'The power rating of a solar installation is commonly expressed in kilowatts or megawatts.'
+},
+{
+  id: 2886, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What does net metering generally measure for a suitable grid-connected customer?',
+  options: ['Electricity imported from and exported to the grid', 'Only wind speed', 'Only transformer temperature', 'Only battery case weight'],
+  a: 0,
+  explanation: 'Net metering arrangements account for electricity imported from and exported to the grid, subject to local regulations.'
+},
+{
+  id: 2887, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which environmental benefit is commonly associated with renewable electricity?',
+  options: ['Potential reduction in operational greenhouse gas emissions compared with fossil generation', 'Guaranteed zero environmental impact over the entire life cycle', 'Increased dependence on coal in every case', 'Elimination of all land-use requirements'],
+  a: 0,
+  explanation: 'Renewables can reduce operational emissions, although equipment manufacturing, land use, and end-of-life impacts still matter.'
+},
+{
+  id: 2888, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is a solar thermal collector designed to capture?',
+  options: ['Solar energy as heat', 'Electrical current from coal', 'Wind energy as sound', 'Magnetic flux from a battery'],
+  a: 0,
+  explanation: 'Solar thermal collectors absorb solar radiation and transfer the energy as useful heat.'
+},
+{
+  id: 2889, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is concentrated solar power (CSP)?',
+  options: ['A technology that concentrates sunlight to produce heat for power generation', 'A battery charging method using no sunlight', 'A type of wind turbine gearbox', 'A system that burns only natural gas by definition'],
+  a: 0,
+  explanation: 'CSP systems concentrate sunlight to heat a working fluid, which can then be used in a power cycle.'
+},
+{
+  id: 2890, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is tidal energy derived from?',
+  options: ['Periodic movement of ocean water caused mainly by gravitational forces', 'Coal combustion', 'The color of seawater', 'The electrical resistance of sand'],
+  a: 0,
+  explanation: 'Tidal energy uses predictable changes in sea level or tidal currents.'
+},
+{
+  id: 2891, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is wave energy derived from?',
+  options: ['Energy carried by surface waves on water', 'The movement of underground coal', 'A transformer winding temperature', 'The rotation of a household fan only'],
+  a: 0,
+  explanation: 'Wave energy converters capture energy from ocean surface waves.'
+},
+{
+  id: 2892, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is green hydrogen generally produced using?',
+  options: ['Electrolysis powered by renewable electricity', 'Coal combustion without emissions controls', 'A normal fuse', 'A mechanical gearbox alone'],
+  a: 0,
+  explanation: 'Green hydrogen is typically produced by water electrolysis using renewable electricity.'
+},
+{
+  id: 2893, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is one possible use of hydrogen in an energy system?',
+  options: ['Energy storage or fuel for suitable fuel cells', 'Replacing every electrical insulator', 'Measuring grid frequency directly', 'Increasing solar irradiance'],
+  a: 0,
+  explanation: 'Hydrogen can store energy and be used in fuel cells or other suitable applications.'
+},
+{
+  id: 2894, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What does a fuel cell do?',
+  options: ['Converts chemical energy directly into electrical energy through an electrochemical process', 'Stores wind as mechanical pressure only', 'Converts electrical energy only into coal', 'Measures conductor diameter'],
+  a: 0,
+  explanation: 'A fuel cell produces electricity through an electrochemical reaction rather than combustion alone.'
+},
+{
+  id: 2895, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Why may a renewable power plant need a grid interface converter?',
+  options: ['To control electrical output and meet grid connection requirements', 'To increase cloud cover', 'To remove all electrical protection', 'To turn the plant into a mechanical pump only'],
+  a: 0,
+  explanation: 'Power converters help control voltage, frequency, and power exchange where required by the system design.'
+},
+{
+  id: 2896, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is curtailment of renewable generation?',
+  options: ['Reducing available generation output when required by system conditions', 'Increasing output beyond physical limits', 'Cleaning a solar panel', 'Replacing an inverter fuse'],
+  a: 0,
+  explanation: 'Curtailment reduces output despite available resource, for example when grid capacity or demand is insufficient.'
+},
+{
+  id: 2897, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is the purpose of forecasting solar irradiance?',
+  options: ['To estimate expected solar generation', 'To determine battery case color', 'To measure the length of a turbine blade only', 'To remove the need for an inverter'],
+  a: 0,
+  explanation: 'Irradiance forecasts help estimate PV output and support grid and plant scheduling.'
+},
+{
+  id: 2898, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'What is a hybrid renewable energy system?',
+  options: ['A system combining two or more energy sources or technologies', 'A system using only one unconnected wire', 'A device with no energy source', 'A system containing only mechanical switches'],
+  a: 0,
+  explanation: 'Hybrid systems combine sources such as solar and wind, sometimes with storage, to improve supply flexibility.'
+},
+{
+  id: 2899, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Why is preventive maintenance important for renewable energy installations?',
+  options: ['To maintain performance, reliability, and safety', 'To increase failures deliberately', 'To eliminate all monitoring', 'To prevent electricity generation permanently'],
+  a: 0,
+  explanation: 'Preventive maintenance helps detect wear, contamination, and faults before they cause major downtime.'
+},
+{
+  id: 2900, branch: 'Electrical Engineering', topic: 'Renewable Energy Systems', semester: 'Semester 7', subject: 'Renewable Energy Systems',
+  q: 'Which factor should be considered when selecting a renewable energy site?',
+  options: ['Resource availability, grid access, environmental impact, and cost', 'Only the color of nearby buildings', 'Only the number of road signs', 'Only the name of the nearest city'],
+  a: 0,
+  explanation: 'Site selection depends on resource quality, grid connectivity, land, environmental considerations, and project economics.'
+},
+// ELECTRICAL ENGINEERING - SEMESTER 8
+
+// SUBJECT 1: Power System Operation and Control
+{
+  id: 2901, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the main objective of economic load dispatch?',
+  options: ['Minimize generation cost', 'Increase transmission losses', 'Reduce system voltage', 'Stop all generators'],
+  a: 'Minimize generation cost',
+  explanation: 'Economic load dispatch allocates generation to minimize operating cost while meeting demand.'
+},
+{
+  id: 2902, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What does load frequency control maintain?',
+  options: ['System frequency', 'Transformer oil level', 'Conductor length', 'Insulator color'],
+  a: 'System frequency',
+  explanation: 'Load frequency control balances generation and load to maintain system frequency.'
+},
+{
+  id: 2903, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the nominal frequency of the Indian power system?',
+  options: ['25 Hz', '50 Hz', '60 Hz', '100 Hz'],
+  a: '50 Hz',
+  explanation: 'The nominal frequency of the Indian grid is 50 Hz.'
+},
+{
+  id: 2904, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is a power system load curve?',
+  options: ['Load versus time', 'Voltage versus distance only', 'Resistance versus temperature only', 'Current versus conductor color'],
+  a: 'Load versus time',
+  explanation: 'A load curve shows how electrical demand varies over time.'
+},
+{
+  id: 2905, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the purpose of a spinning reserve?',
+  options: ['Provide backup generation quickly', 'Increase energy wastage', 'Disconnect every generator', 'Reduce insulation strength'],
+  a: 'Provide backup generation quickly',
+  explanation: 'Spinning reserve is available online generation capacity that can respond to changes or outages.'
+},
+{
+  id: 2906, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which device is commonly used for circuit interruption during faults?',
+  options: ['Circuit breaker', 'Energy meter', 'Capacitor bank only', 'Insulator'],
+  a: 'Circuit breaker',
+  explanation: 'Circuit breakers interrupt fault current to protect the power system.'
+},
+{
+  id: 2907, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What does SCADA stand for?',
+  options: ['Supervisory Control and Data Acquisition', 'System Circuit and Distribution Arrangement', 'Supply Control and Direct Alternation', 'Standard Current and Data Analysis'],
+  a: 'Supervisory Control and Data Acquisition',
+  explanation: 'SCADA systems monitor and control power system equipment remotely.'
+},
+{
+  id: 2908, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the purpose of state estimation?',
+  options: ['Estimate the operating state from measurements', 'Manufacture transmission towers', 'Measure only conductor length', 'Replace all protective relays'],
+  a: 'Estimate the operating state from measurements',
+  explanation: 'State estimation uses available measurements to estimate system voltages and angles.'
+},
+{
+  id: 2909, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is a bus in a power system?',
+  options: ['A common electrical connection point', 'A rotating machine shaft', 'A type of battery case', 'A mechanical switch handle'],
+  a: 'A common electrical connection point',
+  explanation: 'A bus connects multiple power system components at a common electrical node.'
+},
+{
+  id: 2910, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which quantity is usually controlled by generator excitation?',
+  options: ['Terminal voltage and reactive power', 'Fuel tank color', 'Tower height', 'Conductor material only'],
+  a: 'Terminal voltage and reactive power',
+  explanation: 'Excitation control influences generator terminal voltage and reactive power output.'
+},
+{
+  id: 2911, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What does an automatic voltage regulator control?',
+  options: ['Generator terminal voltage', 'Transmission tower spacing', 'Turbine building color', 'Consumer address'],
+  a: 'Generator terminal voltage',
+  explanation: 'An AVR adjusts excitation to regulate generator terminal voltage.'
+},
+{
+  id: 2912, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the main purpose of unit commitment?',
+  options: ['Choose which generating units should operate', 'Choose cable colors', 'Select building materials', 'Set the price of insulators'],
+  a: 'Choose which generating units should operate',
+  explanation: 'Unit commitment schedules generating units to meet demand economically and reliably.'
+},
+{
+  id: 2913, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What does spinning reserve exclude?',
+  options: ['Capacity that is not immediately available online', 'Online available generation reserve', 'Fast-response reserve', 'Synchronized spare capacity'],
+  a: 'Capacity that is not immediately available online',
+  explanation: 'Spinning reserve is synchronized and available online; offline capacity is a different reserve category.'
+},
+{
+  id: 2914, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which condition generally causes system frequency to fall?',
+  options: ['Load exceeds generation', 'Generation exceeds load', 'Load becomes zero', 'Voltage becomes constant'],
+  a: 'Load exceeds generation',
+  explanation: 'A generation shortfall causes rotating machines to slow, reducing frequency.'
+},
+{
+  id: 2915, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the function of a load dispatch centre?',
+  options: ['Coordinate and monitor power system operation', 'Manufacture electrical motors', 'Produce insulating oil', 'Build consumer appliances'],
+  a: 'Coordinate and monitor power system operation',
+  explanation: 'Load dispatch centres coordinate generation and power flows for reliable operation.'
+},
+{
+  id: 2916, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What does power factor describe?',
+  options: ['Ratio of real power to apparent power', 'Ratio of voltage to frequency', 'Ratio of resistance to length', 'Ratio of energy to time squared'],
+  a: 'Ratio of real power to apparent power',
+  explanation: 'Power factor is P/S for sinusoidal steady-state conditions.'
+},
+{
+  id: 2917, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Why are capacitor banks installed in distribution systems?',
+  options: ['Improve power factor and support voltage', 'Increase reactive power demand', 'Remove all active power', 'Increase line resistance'],
+  a: 'Improve power factor and support voltage',
+  explanation: 'Capacitor banks provide local reactive power compensation.'
+},
+{
+  id: 2918, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the purpose of automatic generation control?',
+  options: ['Regulate frequency and tie-line power', 'Measure only conductor diameter', 'Control building lighting only', 'Replace all generators'],
+  a: 'Regulate frequency and tie-line power',
+  explanation: 'AGC adjusts generator outputs to help maintain frequency and scheduled interchange.'
+},
+{
+  id: 2919, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What does a tie-line connect?',
+  options: ['Two power system areas', 'Two battery terminals only', 'A motor to its fan', 'A lamp to its switch only'],
+  a: 'Two power system areas',
+  explanation: 'Tie-lines allow interconnected control areas to exchange electrical power.'
+},
+{
+  id: 2920, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which analysis is commonly used to calculate bus voltages in a power system?',
+  options: ['Load-flow analysis', 'Chemical analysis', 'Soil analysis', 'Optical analysis'],
+  a: 'Load-flow analysis',
+  explanation: 'Load-flow studies determine bus voltage magnitudes, angles and power flows.'
+},
+{
+  id: 2921, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which bus has specified voltage magnitude and angle in a load-flow study?',
+  options: ['Slack bus', 'Every load bus', 'Only a distribution pole', 'None of the buses'],
+  a: 'Slack bus',
+  explanation: 'The slack bus provides the reference angle and balances system real and reactive power mismatches.'
+},
+{
+  id: 2922, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which quantities are specified at a typical PQ bus?',
+  options: ['Real and reactive power', 'Voltage magnitude and angle', 'Only frequency and time', 'Only resistance and length'],
+  a: 'Real and reactive power',
+  explanation: 'A PQ bus specifies active and reactive power injections.'
+},
+{
+  id: 2923, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the purpose of contingency analysis?',
+  options: ['Assess system behaviour after outages', 'Calculate student attendance', 'Design building furniture', 'Determine battery color'],
+  a: 'Assess system behaviour after outages',
+  explanation: 'Contingency analysis evaluates possible component failures and their effects on system security.'
+},
+{
+  id: 2924, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is meant by a blackout?',
+  options: ['A widespread loss of electrical supply', 'A small voltage increase', 'A normal load curve', 'A scheduled meter reading'],
+  a: 'A widespread loss of electrical supply',
+  explanation: 'A blackout is a major interruption of electricity supply over an area.'
+},
+{
+  id: 2925, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the main purpose of protective relays?',
+  options: ['Detect abnormal conditions and initiate isolation', 'Increase fault duration', 'Raise conductor resistance deliberately', 'Measure room temperature only'],
+  a: 'Detect abnormal conditions and initiate isolation',
+  explanation: 'Relays detect faults or abnormal operating conditions and command circuit breakers.'
+},
+{
+  id: 2926, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which factor is important when scheduling generating units?',
+  options: ['Demand, cost and operating constraints', 'Paint shade alone', 'Office furniture size', 'Tower numbering alone'],
+  a: 'Demand, cost and operating constraints',
+  explanation: 'Scheduling must meet demand while respecting cost and technical limits.'
+},
+{
+  id: 2927, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is a demand forecast?',
+  options: ['An estimate of future electrical demand', 'A record of past rainfall only', 'A list of wire colors', 'A motor nameplate'],
+  a: 'An estimate of future electrical demand',
+  explanation: 'Demand forecasting helps utilities plan generation, reserves and network operation.'
+},
+{
+  id: 2928, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What does a frequency relay monitor?',
+  options: ['System frequency', 'Conductor length', 'Transformer paint', 'Tower foundation depth'],
+  a: 'System frequency',
+  explanation: 'Frequency relays respond when frequency crosses configured thresholds.'
+},
+{
+  id: 2929, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Why is voltage stability important?',
+  options: ['It helps prevent uncontrolled voltage decline', 'It increases insulation damage', 'It guarantees zero load', 'It removes all reactive power'],
+  a: 'It helps prevent uncontrolled voltage decline',
+  explanation: 'Voltage stability concerns the ability to maintain acceptable voltages under disturbances.'
+},
+{
+  id: 2930, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What does reactive power mainly support in AC systems?',
+  options: ['Magnetic fields and voltage regulation', 'Mechanical road traffic', 'Fuel storage only', 'Digital file compression'],
+  a: 'Magnetic fields and voltage regulation',
+  explanation: 'Reactive power supports electric and magnetic fields and affects voltage levels.'
+},
+{
+  id: 2931, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which method is used to solve many load-flow problems iteratively?',
+  options: ['Newton-Raphson method', 'Bubble sort', 'Binary search', 'Linear probing'],
+  a: 'Newton-Raphson method',
+  explanation: 'Newton-Raphson is a widely used iterative numerical method for load-flow equations.'
+},
+{
+  id: 2932, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the purpose of a synchronizing check?',
+  options: ['Verify conditions before connecting sources', 'Check a cable label', 'Measure fuel color', 'Inspect a computer keyboard'],
+  a: 'Verify conditions before connecting sources',
+  explanation: 'Synchronizing checks compare voltage, frequency, phase sequence and phase angle before connection.'
+},
+{
+  id: 2933, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which parameter is not normally a primary load-flow bus variable?',
+  options: ['Tower height', 'Voltage magnitude', 'Voltage angle', 'Real power injection'],
+  a: 'Tower height',
+  explanation: 'Load-flow studies focus on electrical quantities, not physical tower height.'
+},
+{
+  id: 2934, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is a brownout?',
+  options: ['A reduction in supply voltage', 'A permanent rise in frequency', 'A type of turbine blade', 'A circuit with no resistance'],
+  a: 'A reduction in supply voltage',
+  explanation: 'A brownout is a reduction in voltage supplied to customers.'
+},
+{
+  id: 2935, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the role of a phasor measurement unit (PMU)?',
+  options: ['Measure synchronized electrical phasors', 'Generate steam directly', 'Store transformer oil', 'Change tower height'],
+  a: 'Measure synchronized electrical phasors',
+  explanation: 'PMUs provide time-synchronized voltage and current phasor measurements.'
+},
+{
+  id: 2936, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is meant by spinning reserve margin?',
+  options: ['Available online reserve capacity', 'Total conductor length', 'Transformer core thickness', 'Number of meters installed'],
+  a: 'Available online reserve capacity',
+  explanation: 'Spinning reserve represents additional synchronized generation available to respond to demand or outages.'
+},
+{
+  id: 2937, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which control action can help restore frequency after a generation loss?',
+  options: ['Increase available generation', 'Disconnect all loads permanently', 'Increase line resistance', 'Remove all excitation'],
+  a: 'Increase available generation',
+  explanation: 'Increasing generation helps rebalance supply and demand and recover frequency.'
+},
+{
+  id: 2938, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is a merit order in generation scheduling?',
+  options: ['Ranking units by incremental operating cost', 'Ranking cables by color', 'Ordering substations alphabetically only', 'Ranking poles by height'],
+  a: 'Ranking units by incremental operating cost',
+  explanation: 'Merit order generally prioritizes units with lower incremental costs, subject to constraints.'
+},
+{
+  id: 2939, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Why is spinning reserve needed?',
+  options: ['To respond to sudden demand or generation changes', 'To increase system losses', 'To prevent all maintenance', 'To reduce the number of buses to zero'],
+  a: 'To respond to sudden demand or generation changes',
+  explanation: 'Reserve capacity improves the reliability of power system operation.'
+},
+{
+  id: 2940, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which system component changes mechanical input to a synchronous generator?',
+  options: ['Governor and prime-mover control', 'Voltage transformer only', 'Insulator string', 'Energy meter display'],
+  a: 'Governor and prime-mover control',
+  explanation: 'The governor adjusts prime-mover input and influences generator speed and active power.'
+},
+{
+  id: 2941, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What does a governor primarily regulate?',
+  options: ['Prime-mover speed and active power', 'Conductor insulation color', 'Transformer oil acidity only', 'Substation fencing height'],
+  a: 'Prime-mover speed and active power',
+  explanation: 'A governor controls prime-mover input to regulate speed and power output.'
+},
+{
+  id: 2942, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the purpose of an interconnection between grids?',
+  options: ['Improve sharing of power and reserves', 'Guarantee no maintenance is needed', 'Eliminate all protection equipment', 'Make all generators identical'],
+  a: 'Improve sharing of power and reserves',
+  explanation: 'Interconnections can improve reliability, reserve sharing and economic operation.'
+},
+{
+  id: 2943, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which unit is commonly used for active power?',
+  options: ['Watt', 'Ohm', 'Farad', 'Henry'],
+  a: 'Watt',
+  explanation: 'Active electrical power is measured in watts.'
+},
+{
+  id: 2944, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which unit is commonly used for reactive power?',
+  options: ['var', 'Ohm', 'Coulomb per metre', 'Tesla per second'],
+  a: 'var',
+  explanation: 'Reactive power is measured in volt-amperes reactive (var).'
+},
+{
+  id: 2945, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What does N-1 security mean?',
+  options: ['The system can withstand a single credible component outage', 'Exactly one generator must run', 'One bus must always be disconnected', 'Only one consumer can receive power'],
+  a: 'The system can withstand a single credible component outage',
+  explanation: 'N-1 security assesses whether the system remains within limits after one component outage.'
+},
+{
+  id: 2946, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which measurement helps detect overload on a transmission line?',
+  options: ['Line current', 'Tower paint color', 'Road width', 'Control-room wall size'],
+  a: 'Line current',
+  explanation: 'Line current can be compared with thermal and equipment ratings to identify overloads.'
+},
+{
+  id: 2947, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Why are transmission losses considered in economic dispatch?',
+  options: ['They affect the generation required to serve demand', 'They determine generator paint', 'They eliminate demand forecasting', 'They set the number of control-room chairs'],
+  a: 'They affect the generation required to serve demand',
+  explanation: 'Generation scheduling may account for network losses as well as operating costs.'
+},
+{
+  id: 2948, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is a blackout restoration plan designed to do?',
+  options: ['Restore supply safely and systematically', 'Increase outage duration', 'Disable all communication', 'Remove all grounding'],
+  a: 'Restore supply safely and systematically',
+  explanation: 'Restoration plans define safe steps for energizing networks and reconnecting loads.'
+},
+{
+  id: 2949, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'What is the function of under-frequency load shedding?',
+  options: ['Disconnect selected loads to arrest frequency decline', 'Increase demand automatically', 'Raise line resistance', 'Switch off all protection permanently'],
+  a: 'Disconnect selected loads to arrest frequency decline',
+  explanation: 'Under-frequency load shedding reduces demand when generation is insufficient.'
+},
+{
+  id: 2950, branch: 'Electrical Engineering', topic: 'Power System Operation and Control', semester: 'Semester 8', subject: 'Power System Operation and Control',
+  q: 'Which is an important goal of power system operation?',
+  options: ['Reliable, secure and economical supply', 'Maximum outages', 'Uncontrolled frequency variation', 'Permanent overload of equipment'],
+  a: 'Reliable, secure and economical supply',
+  explanation: 'Power system operation aims to deliver electricity reliably and economically within technical limits.'
+},
+
+// SUBJECT 2: Electrical and Hybrid Vehicles
+{
+  id: 2951, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the main energy source of a battery electric vehicle?',
+  options: ['Rechargeable battery', 'Petrol tank only', 'Steam boiler', 'Coal furnace'],
+  a: 'Rechargeable battery',
+  explanation: 'A battery electric vehicle stores electrical energy in a rechargeable battery.'
+},
+{
+  id: 2952, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which machine converts electrical energy into wheel-driving torque?',
+  options: ['Electric motor', 'Radiator', 'Fuel injector', 'Mechanical speedometer'],
+  a: 'Electric motor',
+  explanation: 'The traction motor converts electrical energy into mechanical torque.'
+},
+{
+  id: 2953, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is regenerative braking?',
+  options: ['Recovering kinetic energy as electrical energy', 'Wasting all braking energy as heat', 'Charging tyres with air', 'Increasing engine noise'],
+  a: 'Recovering kinetic energy as electrical energy',
+  explanation: 'During regenerative braking, the motor operates as a generator and returns energy to the battery.'
+},
+{
+  id: 2954, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does BMS stand for in an electric vehicle?',
+  options: ['Battery Management System', 'Brake Measurement Shaft', 'Basic Motor Switch', 'Battery Mechanical Support'],
+  a: 'Battery Management System',
+  explanation: 'A BMS monitors battery parameters and helps protect battery cells.'
+},
+{
+  id: 2955, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which battery chemistry is widely used in modern electric cars?',
+  options: ['Lithium-ion', 'Zinc-carbon only', 'Alkaline household cell only', 'Mercury cell'],
+  a: 'Lithium-ion',
+  explanation: 'Lithium-ion batteries offer high energy density and are widely used in EVs.'
+},
+{
+  id: 2956, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does EV range mean?',
+  options: ['Distance travelled on available stored energy', 'Battery weight only', 'Tyre width', 'Motor color'],
+  a: 'Distance travelled on available stored energy',
+  explanation: 'Range estimates how far a vehicle can travel before needing additional energy.'
+},
+{
+  id: 2957, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the purpose of an inverter in an EV powertrain?',
+  options: ['Convert DC battery power to controlled AC for an AC motor', 'Convert tyres into electricity', 'Store petrol', 'Cool the passenger cabin only'],
+  a: 'Convert DC battery power to controlled AC for an AC motor',
+  explanation: 'The inverter supplies controlled AC to an AC traction motor from the DC battery.'
+},
+{
+  id: 2958, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is a hybrid electric vehicle?',
+  options: ['A vehicle using an engine and an electric drive system', 'A vehicle without wheels', 'A vehicle powered only by compressed air', 'A vehicle with no energy storage'],
+  a: 'A vehicle using an engine and an electric drive system',
+  explanation: 'Hybrid vehicles combine an internal combustion engine with electric propulsion.'
+},
+{
+  id: 2959, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the purpose of an onboard charger?',
+  options: ['Convert external AC power to battery-compatible DC', 'Increase tyre pressure', 'Control steering mechanically', 'Store hydrogen in the cabin'],
+  a: 'Convert external AC power to battery-compatible DC',
+  explanation: 'An onboard charger converts AC supply into controlled DC for charging the battery.'
+},
+{
+  id: 2960, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does state of charge (SOC) indicate?',
+  options: ['Remaining battery charge relative to capacity', 'Vehicle body temperature only', 'Tyre tread depth', 'Road slope'],
+  a: 'Remaining battery charge relative to capacity',
+  explanation: 'SOC estimates how much charge remains in the battery.'
+},
+{
+  id: 2961, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does state of health (SOH) indicate?',
+  options: ['Battery condition relative to a reference when new', 'Current road speed only', 'Fuel tank color', 'Number of vehicle doors'],
+  a: 'Battery condition relative to a reference when new',
+  explanation: 'SOH estimates battery ageing and performance compared with its original condition.'
+},
+{
+  id: 2962, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which motor is commonly used in modern EV traction systems?',
+  options: ['Permanent magnet synchronous motor', 'Only a hand-cranked generator', 'Steam engine', 'Induction heating coil only'],
+  a: 'Permanent magnet synchronous motor',
+  explanation: 'Permanent magnet synchronous motors are common because of their efficiency and power density.'
+},
+{
+  id: 2963, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the main purpose of a DC-DC converter in an EV?',
+  options: ['Convert one DC voltage level to another', 'Convert electricity into petrol', 'Change tyre diameter', 'Control road markings'],
+  a: 'Convert one DC voltage level to another',
+  explanation: 'A DC-DC converter can supply low-voltage vehicle systems from the high-voltage battery.'
+},
+{
+  id: 2964, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Why is thermal management important for an EV battery?',
+  options: ['It helps keep cells within a suitable temperature range', 'It increases overheating deliberately', 'It removes battery monitoring', 'It makes the battery unnecessary'],
+  a: 'It helps keep cells within a suitable temperature range',
+  explanation: 'Battery temperature affects safety, performance, charging and lifetime.'
+},
+{
+  id: 2965, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is a plug-in hybrid electric vehicle (PHEV)?',
+  options: ['A hybrid that can be charged from an external power source', 'A vehicle that cannot store energy', 'A vehicle powered only by solar panels at all times', 'A vehicle without an engine or motor'],
+  a: 'A hybrid that can be charged from an external power source',
+  explanation: 'A PHEV combines an engine and electric drive and supports external charging.'
+},
+{
+  id: 2966, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does a traction control system help manage?',
+  options: ['Wheel slip during acceleration', 'Battery paint shade', 'Passenger seat fabric', 'Charging station signage'],
+  a: 'Wheel slip during acceleration',
+  explanation: 'Traction control helps limit excessive wheel spin and improve grip.'
+},
+{
+  id: 2967, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the function of a vehicle power electronics controller?',
+  options: ['Manage electrical power conversion and motor drive', 'Manufacture road tyres', 'Measure passenger height only', 'Replace all mechanical brakes'],
+  a: 'Manage electrical power conversion and motor drive',
+  explanation: 'Power electronics control the flow of energy between the battery and traction motor.'
+},
+{
+  id: 2968, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which unit is commonly used to express battery capacity?',
+  options: ['Ampere-hour', 'Ohm-metre only', 'Newton per metre', 'Hertz per second'],
+  a: 'Ampere-hour',
+  explanation: 'Battery capacity is commonly expressed in ampere-hours or milliampere-hours.'
+},
+{
+  id: 2969, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does kWh measure?',
+  options: ['Energy', 'Resistance', 'Frequency', 'Torque only'],
+  a: 'Energy',
+  explanation: 'A kilowatt-hour is a unit of energy.'
+},
+{
+  id: 2970, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the role of a vehicle charging connector?',
+  options: ['Provide a safe electrical connection for charging', 'Measure tyre pressure only', 'Control steering angle only', 'Cool the motor with fuel'],
+  a: 'Provide a safe electrical connection for charging',
+  explanation: 'Charging connectors provide the electrical interface between the vehicle and charging equipment.'
+},
+{
+  id: 2971, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is fast charging intended to do?',
+  options: ['Transfer charging energy at a higher power level', 'Reduce battery capacity to zero', 'Eliminate all electrical protection', 'Increase charging time deliberately'],
+  a: 'Transfer charging energy at a higher power level',
+  explanation: 'Fast charging uses higher power to reduce the time required to recharge.'
+},
+{
+  id: 2972, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Why is isolation monitoring important in high-voltage EV systems?',
+  options: ['Detect insulation faults to the vehicle chassis', 'Choose the dashboard font', 'Increase current leakage', 'Set tyre rotation direction'],
+  a: 'Detect insulation faults to the vehicle chassis',
+  explanation: 'Isolation monitoring helps detect unsafe leakage paths in high-voltage circuits.'
+},
+{
+  id: 2973, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which component protects a circuit against excessive current?',
+  options: ['Fuse', 'Headrest', 'Windshield wiper', 'Seat belt buckle'],
+  a: 'Fuse',
+  explanation: 'A fuse interrupts a circuit when current exceeds its specified limit.'
+},
+{
+  id: 2974, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the purpose of a contactor in an EV battery system?',
+  options: ['Connect or disconnect high-voltage circuits', 'Change battery chemistry', 'Adjust wheel alignment', 'Measure road distance mechanically'],
+  a: 'Connect or disconnect high-voltage circuits',
+  explanation: 'Contactors safely switch high-voltage connections under controlled conditions.'
+},
+{
+  id: 2975, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does vehicle-to-grid (V2G) technology enable?',
+  options: ['Bidirectional energy exchange with the grid', 'Only tyre pressure monitoring', 'Mechanical steering without a wheel', 'Charging with no electrical connection'],
+  a: 'Bidirectional energy exchange with the grid',
+  explanation: 'V2G-capable vehicles can send stored electrical energy back to a compatible grid.'
+},
+{
+  id: 2976, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the purpose of a motor resolver or encoder?',
+  options: ['Provide rotor position or speed information', 'Measure cabin fragrance', 'Store battery chemicals', 'Adjust tyre tread'],
+  a: 'Provide rotor position or speed information',
+  explanation: 'Position and speed feedback help the motor controller operate the traction motor accurately.'
+},
+{
+  id: 2977, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which factor can reduce electric vehicle range?',
+  options: ['Low ambient temperature', 'Efficient driving under suitable conditions', 'Reduced aerodynamic drag', 'Appropriate tyre pressure'],
+  a: 'Low ambient temperature',
+  explanation: 'Cold weather can reduce battery performance and increase heating energy use.'
+},
+{
+  id: 2978, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Why does regenerative braking not recover all kinetic energy?',
+  options: ['Conversion losses and operating limits exist', 'Energy conversion is always 100% efficient', 'The battery creates unlimited energy', 'Braking requires no energy transfer'],
+  a: 'Conversion losses and operating limits exist',
+  explanation: 'Motor, inverter and battery losses plus traction limits prevent full recovery.'
+},
+{
+  id: 2979, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which factor affects the charging time of a battery?',
+  options: ['Battery capacity and charging power', 'Vehicle paint only', 'Number of windows only', 'Seat material only'],
+  a: 'Battery capacity and charging power',
+  explanation: 'Charging time depends on energy required, available charging power and charging behaviour.'
+},
+{
+  id: 2980, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the purpose of a thermal sensor in a battery pack?',
+  options: ['Measure temperature', 'Measure road width', 'Control the vehicle horn only', 'Determine tyre brand'],
+  a: 'Measure temperature',
+  explanation: 'Temperature sensors provide data for battery monitoring and thermal protection.'
+},
+{
+  id: 2981, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does an electric vehicle drivetrain transmit?',
+  options: ['Power from the motor to the wheels', 'Fuel from a petrol pump only', 'Air to the windscreen only', 'Data to a printer'],
+  a: 'Power from the motor to the wheels',
+  explanation: 'The drivetrain transfers traction power to the wheels.'
+},
+{
+  id: 2982, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which type of braking remains necessary even with regenerative braking?',
+  options: ['Friction braking', 'No braking system', 'Only engine cooling', 'Only battery charging'],
+  a: 'Friction braking',
+  explanation: 'Friction brakes provide reliable stopping and handle conditions where regeneration is limited.'
+},
+{
+  id: 2983, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is a fuel-cell electric vehicle commonly powered by?',
+  options: ['Electricity generated by a fuel cell, often using hydrogen', 'A coal-fired boiler inside the cabin', 'A household alkaline cell alone', 'A mechanical spring only'],
+  a: 'Electricity generated by a fuel cell, often using hydrogen',
+  explanation: 'A fuel cell converts chemical energy into electricity to power the electric drivetrain.'
+},
+{
+  id: 2984, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the main function of a vehicle thermal management system?',
+  options: ['Control component temperatures', 'Change vehicle registration', 'Increase motor vibration', 'Set the exterior paint color'],
+  a: 'Control component temperatures',
+  explanation: 'Thermal management helps maintain suitable temperatures for batteries, motors and electronics.'
+},
+{
+  id: 2985, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which driving condition generally increases aerodynamic drag?',
+  options: ['Higher vehicle speed', 'Lower frontal area', 'Smoother body design', 'Reduced air density'],
+  a: 'Higher vehicle speed',
+  explanation: 'Aerodynamic drag force generally rises approximately with the square of speed.'
+},
+{
+  id: 2986, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does an EV range estimate depend on?',
+  options: ['Energy available and expected energy consumption', 'Paint shade only', 'Number of doors only', 'Dashboard language only'],
+  a: 'Energy available and expected energy consumption',
+  explanation: 'Range estimation uses available battery energy and expected consumption per distance.'
+},
+{
+  id: 2987, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the purpose of pre-charging a DC-link capacitor?',
+  options: ['Limit inrush current during startup', 'Increase startup current without limit', 'Discharge the battery instantly', 'Disable all power electronics'],
+  a: 'Limit inrush current during startup',
+  explanation: 'A pre-charge circuit reduces the current surge when capacitors are connected to a high-voltage battery.'
+},
+{
+  id: 2988, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the main benefit of an electric motor at low speed?',
+  options: ['High torque can be available from standstill', 'It always consumes zero energy', 'It never needs control', 'It produces unlimited power'],
+  a: 'High torque can be available from standstill',
+  explanation: 'Electric traction motors can provide substantial torque at low speeds.'
+},
+{
+  id: 2989, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does charging efficiency compare?',
+  options: ['Energy stored in the battery with energy supplied for charging', 'Tyre width with vehicle height', 'Motor color with battery color', 'Road length with cabin size'],
+  a: 'Energy stored in the battery with energy supplied for charging',
+  explanation: 'Charging efficiency accounts for energy losses during charging.'
+},
+{
+  id: 2990, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Why should a damaged high-voltage EV battery be handled by trained personnel?',
+  options: ['It can present electric shock, fire and chemical hazards', 'It contains no stored energy', 'It is always safe to open', 'It cannot short-circuit'],
+  a: 'It can present electric shock, fire and chemical hazards',
+  explanation: 'High-voltage batteries require proper isolation, protective equipment and trained handling.'
+},
+{
+  id: 2991, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which parameter is measured in newton-metres?',
+  options: ['Torque', 'Battery capacity', 'Frequency', 'Resistance'],
+  a: 'Torque',
+  explanation: 'Torque is commonly expressed in newton-metres.'
+},
+{
+  id: 2992, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the purpose of an EV motor controller?',
+  options: ['Regulate motor torque and speed', 'Control the vehicle paint', 'Store hydrogen in the tyres', 'Replace the battery cells'],
+  a: 'Regulate motor torque and speed',
+  explanation: 'The controller regulates electrical power to achieve the requested traction response.'
+},
+{
+  id: 2993, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which is a possible environmental benefit of battery electric vehicles during driving?',
+  options: ['No tailpipe emissions', 'Zero emissions across every lifecycle stage', 'No electricity consumption', 'No battery recycling needs'],
+  a: 'No tailpipe emissions',
+  explanation: 'Battery EVs have no tailpipe emissions, although lifecycle impacts depend on electricity and manufacturing.'
+},
+{
+  id: 2994, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What does an EV charging station communicate with a compatible vehicle to manage?',
+  options: ['Charging conditions and safety limits', 'Tyre manufacturing dates only', 'Passenger preferences only', 'Vehicle paint details'],
+  a: 'Charging conditions and safety limits',
+  explanation: 'Charging communication helps coordinate current, voltage and safe charging operation.'
+},
+{
+  id: 2995, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is a key function of a battery cell balancing system?',
+  options: ['Reduce differences in cell state of charge', 'Increase cell imbalance deliberately', 'Change vehicle gear ratio only', 'Measure road traffic'],
+  a: 'Reduce differences in cell state of charge',
+  explanation: 'Cell balancing helps keep cells within suitable voltage and charge limits.'
+},
+{
+  id: 2996, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which factor can improve EV energy efficiency?',
+  options: ['Reducing unnecessary vehicle mass', 'Increasing aerodynamic drag', 'Keeping tyres underinflated', 'Accelerating harshly at all times'],
+  a: 'Reducing unnecessary vehicle mass',
+  explanation: 'Lower mass can reduce the energy required for acceleration and climbing.'
+},
+{
+  id: 2997, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the purpose of an electric vehicle reduction gear?',
+  options: ['Match motor speed and torque to wheel requirements', 'Increase battery chemistry complexity', 'Store electricity as fuel', 'Measure passenger weight only'],
+  a: 'Match motor speed and torque to wheel requirements',
+  explanation: 'Reduction gearing converts high motor speed into suitable wheel speed and torque.'
+},
+{
+  id: 2998, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is a common reason for using high-voltage traction batteries?',
+  options: ['Deliver required power with lower current', 'Guarantee no insulation is needed', 'Eliminate all converters', 'Make the vehicle unable to charge'],
+  a: 'Deliver required power with lower current',
+  explanation: 'For the same power, higher voltage permits lower current and can reduce conductor losses.'
+},
+{
+  id: 2999, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'What is the purpose of a battery pack contactor interlock?',
+  options: ['Help ensure safe connection and disconnection conditions', 'Increase accidental contact risk', 'Disable the emergency response', 'Control the horn tone'],
+  a: 'Help ensure safe connection and disconnection conditions',
+  explanation: 'Interlocks help prevent unsafe access or operation of high-voltage circuits.'
+},
+{
+  id: 3000, branch: 'Electrical Engineering', topic: 'Electrical and Hybrid Vehicles', semester: 'Semester 8', subject: 'Electrical and Hybrid Vehicles',
+  q: 'Which is a major design goal of an EV powertrain?',
+  options: ['Efficient, safe delivery of traction power', 'Maximum electrical losses', 'Uncontrolled motor speed', 'Permanent battery overheating'],
+  a: 'Efficient, safe delivery of traction power',
+  explanation: 'EV powertrains aim to provide efficient propulsion while meeting performance and safety requirements.'
+},
+
+// SUBJECT 3: Advanced Power Electronics
+{
+  id: 3001, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is the primary purpose of a power electronic converter?',
+  options: ['Control and convert electrical power', 'Store mechanical fuel only', 'Measure building height', 'Increase wire color variety'],
+  a: 'Control and convert electrical power',
+  explanation: 'Power converters change electrical power between required forms and levels.'
+},
+{
+  id: 3002, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which device is widely used as a controllable power switch?',
+  options: ['IGBT', 'Fuse wire only', 'Fixed resistor only', 'Incandescent lamp'],
+  a: 'IGBT',
+  explanation: 'IGBTs are widely used in medium- and high-power switching converters.'
+},
+{
+  id: 3003, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does PWM stand for?',
+  options: ['Pulse Width Modulation', 'Power Wire Measurement', 'Phase Wave Monitoring', 'Primary Watt Method'],
+  a: 'Pulse Width Modulation',
+  explanation: 'PWM controls average output by varying the width of switching pulses.'
+},
+{
+  id: 3004, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does a DC-DC buck converter do?',
+  options: ['Steps down DC voltage', 'Always steps up DC voltage', 'Converts DC directly into mechanical torque', 'Measures frequency only'],
+  a: 'Steps down DC voltage',
+  explanation: 'A buck converter provides a lower DC output voltage than its input under normal operation.'
+},
+{
+  id: 3005, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does a boost converter do?',
+  options: ['Steps up DC voltage', 'Always steps down DC voltage', 'Converts electricity into sound only', 'Eliminates the need for switching'],
+  a: 'Steps up DC voltage',
+  explanation: 'A boost converter raises DC voltage using an inductor, switch and diode or synchronous switch.'
+},
+{
+  id: 3006, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is the function of an inverter?',
+  options: ['Convert DC to AC', 'Convert AC to DC only', 'Convert voltage into resistance', 'Store charge without a circuit'],
+  a: 'Convert DC to AC',
+  explanation: 'An inverter produces AC from a DC source.'
+},
+{
+  id: 3007, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is the function of a rectifier?',
+  options: ['Convert AC to DC', 'Convert DC to AC only', 'Convert resistance to inductance', 'Generate mechanical pressure'],
+  a: 'Convert AC to DC',
+  explanation: 'A rectifier converts alternating current into unidirectional output.'
+},
+{
+  id: 3008, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which component stores energy in a magnetic field?',
+  options: ['Inductor', 'Capacitor', 'Resistor', 'Fuse'],
+  a: 'Inductor',
+  explanation: 'An inductor stores energy in its magnetic field.'
+},
+{
+  id: 3009, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which component stores energy in an electric field?',
+  options: ['Capacitor', 'Inductor', 'Fuse', 'Switch contact'],
+  a: 'Capacitor',
+  explanation: 'A capacitor stores energy in the electric field between its plates.'
+},
+{
+  id: 3010, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is switching frequency?',
+  options: ['Number of switching cycles per second', 'Number of wires in a cable', 'Resistance of a transformer', 'Battery capacity'],
+  a: 'Number of switching cycles per second',
+  explanation: 'Switching frequency is expressed in hertz and affects losses and filter design.'
+},
+{
+  id: 3011, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is a common effect of increasing switching frequency?',
+  options: ['Smaller passive filters may be possible, but switching losses can rise', 'All losses become zero', 'The circuit no longer needs cooling', 'Output voltage must always become zero'],
+  a: 'Smaller passive filters may be possible, but switching losses can rise',
+  explanation: 'Higher switching frequency can reduce filter size but may increase switching losses.'
+},
+{
+  id: 3012, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Why is a gate driver used with a power semiconductor switch?',
+  options: ['Provide suitable gate-drive signals', 'Measure room humidity only', 'Increase the switch resistance permanently', 'Replace the DC source'],
+  a: 'Provide suitable gate-drive signals',
+  explanation: 'Gate drivers provide the voltage, current and isolation needed to switch power devices reliably.'
+},
+{
+  id: 3013, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is dead time in an inverter leg?',
+  options: ['A short interval preventing simultaneous conduction of opposing switches', 'The time when the battery is permanently disconnected', 'A method to increase shoot-through', 'A measurement of cable length'],
+  a: 'A short interval preventing simultaneous conduction of opposing switches',
+  explanation: 'Dead time helps prevent shoot-through current caused by both switches conducting together.'
+},
+{
+  id: 3014, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is shoot-through in a voltage-source inverter?',
+  options: ['A short circuit across the DC link through switches', 'Normal charging of a capacitor', 'A low-frequency motor sound', 'A correct open-circuit condition'],
+  a: 'A short circuit across the DC link through switches',
+  explanation: 'Shoot-through occurs when switches in the same inverter leg conduct simultaneously.'
+},
+{
+  id: 3015, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is the purpose of a snubber circuit?',
+  options: ['Limit switching transients and voltage stress', 'Increase uncontrolled voltage spikes', 'Replace all power switches', 'Measure battery capacity only'],
+  a: 'Limit switching transients and voltage stress',
+  explanation: 'Snubbers reduce voltage or current transients during switching.'
+},
+{
+  id: 3016, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does an LC filter contain?',
+  options: ['Inductor and capacitor', 'Lamp and contactor', 'Lever and coil only', 'Logic gate and fuse only'],
+  a: 'Inductor and capacitor',
+  explanation: 'LC filters use inductors and capacitors to attenuate unwanted ripple or harmonics.'
+},
+{
+  id: 3017, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is harmonic distortion?',
+  options: ['Waveform distortion caused by frequency components beyond the fundamental', 'A change in wire color', 'A type of mechanical bearing', 'An increase in battery capacity'],
+  a: 'Waveform distortion caused by frequency components beyond the fundamental',
+  explanation: 'Harmonics are frequency components at integer multiples of the fundamental frequency.'
+},
+{
+  id: 3018, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does THD stand for?',
+  options: ['Total Harmonic Distortion', 'Thermal Holding Device', 'Transient Heat Distribution', 'Three-phase Harmonic Driver'],
+  a: 'Total Harmonic Distortion',
+  explanation: 'THD quantifies harmonic content relative to the fundamental component.'
+},
+{
+  id: 3019, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which converter directly changes AC power to AC power at a different frequency without a DC link?',
+  options: ['Cycloconverter', 'Buck converter', 'Boost converter', 'Simple rectifier'],
+  a: 'Cycloconverter',
+  explanation: 'A cycloconverter converts AC at one frequency directly into AC at another frequency.'
+},
+{
+  id: 3020, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is a matrix converter known for?',
+  options: ['Direct AC-to-AC conversion using a switch matrix', 'Storing fuel mechanically', 'Converting DC to DC only', 'Working without any semiconductor switches'],
+  a: 'Direct AC-to-AC conversion using a switch matrix',
+  explanation: 'Matrix converters provide direct AC-to-AC conversion without a bulky DC-link energy store.'
+},
+{
+  id: 3021, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is soft switching designed to reduce?',
+  options: ['Switching losses and electrical stress', 'Battery capacity', 'Insulation thickness in every case', 'Motor shaft length'],
+  a: 'Switching losses and electrical stress',
+  explanation: 'Soft-switching techniques arrange switching near zero voltage or current to reduce losses.'
+},
+{
+  id: 3022, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does ZVS mean?',
+  options: ['Zero Voltage Switching', 'Zero Variable Supply', 'Zonal Voltage Sensor', 'Zero Vector Storage'],
+  a: 'Zero Voltage Switching',
+  explanation: 'In ZVS, the switch transitions when its voltage is near zero.'
+},
+{
+  id: 3023, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does ZCS mean?',
+  options: ['Zero Current Switching', 'Zero Capacitor Supply', 'Zonal Current Storage', 'Zero Circuit Speed'],
+  a: 'Zero Current Switching',
+  explanation: 'In ZCS, the switch transitions when its current is near zero.'
+},
+{
+  id: 3024, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which device is a gate-turn-off power semiconductor?',
+  options: ['GTO thyristor', 'Ordinary fixed resistor', 'Fuse link', 'Capacitor bank'],
+  a: 'GTO thyristor',
+  explanation: 'A gate-turn-off thyristor can be turned off by an appropriate gate signal.'
+},
+{
+  id: 3025, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is the main characteristic of a diode?',
+  options: ['It conducts mainly in one direction', 'It always amplifies voltage', 'It stores mechanical energy', 'It measures frequency directly'],
+  a: 'It conducts mainly in one direction',
+  explanation: 'A diode allows current primarily in the forward direction when appropriately biased.'
+},
+{
+  id: 3026, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is a thyristor commonly used for?',
+  options: ['Controlled power switching', 'Measuring building height', 'Storing data as a hard disk', 'Producing mechanical fuel'],
+  a: 'Controlled power switching',
+  explanation: 'Thyristors are used in controlled rectifiers and high-power switching applications.'
+},
+{
+  id: 3027, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does a controlled rectifier use to regulate output?',
+  options: ['Firing angle of controllable devices', 'Cable paint color', 'Battery case shape', 'Transformer room size'],
+  a: 'Firing angle of controllable devices',
+  explanation: 'Changing the firing angle of thyristors changes the average rectified output.'
+},
+{
+  id: 3028, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is commutation in power electronics?',
+  options: ['Transfer of current from one device or path to another', 'Changing a motor casing color', 'Measuring conductor length', 'Charging a mechanical spring'],
+  a: 'Transfer of current from one device or path to another',
+  explanation: 'Commutation is the process of transferring current between switching devices or circuit paths.'
+},
+{
+  id: 3029, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is the purpose of power factor correction?',
+  options: ['Reduce reactive demand and improve power factor', 'Increase reactive current without benefit', 'Increase conductor resistance', 'Remove all active power'],
+  a: 'Reduce reactive demand and improve power factor',
+  explanation: 'Power factor correction reduces reactive power drawn from the supply.'
+},
+{
+  id: 3030, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which device can provide controllable bidirectional current in many converter designs?',
+  options: ['Suitable power semiconductor switching arrangement', 'Single fixed resistor only', 'Unconnected fuse', 'Open circuit only'],
+  a: 'Suitable power semiconductor switching arrangement',
+  explanation: 'Bidirectional current capability depends on the selected switches and their circuit arrangement.'
+},
+{
+  id: 3031, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does a three-phase inverter produce from a DC source?',
+  options: ['Three-phase AC output', 'Only mechanical pressure', 'A permanent open circuit', 'Only a single battery cell'],
+  a: 'Three-phase AC output',
+  explanation: 'A three-phase inverter synthesizes three AC output phases from a DC input.'
+},
+{
+  id: 3032, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is a multilevel inverter designed to provide?',
+  options: ['An output waveform with multiple voltage levels', 'Only one fixed DC level at all terminals', 'Mechanical torque without a motor', 'A battery without cells'],
+  a: 'An output waveform with multiple voltage levels',
+  explanation: 'Multilevel inverters synthesize stepped AC waveforms using several DC voltage levels.'
+},
+{
+  id: 3033, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which is a common application of a power electronic chopper?',
+  options: ['DC motor speed control', 'Measuring room lighting lux only', 'Producing steam directly', 'Changing conductor material'],
+  a: 'DC motor speed control',
+  explanation: 'A DC chopper controls average voltage supplied to a DC load or motor.'
+},
+{
+  id: 3034, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is duty cycle in a PWM switching converter?',
+  options: ['Fraction of a switching period for which the switch is on', 'Number of wires in a cable', 'Length of a transformer core', 'Battery age in years'],
+  a: 'Fraction of a switching period for which the switch is on',
+  explanation: 'Duty cycle is the on-time divided by the switching period.'
+},
+{
+  id: 3035, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which sensor can provide current feedback in a converter?',
+  options: ['Current sensor', 'Room thermometer only', 'Light bulb', 'Mechanical ruler'],
+  a: 'Current sensor',
+  explanation: 'Current sensors provide feedback for control and overcurrent protection.'
+},
+{
+  id: 3036, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Why is heat sinking used with power semiconductors?',
+  options: ['Remove heat and limit junction temperature', 'Increase semiconductor temperature without limit', 'Create switching pulses', 'Replace the gate driver'],
+  a: 'Remove heat and limit junction temperature',
+  explanation: 'Heat sinks transfer device losses to the surrounding environment.'
+},
+{
+  id: 3037, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is the role of an optocoupler in a gate-drive system?',
+  options: ['Provide signal transfer with electrical isolation', 'Store energy as fuel', 'Measure motor torque mechanically', 'Replace every semiconductor switch'],
+  a: 'Provide signal transfer with electrical isolation',
+  explanation: 'Optocouplers can transfer control signals while maintaining galvanic isolation.'
+},
+{
+  id: 3038, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which quantity describes power converter efficiency?',
+  options: ['Output power divided by input power', 'Input voltage divided by wire length', 'Resistance multiplied by frequency only', 'Switching cycles per kilogram'],
+  a: 'Output power divided by input power',
+  explanation: 'Efficiency is useful output power divided by input power, usually expressed as a percentage.'
+},
+{
+  id: 3039, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does an active front end allow in suitable drive systems?',
+  options: ['Controlled AC-to-DC conversion and possible regeneration', 'Only uncontrolled mechanical braking', 'Operation without switches', 'Permanent isolation of the load'],
+  a: 'Controlled AC-to-DC conversion and possible regeneration',
+  explanation: 'An active front end can control input current and support power flow back to the supply.'
+},
+{
+  id: 3040, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is a common purpose of a DC-link capacitor?',
+  options: ['Smooth DC voltage and store short-term energy', 'Measure room temperature', 'Change the AC frequency mechanically', 'Replace all inductors in every circuit'],
+  a: 'Smooth DC voltage and store short-term energy',
+  explanation: 'The DC-link capacitor helps stabilize the DC bus and supplies transient energy.'
+},
+{
+  id: 3041, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is a common use of a resonant converter?',
+  options: ['Efficient high-frequency power conversion', 'Measuring road distance', 'Generating fuel from wires', 'Changing the shape of an insulator'],
+  a: 'Efficient high-frequency power conversion',
+  explanation: 'Resonant converters use resonant circuit behaviour to support efficient switching.'
+},
+{
+  id: 3042, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which protection can help protect a converter against excessive current?',
+  options: ['Overcurrent protection', 'Paint inspection', 'Seat belt warning', 'Room lighting control'],
+  a: 'Overcurrent protection',
+  explanation: 'Overcurrent protection limits damage from excessive current in switches and conductors.'
+},
+{
+  id: 3043, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What does a flyback converter commonly use to transfer energy?',
+  options: ['A coupled inductor or transformer', 'A mechanical flywheel only', 'A bare wire without switching', 'A fixed resistor alone'],
+  a: 'A coupled inductor or transformer',
+  explanation: 'A flyback converter stores energy during one switching interval and transfers it during another.'
+},
+{
+  id: 3044, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is galvanic isolation?',
+  options: ['No direct conductive electrical path between circuits', 'A direct short circuit between circuits', 'A mechanical connection between shafts only', 'A rise in switching frequency'],
+  a: 'No direct conductive electrical path between circuits',
+  explanation: 'Galvanic isolation separates circuits electrically while allowing energy or signals to transfer by other means.'
+},
+{
+  id: 3045, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is a common application of a variable-frequency drive?',
+  options: ['Control AC motor speed', 'Control paper size only', 'Increase cable color options', 'Measure battery weight only'],
+  a: 'Control AC motor speed',
+  explanation: 'A VFD varies the frequency and voltage supplied to an AC motor.'
+},
+{
+  id: 3046, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which factor contributes to conduction losses in a power switch?',
+  options: ['Voltage drop and current while conducting', 'The label font alone', 'The room paint color', 'The number of windows'],
+  a: 'Voltage drop and current while conducting',
+  explanation: 'Conduction losses occur when current flows through a device with a nonzero voltage drop or resistance.'
+},
+{
+  id: 3047, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is a common reason for using synchronous rectification?',
+  options: ['Reduce conduction losses in suitable converters', 'Increase diode losses deliberately', 'Eliminate all control circuitry', 'Make output voltage undefined'],
+  a: 'Reduce conduction losses in suitable converters',
+  explanation: 'A controlled MOSFET can replace a diode to reduce forward conduction losses.'
+},
+{
+  id: 3048, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is the purpose of a maximum power point tracking controller?',
+  options: ['Extract available maximum power from a PV array under current conditions', 'Fix solar panel output at zero', 'Control the color of panels', 'Eliminate the need for sunlight'],
+  a: 'Extract available maximum power from a PV array under current conditions',
+  explanation: 'MPPT adjusts the operating point of a PV system to harvest available power.'
+},
+{
+  id: 3049, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'Which power converter is commonly used between a PV array and a DC bus?',
+  options: ['DC-DC converter', 'Mechanical gearbox only', 'Unconnected transformer', 'Fixed fuse only'],
+  a: 'DC-DC converter',
+  explanation: 'A DC-DC converter can regulate the PV operating point and match its output to a DC bus.'
+},
+{
+  id: 3050, branch: 'Electrical Engineering', topic: 'Advanced Power Electronics', semester: 'Semester 8', subject: 'Advanced Power Electronics',
+  q: 'What is a major goal in designing advanced power converters?',
+  options: ['High efficiency, reliability and power quality', 'Maximum switching losses', 'Uncontrolled voltage', 'No thermal protection'],
+  a: 'High efficiency, reliability and power quality',
+  explanation: 'Good converter design balances efficiency, safety, reliability and output quality.'
+},
+
+// SUBJECT 4: Project and Professional Ethics
+{
+  id: 3051, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is the first useful step in starting an engineering project?',
+  options: ['Define the problem and objectives', 'Purchase every component immediately', 'Skip planning', 'Write the conclusion before research'],
+  a: 'Define the problem and objectives',
+  explanation: 'Clear objectives guide scope, design, testing and evaluation.'
+},
+{
+  id: 3052, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is a project timeline used for?',
+  options: ['Plan tasks and deadlines', 'Determine wire color only', 'Replace all testing', 'Avoid assigning responsibilities'],
+  a: 'Plan tasks and deadlines',
+  explanation: 'A timeline helps organize activities and monitor project progress.'
+},
+{
+  id: 3053, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What does a project budget estimate?',
+  options: ['Expected project costs', 'Only the final report font', 'The number of pages only', 'The weather forecast'],
+  a: 'Expected project costs',
+  explanation: 'A budget estimates materials, equipment, labour and other project expenses.'
+},
+{
+  id: 3054, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Why is a literature review conducted?',
+  options: ['Understand existing work and identify gaps', 'Copy an entire report', 'Avoid learning the topic', 'Replace all experiments'],
+  a: 'Understand existing work and identify gaps',
+  explanation: 'A literature review places the project in context and identifies relevant prior work.'
+},
+{
+  id: 3055, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is plagiarism?',
+  options: ['Presenting another person’s work as one’s own without proper acknowledgement', 'Citing sources correctly', 'Writing original analysis', 'Testing a circuit safely'],
+  a: 'Presenting another person’s work as one’s own without proper acknowledgement',
+  explanation: 'Plagiarism misrepresents the source or ownership of ideas, words or work.'
+},
+{
+  id: 3056, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What should an engineering report include?',
+  options: ['Objectives, method, results and conclusions', 'Only decorative images', 'Only the title page', 'Unverified claims only'],
+  a: 'Objectives, method, results and conclusions',
+  explanation: 'A clear report explains the purpose, methods, evidence and findings.'
+},
+{
+  id: 3057, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Why is testing important in an engineering project?',
+  options: ['Verify performance and identify problems', 'Guarantee results without evidence', 'Avoid checking safety', 'Replace design requirements'],
+  a: 'Verify performance and identify problems',
+  explanation: 'Testing compares actual performance with requirements and helps reveal defects.'
+},
+{
+  id: 3058, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is risk assessment?',
+  options: ['Identify hazards and evaluate their likelihood and impact', 'Ignore possible failures', 'Estimate only project color', 'Remove all project documentation'],
+  a: 'Identify hazards and evaluate their likelihood and impact',
+  explanation: 'Risk assessment supports decisions about prevention and mitigation.'
+},
+{
+  id: 3059, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is the main purpose of a project abstract?',
+  options: ['Briefly summarize the project and its findings', 'List every raw measurement', 'Replace the complete report', 'Provide unrelated information'],
+  a: 'Briefly summarize the project and its findings',
+  explanation: 'An abstract gives readers a concise overview of the project.'
+},
+{
+  id: 3060, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is an engineering code of ethics?',
+  options: ['Guidance for responsible professional conduct', 'A list of personal passwords', 'A wiring diagram only', 'A project shopping list'],
+  a: 'Guidance for responsible professional conduct',
+  explanation: 'Ethical codes describe professional responsibilities and expected conduct.'
+},
+{
+  id: 3061, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Which principle should guide engineering decisions affecting public safety?',
+  options: ['Prioritize public health and safety', 'Hide known hazards', 'Ignore technical standards', 'Choose speed regardless of risk'],
+  a: 'Prioritize public health and safety',
+  explanation: 'Protecting public safety is a fundamental engineering responsibility.'
+},
+{
+  id: 3062, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What should an engineer do when a serious safety risk is discovered?',
+  options: ['Report and address the risk through appropriate channels', 'Conceal it from everyone', 'Delete the test results', 'Continue without review'],
+  a: 'Report and address the risk through appropriate channels',
+  explanation: 'Transparent reporting helps prevent harm and supports corrective action.'
+},
+{
+  id: 3063, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is a conflict of interest?',
+  options: ['A personal interest that could improperly influence professional judgement', 'A routine project meeting', 'A normal circuit connection', 'A required safety test'],
+  a: 'A personal interest that could improperly influence professional judgement',
+  explanation: 'Conflicts should be disclosed and managed to protect objective decision-making.'
+},
+{
+  id: 3064, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Why should experimental data be recorded accurately?',
+  options: ['Support reproducibility and trustworthy conclusions', 'Make results look better regardless of facts', 'Avoid explaining methods', 'Replace all calculations with guesses'],
+  a: 'Support reproducibility and trustworthy conclusions',
+  explanation: 'Accurate records allow results to be checked, reproduced and interpreted responsibly.'
+},
+{
+  id: 3065, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What does intellectual property protect?',
+  options: ['Eligible creations, inventions and original works', 'Every general fact automatically', 'Only physical tools', 'Only project deadlines'],
+  a: 'Eligible creations, inventions and original works',
+  explanation: 'Intellectual property law can protect qualifying inventions, creative works and other original contributions.'
+},
+{
+  id: 3066, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is teamwork in an engineering project?',
+  options: ['Coordinated work toward shared objectives', 'Everyone working without communication', 'Avoiding all responsibility', 'Duplicating every task unnecessarily'],
+  a: 'Coordinated work toward shared objectives',
+  explanation: 'Effective teamwork depends on communication, coordination and shared responsibility.'
+},
+{
+  id: 3067, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What should meeting minutes record?',
+  options: ['Key decisions, actions and responsibilities', 'Personal passwords', 'Unrelated rumours', 'Only room decoration'],
+  a: 'Key decisions, actions and responsibilities',
+  explanation: 'Minutes preserve decisions and clarify who will complete follow-up tasks.'
+},
+{
+  id: 3068, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is the purpose of version control in a software or design project?',
+  options: ['Track changes and support collaboration', 'Erase all project history', 'Prevent backup creation', 'Replace testing completely'],
+  a: 'Track changes and support collaboration',
+  explanation: 'Version control records changes and helps teams coordinate work safely.'
+},
+{
+  id: 3069, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What does a Gantt chart display?',
+  options: ['Project tasks against a timeline', 'Only electrical resistance', 'Only the final project grade', 'The chemical composition of a battery'],
+  a: 'Project tasks against a timeline',
+  explanation: 'A Gantt chart visualizes task durations and schedules.'
+},
+{
+  id: 3070, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is a project milestone?',
+  options: ['A significant checkpoint or achievement', 'An unrecorded expense', 'A random wire connection', 'A replacement for the entire schedule'],
+  a: 'A significant checkpoint or achievement',
+  explanation: 'Milestones mark important stages or deliverables in a project.'
+},
+{
+  id: 3071, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Why is calibration performed on measuring instruments?',
+  options: ['Check and improve measurement accuracy against references', 'Change the instrument color', 'Remove the need for measurements', 'Guarantee zero uncertainty in all cases'],
+  a: 'Check and improve measurement accuracy against references',
+  explanation: 'Calibration compares instrument readings with known standards and documents deviations.'
+},
+{
+  id: 3072, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is repeatability in measurement?',
+  options: ['Agreement among repeated measurements under the same conditions', 'The number of report pages', 'The color of an instrument', 'A type of project funding'],
+  a: 'Agreement among repeated measurements under the same conditions',
+  explanation: 'Repeatability describes measurement agreement under specified, similar conditions.'
+},
+{
+  id: 3073, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is the purpose of a conclusion in a technical report?',
+  options: ['Summarize findings in relation to the objectives', 'Introduce unrelated claims', 'Hide all limitations', 'Replace the methods section'],
+  a: 'Summarize findings in relation to the objectives',
+  explanation: 'A conclusion connects evidence and results to the project objectives.'
+},
+{
+  id: 3074, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Why should project limitations be documented?',
+  options: ['Explain the boundaries and constraints of the findings', 'Make the project appear perfect', 'Remove the need for future work', 'Hide measurement uncertainty'],
+  a: 'Explain the boundaries and constraints of the findings',
+  explanation: 'Documenting limitations helps readers interpret results accurately.'
+},
+{
+  id: 3075, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is sustainable engineering?',
+  options: ['Design that considers environmental, social and economic impacts', 'Design that ignores resource use', 'Design that maximizes waste', 'Design without safety checks'],
+  a: 'Design that considers environmental, social and economic impacts',
+  explanation: 'Sustainable engineering considers long-term impacts and resource efficiency.'
+},
+{
+  id: 3076, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is life-cycle assessment used to evaluate?',
+  options: ['Environmental impacts across a product life cycle', 'Only the product color', 'Only the first purchase price', 'Only the size of a report'],
+  a: 'Environmental impacts across a product life cycle',
+  explanation: 'Life-cycle assessment considers impacts from material extraction through use and end-of-life stages.'
+},
+{
+  id: 3077, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is a technical standard?',
+  options: ['A documented set of requirements or guidelines', 'An informal guess only', 'A project team nickname', 'A list of personal opinions'],
+  a: 'A documented set of requirements or guidelines',
+  explanation: 'Standards provide agreed requirements or methods for safety, quality and interoperability.'
+},
+{
+  id: 3078, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Why is personal protective equipment used in an electrical laboratory?',
+  options: ['Reduce exposure to identified hazards', 'Guarantee every task is risk-free', 'Replace all safe procedures', 'Increase contact with live conductors'],
+  a: 'Reduce exposure to identified hazards',
+  explanation: 'Appropriate PPE is one layer of protection and must be used with safe procedures.'
+},
+{
+  id: 3079, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is the purpose of lockout/tagout procedures?',
+  options: ['Prevent unexpected energization during maintenance', 'Increase accidental startup', 'Hide equipment faults', 'Speed up operation by bypassing isolation'],
+  a: 'Prevent unexpected energization during maintenance',
+  explanation: 'Lockout/tagout helps isolate energy sources and prevent unexpected startup.'
+},
+{
+  id: 3080, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What should be done before working on electrical equipment?',
+  options: ['Follow approved isolation and verification procedures', 'Assume the equipment is de-energized', 'Touch conductors to test voltage', 'Ignore the risk assessment'],
+  a: 'Follow approved isolation and verification procedures',
+  explanation: 'Safe work requires proper isolation, testing for absence of voltage and relevant procedures.'
+},
+{
+  id: 3081, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is an executive summary?',
+  options: ['A concise overview of a report for decision-makers', 'A full raw-data appendix only', 'A list of unrelated references', 'A personal diary entry'],
+  a: 'A concise overview of a report for decision-makers',
+  explanation: 'An executive summary highlights the problem, approach, findings and recommendations.'
+},
+{
+  id: 3082, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Why are references included in a project report?',
+  options: ['Credit sources and help readers verify information', 'Increase page count without purpose', 'Hide the source of data', 'Replace the project results'],
+  a: 'Credit sources and help readers verify information',
+  explanation: 'References acknowledge prior work and allow readers to locate cited sources.'
+},
+{
+  id: 3083, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is peer review?',
+  options: ['Evaluation of work by knowledgeable colleagues', 'Automatic approval without reading', 'Deleting all comments', 'A type of circuit breaker'],
+  a: 'Evaluation of work by knowledgeable colleagues',
+  explanation: 'Peer review can identify errors, improve clarity and assess the quality of work.'
+},
+{
+  id: 3084, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is a prototype?',
+  options: ['An early model used to evaluate a design', 'The final product in every case', 'A project budget only', 'A list of references'],
+  a: 'An early model used to evaluate a design',
+  explanation: 'Prototypes help engineers test assumptions and improve designs before final production.'
+},
+{
+  id: 3085, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is the purpose of a feasibility study?',
+  options: ['Assess whether a proposed project is practical', 'Guarantee success without analysis', 'Choose a logo only', 'Replace the technical design entirely'],
+  a: 'Assess whether a proposed project is practical',
+  explanation: 'Feasibility studies evaluate technical, economic, operational and other constraints.'
+},
+{
+  id: 3086, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What does quality assurance focus on?',
+  options: ['Processes intended to achieve required quality', 'Only finding faults after delivery', 'Ignoring project requirements', 'Changing results to pass tests'],
+  a: 'Processes intended to achieve required quality',
+  explanation: 'Quality assurance focuses on processes that help consistently meet requirements.'
+},
+{
+  id: 3087, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What does quality control commonly involve?',
+  options: ['Checking outputs against requirements', 'Avoiding inspections', 'Removing acceptance criteria', 'Ignoring defects'],
+  a: 'Checking outputs against requirements',
+  explanation: 'Quality control checks whether a product or result meets defined criteria.'
+},
+{
+  id: 3088, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is a root-cause analysis?',
+  options: ['Identify underlying causes of a problem', 'Describe only the visible symptom', 'Assign blame without evidence', 'Delete all incident records'],
+  a: 'Identify underlying causes of a problem',
+  explanation: 'Root-cause analysis seeks causes that can be addressed to prevent recurrence.'
+},
+{
+  id: 3089, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is an engineering design specification?',
+  options: ['Documented requirements the design must satisfy', 'A list of unrelated ideas', 'A project celebration plan', 'A record of personal passwords'],
+  a: 'Documented requirements the design must satisfy',
+  explanation: 'Specifications define functional, performance, safety and other design requirements.'
+},
+{
+  id: 3090, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Why should engineers communicate technical uncertainty honestly?',
+  options: ['Support informed and responsible decisions', 'Make estimates appear exact', 'Hide possible risks', 'Avoid documenting assumptions'],
+  a: 'Support informed and responsible decisions',
+  explanation: 'Transparent uncertainty helps stakeholders understand the confidence and limitations of results.'
+},
+{
+  id: 3091, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is a stakeholder in a project?',
+  options: ['A person or group affected by or interested in the project', 'Only the project computer', 'Only the final report', 'A type of electrical resistor'],
+  a: 'A person or group affected by or interested in the project',
+  explanation: 'Stakeholders may include users, sponsors, team members, regulators and communities.'
+},
+{
+  id: 3092, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is change management in a project?',
+  options: ['Review and control proposed changes', 'Accept every change without analysis', 'Delete the project plan', 'Prevent documentation'],
+  a: 'Review and control proposed changes',
+  explanation: 'Change management evaluates effects on scope, schedule, cost and quality.'
+},
+{
+  id: 3093, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Why should confidential project information be protected?',
+  options: ['Respect privacy, agreements and legitimate security needs', 'Share every record publicly by default', 'Avoid all data security', 'Publish passwords in the report'],
+  a: 'Respect privacy, agreements and legitimate security needs',
+  explanation: 'Responsible handling of information protects people, organizations and project integrity.'
+},
+{
+  id: 3094, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is a patent generally intended to protect?',
+  options: ['A qualifying invention under applicable law', 'Every scientific fact without conditions', 'Every spoken conversation', 'Any project schedule automatically'],
+  a: 'A qualifying invention under applicable law',
+  explanation: 'A patent may grant time-limited rights over a qualifying invention subject to legal requirements.'
+},
+{
+  id: 3095, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What should an engineer do if asked to falsify test results?',
+  options: ['Refuse and report the issue appropriately', 'Change the data to please a client', 'Delete all raw measurements', 'Approve the results without testing'],
+  a: 'Refuse and report the issue appropriately',
+  explanation: 'Falsifying results violates professional integrity and can create serious safety risks.'
+},
+{
+  id: 3096, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is the purpose of a final project demonstration?',
+  options: ['Show the system working and explain its results', 'Avoid answering questions', 'Replace all project documentation', 'Hide known limitations'],
+  a: 'Show the system working and explain its results',
+  explanation: 'A demonstration helps reviewers assess functionality and understand the project outcomes.'
+},
+{
+  id: 3097, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What is continuous improvement?',
+  options: ['Ongoing efforts to improve processes and outcomes', 'Keeping every process unchanged forever', 'Ignoring user feedback', 'Repeating known errors'],
+  a: 'Ongoing efforts to improve processes and outcomes',
+  explanation: 'Continuous improvement uses feedback and evidence to make processes more effective.'
+},
+{
+  id: 3098, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Why is user feedback useful during product development?',
+  options: ['It reveals user needs and usability issues', 'It guarantees that no testing is needed', 'It replaces all safety standards', 'It makes requirements irrelevant'],
+  a: 'It reveals user needs and usability issues',
+  explanation: 'Feedback helps developers improve features, usability and alignment with real needs.'
+},
+{
+  id: 3099, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'What should a project recommendation be based on?',
+  options: ['Evidence, requirements and analysis', 'Unsupported guesses only', 'Personal preference without context', 'Unrelated information'],
+  a: 'Evidence, requirements and analysis',
+  explanation: 'Evidence-based recommendations are easier to justify and evaluate.'
+},
+{
+  id: 3100, branch: 'Electrical Engineering', topic: 'Project and Professional Ethics', semester: 'Semester 8', subject: 'Project and Professional Ethics',
+  q: 'Which quality is essential for a professional engineer?',
+  options: ['Integrity and responsibility', 'Concealing safety issues', 'Falsifying records', 'Ignoring professional standards'],
+  a: 'Integrity and responsibility',
+  explanation: 'Integrity and responsibility support safe, trustworthy and ethical engineering practice.'
+},
 
 
 
