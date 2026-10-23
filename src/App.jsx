@@ -1577,6 +1577,145 @@ function ProfilePage({ profile, setProfile, saveProfile, saving, email }) {
         ))}
       </div>
       
+      
+      {section === 'About' && (
+        <section className="panel about-portfolio">
+          <div className="about-hero">
+            <div className="about-avatar">AY</div>
+            <p className="about-eyebrow">MY PROFILE · MY JOURNEY</p>
+            <h2>Anshika Yadav</h2>
+            <p className="about-role">
+              Computer Science Engineering Student
+            </p>
+            <p className="about-college">
+              Central University of Haryana
+            </p>
+            <p className="about-tagline">
+              Learning, building and creating meaningful digital experiences.
+            </p>
+          </div>
+
+          <div className="about-section">
+            <h2>About Me</h2>
+            <p>
+              Hello! I'm Anshika Yadav, a Computer Science Engineering
+              student passionate about technology, programming, and
+              building digital solutions that make learning easier.
+              I enjoy exploring new ideas and turning them into useful
+              projects for students.
+            </p>
+          </div>
+
+          <div className="about-section">
+            <h2>My Project — StudySpace 💜</h2>
+            <p>
+              StudySpace is a student-focused educational platform
+              designed to bring study resources, practice tools, and
+              student collaboration together in one place.
+            </p>
+            <p>
+              Its goal is to help students organize their learning,
+              practise questions, prepare for exams, share knowledge,
+              and connect with other learners.
+            </p>
+          </div>
+
+          <div className="about-section">
+            <h2>Explore StudySpace Features</h2>
+
+            <div className="about-feature-grid">
+              <article className="about-feature-card">
+                <span>📚</span>
+                <h3>Student Notes</h3>
+                <p>
+                  Access useful study material and subject notes
+                  in one place.
+                </p>
+              </article>
+
+              <article className="about-feature-card">
+                <span>📝</span>
+                <h3>My Notes</h3>
+                <p>
+                  Create, organize, save, and manage personal
+                  study notes.
+                </p>
+              </article>
+
+              <article className="about-feature-card">
+                <span>📤</span>
+                <h3>Notes Sharing</h3>
+                <p>
+                  Share helpful notes and discover learning
+                  resources from other students.
+                </p>
+              </article>
+
+              <article className="about-feature-card">
+                <span>💬</span>
+                <h3>Doubt Forum</h3>
+                <p>
+                  Ask study-related questions and discuss doubts
+                  with the student community.
+                </p>
+              </article>
+
+              <article className="about-feature-card">
+                <span>🧠</span>
+                <h3>Quiz Zone</h3>
+                <p>
+                  Practise MCQs, test your understanding, and
+                  strengthen exam preparation.
+                </p>
+              </article>
+
+              <article className="about-feature-card">
+                <span>🤝</span>
+                <h3>Student Community</h3>
+                <p>
+                  Share ideas, publish posts, and learn through
+                  student interaction.
+                </p>
+              </article>
+
+              <article className="about-feature-card">
+                <span>📂</span>
+                <h3>PYQ Library</h3>
+                <p>
+                  Use previous-year questions to revise topics
+                  and understand exam patterns.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <div className="about-section">
+            <h2>How StudySpace Helps Students</h2>
+            <ul className="about-benefits">
+              <li>Keep study resources organized in one place.</li>
+              <li>Practise MCQs and identify topics for revision.</li>
+              <li>Prepare with previous-year questions.</li>
+              <li>Ask doubts and learn through discussion.</li>
+              <li>Share knowledge and collaborate with peers.</li>
+            </ul>
+          </div>
+
+          <div className="about-contact">
+            <h2>Let's Connect ✉️</h2>
+            <p>
+              Have a question, idea, or collaboration opportunity?
+              Feel free to contact me.
+            </p>
+            <a href="mailto:anshi290706@gmail.com">
+              anshi290706@gmail.com
+            </a>
+          </div>
+
+          <p className="about-footer">
+            Designed and developed with passion by Anshika Yadav 💜
+          </p>
+        </section>
+      )}
 
       {section === 'Privacy' && (
         <section className="panel">
